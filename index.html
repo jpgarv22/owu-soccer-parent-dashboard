@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#101820">
+<title>OWU Parent Dashboard</title>
+<style>
+:root{--red:#BA0C2F;--darkred:#8F0A24;--bg:#101820;--line:#516273;--text:#fff;--muted:#d7dde3}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+body{padding:0}
+header{height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;background:#173247;border-bottom:1px solid var(--line)}
+header h1{margin:0;font-size:22px}
+header .sub{font-size:13px;color:#d8e0e7}
+main{padding:10px}
+.monitor{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(280px,42vh) minmax(280px,42vh);gap:2px;background:var(--line);border:1px solid var(--line)}
+.tile{position:relative;overflow:hidden;background:#050505;min-height:0}
+.tile iframe{width:100%;height:100%;border:0;display:block}
+.label{position:absolute;z-index:4;top:8px;left:10px;background:rgba(0,0,0,.62);padding:5px 8px;border-radius:6px;font-weight:700}
+.fallback{position:absolute;z-index:5;right:10px;bottom:10px;background:rgba(186,12,47,.94);color:#fff;text-decoration:none;padding:8px 10px;border-radius:8px;font-size:13px;font-weight:700}
+.weather{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;background:linear-gradient(155deg,var(--red),var(--darkred))}
+.clock{font-size:clamp(44px,7vw,86px);font-weight:800;line-height:1}
+.date{margin-top:8px;font-size:clamp(16px,2vw,24px);color:#fff}
+.temp{margin-top:20px;font-size:clamp(44px,7vw,82px);font-weight:800;line-height:1}
+.cond{font-size:clamp(18px,2.4vw,28px);margin-top:7px}
+.details{margin-top:12px;font-size:clamp(14px,1.7vw,20px);color:#fff}
+.countdown{margin-top:10px;background:#fff;color:#101820;border-radius:12px;padding:15px 18px;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center}
+.countdown .eyebrow{color:var(--red);font-size:12px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}
+.countdown h2{margin:4px 0 3px;font-size:clamp(22px,3vw,34px)}
+.countdown .meta{color:#64717d;font-size:15px}
+.timer{display:grid;grid-template-columns:repeat(4,minmax(64px,90px));gap:7px}
+.timebox{background:#173247;color:#fff;border-radius:9px;text-align:center;padding:9px 5px}
+.timebox strong{display:block;font-size:26px;line-height:1}
+.timebox span{font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.links{margin-top:10px;text-align:center;font-size:13px}
+.links a{color:#fff}
+@media(max-width:800px),(orientation:portrait){
+  header{height:auto;min-height:54px;gap:10px}
+  .monitor{grid-template-columns:1fr;grid-template-rows:repeat(4,minmax(240px,42vh))}
+  .countdown{grid-template-columns:1fr}
+  .timer{grid-template-columns:repeat(4,1fr)}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>OWU Parent Dashboard</h1>
+  <div class="sub">Class of 2030 • Delaware, Ohio</div>
+</header>
+<main>
+  <section class="monitor">
+    <div class="tile">
+      <div class="label">Rock Quad</div>
+      <iframe src="https://www.youtube-nocookie.com/embed/hlFqtnAgPps?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="Rock Quad live camera" allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a class="fallback" href="https://www.youtube.com/watch?v=hlFqtnAgPps" target="_blank" rel="noopener">Open in YouTube</a>
+    </div>
+    <div class="tile">
+      <div class="label">University Gateway</div>
+      <iframe src="https://www.youtube-nocookie.com/embed/pDjVx-zwt6k?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="University Gateway live camera" allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a class="fallback" href="https://www.youtube.com/watch?v=pDjVx-zwt6k" target="_blank" rel="noopener">Open in YouTube</a>
+    </div>
+    <div class="tile">
+      <div class="label">JAYwalk</div>
+      <iframe src="https://www.youtube-nocookie.com/embed/9lSdTxl8cDw?autoplay=1&mute=1&playsinline=1&rel=0"
+        title="JAYwalk live camera" allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a class="fallback" href="https://www.youtube.com/watch?v=9lSdTxl8cDw" target="_blank" rel="noopener">Open in YouTube</a>
+    </div>
+    <div class="tile">
+      <div class="weather">
+        <div class="clock" id="clock">--:--</div>
+        <div class="date" id="date">Delaware, Ohio</div>
+        <div class="temp" id="temperature">--°F</div>
+        <div class="cond" id="condition">Loading weather…</div>
+        <div class="details" id="details"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="countdown">
+    <div>
+      <div class="eyebrow">Next OWU Women’s Soccer Game</div>
+      <h2 id="nextOpponent">Loading schedule…</h2>
+      <div class="meta" id="nextMeta"></div>
+    </div>
+    <div class="timer">
+      <div class="timebox"><strong id="days">--</strong><span>Days</span></div>
+      <div class="timebox"><strong id="hours">--</strong><span>Hours</span></div>
+      <div class="timebox"><strong id="minutes">--</strong><span>Minutes</span></div>
+      <div class="timebox"><strong id="seconds">--</strong><span>Seconds</span></div>
+    </div>
+  </section>
+
+  <div class="links">
+    <a href="https://battlingbishops.com/sports/womens-soccer/schedule" target="_blank" rel="noopener">Official OWU women’s soccer schedule</a>
+  </div>
+</main>
+
+<script>
+const games = [
+  {date:"2026-08-21T16:00:00-04:00",opponent:"Albion (Exhibition)",site:"Away",location:"Albion, Michigan"},
+  {date:"2026-08-23T15:00:00-04:00",opponent:"Thomas More (Exhibition)",site:"Away",location:"Crestview Hills, Kentucky"},
+  {date:"2026-08-25T17:30:00-04:00",opponent:"Earlham (Exhibition)",site:"Away",location:"Richmond, Indiana"},
+  {date:"2026-09-01T19:00:00-04:00",opponent:"Transylvania",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-09-04T18:00:00-04:00",opponent:"Saint Francis",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-09-05T16:00:00-04:00",opponent:"Sewanee",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-09-12T15:00:00-04:00",opponent:"Asbury",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-09-16T19:00:00-04:00",opponent:"Franciscan",site:"Away",location:"Steubenville, Ohio"},
+  {date:"2026-09-19T16:00:00-04:00",opponent:"Heidelberg",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-09-20T16:00:00-04:00",opponent:"Marietta",site:"Away",location:"Marietta, Ohio"},
+  {date:"2026-09-22T17:00:00-04:00",opponent:"Hanover",site:"Away",location:"Hanover, Indiana"},
+  {date:"2026-09-29T19:00:00-04:00",opponent:"Capital",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-10-03T16:00:00-04:00",opponent:"Wooster",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-10-06T15:30:00-04:00",opponent:"Kenyon",site:"Away",location:"Gambier, Ohio"},
+  {date:"2026-10-10T13:00:00-04:00",opponent:"John Carroll",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-10-17T14:30:00-04:00",opponent:"DePauw",site:"Away",location:"Greencastle, Indiana"},
+  {date:"2026-10-20T19:00:00-04:00",opponent:"Oberlin",site:"Away",location:"Oberlin, Ohio"},
+  {date:"2026-10-24T13:00:00-04:00",opponent:"Wittenberg",site:"Home",location:"Jay Martin Soccer Complex"},
+  {date:"2026-10-31T12:00:00-04:00",opponent:"Denison",site:"Away",location:"Granville, Ohio"}
+];
+
+function updateClock(){
+  const now=new Date();
+  document.getElementById("clock").textContent=new Intl.DateTimeFormat("en-US",{
+    timeZone:"America/New_York",hour:"numeric",minute:"2-digit",second:"2-digit"
+  }).format(now);
+  document.getElementById("date").textContent=new Intl.DateTimeFormat("en-US",{
+    timeZone:"America/New_York",weekday:"long",month:"long",day:"numeric"
+  }).format(now)+" • Delaware, Ohio";
+}
+
+const codes={0:"Clear",1:"Mostly clear",2:"Partly cloudy",3:"Overcast",45:"Fog",48:"Freezing fog",
+51:"Light drizzle",53:"Drizzle",55:"Heavy drizzle",61:"Light rain",63:"Rain",65:"Heavy rain",
+71:"Light snow",73:"Snow",75:"Heavy snow",80:"Rain showers",81:"Rain showers",82:"Heavy showers",
+95:"Thunderstorms",96:"Thunderstorms with hail",99:"Severe thunderstorms"};
+
+async function loadWeather(){
+  try{
+    const url="https://api.open-meteo.com/v1/forecast?latitude=40.2987&longitude=-83.0679&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FNew_York&forecast_days=1";
+    const r=await fetch(url,{cache:"no-store"});
+    if(!r.ok) throw new Error();
+    const d=await r.json(), c=d.current;
+    document.getElementById("temperature").textContent=Math.round(c.temperature_2m)+"°F";
+    document.getElementById("condition").textContent=codes[c.weather_code]||"Current conditions";
+    document.getElementById("details").textContent=`Feels like ${Math.round(c.apparent_temperature)}° • High ${Math.round(d.daily.temperature_2m_max[0])}° • Low ${Math.round(d.daily.temperature_2m_min[0])}° • Wind ${Math.round(c.wind_speed_10m)} mph`;
+  }catch(e){
+    document.getElementById("condition").textContent="Weather unavailable";
+    document.getElementById("details").textContent="Reload the page to try again.";
+  }
+}
+
+function updateCountdown(){
+  const now=new Date();
+  const g=games.find(x=>new Date(x.date)>now);
+  if(!g){
+    document.getElementById("nextOpponent").textContent="Season complete";
+    document.getElementById("nextMeta").textContent="";
+    return;
+  }
+  const gameDate=new Date(g.date);
+  const diff=Math.max(0,gameDate-now);
+  const label=g.site==="Home"?"vs.":"at";
+  document.getElementById("nextOpponent").textContent=`${label} ${g.opponent}`;
+  document.getElementById("nextMeta").textContent=
+    new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",weekday:"long",month:"long",day:"numeric",hour:"numeric",minute:"2-digit"}).format(gameDate)
+    +" ET • "+g.location;
+  document.getElementById("days").textContent=Math.floor(diff/86400000);
+  document.getElementById("hours").textContent=Math.floor(diff/3600000)%24;
+  document.getElementById("minutes").textContent=Math.floor(diff/60000)%60;
+  document.getElementById("seconds").textContent=Math.floor(diff/1000)%60;
+}
+
+updateClock(); loadWeather(); updateCountdown();
+setInterval(updateClock,1000);
+setInterval(updateCountdown,1000);
+setInterval(loadWeather,600000);
+</script>
+</body>
+</html>
