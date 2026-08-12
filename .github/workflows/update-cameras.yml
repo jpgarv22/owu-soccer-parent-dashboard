@@ -1,0 +1,92 @@
+name: Update OWU camera links
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-cameras:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Find current OWU camera embeds
+        shell: bash
+        run: |
+          python3 <<'PY'
+          import json
+          import re
+          import urllib.request
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          source = "https://www.owu.edu/about/live-campus-views/"
+          target = Path("cameras.json")
+
+          req = urllib.request.Request(
+              source,
+              headers={"User-Agent": "Mozilla/5.0 OWU-Parent-Dashboard/2.0"}
+          )
+
+          with urllib.request.urlopen(req, timeout=30) as response:
+              html = response.read().decode("utf-8", errors="replace")
+
+          found = re.findall(
+              r'youtube(?:-nocookie)?\.com/embed/([A-Za-z0-9_-]{11})',
+              html,
+              flags=re.I
+          )
+
+          ids = []
+          for video_id in found:
+              if video_id not in ids:
+                  ids.append(video_id)
+
+          if len(ids) < 3:
+              raise SystemExit(
+                  f"Expected 3 OWU YouTube camera embeds; found {len(ids)}. "
+                  "cameras.json left unchanged."
+              )
+
+          new_cameras = {
+              "rockQuad": ids[0],
+              "gateway": ids[1],
+              "jaywalk": ids[2]
+          }
+
+          current = json.loads(target.read_text()) if target.exists() else {}
+
+          if current.get("cameras") == new_cameras:
+              print("Camera IDs have not changed.")
+              raise SystemExit(0)
+
+          payload = {
+              "source": source,
+              "updatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "cameras": new_cameras
+          }
+
+          target.write_text(json.dumps(payload, indent=2) + "\n")
+          print("Updated camera IDs:", new_cameras)
+          PY
+
+      - name: Commit camera-link changes
+        shell: bash
+        run: |
+          if git diff --quiet -- cameras.json; then
+            echo "No camera changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add cameras.json
+          git commit -m "Auto-update OWU camera links"
+          git push
