@@ -20,7 +20,9 @@
   --nav:50px;
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box;
+}
 
 html,body{
   margin:0;
@@ -60,6 +62,11 @@ main{
   overflow:hidden;
   background:#050708;
 }
+
+
+/* =========================
+   CAMERAS
+========================= */
 
 .camera iframe{
   position:absolute;
@@ -122,7 +129,7 @@ main{
   border-radius:5px;
   border:1px solid rgba(255,255,255,.22);
   background:rgba(12,19,25,.85);
-  color:white;
+  color:#fff;
   text-decoration:none;
   font-size:11px;
   font-weight:700;
@@ -141,7 +148,10 @@ main{
   font-size:15px;
 }
 
-/* CAMPUS STATUS */
+
+/* =========================
+   CAMPUS STATUS
+========================= */
 
 .status{
   height:100%;
@@ -150,8 +160,16 @@ main{
   grid-template-rows:auto auto auto 1fr auto;
   gap:10px;
   background:
-    radial-gradient(circle at 100% 100%,rgba(186,12,47,.12),transparent 40%),
-    linear-gradient(145deg,#12212b,#0d171f);
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(186,12,47,.12),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #12212b,
+      #0d171f
+    );
 }
 
 .status-head{
@@ -248,7 +266,7 @@ main{
 
 .countdown{
   margin-top:6px;
-  color:white;
+  color:#fff;
   font-size:12px;
   font-weight:750;
 }
@@ -261,7 +279,10 @@ main{
   text-transform:uppercase;
 }
 
-/* NAVIGATION */
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
   height:var(--nav);
@@ -288,46 +309,161 @@ nav a:last-child{
 
 nav a:hover{
   background:#182630;
-  color:white;
+  color:#fff;
 }
 
-@media(max-width:760px){
-  :root{--nav:44px}
 
-  main{padding:2px}
+/* =====================================================
+   IPHONE PORTRAIT
+   Desktop / Mac / iPad landscape remain unchanged.
+===================================================== */
 
-  .monitor{gap:2px}
+@media (max-width:760px) and (orientation:portrait){
 
-  .camera-bar{height:29px}
+  html,
+  body{
+    width:100%;
+    height:auto;
+    min-height:100%;
+    overflow-x:hidden;
+    overflow-y:auto;
+  }
 
-  .camera-name{font-size:11px}
+  body{
+    display:block;
+    padding-bottom:48px;
+  }
 
-  .live{font-size:9px}
+  main{
+    width:100%;
+    height:auto;
+    min-height:0;
+    padding:3px;
+  }
+
+  .monitor{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    gap:3px;
+    border:0;
+  }
+
+  .tile{
+    width:100%;
+    min-height:0;
+  }
+
+  .camera{
+    position:relative;
+    width:100%;
+    height:auto;
+    aspect-ratio:16 / 9;
+    flex:none;
+  }
+
+  .camera iframe{
+    position:absolute;
+    inset:0;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform:none;
+  }
+
+  .camera-bar{
+    height:30px;
+    padding:0 9px;
+  }
+
+  .camera-name{
+    font-size:12px;
+  }
+
+  .live{
+    font-size:9px;
+  }
+
+  .fallback{
+    right:6px;
+    bottom:6px;
+    padding:5px 8px;
+    font-size:10px;
+  }
 
   .status{
-    padding:9px 10px;
-    gap:6px;
+    height:auto;
+    min-height:410px;
+    padding:14px;
+    gap:10px;
   }
 
   .status-head{
-    padding-bottom:6px;
+    padding-bottom:10px;
+  }
+
+  .clock{
+    font-size:52px;
+  }
+
+  .date{
+    font-size:14px;
+  }
+
+  .temp{
+    font-size:44px;
+  }
+
+  .cond{
+    font-size:14px;
   }
 
   .section{
-    padding:7px 8px;
+    min-height:100px;
+    padding:10px;
   }
 
-  .weather-detail,
+  .section h2{
+    font-size:20px;
+  }
+
+  .meta{
+    font-size:13px;
+  }
+
+  .weather-detail{
+    font-size:10px;
+  }
+
   .sync{
-    display:none;
+    font-size:8px;
+  }
+
+  nav{
+    position:fixed;
+    z-index:100;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:48px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
   }
 
   nav a{
+    padding:4px;
+    text-align:center;
     font-size:10px;
+    line-height:1.1;
   }
 }
+
 </style>
 </head>
+
 
 <body>
 
@@ -335,148 +471,168 @@ nav a:hover{
 
 <section class="monitor">
 
-  <!-- ROCK QUAD -->
 
-  <section class="tile camera" id="camera-rock">
+<!-- ROCK QUAD -->
 
-    <div class="camera-bar">
-      <span class="camera-name">Rock Quad</span>
-      <span class="live">
-        <span class="live-dot"></span>LIVE
-      </span>
-    </div>
+<section class="tile camera" id="camera-rock">
 
-    <div class="camera-placeholder">
-      Loading current OWU camera…
-    </div>
+  <div class="camera-bar">
+    <span class="camera-name">Rock Quad</span>
 
-  </section>
+    <span class="live">
+      <span class="live-dot"></span>LIVE
+    </span>
+  </div>
 
+  <div class="camera-placeholder">
+    Loading current OWU camera…
+  </div>
 
-  <!-- UNIVERSITY GATEWAY -->
-
-  <section class="tile camera" id="camera-gateway">
-
-    <div class="camera-bar">
-      <span class="camera-name">University Gateway</span>
-      <span class="live">
-        <span class="live-dot"></span>LIVE
-      </span>
-    </div>
-
-    <div class="camera-placeholder">
-      Loading current OWU camera…
-    </div>
-
-  </section>
+</section>
 
 
-  <!-- JAYWALK -->
+<!-- UNIVERSITY GATEWAY -->
 
-  <section class="tile camera" id="camera-jaywalk">
+<section class="tile camera" id="camera-gateway">
 
-    <div class="camera-bar">
-      <span class="camera-name">JAYwalk</span>
-      <span class="live">
-        <span class="live-dot"></span>LIVE
-      </span>
-    </div>
+  <div class="camera-bar">
+    <span class="camera-name">University Gateway</span>
 
-    <div class="camera-placeholder">
-      Loading current OWU camera…
-    </div>
+    <span class="live">
+      <span class="live-dot"></span>LIVE
+    </span>
+  </div>
 
-  </section>
+  <div class="camera-placeholder">
+    Loading current OWU camera…
+  </div>
 
-
-  <!-- CAMPUS STATUS -->
-
-  <section class="tile">
-
-    <div class="status">
-
-      <div class="status-head">
-
-        <div>
-
-          <div class="location">
-            Delaware, Ohio
-          </div>
-
-          <div class="clock" id="clock">
-            --:--
-          </div>
-
-          <div class="date" id="date">
-            Loading…
-          </div>
-
-        </div>
+</section>
 
 
-        <div class="weather">
+<!-- JAYWALK -->
 
-          <div class="weather-label">
-            Current Weather
-          </div>
+<section class="tile camera" id="camera-jaywalk">
 
-          <div class="temp" id="temperature">
-            --°
-          </div>
+  <div class="camera-bar">
+    <span class="camera-name">JAYwalk</span>
 
-          <div class="cond" id="condition">
-            Loading…
-          </div>
+    <span class="live">
+      <span class="live-dot"></span>LIVE
+    </span>
+  </div>
 
-          <div class="weather-detail" id="weatherDetail"></div>
+  <div class="camera-placeholder">
+    Loading current OWU camera…
+  </div>
 
-        </div>
+</section>
 
+
+<!-- CAMPUS STATUS -->
+
+<section class="tile">
+
+<div class="status">
+
+  <div class="status-head">
+
+    <div>
+
+      <div class="location">
+        Delaware, Ohio
       </div>
 
-
-      <div class="section">
-
-        <div class="eyebrow">
-          Next Women's Soccer Match
-        </div>
-
-        <h2 id="nextOpponent">
-          Loading schedule…
-        </h2>
-
-        <div class="meta" id="nextMeta"></div>
-
-        <div class="countdown" id="countdown"></div>
-
+      <div class="clock" id="clock">
+        --:--
       </div>
 
-
-      <div class="section">
-
-        <div class="eyebrow">
-          Next Academic Event
-        </div>
-
-        <h2 id="academicTitle">
-          Loading calendar…
-        </h2>
-
-        <div class="meta" id="academicMeta"></div>
-
-      </div>
-
-
-      <div></div>
-
-
-      <div class="sync" id="syncStatus">
-        Camera auto-sync active • Dashboard v2.0.1
+      <div class="date" id="date">
+        Loading…
       </div>
 
     </div>
 
-  </section>
+
+    <div class="weather">
+
+      <div class="weather-label">
+        Current Weather
+      </div>
+
+      <div class="temp" id="temperature">
+        --°
+      </div>
+
+      <div class="cond" id="condition">
+        Loading…
+      </div>
+
+      <div
+        class="weather-detail"
+        id="weatherDetail">
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="section">
+
+    <div class="eyebrow">
+      Next Women's Soccer Match
+    </div>
+
+    <h2 id="nextOpponent">
+      Loading schedule…
+    </h2>
+
+    <div
+      class="meta"
+      id="nextMeta">
+    </div>
+
+    <div
+      class="countdown"
+      id="countdown">
+    </div>
+
+  </div>
+
+
+  <div class="section">
+
+    <div class="eyebrow">
+      Next Academic Event
+    </div>
+
+    <h2 id="academicTitle">
+      Loading calendar…
+    </h2>
+
+    <div
+      class="meta"
+      id="academicMeta">
+    </div>
+
+  </div>
+
+
+  <div></div>
+
+
+  <div
+    class="sync"
+    id="syncStatus">
+
+    Camera auto-sync active • Dashboard v2.0.2
+
+  </div>
+
+</div>
+
+</section>
 
 </section>
 
@@ -523,40 +679,25 @@ Campus Map
 OWU SOCCER PARENT DASHBOARD
 =========================================================
 
-VERSION HISTORY
+VERSION 2.0.2
 
-1.0
-Initial dashboard.
+Desktop / iPad landscape:
+2 x 2 ICView-style dashboard.
 
-2.0
-Full-screen ICView-inspired four-panel layout.
-Campus Status integrated into fourth panel.
-Bottom navigation.
-No-scroll viewport.
+iPhone portrait:
+Three horizontal 16:9 camera feeds stacked vertically,
+followed by Campus Status.
 
-2.0.1
-Automatic OWU camera-link architecture.
-Camera IDs stored in cameras.json.
-GitHub Action can automatically update cameras.json
-when OWU changes its YouTube livestream IDs.
+Camera IDs are loaded from cameras.json.
+GitHub Actions automatically maintains cameras.json.
 
 =========================================================
 */
 
 
-/* =====================================================
-   CAMERA SYSTEM
-===================================================== */
-
-
-/*
-These are emergency fallback IDs.
-
-Normally the dashboard gets the current IDs from
-cameras.json.
-
-If cameras.json cannot be loaded, these IDs are used.
-*/
+/* =========================
+   CAMERA FALLBACKS
+========================= */
 
 const CAMERA_FALLBACKS = {
 
@@ -572,9 +713,9 @@ const CAMERA_FALLBACKS = {
 };
 
 
-/*
-Create one camera player.
-*/
+/* =========================
+   RENDER CAMERA
+========================= */
 
 function renderCamera(
   tileId,
@@ -609,7 +750,6 @@ function renderCamera(
     tile.appendChild(message);
 
     return;
-
   }
 
 
@@ -664,13 +804,12 @@ function renderCamera(
   tile.appendChild(iframe);
 
   tile.appendChild(link);
-
 }
 
 
-/*
-Load current camera IDs from cameras.json.
-*/
+/* =========================
+   LOAD CAMERA LINKS
+========================= */
 
 async function loadCameraLinks(){
 
@@ -704,7 +843,6 @@ async function loadCameraLinks(){
           ...CAMERA_FALLBACKS,
           ...data.cameras
         };
-
       }
 
 
@@ -717,20 +855,22 @@ async function loadCameraLinks(){
         document
           .getElementById("syncStatus")
           .textContent =
+
           "Camera links synced " +
+
           updated.toLocaleDateString(
             "en-US",
             {
               month:"short",
               day:"numeric"
             }
-          ) +
-          " • Dashboard v2.0.1";
+          )
 
+          +
+
+          " • Dashboard v2.0.2";
       }
-
     }
-
   }
 
   catch(error){
@@ -739,7 +879,6 @@ async function loadCameraLinks(){
       "Using fallback camera IDs.",
       error
     );
-
   }
 
 
@@ -762,14 +901,12 @@ async function loadCameraLinks(){
     "JAYwalk",
     cameras.jaywalk
   );
-
 }
 
 
-/* =====================================================
+/* =========================
    CLOCK
-===================================================== */
-
+========================= */
 
 function updateClock(){
 
@@ -780,17 +917,13 @@ function updateClock(){
   document
     .getElementById("clock")
     .textContent =
+
     new Intl.DateTimeFormat(
       "en-US",
       {
-        timeZone:
-          "America/New_York",
-
-        hour:
-          "numeric",
-
-        minute:
-          "2-digit"
+        timeZone:"America/New_York",
+        hour:"numeric",
+        minute:"2-digit"
       }
     )
     .format(now);
@@ -799,74 +932,46 @@ function updateClock(){
   document
     .getElementById("date")
     .textContent =
+
     new Intl.DateTimeFormat(
       "en-US",
       {
-        timeZone:
-          "America/New_York",
-
-        weekday:
-          "long",
-
-        month:
-          "long",
-
-        day:
-          "numeric"
+        timeZone:"America/New_York",
+        weekday:"long",
+        month:"long",
+        day:"numeric"
       }
     )
     .format(now);
-
 }
 
 
-/* =====================================================
+/* =========================
    WEATHER
-===================================================== */
-
+========================= */
 
 const weatherCodes = {
 
   0:"Clear",
-
   1:"Mostly clear",
-
   2:"Partly cloudy",
-
   3:"Overcast",
-
   45:"Fog",
-
   48:"Freezing fog",
-
   51:"Light drizzle",
-
   53:"Drizzle",
-
   55:"Heavy drizzle",
-
   61:"Light rain",
-
   63:"Rain",
-
   65:"Heavy rain",
-
   71:"Light snow",
-
   73:"Snow",
-
   75:"Heavy snow",
-
   80:"Rain showers",
-
   81:"Rain showers",
-
   82:"Heavy showers",
-
   95:"Thunderstorms",
-
   96:"Thunderstorms with hail",
-
   99:"Severe thunderstorms"
 
 };
@@ -904,17 +1009,26 @@ async function loadWeather(){
     document
       .getElementById("temperature")
       .textContent =
+
       Math.round(
         current.temperature_2m
-      ) + "°";
+      )
+
+      +
+
+      "°";
 
 
     document
       .getElementById("condition")
       .textContent =
+
       weatherCodes[
         current.weather_code
-      ] ||
+      ]
+
+      ||
+
       "Current conditions";
 
 
@@ -926,28 +1040,35 @@ async function loadWeather(){
 
       Math.round(
         current.apparent_temperature
-      ) +
+      )
+
+      +
 
       "° • H " +
 
       Math.round(
         data.daily.temperature_2m_max[0]
-      ) +
+      )
+
+      +
 
       "° • L " +
 
       Math.round(
         data.daily.temperature_2m_min[0]
-      ) +
+      )
+
+      +
 
       "° • Wind " +
 
       Math.round(
         current.wind_speed_10m
-      ) +
+      )
+
+      +
 
       " mph";
-
   }
 
   catch(error){
@@ -956,16 +1077,13 @@ async function loadWeather(){
       .getElementById("condition")
       .textContent =
       "Weather unavailable";
-
   }
-
 }
 
 
-/* =====================================================
-   WOMEN'S SOCCER SCHEDULE
-===================================================== */
-
+/* =========================
+   SOCCER SCHEDULE
+========================= */
 
 const games = [
 
@@ -1140,7 +1258,6 @@ function updateGame(){
 
 
     return;
-
   }
 
 
@@ -1167,23 +1284,12 @@ function updateGame(){
     new Intl.DateTimeFormat(
       "en-US",
       {
-        timeZone:
-          "America/New_York",
-
-        weekday:
-          "short",
-
-        month:
-          "short",
-
-        day:
-          "numeric",
-
-        hour:
-          "numeric",
-
-        minute:
-          "2-digit"
+        timeZone:"America/New_York",
+        weekday:"short",
+        month:"short",
+        day:"numeric",
+        hour:"numeric",
+        minute:"2-digit"
       }
     )
     .format(gameDate)
@@ -1230,14 +1336,12 @@ function updateGame(){
     .textContent =
 
     `${days} days, ${hours} hr, ${minutes} min`;
-
 }
 
 
-/* =====================================================
+/* =========================
    ACADEMIC CALENDAR
-===================================================== */
-
+========================= */
 
 const academicEvents = [
 
@@ -1312,7 +1416,6 @@ function updateAcademic(){
       .getElementById("academicMeta")
       .textContent =
       event.meta;
-
   }
 
   else{
@@ -1327,16 +1430,13 @@ function updateAcademic(){
       .getElementById("academicMeta")
       .textContent =
       "";
-
   }
-
 }
 
 
-/* =====================================================
+/* =========================
    START DASHBOARD
-===================================================== */
-
+========================= */
 
 loadCameraLinks();
 
@@ -1374,17 +1474,13 @@ setInterval(
 
 
 /*
-Check cameras.json every 30 minutes.
-
-If GitHub Actions changes a camera ID,
-the dashboard will automatically pick it up.
+Reload cameras.json every 30 minutes.
 */
 
 setInterval(
   loadCameraLinks,
   1800000
 );
-
 
 </script>
 
