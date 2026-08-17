@@ -3,6 +3,7 @@ name: Update OWU camera links
 on:
   schedule:
     - cron: "7,37 * * * *"
+
   workflow_dispatch:
 
 permissions:
@@ -11,68 +12,132 @@ permissions:
 jobs:
   update-cameras:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
-      - name: Find current OWU camera embeds
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Read current OWU camera streams
         shell: bash
         run: |
           python3 <<'PY'
           import json
           import re
-          import urllib.request
           from datetime import datetime, timezone
           from pathlib import Path
+          from playwright.sync_api import sync_playwright
 
-          source = "https://www.owu.edu/about/live-campus-views/"
-          target = Path("cameras.json")
+          SOURCE = "https://www.owu.edu/about/live-campus-views/"
+          TARGET = Path("cameras.json")
 
-          req = urllib.request.Request(
-              source,
-              headers={"User-Agent": "Mozilla/5.0 OWU-Parent-Dashboard/2.0"}
-          )
+          def extract_video_id(url):
+              if not url:
+                  return None
 
-          with urllib.request.urlopen(req, timeout=30) as response:
-              html = response.read().decode("utf-8", errors="replace")
+              patterns = [
+                  r'youtube(?:-nocookie)?\.com/embed/([A-Za-z0-9_-]{11})',
+                  r'youtube\.com/watch\?v=([A-Za-z0-9_-]{11})',
+                  r'youtu\.be/([A-Za-z0-9_-]{11})'
+              ]
 
-          found = re.findall(
-              r'youtube(?:-nocookie)?\.com/embed/([A-Za-z0-9_-]{11})',
-              html,
-              flags=re.I
-          )
+              for pattern in patterns:
+                  match = re.search(pattern, url, re.I)
+                  if match:
+                      return match.group(1)
 
-          ids = []
-          for video_id in found:
-              if video_id not in ids:
-                  ids.append(video_id)
+              return None
 
-          if len(ids) < 3:
+          with sync_playwright() as p:
+              browser = p.chromium.launch(headless=True)
+
+              page = browser.new_page(
+                  viewport={"width": 1440, "height": 1200},
+                  user_agent=(
+                      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) "
+                      "Chrome/139 Safari/537.36"
+                  )
+              )
+
+              url = SOURCE + "?dashboard_check=" + datetime.now(
+                  timezone.utc
+              ).strftime("%Y%m%d%H%M%S")
+
+              page.goto(
+                  url,
+                  wait_until="domcontentloaded",
+                  timeout=60000
+              )
+
+              page.wait_for_timeout(5000)
+
+              iframe_urls = page.locator("iframe").evaluate_all(
+                  """
+                  els => els
+                    .map(el => el.src)
+                    .filter(src => src && src.includes("youtube"))
+                  """
+              )
+
+              browser.close()
+
+          video_ids = []
+
+          for iframe_url in iframe_urls:
+              video_id = extract_video_id(iframe_url)
+
+              if video_id and video_id not in video_ids:
+                  video_ids.append(video_id)
+
+          print("YouTube embeds found:", iframe_urls)
+          print("Video IDs found:", video_ids)
+
+          if len(video_ids) < 3:
               raise SystemExit(
-                  f"Expected 3 OWU YouTube camera embeds; found {len(ids)}. "
-                  "cameras.json left unchanged."
+                  f"Expected at least 3 YouTube camera embeds, "
+                  f"but found {len(video_ids)}. "
+                  "Leaving cameras.json unchanged."
               )
 
           new_cameras = {
-              "rockQuad": ids[0],
-              "gateway": ids[1],
-              "jaywalk": ids[2]
+              "rockQuad": video_ids[0],
+              "gateway": video_ids[1],
+              "jaywalk": video_ids[2]
           }
 
-          current = json.loads(target.read_text()) if target.exists() else {}
+          current = {}
+
+          if TARGET.exists():
+              current = json.loads(TARGET.read_text())
 
           if current.get("cameras") == new_cameras:
               print("Camera IDs have not changed.")
               raise SystemExit(0)
 
           payload = {
-              "source": source,
-              "updatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "source": SOURCE,
+              "updatedAt": datetime.now(
+                  timezone.utc
+              ).isoformat().replace("+00:00", "Z"),
               "cameras": new_cameras
           }
 
-          target.write_text(json.dumps(payload, indent=2) + "\n")
+          TARGET.write_text(
+              json.dumps(payload, indent=2) + "\n"
+          )
+
           print("Updated camera IDs:", new_cameras)
           PY
 
@@ -80,7 +145,7 @@ jobs:
         shell: bash
         run: |
           if git diff --quiet -- cameras.json; then
-            echo "No camera changes to commit."
+            echo "No camera-link changes to commit."
             exit 0
           fi
 
