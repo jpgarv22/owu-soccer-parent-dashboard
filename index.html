@@ -5,18 +5,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0b1117">
+<meta name="theme-color" content="#0b0b0d">
 
 <title>OWU Parent Dashboard</title>
 
 <style>
 :root{
-  --red:#BA0C2F;
-  --bg:#0b1117;
-  --panel:#101a22;
-  --line:#344551;
-  --text:#ffffff;
-  --muted:#aebbc5;
+  --owu-red:#BA0C2F;
+  --owu-red-dark:#750719;
+  --owu-red-bright:#d3193e;
+  --black:#07080a;
+  --panel:#111316;
+  --panel2:#17191d;
+  --line:#34373d;
+  --white:#ffffff;
+  --muted:#b7bbc2;
   --nav:50px;
 }
 
@@ -29,8 +32,8 @@ html,body{
   width:100%;
   height:100%;
   overflow:hidden;
-  background:var(--bg);
-  color:var(--text);
+  background:var(--black);
+  color:var(--white);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
 }
 
@@ -51,8 +54,8 @@ main{
   grid-template-columns:1fr 1fr;
   grid-template-rows:1fr 1fr;
   gap:3px;
-  background:var(--line);
-  border:1px solid var(--line);
+  background:#30343a;
+  border:1px solid #30343a;
 }
 
 .tile{
@@ -60,13 +63,13 @@ main{
   min-width:0;
   min-height:0;
   overflow:hidden;
-  background:#050708;
+  background:#050608;
 }
 
 
-/* =========================
+/* =====================================================
    CAMERAS
-========================= */
+===================================================== */
 
 .camera iframe{
   position:absolute;
@@ -93,10 +96,10 @@ main{
   justify-content:space-between;
   background:linear-gradient(
     180deg,
-    rgba(7,12,16,.92),
-    rgba(7,12,16,.58)
+    rgba(5,6,7,.95),
+    rgba(5,6,7,.60)
   );
-  border-bottom:1px solid rgba(255,255,255,.12);
+  border-bottom:1px solid rgba(255,255,255,.14);
   pointer-events:none;
 }
 
@@ -117,7 +120,7 @@ main{
   height:7px;
   margin-right:5px;
   border-radius:50%;
-  background:#e12646;
+  background:#e3294b;
 }
 
 .fallback{
@@ -128,7 +131,7 @@ main{
   padding:6px 9px;
   border-radius:5px;
   border:1px solid rgba(255,255,255,.22);
-  background:rgba(12,19,25,.85);
+  background:rgba(10,10,12,.86);
   color:#fff;
   text-decoration:none;
   font-size:11px;
@@ -143,64 +146,70 @@ main{
   justify-content:center;
   padding:20px;
   text-align:center;
-  background:#050708;
-  color:#cfd7de;
+  background:#050608;
+  color:#cfd2d7;
   font-size:15px;
 }
 
 
-/* =========================
-   CAMPUS STATUS
-========================= */
+/* =====================================================
+   OWU INFORMATION PANEL
+===================================================== */
 
-.status{
+.owu-panel{
   height:100%;
-  padding:16px 18px;
-  display:grid;
-  grid-template-rows:auto auto auto 1fr auto;
-  gap:10px;
-  background:
-    radial-gradient(
-      circle at 100% 100%,
-      rgba(186,12,47,.12),
-      transparent 40%
-    ),
-    linear-gradient(
-      145deg,
-      #12212b,
-      #0d171f
-    );
-}
-
-.status-head{
+  min-height:0;
   display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  gap:15px;
-  padding-bottom:10px;
-  border-bottom:1px solid var(--line);
+  flex-direction:column;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 95% 95%,rgba(186,12,47,.18),transparent 38%),
+    linear-gradient(145deg,#16181c,#08090b 72%);
 }
 
-.location{
-  margin-bottom:4px;
-  color:#d45b73;
+
+/* RED HEADER */
+
+.owu-header{
+  flex:0 0 auto;
+  min-height:112px;
+  padding:13px 16px 12px;
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:14px;
+  align-items:center;
+  background:
+    linear-gradient(
+      135deg,
+      var(--owu-red-bright),
+      var(--owu-red) 55%,
+      var(--owu-red-dark)
+    );
+  border-bottom:2px solid #ef3155;
+}
+
+.owu-location{
+  margin-bottom:2px;
   font-size:10px;
   font-weight:800;
-  letter-spacing:.13em;
+  letter-spacing:.15em;
   text-transform:uppercase;
+  opacity:.88;
 }
 
 .clock{
-  font-size:clamp(40px,4.7vw,70px);
-  line-height:.95;
-  font-weight:800;
-  letter-spacing:-.04em;
+  margin:0;
+  font-size:clamp(39px,4.6vw,68px);
+  line-height:.94;
+  font-weight:850;
+  letter-spacing:-.045em;
 }
 
 .date{
-  margin-top:6px;
-  color:var(--muted);
-  font-size:clamp(12px,1.2vw,16px);
+  margin-top:5px;
+  font-size:clamp(11px,1.1vw,15px);
+  font-weight:600;
+  opacity:.94;
 }
 
 .weather{
@@ -208,99 +217,249 @@ main{
 }
 
 .weather-label{
-  color:#d45b73;
+  margin-bottom:2px;
   font-size:9px;
   font-weight:800;
   letter-spacing:.12em;
   text-transform:uppercase;
+  opacity:.88;
 }
 
 .temp{
-  font-size:clamp(32px,3.6vw,54px);
-  line-height:1;
-  font-weight:800;
+  font-size:clamp(31px,3.4vw,51px);
+  line-height:.96;
+  font-weight:850;
 }
 
 .cond{
   margin-top:3px;
-  font-size:clamp(12px,1.3vw,17px);
+  font-size:clamp(11px,1.1vw,15px);
+  font-weight:700;
 }
 
 .weather-detail{
-  margin-top:4px;
-  color:var(--muted);
-  font-size:11px;
+  margin-top:3px;
+  font-size:10px;
+  opacity:.86;
 }
 
-.section{
+
+/* PANEL CONTENT */
+
+.info-body{
+  flex:1 1 auto;
   min-height:0;
-  padding:10px 12px;
+  padding:10px 12px 8px;
+  display:grid;
+  grid-template-rows:minmax(0,1.25fr) minmax(0,.9fr);
+  gap:9px;
+}
+
+.info-card{
+  min-height:0;
+  overflow:hidden;
+  border:1px solid #3b3d43;
+  border-left:3px solid var(--owu-red);
+  border-radius:5px;
+  background:rgba(255,255,255,.035);
+}
+
+.info-title-row{
+  height:30px;
+  padding:0 10px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  border-bottom:1px solid #34363b;
+  background:rgba(0,0,0,.20);
+}
+
+.info-title{
+  color:#fff;
+  font-size:11px;
+  font-weight:850;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+
+.soccer-links{
+  display:flex;
+  gap:5px;
+}
+
+.soccer-links a{
+  padding:3px 7px;
+  border:1px solid rgba(255,255,255,.24);
+  border-radius:4px;
+  background:var(--owu-red);
+  color:#fff;
+  text-decoration:none;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.03em;
+}
+
+.soccer-links a:hover{
+  background:#d2183d;
+}
+
+
+/* GAMES */
+
+.game-list{
+  height:calc(100% - 30px);
+  padding:4px 9px;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  border:1px solid var(--line);
-  border-left:3px solid var(--red);
-  border-radius:3px;
-  background:rgba(255,255,255,.025);
 }
 
-.eyebrow{
-  color:#e66880;
+.game-row{
+  min-height:0;
+  padding:5px 1px;
+  display:grid;
+  grid-template-columns:74px minmax(0,1fr) auto;
+  gap:8px;
+  align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.09);
+}
+
+.game-row:last-child{
+  border-bottom:0;
+}
+
+.game-date{
+  color:#f06a82;
+  font-size:10px;
+  font-weight:850;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+
+.game-opponent{
+  min-width:0;
+  color:#fff;
+  font-size:clamp(12px,1.15vw,16px);
+  font-weight:750;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.game-location{
+  margin-top:1px;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:500;
+}
+
+.game-time{
+  color:#fff;
   font-size:10px;
   font-weight:800;
-  letter-spacing:.11em;
+  white-space:nowrap;
+}
+
+.next-badge{
+  margin-left:5px;
+  padding:2px 5px;
+  border-radius:3px;
+  background:var(--owu-red);
+  color:white;
+  font-size:8px;
+  font-weight:850;
+  letter-spacing:.05em;
   text-transform:uppercase;
 }
 
-.section h2{
-  margin:5px 0 3px;
-  font-size:clamp(17px,1.7vw,25px);
-  line-height:1.05;
+
+/* EVENTS */
+
+.event-list{
+  height:calc(100% - 30px);
+  padding:4px 9px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
-.meta{
-  color:var(--muted);
-  font-size:clamp(11px,1vw,14px);
-  line-height:1.3;
+.event-row{
+  padding:4px 1px;
+  display:grid;
+  grid-template-columns:67px minmax(0,1fr);
+  gap:8px;
+  align-items:center;
+  border-bottom:1px solid rgba(255,255,255,.09);
 }
 
-.countdown{
-  margin-top:6px;
-  color:#fff;
-  font-size:12px;
-  font-weight:750;
+.event-row:last-child{
+  border-bottom:0;
 }
 
-.sync{
-  text-align:right;
-  color:#81909b;
+.event-date{
+  color:#f06a82;
   font-size:9px;
-  letter-spacing:.08em;
+  font-weight:850;
   text-transform:uppercase;
 }
 
+.event-name{
+  min-width:0;
+  color:#fff;
+  font-size:clamp(10px,1vw,13px);
+  font-weight:650;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
 
-/* =========================
-   NAVIGATION
-========================= */
+
+/* PANEL FOOTER */
+
+.owu-footer{
+  flex:0 0 23px;
+  padding:0 11px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  border-top:1px solid #303238;
+  background:#090a0c;
+  color:#969aa1;
+  font-size:8px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+
+.go-bishops{
+  color:#fff;
+  font-weight:900;
+  letter-spacing:.11em;
+}
+
+
+/* =====================================================
+   BOTTOM NAVIGATION
+===================================================== */
 
 nav{
   height:var(--nav);
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  background:#111b23;
-  border-top:1px solid var(--line);
+  background:#111216;
+  border-top:1px solid #3b3d42;
 }
 
 nav a{
   display:flex;
   align-items:center;
   justify-content:center;
-  border-right:1px solid #2a3944;
-  color:#dce4e9;
+  border-right:1px solid #303238;
+  color:#e5e5e7;
   text-decoration:none;
   font-size:12px;
-  font-weight:700;
+  font-weight:750;
 }
 
 nav a:last-child{
@@ -308,14 +467,13 @@ nav a:last-child{
 }
 
 nav a:hover{
-  background:#182630;
+  background:var(--owu-red);
   color:#fff;
 }
 
 
 /* =====================================================
    IPHONE PORTRAIT
-   Desktop / Mac / iPad landscape remain unchanged.
 ===================================================== */
 
 @media (max-width:760px) and (orientation:portrait){
@@ -393,51 +551,73 @@ nav a:hover{
     font-size:10px;
   }
 
-  .status{
+  .owu-panel{
     height:auto;
-    min-height:410px;
-    padding:14px;
-    gap:10px;
+    min-height:590px;
   }
 
-  .status-head{
-    padding-bottom:10px;
+  .owu-header{
+    min-height:112px;
+    padding:13px 14px;
   }
 
   .clock{
-    font-size:52px;
+    font-size:50px;
   }
 
   .date{
-    font-size:14px;
-  }
-
-  .temp{
-    font-size:44px;
-  }
-
-  .cond{
-    font-size:14px;
-  }
-
-  .section{
-    min-height:100px;
-    padding:10px;
-  }
-
-  .section h2{
-    font-size:20px;
-  }
-
-  .meta{
     font-size:13px;
   }
 
-  .weather-detail{
-    font-size:10px;
+  .temp{
+    font-size:42px;
   }
 
-  .sync{
+  .cond{
+    font-size:13px;
+  }
+
+  .info-body{
+    height:auto;
+    padding:9px;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .info-card{
+    height:auto;
+    min-height:175px;
+  }
+
+  .events-card{
+    min-height:145px;
+  }
+
+  .game-list,
+  .event-list{
+    height:auto;
+    padding:6px 9px;
+  }
+
+  .game-row{
+    padding:7px 1px;
+    grid-template-columns:68px minmax(0,1fr) auto;
+  }
+
+  .game-opponent{
+    font-size:13px;
+  }
+
+  .event-row{
+    padding:6px 1px;
+  }
+
+  .event-name{
+    font-size:12px;
+  }
+
+  .soccer-links a{
+    padding:3px 5px;
     font-size:8px;
   }
 
@@ -449,8 +629,6 @@ nav a:hover{
     bottom:0;
     width:100%;
     height:48px;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
   }
 
   nav a{
@@ -464,7 +642,6 @@ nav a:hover{
 </style>
 </head>
 
-
 <body>
 
 <main>
@@ -472,16 +649,22 @@ nav a:hover{
 <section class="monitor">
 
 
-<!-- ROCK QUAD -->
+<!-- ===================================================
+     ROCK QUAD
+=================================================== -->
 
 <section class="tile camera" id="camera-rock">
 
   <div class="camera-bar">
-    <span class="camera-name">Rock Quad</span>
+
+    <span class="camera-name">
+      Rock Quad
+    </span>
 
     <span class="live">
       <span class="live-dot"></span>LIVE
     </span>
+
   </div>
 
   <div class="camera-placeholder">
@@ -491,16 +674,22 @@ nav a:hover{
 </section>
 
 
-<!-- UNIVERSITY GATEWAY -->
+<!-- ===================================================
+     UNIVERSITY GATEWAY
+=================================================== -->
 
 <section class="tile camera" id="camera-gateway">
 
   <div class="camera-bar">
-    <span class="camera-name">University Gateway</span>
+
+    <span class="camera-name">
+      University Gateway
+    </span>
 
     <span class="live">
       <span class="live-dot"></span>LIVE
     </span>
+
   </div>
 
   <div class="camera-placeholder">
@@ -510,16 +699,22 @@ nav a:hover{
 </section>
 
 
-<!-- JAYWALK -->
+<!-- ===================================================
+     JAYWALK
+=================================================== -->
 
 <section class="tile camera" id="camera-jaywalk">
 
   <div class="camera-bar">
-    <span class="camera-name">JAYwalk</span>
+
+    <span class="camera-name">
+      JAYwalk
+    </span>
 
     <span class="live">
       <span class="live-dot"></span>LIVE
     </span>
+
   </div>
 
   <div class="camera-placeholder">
@@ -529,17 +724,22 @@ nav a:hover{
 </section>
 
 
-<!-- CAMPUS STATUS -->
+<!-- ===================================================
+     OWU INFORMATION PANEL
+=================================================== -->
 
 <section class="tile">
 
-<div class="status">
+<div class="owu-panel">
 
-  <div class="status-head">
+
+  <!-- TIME + WEATHER -->
+
+  <div class="owu-header">
 
     <div>
 
-      <div class="location">
+      <div class="owu-location">
         Delaware, Ohio
       </div>
 
@@ -578,55 +778,89 @@ nav a:hover{
   </div>
 
 
-  <div class="section">
+  <!-- INFORMATION CARDS -->
 
-    <div class="eyebrow">
-      Next Women's Soccer Match
+  <div class="info-body">
+
+
+    <!-- WOMEN'S SOCCER -->
+
+    <div class="info-card">
+
+      <div class="info-title-row">
+
+        <div class="info-title">
+          Women's Soccer • Next 3
+        </div>
+
+        <div class="soccer-links">
+
+          <a
+          href="https://battlingbishops.com/sports/womens-soccer/schedule/2026"
+          target="_blank"
+          rel="noopener">
+          Schedule
+          </a>
+
+          <a
+          href="https://battlingbishops.com/sports/womens-soccer/roster"
+          target="_blank"
+          rel="noopener">
+          Roster
+          </a>
+
+          <a
+          href="https://battlingbishops.com/sports/womens-soccer/stats"
+          target="_blank"
+          rel="noopener">
+          Stats
+          </a>
+
+        </div>
+
+      </div>
+
+      <div
+        class="game-list"
+        id="gameList">
+      </div>
+
     </div>
 
-    <h2 id="nextOpponent">
-      Loading schedule…
-    </h2>
 
-    <div
-      class="meta"
-      id="nextMeta">
-    </div>
+    <!-- OWU EVENTS -->
 
-    <div
-      class="countdown"
-      id="countdown">
+    <div class="info-card events-card">
+
+      <div class="info-title-row">
+
+        <div class="info-title">
+          Upcoming OWU Events
+        </div>
+
+      </div>
+
+      <div
+        class="event-list"
+        id="eventList">
+      </div>
+
     </div>
 
   </div>
 
 
-  <div class="section">
+  <!-- FOOTER -->
 
-    <div class="eyebrow">
-      Next Academic Event
-    </div>
+  <div class="owu-footer">
 
-    <h2 id="academicTitle">
-      Loading calendar…
-    </h2>
+    <span id="syncStatus">
+      Camera auto-sync active • Dashboard v2.1
+    </span>
 
-    <div
-      class="meta"
-      id="academicMeta">
-    </div>
-
-  </div>
-
-
-  <div></div>
-
-
-  <div
-    class="sync"
-    id="syncStatus">
-
-    Camera auto-sync active • Dashboard v2.0.2
+    <span class="go-bishops">
+      Go Bishops!
+    </span>
 
   </div>
 
@@ -634,10 +868,15 @@ nav a:hover{
 
 </section>
 
+
 </section>
 
 </main>
 
+
+<!-- ===================================================
+     PERMANENT NAVIGATION
+=================================================== -->
 
 <nav>
 
@@ -679,43 +918,58 @@ Campus Map
 OWU SOCCER PARENT DASHBOARD
 =========================================================
 
-VERSION 2.0.2
+VERSION HISTORY
 
-Desktop / iPad landscape:
-2 x 2 ICView-style dashboard.
+1.0
+Initial dashboard.
 
-iPhone portrait:
-Three horizontal 16:9 camera feeds stacked vertically,
-followed by Campus Status.
+2.0
+Full-screen four-panel ICView-style layout.
 
-Camera IDs are loaded from cameras.json.
-GitHub Actions automatically maintains cameras.json.
+2.0.1
+Automatic cameras.json architecture.
+
+2.0.2
+Responsive iPhone portrait layout.
+
+2.1
+OWU red / black / white information panel.
+Next three women's soccer games.
+Schedule / Roster / Stats shortcuts.
+Multiple upcoming OWU events.
+
+Camera links remain automatically maintained through
+cameras.json and the GitHub Actions Playwright workflow.
 
 =========================================================
 */
 
 
-/* =========================
-   CAMERA FALLBACKS
-========================= */
+/* =====================================================
+   CAMERA SYSTEM
+===================================================== */
+
+
+/*
+These fallback IDs are only used if cameras.json
+temporarily cannot be loaded.
+
+cameras.json remains the primary source.
+*/
 
 const CAMERA_FALLBACKS = {
 
   rockQuad:
-    "kcKmvFVEbj8",
+    "CaKBiuHui0w",
 
   gateway:
-    "V4DYLd3VMOE",
+    "LF4FVLWP3Vs",
 
   jaywalk:
-    "_7ySqsnCAHI"
+    "l97JBARWgrA"
 
 };
 
-
-/* =========================
-   RENDER CAMERA
-========================= */
 
 function renderCamera(
   tileId,
@@ -807,10 +1061,6 @@ function renderCamera(
 }
 
 
-/* =========================
-   LOAD CAMERA LINKS
-========================= */
-
 async function loadCameraLinks(){
 
   let cameras =
@@ -868,7 +1118,7 @@ async function loadCameraLinks(){
 
           +
 
-          " • Dashboard v2.0.2";
+          " • Dashboard v2.1";
       }
     }
   }
@@ -904,9 +1154,9 @@ async function loadCameraLinks(){
 }
 
 
-/* =========================
+/* =====================================================
    CLOCK
-========================= */
+===================================================== */
 
 function updateClock(){
 
@@ -946,9 +1196,9 @@ function updateClock(){
 }
 
 
-/* =========================
+/* =====================================================
    WEATHER
-========================= */
+===================================================== */
 
 const weatherCodes = {
 
@@ -1081,362 +1331,434 @@ async function loadWeather(){
 }
 
 
-/* =========================
-   SOCCER SCHEDULE
-========================= */
+/* =====================================================
+   WOMEN'S SOCCER
+===================================================== */
 
 const games = [
 
 {
-date:"2026-08-21T16:00:00-04:00",
-opponent:"Albion (Exhibition)",
-site:"Away",
-location:"Albion, Michigan"
+  date:"2026-08-21T16:00:00-04:00",
+  opponent:"Albion (Exhibition)",
+  site:"Away",
+  location:"Albion, Michigan"
 },
 
 {
-date:"2026-08-23T15:00:00-04:00",
-opponent:"Thomas More (Exhibition)",
-site:"Away",
-location:"Crestview Hills, Kentucky"
+  date:"2026-08-23T15:00:00-04:00",
+  opponent:"Thomas More (Exhibition)",
+  site:"Away",
+  location:"Crestview Hills, Kentucky"
 },
 
 {
-date:"2026-08-25T17:30:00-04:00",
-opponent:"Earlham (Exhibition)",
-site:"Away",
-location:"Richmond, Indiana"
+  date:"2026-08-25T17:30:00-04:00",
+  opponent:"Earlham (Exhibition)",
+  site:"Away",
+  location:"Richmond, Indiana"
 },
 
 {
-date:"2026-09-01T19:00:00-04:00",
-opponent:"Transylvania",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-01T19:00:00-04:00",
+  opponent:"Transylvania",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-09-04T18:00:00-04:00",
-opponent:"Saint Francis",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-04T18:00:00-04:00",
+  opponent:"Saint Francis",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-09-05T16:00:00-04:00",
-opponent:"Sewanee",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-05T16:00:00-04:00",
+  opponent:"Sewanee",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-09-12T15:00:00-04:00",
-opponent:"Asbury",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-12T15:00:00-04:00",
+  opponent:"Asbury",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-09-16T19:00:00-04:00",
-opponent:"Franciscan",
-site:"Away",
-location:"Steubenville, Ohio"
+  date:"2026-09-16T19:00:00-04:00",
+  opponent:"Franciscan",
+  site:"Away",
+  location:"Steubenville, Ohio"
 },
 
 {
-date:"2026-09-19T16:00:00-04:00",
-opponent:"Heidelberg",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-19T16:00:00-04:00",
+  opponent:"Heidelberg",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-09-20T16:00:00-04:00",
-opponent:"Marietta",
-site:"Away",
-location:"Marietta, Ohio"
+  date:"2026-09-20T16:00:00-04:00",
+  opponent:"Marietta",
+  site:"Away",
+  location:"Marietta, Ohio"
 },
 
 {
-date:"2026-09-22T17:00:00-04:00",
-opponent:"Hanover",
-site:"Away",
-location:"Hanover, Indiana"
+  date:"2026-09-22T17:00:00-04:00",
+  opponent:"Hanover",
+  site:"Away",
+  location:"Hanover, Indiana"
 },
 
 {
-date:"2026-09-29T19:00:00-04:00",
-opponent:"Capital",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-26T12:00:00-04:00",
+  opponent:"Bethany",
+  site:"Away",
+  location:"Bethany, West Virginia",
+  timeTBA:true
 },
 
 {
-date:"2026-10-03T16:00:00-04:00",
-opponent:"Wooster",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-09-29T19:00:00-04:00",
+  opponent:"Capital",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-10-06T15:30:00-04:00",
-opponent:"Kenyon",
-site:"Away",
-location:"Gambier, Ohio"
+  date:"2026-10-03T16:00:00-04:00",
+  opponent:"Wooster",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-10-10T13:00:00-04:00",
-opponent:"John Carroll",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-10-06T15:30:00-04:00",
+  opponent:"Kenyon",
+  site:"Away",
+  location:"Gambier, Ohio"
 },
 
 {
-date:"2026-10-17T14:30:00-04:00",
-opponent:"DePauw",
-site:"Away",
-location:"Greencastle, Indiana"
+  date:"2026-10-10T13:00:00-04:00",
+  opponent:"John Carroll",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
 },
 
 {
-date:"2026-10-20T19:00:00-04:00",
-opponent:"Oberlin",
-site:"Away",
-location:"Oberlin, Ohio"
+  date:"2026-10-17T14:30:00-04:00",
+  opponent:"DePauw",
+  site:"Away",
+  location:"Greencastle, Indiana"
 },
 
 {
-date:"2026-10-24T13:00:00-04:00",
-opponent:"Wittenberg",
-site:"Home",
-location:"Jay Martin Soccer Complex"
+  date:"2026-10-20T19:00:00-04:00",
+  opponent:"Oberlin",
+  site:"Away",
+  location:"Oberlin, Ohio"
 },
 
 {
-date:"2026-10-31T12:00:00-04:00",
-opponent:"Denison",
-site:"Away",
-location:"Granville, Ohio"
+  date:"2026-10-24T13:00:00-04:00",
+  opponent:"Wittenberg",
+  site:"Home",
+  location:"Jay Martin Soccer Complex"
+},
+
+{
+  date:"2026-10-31T12:00:00-04:00",
+  opponent:"Denison",
+  site:"Away",
+  location:"Granville, Ohio"
 }
 
 ];
 
 
-function updateGame(){
+function renderGames(){
 
   const now =
     new Date();
 
 
-  const game =
-    games.find(
-      game =>
-        new Date(game.date) >
-        now
-    );
+  const upcoming =
+    games
+      .filter(
+        game =>
+          new Date(game.date) >
+          now
+      )
+      .slice(0,3);
 
 
-  if(!game){
-
-    document
-      .getElementById("nextOpponent")
-      .textContent =
-      "Season complete";
+  const container =
+    document.getElementById("gameList");
 
 
-    document
-      .getElementById("nextMeta")
-      .textContent =
-      "";
+  container.innerHTML =
+    "";
 
 
-    document
-      .getElementById("countdown")
-      .textContent =
-      "";
+  if(upcoming.length === 0){
 
+    container.innerHTML =
+      '<div class="game-row"><div class="game-opponent">Regular season complete</div></div>';
 
     return;
   }
 
 
-  const gameDate =
-    new Date(game.date);
+  upcoming.forEach(
+    (game,index) => {
+
+      const gameDate =
+        new Date(game.date);
 
 
-  const prefix =
-    game.site === "Home"
-    ? "vs."
-    : "at";
+      const dateText =
+        new Intl.DateTimeFormat(
+          "en-US",
+          {
+            timeZone:"America/New_York",
+            month:"short",
+            day:"numeric"
+          }
+        )
+        .format(gameDate);
 
 
-  document
-    .getElementById("nextOpponent")
-    .textContent =
-    `${prefix} ${game.opponent}`;
+      const dayText =
+        new Intl.DateTimeFormat(
+          "en-US",
+          {
+            timeZone:"America/New_York",
+            weekday:"short"
+          }
+        )
+        .format(gameDate);
 
 
-  document
-    .getElementById("nextMeta")
-    .textContent =
+      const timeText =
+        game.timeTBA
 
-    new Intl.DateTimeFormat(
-      "en-US",
-      {
-        timeZone:"America/New_York",
-        weekday:"short",
-        month:"short",
-        day:"numeric",
-        hour:"numeric",
-        minute:"2-digit"
-      }
-    )
-    .format(gameDate)
+        ? "TBA"
 
-    +
-
-    " ET • "
-
-    +
-
-    game.location;
+        : new Intl.DateTimeFormat(
+            "en-US",
+            {
+              timeZone:"America/New_York",
+              hour:"numeric",
+              minute:"2-digit"
+            }
+          )
+          .format(gameDate);
 
 
-  const difference =
-    Math.max(
-      0,
-      gameDate - now
-    );
+      const prefix =
+        game.site === "Home"
+        ? "vs."
+        : "at";
 
 
-  const days =
-    Math.floor(
-      difference /
-      86400000
-    );
+      const row =
+        document.createElement("div");
 
 
-  const hours =
-    Math.floor(
-      difference /
-      3600000
-    ) % 24;
+      row.className =
+        "game-row";
 
 
-  const minutes =
-    Math.floor(
-      difference /
-      60000
-    ) % 60;
+      row.innerHTML = `
+
+        <div class="game-date">
+
+          ${dayText}<br>
+
+          ${dateText}
+
+          ${
+            index === 0
+            ? '<span class="next-badge">Next</span>'
+            : ''
+          }
+
+        </div>
 
 
-  document
-    .getElementById("countdown")
-    .textContent =
+        <div>
 
-    `${days} days, ${hours} hr, ${minutes} min`;
+          <div class="game-opponent">
+            ${prefix} ${game.opponent}
+          </div>
+
+          <div class="game-location">
+            ${game.location}
+          </div>
+
+        </div>
+
+
+        <div class="game-time">
+          ${timeText} ET
+        </div>
+
+      `;
+
+
+      container.appendChild(row);
+    }
+  );
 }
 
 
-/* =========================
-   ACADEMIC CALENDAR
-========================= */
+/* =====================================================
+   OWU EVENTS
+===================================================== */
 
-const academicEvents = [
+const owuEvents = [
 
 {
-date:"2026-08-20T16:00:00-04:00",
-title:"Opening Convocation",
-meta:"Thursday, August 20 • 4:00 PM"
+  date:"2026-08-20T16:00:00-04:00",
+  end:"2026-08-20T23:59:00-04:00",
+  title:"Opening Convocation"
 },
 
 {
-date:"2026-08-26T08:00:00-04:00",
-title:"Fall Semester Courses Begin",
-meta:"Wednesday, August 26"
+  date:"2026-08-21T08:00:00-04:00",
+  end:"2026-08-23T23:59:00-04:00",
+  title:"Camp Oh-Wooo"
 },
 
 {
-date:"2026-09-03T23:59:00-04:00",
-title:"Last Day to Add/Drop",
-meta:"Thursday, September 3"
+  date:"2026-08-24T08:00:00-04:00",
+  end:"2026-08-28T23:59:00-04:00",
+  title:"Welcome Week"
 },
 
 {
-date:"2026-09-24T08:00:00-04:00",
-title:"OWU Connection Conference",
-meta:"Thursday, September 24"
+  date:"2026-08-26T08:00:00-04:00",
+  end:"2026-08-26T23:59:00-04:00",
+  title:"Fall Semester Courses Begin"
 },
 
 {
-date:"2026-10-07T08:00:00-04:00",
-title:"Midsemester Break",
-meta:"October 7–11"
+  date:"2026-09-03T08:00:00-04:00",
+  end:"2026-09-03T23:59:00-04:00",
+  title:"Last Day to Add/Drop"
 },
 
 {
-date:"2026-11-21T08:00:00-05:00",
-title:"Thanksgiving Break",
-meta:"November 21–29"
+  date:"2026-09-24T08:00:00-04:00",
+  end:"2026-09-24T23:59:00-04:00",
+  title:"OWU Connection Conference"
 },
 
 {
-date:"2026-12-11T23:59:00-05:00",
-title:"Last Day of Classes",
-meta:"Friday, December 11"
+  date:"2026-10-02T08:00:00-04:00",
+  end:"2026-10-03T23:59:00-04:00",
+  title:"Homecoming & Family Weekend"
+},
+
+{
+  date:"2026-10-07T08:00:00-04:00",
+  end:"2026-10-11T23:59:00-04:00",
+  title:"Midsemester Break"
+},
+
+{
+  date:"2026-11-21T08:00:00-05:00",
+  end:"2026-11-29T23:59:00-05:00",
+  title:"Thanksgiving Break"
+},
+
+{
+  date:"2026-12-11T08:00:00-05:00",
+  end:"2026-12-11T23:59:00-05:00",
+  title:"Last Day of Classes"
 }
 
 ];
 
 
-function updateAcademic(){
+function renderEvents(){
 
   const now =
     new Date();
 
 
-  const event =
-    academicEvents.find(
-      event =>
-        new Date(event.date) >
-        now
-    );
+  const upcoming =
+    owuEvents
+      .filter(
+        event =>
+          new Date(event.end) >
+          now
+      )
+      .slice(0,3);
 
 
-  if(event){
-
-    document
-      .getElementById("academicTitle")
-      .textContent =
-      event.title;
+  const container =
+    document.getElementById("eventList");
 
 
-    document
-      .getElementById("academicMeta")
-      .textContent =
-      event.meta;
-  }
-
-  else{
-
-    document
-      .getElementById("academicTitle")
-      .textContent =
-      "See Academic Calendar";
+  container.innerHTML =
+    "";
 
 
-    document
-      .getElementById("academicMeta")
-      .textContent =
-      "";
-  }
+  upcoming.forEach(
+    event => {
+
+      const eventDate =
+        new Date(event.date);
+
+
+      const dateText =
+        new Intl.DateTimeFormat(
+          "en-US",
+          {
+            timeZone:"America/New_York",
+            month:"short",
+            day:"numeric"
+          }
+        )
+        .format(eventDate);
+
+
+      const row =
+        document.createElement("div");
+
+
+      row.className =
+        "event-row";
+
+
+      row.innerHTML = `
+
+        <div class="event-date">
+          ${dateText}
+        </div>
+
+        <div class="event-name">
+          ${event.title}
+        </div>
+
+      `;
+
+
+      container.appendChild(row);
+    }
+  );
 }
 
 
-/* =========================
+/* =====================================================
    START DASHBOARD
-========================= */
+===================================================== */
 
 loadCameraLinks();
 
@@ -1444,9 +1766,9 @@ updateClock();
 
 loadWeather();
 
-updateGame();
+renderGames();
 
-updateAcademic();
+renderEvents();
 
 
 setInterval(
@@ -1462,13 +1784,13 @@ setInterval(
 
 
 setInterval(
-  updateGame,
+  renderGames,
   60000
 );
 
 
 setInterval(
-  updateAcademic,
+  renderEvents,
   60000
 );
 
