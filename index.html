@@ -5,27 +5,25 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#0b0b0d">
+<meta name="theme-color" content="#08090b">
 
 <title>OWU Parent Dashboard</title>
 
 <style>
 :root{
-  --owu-red:#BA0C2F;
-  --owu-red-dark:#750719;
-  --owu-red-bright:#d3193e;
-  --black:#07080a;
-  --panel:#111316;
+  --red:#BA0C2F;
+  --red2:#d4153b;
+  --darkred:#720719;
+  --black:#050608;
+  --panel:#111317;
   --panel2:#17191d;
-  --line:#34373d;
-  --white:#ffffff;
-  --muted:#b7bbc2;
+  --line:#393c42;
+  --white:#fff;
+  --muted:#b6bac1;
   --nav:50px;
 }
 
-*{
-  box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
 html,body{
   margin:0;
@@ -96,22 +94,22 @@ main{
   justify-content:space-between;
   background:linear-gradient(
     180deg,
-    rgba(5,6,7,.95),
-    rgba(5,6,7,.60)
+    rgba(3,4,5,.96),
+    rgba(3,4,5,.58)
   );
-  border-bottom:1px solid rgba(255,255,255,.14);
+  border-bottom:1px solid rgba(255,255,255,.13);
   pointer-events:none;
 }
 
 .camera-name{
   font-size:14px;
-  font-weight:700;
+  font-weight:750;
 }
 
 .live{
   font-size:10px;
-  font-weight:800;
-  letter-spacing:.08em;
+  font-weight:850;
+  letter-spacing:.09em;
 }
 
 .live-dot{
@@ -120,7 +118,7 @@ main{
   height:7px;
   margin-right:5px;
   border-radius:50%;
-  background:#e3294b;
+  background:#ec2449;
 }
 
 .fallback{
@@ -131,11 +129,11 @@ main{
   padding:6px 9px;
   border-radius:5px;
   border:1px solid rgba(255,255,255,.22);
-  background:rgba(10,10,12,.86);
-  color:#fff;
+  background:rgba(7,8,10,.87);
+  color:white;
   text-decoration:none;
   font-size:11px;
-  font-weight:700;
+  font-weight:750;
 }
 
 .camera-placeholder{
@@ -148,7 +146,6 @@ main{
   text-align:center;
   background:#050608;
   color:#cfd2d7;
-  font-size:15px;
 }
 
 
@@ -159,170 +156,195 @@ main{
 .owu-panel{
   height:100%;
   min-height:0;
-  display:flex;
-  flex-direction:column;
-  overflow:hidden;
+  display:grid;
+  grid-template-rows:auto minmax(0,1fr) auto;
   background:
-    radial-gradient(circle at 95% 95%,rgba(186,12,47,.18),transparent 38%),
-    linear-gradient(145deg,#16181c,#08090b 72%);
+    radial-gradient(circle at 95% 100%,rgba(186,12,47,.16),transparent 34%),
+    linear-gradient(145deg,#111317,#060709 72%);
 }
 
 
-/* RED HEADER */
+/* ---------- RED HEADER ---------- */
 
 .owu-header{
-  flex:0 0 auto;
-  min-height:112px;
-  padding:13px 16px 12px;
+  min-height:108px;
+  padding:12px 15px;
   display:grid;
   grid-template-columns:1fr auto;
-  gap:14px;
+  gap:18px;
   align-items:center;
   background:
     linear-gradient(
-      135deg,
-      var(--owu-red-bright),
-      var(--owu-red) 55%,
-      var(--owu-red-dark)
+      125deg,
+      #8c071f,
+      var(--red) 42%,
+      #9d0824 72%,
+      #630515
     );
-  border-bottom:2px solid #ef3155;
+  border-bottom:2px solid #ec284e;
+  position:relative;
+  overflow:hidden;
+}
+
+.owu-header::after{
+  content:"";
+  position:absolute;
+  right:24%;
+  top:-20px;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  border:1px solid rgba(0,0,0,.08);
+  box-shadow:
+    30px 15px 0 rgba(0,0,0,.035),
+    60px 30px 0 rgba(0,0,0,.025);
+  pointer-events:none;
 }
 
 .owu-location{
   margin-bottom:2px;
   font-size:10px;
-  font-weight:800;
-  letter-spacing:.15em;
+  font-weight:850;
+  letter-spacing:.14em;
   text-transform:uppercase;
-  opacity:.88;
 }
 
 .clock{
   margin:0;
-  font-size:clamp(39px,4.6vw,68px);
-  line-height:.94;
-  font-weight:850;
-  letter-spacing:-.045em;
+  font-size:clamp(41px,4.7vw,68px);
+  line-height:.93;
+  font-weight:900;
+  letter-spacing:-.05em;
 }
 
 .date{
   margin-top:5px;
-  font-size:clamp(11px,1.1vw,15px);
+  font-size:clamp(11px,1vw,14px);
   font-weight:600;
-  opacity:.94;
 }
 
 .weather{
   text-align:right;
+  position:relative;
+  z-index:1;
 }
 
 .weather-label{
   margin-bottom:2px;
   font-size:9px;
-  font-weight:800;
+  font-weight:850;
   letter-spacing:.12em;
   text-transform:uppercase;
-  opacity:.88;
 }
 
 .temp{
-  font-size:clamp(31px,3.4vw,51px);
-  line-height:.96;
-  font-weight:850;
+  font-size:clamp(32px,3.6vw,53px);
+  line-height:.95;
+  font-weight:900;
 }
 
 .cond{
   margin-top:3px;
   font-size:clamp(11px,1.1vw,15px);
-  font-weight:700;
+  font-weight:750;
 }
 
 .weather-detail{
   margin-top:3px;
-  font-size:10px;
-  opacity:.86;
+  font-size:9px;
+  opacity:.88;
 }
 
 
-/* PANEL CONTENT */
+/* ---------- BODY ---------- */
 
 .info-body{
-  flex:1 1 auto;
   min-height:0;
-  padding:10px 12px 8px;
+  padding:9px;
   display:grid;
-  grid-template-rows:minmax(0,1.25fr) minmax(0,.9fr);
-  gap:9px;
+  grid-template-columns:1.1fr 1fr;
+  gap:8px;
 }
 
 .info-card{
+  min-width:0;
   min-height:0;
+  display:grid;
+  grid-template-rows:30px minmax(0,1fr);
   overflow:hidden;
-  border:1px solid #3b3d43;
-  border-left:3px solid var(--owu-red);
-  border-radius:5px;
-  background:rgba(255,255,255,.035);
+  border:1px solid #3a3d43;
+  border-radius:7px;
+  background:rgba(7,8,10,.79);
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.015);
+}
+
+.info-card.soccer-card{
+  border-left:3px solid var(--red);
+}
+
+.info-card.events-card{
+  border-right:2px solid rgba(186,12,47,.7);
 }
 
 .info-title-row{
+  min-width:0;
   height:30px;
-  padding:0 10px;
+  padding:0 9px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:10px;
-  border-bottom:1px solid #34363b;
-  background:rgba(0,0,0,.20);
+  gap:8px;
+  background:#0b0c0f;
+  border-bottom:1px solid #383b40;
 }
 
 .info-title{
+  white-space:nowrap;
   color:#fff;
-  font-size:11px;
-  font-weight:850;
-  letter-spacing:.09em;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.075em;
   text-transform:uppercase;
 }
 
 .soccer-links{
   display:flex;
-  gap:5px;
+  gap:4px;
 }
 
 .soccer-links a{
   padding:3px 7px;
-  border:1px solid rgba(255,255,255,.24);
   border-radius:4px;
-  background:var(--owu-red);
+  border:1px solid #ef3155;
+  background:linear-gradient(#d51b40,#a60a2b);
   color:#fff;
   text-decoration:none;
-  font-size:9px;
-  font-weight:800;
-  letter-spacing:.03em;
+  font-size:8px;
+  font-weight:850;
+  text-transform:uppercase;
 }
 
 .soccer-links a:hover{
-  background:#d2183d;
+  background:#e32249;
 }
 
 
-/* GAMES */
+/* ---------- GAMES ---------- */
 
 .game-list{
-  height:calc(100% - 30px);
-  padding:4px 9px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+  min-height:0;
+  padding:3px 8px;
+  display:grid;
+  grid-template-rows:repeat(3,1fr);
 }
 
 .game-row{
   min-height:0;
-  padding:5px 1px;
   display:grid;
-  grid-template-columns:74px minmax(0,1fr) auto;
+  grid-template-columns:65px minmax(0,1fr) auto;
   gap:8px;
   align-items:center;
-  border-bottom:1px solid rgba(255,255,255,.09);
+  border-bottom:1px solid rgba(255,255,255,.10);
 }
 
 .game-row:last-child{
@@ -330,64 +352,66 @@ main{
 }
 
 .game-date{
-  color:#f06a82;
-  font-size:10px;
-  font-weight:850;
-  line-height:1.2;
-  text-transform:uppercase;
-}
-
-.game-opponent{
-  min-width:0;
-  color:#fff;
-  font-size:clamp(12px,1.15vw,16px);
-  font-weight:750;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-
-.game-location{
-  margin-top:1px;
-  color:var(--muted);
+  color:#f34b69;
   font-size:9px;
-  font-weight:500;
-}
-
-.game-time{
-  color:#fff;
-  font-size:10px;
-  font-weight:800;
-  white-space:nowrap;
+  font-weight:900;
+  line-height:1.05;
+  text-transform:uppercase;
 }
 
 .next-badge{
-  margin-left:5px;
+  display:inline-block;
+  margin-top:3px;
   padding:2px 5px;
   border-radius:3px;
-  background:var(--owu-red);
-  color:white;
-  font-size:8px;
-  font-weight:850;
+  background:var(--red2);
+  color:#fff;
+  font-size:7px;
+  font-weight:900;
   letter-spacing:.05em;
-  text-transform:uppercase;
+}
+
+.game-main{
+  min-width:0;
+}
+
+.game-opponent{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:clamp(11px,1vw,14px);
+  font-weight:800;
+}
+
+.game-location{
+  margin-top:2px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color:var(--muted);
+  font-size:8px;
+}
+
+.game-time{
+  white-space:nowrap;
+  font-size:9px;
+  font-weight:850;
 }
 
 
-/* EVENTS */
+/* ---------- EVENTS ---------- */
 
 .event-list{
-  height:calc(100% - 30px);
-  padding:4px 9px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+  min-height:0;
+  padding:3px 8px;
+  display:grid;
+  grid-template-rows:repeat(5,1fr);
 }
 
 .event-row{
-  padding:4px 1px;
+  min-height:0;
   display:grid;
-  grid-template-columns:67px minmax(0,1fr);
+  grid-template-columns:54px minmax(0,1fr);
   gap:8px;
   align-items:center;
   border-bottom:1px solid rgba(255,255,255,.09);
@@ -398,44 +422,91 @@ main{
 }
 
 .event-date{
-  color:#f06a82;
-  font-size:9px;
-  font-weight:850;
+  color:#f34b69;
+  font-size:8px;
+  font-weight:900;
   text-transform:uppercase;
 }
 
 .event-name{
-  min-width:0;
-  color:#fff;
-  font-size:clamp(10px,1vw,13px);
-  font-weight:650;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
+  font-size:clamp(9px,.9vw,12px);
+  font-weight:700;
 }
 
 
-/* PANEL FOOTER */
+/* ---------- BRAND / FOOTER ---------- */
 
 .owu-footer{
-  flex:0 0 23px;
-  padding:0 11px;
+  min-height:48px;
+  padding:5px 10px;
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:10px;
+  background:#060709;
+  border-top:1px solid #383a40;
+}
+
+.owu-mark{
+  width:38px;
+  height:38px;
   display:flex;
   align-items:center;
-  justify-content:space-between;
-  gap:10px;
-  border-top:1px solid #303238;
-  background:#090a0c;
-  color:#969aa1;
-  font-size:8px;
-  letter-spacing:.06em;
+  justify-content:center;
+  border:2px solid #ed2449;
+  color:#fff;
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:-.04em;
+  transform:rotate(0deg);
+  clip-path:polygon(50% 0,92% 22%,92% 78%,50% 100%,8% 78%,8% 22%);
+}
+
+.owu-brand{
+  min-width:0;
+}
+
+.owu-name{
+  font-family:Georgia,"Times New Roman",serif;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color:#fff;
+  font-size:clamp(14px,1.5vw,24px);
+  line-height:.95;
+  letter-spacing:.02em;
+}
+
+.bishops{
+  margin-top:3px;
+  color:#e42148;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(9px,.95vw,14px);
+  font-weight:800;
+  letter-spacing:.11em;
+}
+
+.footer-right{
+  text-align:right;
+}
+
+.sync{
+  color:#9da1a7;
+  font-size:7px;
+  letter-spacing:.05em;
   text-transform:uppercase;
 }
 
 .go-bishops{
-  color:#fff;
-  font-weight:900;
-  letter-spacing:.11em;
+  margin-top:3px;
+  color:#f22b50;
+  font-size:9px;
+  font-weight:950;
+  letter-spacing:.08em;
+  text-transform:uppercase;
 }
 
 
@@ -447,17 +518,18 @@ nav{
   height:var(--nav);
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  background:#111216;
-  border-top:1px solid #3b3d42;
+  background:#090a0c;
+  border-top:1px solid #373a40;
+  border-bottom:3px solid var(--red);
 }
 
 nav a{
   display:flex;
   align-items:center;
   justify-content:center;
-  border-right:1px solid #303238;
-  color:#e5e5e7;
+  color:#e9e9eb;
   text-decoration:none;
+  border-right:1px solid #303238;
   font-size:12px;
   font-weight:750;
 }
@@ -467,8 +539,8 @@ nav a:last-child{
 }
 
 nav a:hover{
-  background:var(--owu-red);
-  color:#fff;
+  background:var(--red);
+  color:white;
 }
 
 
@@ -551,9 +623,13 @@ nav a:hover{
     font-size:10px;
   }
 
+
+  /* Information panel becomes natural-height */
+
   .owu-panel{
     height:auto;
-    min-height:590px;
+    min-height:0;
+    display:block;
   }
 
   .owu-header{
@@ -577,47 +653,106 @@ nav a:hover{
     font-size:13px;
   }
 
+  .weather-detail{
+    font-size:9px;
+  }
+
   .info-body{
     height:auto;
     padding:9px;
     display:flex;
     flex-direction:column;
+    gap:9px;
   }
 
   .info-card{
+    display:block;
     height:auto;
-    min-height:175px;
+    min-height:0;
   }
 
-  .events-card{
-    min-height:145px;
+  .info-title-row{
+    height:36px;
   }
 
-  .game-list,
-  .event-list{
-    height:auto;
-    padding:6px 9px;
+  .info-title{
+    font-size:10px;
+  }
+
+  .soccer-links a{
+    padding:4px 7px;
+    font-size:8px;
+  }
+
+  .game-list{
+    display:block;
+    padding:4px 10px;
   }
 
   .game-row{
-    padding:7px 1px;
-    grid-template-columns:68px minmax(0,1fr) auto;
+    min-height:61px;
+    padding:6px 0;
+    grid-template-columns:69px minmax(0,1fr) auto;
+  }
+
+  .game-date{
+    font-size:9px;
   }
 
   .game-opponent{
     font-size:13px;
   }
 
+  .game-location{
+    font-size:9px;
+  }
+
+  .game-time{
+    font-size:9px;
+  }
+
+  .event-list{
+    display:block;
+    padding:4px 10px;
+  }
+
   .event-row{
-    padding:6px 1px;
+    min-height:43px;
+    padding:4px 0;
+    grid-template-columns:60px minmax(0,1fr);
+  }
+
+  .event-date{
+    font-size:9px;
   }
 
   .event-name{
     font-size:12px;
   }
 
-  .soccer-links a{
-    padding:3px 5px;
+  .owu-footer{
+    min-height:60px;
+    padding:7px 10px;
+  }
+
+  .owu-mark{
+    width:36px;
+    height:36px;
+  }
+
+  .owu-name{
+    font-size:16px;
+  }
+
+  .bishops{
+    font-size:9px;
+  }
+
+  .sync{
+    font-size:6px;
+  }
+
+  .go-bishops{
     font-size:8px;
   }
 
@@ -649,22 +784,16 @@ nav a:hover{
 <section class="monitor">
 
 
-<!-- ===================================================
-     ROCK QUAD
-=================================================== -->
+<!-- ROCK QUAD -->
 
 <section class="tile camera" id="camera-rock">
 
   <div class="camera-bar">
-
-    <span class="camera-name">
-      Rock Quad
-    </span>
+    <span class="camera-name">Rock Quad</span>
 
     <span class="live">
       <span class="live-dot"></span>LIVE
     </span>
-
   </div>
 
   <div class="camera-placeholder">
@@ -674,22 +803,16 @@ nav a:hover{
 </section>
 
 
-<!-- ===================================================
-     UNIVERSITY GATEWAY
-=================================================== -->
+<!-- UNIVERSITY GATEWAY -->
 
 <section class="tile camera" id="camera-gateway">
 
   <div class="camera-bar">
-
-    <span class="camera-name">
-      University Gateway
-    </span>
+    <span class="camera-name">University Gateway</span>
 
     <span class="live">
       <span class="live-dot"></span>LIVE
     </span>
-
   </div>
 
   <div class="camera-placeholder">
@@ -699,22 +822,16 @@ nav a:hover{
 </section>
 
 
-<!-- ===================================================
-     JAYWALK
-=================================================== -->
+<!-- JAYWALK -->
 
 <section class="tile camera" id="camera-jaywalk">
 
   <div class="camera-bar">
-
-    <span class="camera-name">
-      JAYwalk
-    </span>
+    <span class="camera-name">JAYwalk</span>
 
     <span class="live">
       <span class="live-dot"></span>LIVE
     </span>
-
   </div>
 
   <div class="camera-placeholder">
@@ -724,16 +841,14 @@ nav a:hover{
 </section>
 
 
-<!-- ===================================================
-     OWU INFORMATION PANEL
-=================================================== -->
+<!-- OWU INFORMATION PANEL -->
 
 <section class="tile">
 
 <div class="owu-panel">
 
 
-  <!-- TIME + WEATHER -->
+  <!-- HEADER -->
 
   <div class="owu-header">
 
@@ -778,14 +893,14 @@ nav a:hover{
   </div>
 
 
-  <!-- INFORMATION CARDS -->
+  <!-- BODY -->
 
   <div class="info-body">
 
 
-    <!-- WOMEN'S SOCCER -->
+    <!-- SOCCER -->
 
-    <div class="info-card">
+    <section class="info-card soccer-card">
 
       <div class="info-title-row">
 
@@ -825,12 +940,12 @@ nav a:hover{
         id="gameList">
       </div>
 
-    </div>
+    </section>
 
 
-    <!-- OWU EVENTS -->
+    <!-- EVENTS -->
 
-    <div class="info-card events-card">
+    <section class="info-card events-card">
 
       <div class="info-title-row">
 
@@ -845,22 +960,48 @@ nav a:hover{
         id="eventList">
       </div>
 
-    </div>
+    </section>
 
   </div>
 
 
-  <!-- FOOTER -->
+  <!-- BRANDING -->
 
   <div class="owu-footer">
 
-    <span id="syncStatus">
-      Camera auto-sync active • Dashboard v2.1
-    </span>
+    <div class="owu-mark">
+      OWU
+    </div>
 
-    <span class="go-bishops">
-      Go Bishops!
-    </span>
+
+    <div class="owu-brand">
+
+      <div class="owu-name">
+        Ohio Wesleyan
+      </div>
+
+      <div class="bishops">
+        BATTling BISHOPS
+      </div>
+
+    </div>
+
+
+    <div class="footer-right">
+
+      <div
+        class="sync"
+        id="syncStatus">
+
+        Camera auto-sync active • Dashboard v2.1.1
+
+      </div>
+
+      <div class="go-bishops">
+        Go Bishops!
+      </div>
+
+    </div>
 
   </div>
 
@@ -874,9 +1015,7 @@ nav a:hover{
 </main>
 
 
-<!-- ===================================================
-     PERMANENT NAVIGATION
-=================================================== -->
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -916,46 +1055,24 @@ Campus Map
 /*
 =========================================================
 OWU SOCCER PARENT DASHBOARD
-=========================================================
 
-VERSION HISTORY
+VERSION 2.1.1
 
-1.0
-Initial dashboard.
-
-2.0
-Full-screen four-panel ICView-style layout.
-
-2.0.1
-Automatic cameras.json architecture.
-
-2.0.2
-Responsive iPhone portrait layout.
-
-2.1
-OWU red / black / white information panel.
-Next three women's soccer games.
-Schedule / Roster / Stats shortcuts.
-Multiple upcoming OWU events.
-
-Camera links remain automatically maintained through
-cameras.json and the GitHub Actions Playwright workflow.
-
+- 2x2 desktop / iPad landscape layout
+- iPhone vertical camera layout
+- Automatic cameras.json updates
+- OWU red / black / white information panel
+- Next three women's soccer matches
+- Schedule / Roster / Stats links
+- Upcoming OWU events
+- OWU branding panel
 =========================================================
 */
 
 
 /* =====================================================
-   CAMERA SYSTEM
+   CAMERAS
 ===================================================== */
-
-
-/*
-These fallback IDs are only used if cameras.json
-temporarily cannot be loaded.
-
-cameras.json remains the primary source.
-*/
 
 const CAMERA_FALLBACKS = {
 
@@ -1118,7 +1235,7 @@ async function loadCameraLinks(){
 
           +
 
-          " • Dashboard v2.1";
+          " • Dashboard v2.1.1";
       }
     }
   }
@@ -1505,20 +1622,22 @@ function renderGames(){
     "";
 
 
-  if(upcoming.length === 0){
-
-    container.innerHTML =
-      '<div class="game-row"><div class="game-opponent">Regular season complete</div></div>';
-
-    return;
-  }
-
-
   upcoming.forEach(
     (game,index) => {
 
       const gameDate =
         new Date(game.date);
+
+
+      const dayText =
+        new Intl.DateTimeFormat(
+          "en-US",
+          {
+            timeZone:"America/New_York",
+            weekday:"short"
+          }
+        )
+        .format(gameDate);
 
 
       const dateText =
@@ -1528,17 +1647,6 @@ function renderGames(){
             timeZone:"America/New_York",
             month:"short",
             day:"numeric"
-          }
-        )
-        .format(gameDate);
-
-
-      const dayText =
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone:"America/New_York",
-            weekday:"short"
           }
         )
         .format(gameDate);
@@ -1579,19 +1687,18 @@ function renderGames(){
         <div class="game-date">
 
           ${dayText}<br>
-
           ${dateText}
 
           ${
             index === 0
-            ? '<span class="next-badge">Next</span>'
+            ? '<br><span class="next-badge">Next</span>'
             : ''
           }
 
         </div>
 
 
-        <div>
+        <div class="game-main">
 
           <div class="game-opponent">
             ${prefix} ${game.opponent}
@@ -1605,7 +1712,7 @@ function renderGames(){
 
 
         <div class="game-time">
-          ${timeText} ET
+          ${timeText}${game.timeTBA ? "" : " ET"}
         </div>
 
       `;
@@ -1699,7 +1806,7 @@ function renderEvents(){
           new Date(event.end) >
           now
       )
-      .slice(0,3);
+      .slice(0,5);
 
 
   const container =
@@ -1757,7 +1864,7 @@ function renderEvents(){
 
 
 /* =====================================================
-   START DASHBOARD
+   START
 ===================================================== */
 
 loadCameraLinks();
@@ -1794,10 +1901,6 @@ setInterval(
   60000
 );
 
-
-/*
-Reload cameras.json every 30 minutes.
-*/
 
 setInterval(
   loadCameraLinks,
