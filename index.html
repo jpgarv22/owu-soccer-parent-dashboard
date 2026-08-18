@@ -577,7 +577,7 @@ main{
 
 .event-date{
   color:#ff496b;
-  font-size:9px;
+  font-size:clamp(10px,.52vw,14px);
   font-weight:900;
   text-transform:uppercase;
 }
@@ -586,9 +586,9 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  font-size:clamp(11px,.55vw,15px);
-  line-height:1.05;
-  font-weight:780;
+  font-size:clamp(13px,.72vw,18px);
+  line-height:1.08;
+  font-weight:800;
 }
 
 
@@ -972,11 +972,13 @@ nav a:last-child{
   }
 
   .event-date{
-    font-size:11px;
+    font-size:14px;
   }
 
   .event-name{
-    font-size:14px;
+    font-size:18px;
+    line-height:1.12;
+    font-weight:800;
   }
 
   .owu-footer{
