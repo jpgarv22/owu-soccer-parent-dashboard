@@ -34,6 +34,8 @@ jobs:
           const fs = require("fs");
 
           const YEAR = 2026;
+          const BASE = "https://battlingbishops.com";
+          const VIDEO_HOME = "https://www.northcoastnetwork.com/ohiowesleyan/";
 
           const SPORTS = [
             { name: "Men's Baseball", slug: "baseball" },
@@ -45,7 +47,6 @@ jobs:
             { name: "Men's Swimming & Diving", slug: "mens-swimming-and-diving" },
             { name: "Men's Tennis", slug: "mens-tennis" },
             { name: "Men's Track & Field", slug: "mens-track-and-field" },
-
             { name: "Women's Basketball", slug: "womens-basketball" },
             { name: "Women's Field Hockey", slug: "field-hockey" },
             { name: "Women's Golf", slug: "womens-golf" },
@@ -58,521 +59,220 @@ jobs:
             { name: "Women's Volleyball", slug: "womens-volleyball" }
           ];
 
-          function clean(value) {
-            return String(value || "")
-              .replace(/\u00a0/g, " ")
-              .replace(/\s+/g, " ")
-              .trim();
-          }
+          const clean = value => String(value || "")
+            .replace(/\u00a0/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
 
           function absoluteUrl(value, base) {
             if (!value) return "";
-
-            try {
-              return new URL(value, base).href;
-            } catch {
-              return "";
-            }
+            try { return new URL(value, base).href; }
+            catch { return ""; }
           }
 
-          /*
-           * IMPORTANT:
-           *
-           * Never hand OWU's entire date string to JavaScript's
-           * automatic Date parser.
-           *
-           * A string such as:
-           *
-           *   May 1 (Fri) May 2 (Sat)
-           *
-           * can be interpreted incorrectly.
-           *
-           * Instead, explicitly grab the FIRST month/day pair.
-           */
           function makeIsoDate(dateText) {
             const months = {
-              jan: 0,
-              feb: 1,
-              mar: 2,
-              apr: 3,
-              may: 4,
-              jun: 5,
-              jul: 6,
-              aug: 7,
-              sep: 8,
-              sept: 8,
-              oct: 9,
-              nov: 10,
-              dec: 11
+              jan:0,feb:1,mar:2,apr:3,may:4,jun:5,
+              jul:6,aug:7,sep:8,sept:8,oct:9,nov:10,dec:11
             };
-
-            const text = clean(dateText);
-
-            const match = text.match(
+            const match = clean(dateText).match(
               /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+(\d{1,2})\b/i
             );
-
             if (!match) return "";
-
             const month = months[match[1].toLowerCase()];
             const day = Number(match[2]);
-
-            if (
-              month === undefined ||
-              !Number.isInteger(day) ||
-              day < 1 ||
-              day > 31
-            ) {
-              return "";
-            }
-
-            return new Date(
-              Date.UTC(YEAR, month, day, 12, 0, 0)
-            ).toISOString();
+            return new Date(Date.UTC(YEAR, month, day, 12, 0, 0)).toISOString();
           }
 
           function determineSite(text) {
             const t = clean(text).toLowerCase();
-
-            if (
-              /\bat\b/.test(t) ||
-              /\baway\b/.test(t)
-            ) {
-              return "Away";
-            }
-
-            if (
-              /\bvs\.?\b/.test(t) ||
-              /\bhome\b/.test(t)
-            ) {
-              return "Home";
-            }
-
+            if (/\bat\b/.test(t)) return "Away";
+            if (/\bvs\.?\b/.test(t)) return "Home";
             return "";
           }
 
           (async () => {
-            const browser = await chromium.launch({
-              headless: true
-            });
-
-            const page = await browser.newPage({
-              viewport: {
-                width: 1440,
-                height: 1800
-              }
-            });
-
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1440, height: 1800 } });
             const collected = [];
 
             for (const sport of SPORTS) {
-              const scheduleUrl =
-                `https://battlingbishops.com/sports/${sport.slug}/schedule/${YEAR}`;
-
-              console.log("");
-              console.log("======================================");
-              console.log(`Reading ${sport.name}`);
-              console.log(scheduleUrl);
-              console.log("======================================");
+              const scheduleUrl = `${BASE}/sports/${sport.slug}/schedule/${YEAR}`;
+              console.log(`Reading ${sport.name}: ${scheduleUrl}`);
 
               try {
                 await page.goto(scheduleUrl, {
                   waitUntil: "domcontentloaded",
                   timeout: 30000
                 });
+                await page.waitForTimeout(700);
 
-                await page.waitForTimeout(750);
-
-                /*
-                 * Find the actual Sidearm game containers.
-                 *
-                 * We intentionally try several selectors because Sidearm
-                 * does not use precisely identical markup for every sport
-                 * or every type of event.
-                 */
                 const games = await page.evaluate(() => {
-                  const selectorGroups = [
-                    "li.sidearm-schedule-game",
-                    ".sidearm-schedule-game",
-                    "li[class*='schedule-game']",
-                    "[class*='schedule-game'][data-game-id]",
-                    "[data-game-id]"
-                  ];
+                  const clean = value => String(value || "")
+                    .replace(/\u00a0/g, " ")
+                    .replace(/\s+/g, " ")
+                    .trim();
 
-                  let rows = [];
+                  // Sidearm's real schedule entries are LI elements. Using the
+                  // exact LI selector avoids accidentally choosing nested
+                  // controls inside games that contain Watch/Live Stats links.
+                  let rows = Array.from(
+                    document.querySelectorAll("li.sidearm-schedule-game")
+                  );
 
-                  for (const selector of selectorGroups) {
-                    const found = Array.from(
-                      document.querySelectorAll(selector)
-                    );
-
-                    if (found.length > rows.length) {
-                      rows = found;
-                    }
+                  // Fallback only for sports whose page uses a slightly
+                  // different top-level Sidearm element.
+                  if (!rows.length) {
+                    rows = Array.from(
+                      document.querySelectorAll(".sidearm-schedule-game")
+                    ).filter(el => !el.closest("li.sidearm-schedule-game"));
                   }
 
-                  /*
-                   * Eliminate nested duplicates. If one candidate row
-                   * contains another candidate row, retain the smaller
-                   * game-level element.
-                   */
-                  rows = rows.filter((row, index, all) => {
-                    return !all.some((other, otherIndex) => {
-                      if (index === otherIndex) return false;
-                      return row.contains(other);
-                    });
-                  });
-
-                  function textFrom(row, selectors) {
+                  function firstText(row, selectors) {
                     for (const selector of selectors) {
                       const el = row.querySelector(selector);
-
-                      if (el) {
-                        const value = (el.textContent || "")
-                          .replace(/\s+/g, " ")
-                          .trim();
-
-                        if (value) return value;
-                      }
+                      const value = clean(el?.textContent);
+                      if (value) return value;
                     }
-
                     return "";
                   }
 
-                  function hrefFrom(row, test) {
-                    const links = Array.from(
-                      row.querySelectorAll("a[href]")
-                    );
+                  function linkByMeaning(row, type) {
+                    const links = Array.from(row.querySelectorAll("a[href]"));
+                    for (const a of links) {
+                      const href = a.href || "";
+                      const label = clean([
+                        a.textContent,
+                        a.getAttribute("aria-label"),
+                        a.getAttribute("title")
+                      ].filter(Boolean).join(" ")).toLowerCase();
+                      const combined = `${label} ${href.toLowerCase()}`;
 
-                    for (const link of links) {
-                      const href = link.href || "";
-                      const label = [
-                        link.textContent || "",
-                        link.getAttribute("aria-label") || "",
-                        link.getAttribute("title") || ""
-                      ].join(" ");
+                      if (type === "watch" &&
+                          (/\bwatch\b/.test(combined) ||
+                           combined.includes("northcoastnetwork") ||
+                           combined.includes("video"))) return href;
 
-                      if (test(href, label)) {
-                        return href;
-                      }
+                      if (type === "stats" &&
+                          (combined.includes("live stats") ||
+                           combined.includes("livestats") ||
+                           combined.includes("sidearmstats") ||
+                           combined.includes("/stats"))) return href;
                     }
-
                     return "";
                   }
 
                   return rows.map(row => {
-                    const allText = (row.textContent || "")
-                      .replace(/\s+/g, " ")
-                      .trim();
+                    const allText = clean(row.textContent);
 
-                    let date = textFrom(row, [
+                    let date = firstText(row, [
                       ".sidearm-schedule-game-opponent-date",
                       ".sidearm-schedule-game-date",
-                      "[class*='game-date']",
-                      "time"
+                      "[class*='game-date']"
                     ]);
-
-                    /*
-                     * Fallback:
-                     * Find a month/day anywhere in the row.
-                     */
                     if (!date) {
-                      const match = allText.match(
-                        /\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+\d{1,2}\b/i
+                      const m = allText.match(
+                        /\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+\d{1,2}(?:\s+\([^)]*\))?(?:\s+(?:TBA|\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?)))?/i
                       );
-
-                      if (match) {
-                        date = match[0];
-                      }
+                      date = m ? m[0] : "";
                     }
 
-                    let time = textFrom(row, [
+                    let time = firstText(row, [
                       ".sidearm-schedule-game-opponent-time",
                       ".sidearm-schedule-game-time",
                       "[class*='game-time']"
                     ]);
-
-                    /*
-                     * Time fallback.
-                     */
                     if (!time) {
-                      const match = allText.match(
-                        /\b\d{1,2}:\d{2}\s*(?:a\.?m\.?|p\.?m\.?|AM|PM)\b/i
+                      const m = allText.match(
+                        /\b(?:TBA|\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?))\b/i
                       );
-
-                      if (match) {
-                        time = match[0];
-                      }
+                      time = m ? m[0] : "";
                     }
 
-                    let opponent = textFrom(row, [
+                    let opponent = firstText(row, [
                       ".sidearm-schedule-game-opponent-name",
                       ".sidearm-schedule-game-opponent-text",
-                      "[class*='opponent-name']",
-                      "[class*='opponent-text']"
+                      "[class*='opponent-name']"
                     ]);
+                    opponent = opponent.replace(/^(?:vs\.?|at)\s+/i, "").trim();
 
-                    /*
-                     * Sometimes the opponent is stored in a link inside
-                     * the opponent section rather than in the container.
-                     */
-                    if (!opponent) {
-                      const opponentLink = row.querySelector(
-                        ".sidearm-schedule-game-opponent a, [class*='opponent'] a"
-                      );
-
-                      if (opponentLink) {
-                        opponent =
-                          (opponentLink.textContent || "")
-                            .replace(/\s+/g, " ")
-                            .trim();
-                      }
-                    }
-
-                    let location = textFrom(row, [
+                    const location = firstText(row, [
                       ".sidearm-schedule-game-location",
                       "[class*='game-location']",
                       "[class*='location']"
                     ]);
-
-                    const watchUrl = hrefFrom(
-                      row,
-                      (href, label) => {
-                        const combined =
-                          `${href} ${label}`.toLowerCase();
-
-                        return (
-                          combined.includes("watch") ||
-                          combined.includes("video") ||
-                          combined.includes("northcoastnetwork")
-                        );
-                      }
-                    );
-
-                    const statsUrl = hrefFrom(
-                      row,
-                      (href, label) => {
-                        const combined =
-                          `${href} ${label}`.toLowerCase();
-
-                        return (
-                          combined.includes("live stats") ||
-                          combined.includes("livestats") ||
-                          combined.includes("sidearmstats") ||
-                          combined.includes("/stats")
-                        );
-                      }
-                    );
 
                     return {
                       date,
                       time,
                       opponent,
                       location,
-                      watchUrl,
-                      statsUrl,
-                      allText
+                      allText,
+                      watchUrl: linkByMeaning(row, "watch"),
+                      statsUrl: linkByMeaning(row, "stats")
                     };
                   });
                 });
 
-                console.log(
-                  `${sport.name}: ${games.length} schedule rows found`
-                );
+                console.log(`${sport.name}: ${games.length} top-level schedule rows`);
 
                 for (const game of games) {
                   const date = clean(game.date);
-                  const time = clean(game.time);
-                  let opponent = clean(game.opponent);
-                  const location = clean(game.location);
-                  const allText = clean(game.allText);
+                  const opponent = clean(game.opponent);
+                  if (!date || !opponent) continue;
 
-                  /*
-                   * A real game must at minimum contain a recognizable
-                   * date and opponent.
-                   */
-                  if (!date) {
-                    console.log(
-                      `SKIP ${sport.name}: no date -> ${allText.slice(0, 180)}`
-                    );
-                    continue;
-                  }
-
-                  if (!opponent) {
-                    /*
-                     * Last-resort opponent extraction:
-                     *
-                     * Remove the date/time and look for text following
-                     * "at" or "vs".
-                     */
-                    let simplified = allText
-                      .replace(
-                        /\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+\d{1,2}\b/ig,
-                        " "
-                      )
-                      .replace(
-                        /\b\d{1,2}:\d{2}\s*(?:a\.?m\.?|p\.?m\.?|AM|PM)\b/ig,
-                        " "
-                      )
-                      .replace(/\s+/g, " ")
-                      .trim();
-
-                    const atMatch = simplified.match(
-                      /\bat\s+(.+?)(?:\s+(?:Watch|Live Stats|Results|Box Score|Recap)\b|$)/i
-                    );
-
-                    const vsMatch = simplified.match(
-                      /\bvs\.?\s+(.+?)(?:\s+(?:Watch|Live Stats|Results|Box Score|Recap)\b|$)/i
-                    );
-
-                    if (atMatch) {
-                      opponent = clean(atMatch[1]);
-                    } else if (vsMatch) {
-                      opponent = clean(vsMatch[1]);
-                    }
-                  }
-
-                  if (!opponent) {
-                    console.log(
-                      `SKIP ${sport.name}: no opponent -> ${allText.slice(0, 180)}`
-                    );
-                    continue;
-                  }
-
-                  const isoDate = makeIsoDate(date);
-
-                  const event = {
+                  collected.push({
                     sport: sport.name,
                     opponent,
                     date,
-                    time,
-                    location,
-                    site: determineSite(allText),
-                    watchUrl: absoluteUrl(
-                      game.watchUrl,
-                      scheduleUrl
-                    ),
-                    statsUrl: absoluteUrl(
-                      game.statsUrl,
-                      scheduleUrl
-                    ),
+                    time: clean(game.time),
+                    location: clean(game.location),
+                    site: determineSite(game.allText),
+                    watchUrl: absoluteUrl(game.watchUrl, scheduleUrl),
+                    statsUrl: absoluteUrl(game.statsUrl, scheduleUrl),
                     scheduleUrl,
-                    isoDate
-                  };
-
-                  collected.push(event);
-
-                  console.log(
-                    `ADD ${sport.name} | ${date} | ${opponent}`
-                  );
+                    isoDate: makeIsoDate(date)
+                  });
                 }
               } catch (error) {
-                console.error(
-                  `ERROR ${sport.name}: ${error.message}`
-                );
+                console.error(`ERROR ${sport.name}: ${error.message}`);
               }
             }
 
-            /*
-             * Deduplicate.
-             */
-            const map = new Map();
-
+            const uniqueMap = new Map();
             for (const event of collected) {
-              const key = [
-                event.sport,
-                event.date,
-                event.time,
-                event.opponent,
-                event.location
-              ]
-                .join("|")
-                .toLowerCase();
-
-              if (!map.has(key)) {
-                map.set(key, event);
-                continue;
-              }
-
-              const existing = map.get(key);
-
-              if (!existing.watchUrl && event.watchUrl) {
-                existing.watchUrl = event.watchUrl;
-              }
-
-              if (!existing.statsUrl && event.statsUrl) {
-                existing.statsUrl = event.statsUrl;
-              }
-
-              if (!existing.isoDate && event.isoDate) {
-                existing.isoDate = event.isoDate;
+              const key = [event.sport, event.date, event.opponent, event.location]
+                .join("|").toLowerCase();
+              if (!uniqueMap.has(key)) uniqueMap.set(key, event);
+              else {
+                const old = uniqueMap.get(key);
+                if (!old.watchUrl && event.watchUrl) old.watchUrl = event.watchUrl;
+                if (!old.statsUrl && event.statsUrl) old.statsUrl = event.statsUrl;
+                if (!old.time && event.time) old.time = event.time;
               }
             }
 
-            const events = Array.from(map.values());
-
-            /*
-             * Chronological order first.
-             */
-            events.sort((a, b) => {
-              if (a.isoDate && b.isoDate) {
-                const dateCompare =
-                  a.isoDate.localeCompare(b.isoDate);
-
-                if (dateCompare !== 0) {
-                  return dateCompare;
-                }
-              }
-
-              if (a.isoDate && !b.isoDate) return -1;
-              if (!a.isoDate && b.isoDate) return 1;
-
-              const sportCompare =
-                a.sport.localeCompare(b.sport);
-
-              if (sportCompare !== 0) {
-                return sportCompare;
-              }
-
-              return a.opponent.localeCompare(b.opponent);
+            const events = Array.from(uniqueMap.values()).sort((a,b) => {
+              if (a.isoDate && b.isoDate) return a.isoDate.localeCompare(b.isoDate);
+              if (a.isoDate) return -1;
+              if (b.isoDate) return 1;
+              return a.sport.localeCompare(b.sport);
             });
 
             const output = {
               updatedAt: new Date().toISOString(),
-              source: "https://battlingbishops.com/",
-              videoHome:
-                "https://www.northcoastnetwork.com/ohiowesleyan/",
-              availableSports: SPORTS
-                .map(sport => sport.name)
-                .sort((a, b) => a.localeCompare(b)),
+              source: BASE,
+              videoHome: VIDEO_HOME,
+              availableSports: SPORTS.map(x => x.name).sort((a,b) => a.localeCompare(b)),
               events
             };
 
-            fs.writeFileSync(
-              "sports.json",
-              JSON.stringify(output, null, 2)
-            );
+            fs.writeFileSync("sports.json", JSON.stringify(output, null, 2) + "\n");
 
-            console.log("");
-            console.log("============================");
-            console.log(
-              `TOTAL EVENTS SAVED: ${events.length}`
-            );
-            console.log("============================");
-
-            /*
-             * Diagnostic specifically useful while we are testing
-             * the dashboard.
-             */
-            const womensSoccer = events.filter(
-              event => event.sport === "Women's Soccer"
-            );
-
-            console.log("");
-            console.log("WOMEN'S SOCCER EVENTS:");
-            console.log(
-              JSON.stringify(womensSoccer, null, 2)
-            );
+            const wsoc = events.filter(e => e.sport === "Women's Soccer");
+            console.log(`TOTAL EVENTS SAVED: ${events.length}`);
+            console.log("WOMEN'S SOCCER:");
+            console.log(JSON.stringify(wsoc.slice(0, 12), null, 2));
 
             await browser.close();
           })().catch(error => {
@@ -587,7 +287,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add sports.json
 
           if git diff --cached --quiet; then
@@ -595,5 +294,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Auto-update full OWU sports schedules"
+          git commit -m "Auto-update complete OWU sports schedules"
           git push
