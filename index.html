@@ -1200,7 +1200,7 @@ nav a:last-child{
       <div
       class="sync"
       id="syncStatus">
-        Camera auto-sync active • Dashboard v2.3
+        Camera auto-sync active • Dashboard v2.4
       </div>
 
       <div class="go-bishops">
@@ -1304,7 +1304,7 @@ rel="noopener">
 
 /* =====================================================
    OWU PARENT DASHBOARD
-   VERSION 2.3
+   VERSION 2.4
 ===================================================== */
 
 
@@ -1438,7 +1438,7 @@ async function loadCameraLinks(){
             }
           )
           +
-          " • Dashboard v2.3";
+          " • Dashboard v2.4";
       }
     }
   }
@@ -1838,6 +1838,13 @@ function sportDisplayName(sport){
   return names[sport] || sport;
 }
 
+function sportShortName(sport){
+  const full = sportDisplayName(sport);
+  if(full.startsWith("Men's ")) return full.slice(6) + " (M)";
+  if(full.startsWith("Women's ")) return full.slice(8) + " (W)";
+  return full;
+}
+
 
 function buildSportsChoices(){
 
@@ -1903,6 +1910,20 @@ function buildSportsChoices(){
           sport
         );
 
+      checkbox.addEventListener(
+        "change",
+        () => {
+          const currentSelection = [
+            ...document.querySelectorAll(
+              "#sportsChoices input:checked"
+            )
+          ].map(input => input.value);
+
+          saveSelectedSports(currentSelection);
+          renderSportsLive();
+        }
+      );
+
       const text =
         document.createElement(
           "span"
@@ -1927,78 +1948,67 @@ function buildSportsChoices(){
 }
 
 
-function parseSportsDate(
-  event
-){
+function parseSportsDate(event){
 
-  if(event.isoDate){
+  const dateText = String(event.date || "");
+  const timeText = String(event.time || "");
 
-    const parsed =
-      new Date(
-        event.isoDate
-      );
+  const monthMatch = dateText.match(
+    /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+(\d{1,2})\b/i
+  );
 
-    if(
-      !Number.isNaN(
-        parsed.getTime()
-      )
-    ){
-      return parsed;
+  if(!monthMatch){
+    if(event.isoDate){
+      const fallback = new Date(event.isoDate);
+      return Number.isNaN(fallback.getTime()) ? null : fallback;
     }
-  }
-
-  if(!event.date){
     return null;
   }
 
-  const cleaned =
-    event.date
-      .replace(
-        /\([^)]*\)/g,
-        ""
-      )
-      .replace(
-        /\bp\.m\./gi,
-        "PM"
-      )
-      .replace(
-        /\ba\.m\./gi,
-        "AM"
-      )
-      .replace(
-        /\s+/g,
-        " "
-      )
-      .trim();
+  const months = {
+    jan:0,feb:1,mar:2,apr:3,may:4,jun:5,
+    jul:6,aug:7,sep:8,sept:8,oct:9,nov:10,dec:11
+  };
 
-  const updatedYear =
-    sportsData.updatedAt
-
-    ? new Date(
-        sportsData.updatedAt
-      ).getFullYear()
-
+  const year = sportsData.updatedAt
+    ? new Date(sportsData.updatedAt).getFullYear()
     : new Date().getFullYear();
 
-  const candidate =
-    /\b20\d{2}\b/.test(cleaned)
+  let hour = 12;
+  let minute = 0;
 
-    ? cleaned
+  const timeMatch = timeText.match(
+    /\b(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)\b/i
+  );
 
-    : `${cleaned} ${updatedYear}`;
-
-  const parsed =
-    new Date(candidate);
-
-  if(
-    Number.isNaN(
-      parsed.getTime()
-    )
-  ){
-    return null;
+  if(timeMatch){
+    hour = Number(timeMatch[1]);
+    minute = Number(timeMatch[2] || 0);
+    const meridiem = timeMatch[3].toLowerCase();
+    if(meridiem.startsWith("p") && hour !== 12) hour += 12;
+    if(meridiem.startsWith("a") && hour === 12) hour = 0;
   }
 
-  return parsed;
+  // OWU schedule times are Delaware, Ohio local time.
+  // Convert that Eastern wall-clock time to a real instant, accounting for DST.
+  const month = months[monthMatch[1].toLowerCase()];
+  const day = Number(monthMatch[2]);
+  const wallUtc = Date.UTC(year, month, day, hour, minute, 0);
+
+  const probe = new Date(wallUtc);
+  const easternParts = new Intl.DateTimeFormat("en-US", {
+    timeZone:"America/New_York",
+    year:"numeric", month:"2-digit", day:"2-digit",
+    hour:"2-digit", minute:"2-digit", hourCycle:"h23"
+  }).formatToParts(probe);
+
+  const part = type => Number(easternParts.find(p => p.type === type)?.value || 0);
+  const easternAsUtc = Date.UTC(
+    part("year"), part("month") - 1, part("day"), part("hour"), part("minute"), 0
+  );
+  const offset = easternAsUtc - wallUtc;
+
+  return new Date(wallUtc - offset);
 }
 
 
@@ -2028,33 +2038,30 @@ function isLikelyLive(
 }
 
 
-function sportsDisplayDate(
-  event
-){
+function sportsDisplayDate(event){
 
-  const parsed =
-    parseSportsDate(event);
+  const parsed = parseSportsDate(event);
 
   if(parsed){
+    const hasOfficialTime = /\d/.test(String(event.time || ""));
 
-    return new Intl.DateTimeFormat(
-      "en-US",
-      {
-        timeZone:"America/New_York",
-        month:"short",
-        day:"numeric",
-        hour:"numeric",
-        minute:"2-digit"
-      }
-    )
-    .format(parsed);
+    const options = {
+      month:"short",
+      day:"numeric"
+    };
+
+    if(hasOfficialTime){
+      options.hour = "numeric";
+      options.minute = "2-digit";
+      options.timeZoneName = "short";
+    }
+
+    // No timeZone is specified intentionally: the browser/device's
+    // current local time zone is used for parents wherever they are.
+    return new Intl.DateTimeFormat("en-US", options).format(parsed);
   }
 
-  return (
-    event.date ||
-    event.time ||
-    "Upcoming"
-  );
+  return event.date || event.time || "Upcoming";
 }
 
 
@@ -2198,7 +2205,6 @@ function renderSportsLive(){
 
       const watchUrl =
         event.watchUrl ||
-        sportsData.videoHome ||
         "";
 
       const statsUrl =
@@ -2248,7 +2254,7 @@ function renderSportsLive(){
 
         <div class="sport-label">
 
-          ${sportDisplayName(
+          ${sportShortName(
             event.sport ||
             "OWU Sport"
           )}
