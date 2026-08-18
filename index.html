@@ -17,6 +17,7 @@
   --red-dark:#760719;
   --black:#050506;
   --panel:#090a0c;
+  --panel2:#101216;
   --line:#3d4046;
   --muted:#b8bbc1;
   --white:#ffffff;
@@ -40,6 +41,11 @@ html,body{
 body{
   display:grid;
   grid-template-rows:minmax(0,1fr) var(--nav);
+}
+
+button,
+a{
+  -webkit-tap-highlight-color:transparent;
 }
 
 main{
@@ -94,14 +100,11 @@ main{
   display:flex;
   align-items:center;
   justify-content:space-between;
-
-  background:
-    linear-gradient(
-      180deg,
-      rgba(2,2,3,.96),
-      rgba(2,2,3,.60)
-    );
-
+  background:linear-gradient(
+    180deg,
+    rgba(2,2,3,.96),
+    rgba(2,2,3,.60)
+  );
   border-bottom:1px solid rgba(255,255,255,.12);
   pointer-events:none;
 }
@@ -160,7 +163,7 @@ main{
   height:100%;
   min-height:0;
   display:grid;
-  grid-template-rows:140px minmax(0,1fr) 82px;
+  grid-template-rows:132px minmax(0,1fr) 72px;
   overflow:hidden;
   background:#050506;
 }
@@ -173,14 +176,14 @@ main{
 .owu-header{
   position:relative;
   overflow:hidden;
-  min-height:140px;
+  min-height:132px;
 
   display:grid;
   grid-template-columns:1fr auto;
   align-items:center;
   gap:20px;
 
-  padding:16px 22px;
+  padding:15px 21px;
 
   background:
     radial-gradient(
@@ -207,65 +210,10 @@ main{
   transform:translateY(-51%);
   color:rgba(0,0,0,.13);
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(90px,8vw,145px);
+  font-size:clamp(86px,7.8vw,138px);
   font-weight:900;
   letter-spacing:-.06em;
   white-space:nowrap;
-  pointer-events:none;
-}
-
-.owu-header::after{
-  content:"";
-  position:absolute;
-  left:58%;
-  bottom:-8px;
-  width:145px;
-  height:95px;
-  opacity:.19;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent 0 5%,
-      #000 5% 12%,
-      transparent 12% 18%,
-      #000 18% 25%,
-      transparent 25% 33%,
-      #000 33% 45%,
-      transparent 45% 52%,
-      #000 52% 63%,
-      transparent 63% 70%,
-      #000 70% 82%,
-      transparent 82%
-    );
-
-  clip-path:polygon(
-    0 100%,
-    0 63%,
-    7% 63%,
-    7% 36%,
-    15% 36%,
-    15% 53%,
-    25% 53%,
-    25% 18%,
-    34% 18%,
-    34% 50%,
-    43% 50%,
-    43% 0,
-    53% 0,
-    53% 45%,
-    62% 45%,
-    62% 21%,
-    72% 21%,
-    72% 52%,
-    83% 52%,
-    83% 31%,
-    92% 31%,
-    92% 65%,
-    100% 65%,
-    100% 100%
-  );
-
   pointer-events:none;
 }
 
@@ -276,23 +224,23 @@ main{
 }
 
 .owu-location{
-  margin-bottom:5px;
-  font-size:13px;
+  margin-bottom:4px;
+  font-size:12px;
   font-weight:900;
   letter-spacing:.16em;
   text-transform:uppercase;
 }
 
 .clock{
-  font-size:clamp(62px,5.5vw,90px);
+  font-size:clamp(58px,5.3vw,86px);
   line-height:.88;
   font-weight:900;
   letter-spacing:-.055em;
 }
 
 .date{
-  margin-top:8px;
-  font-size:17px;
+  margin-top:7px;
+  font-size:16px;
   font-weight:600;
 }
 
@@ -305,7 +253,7 @@ main{
     "icon condition"
     "detail detail";
 
-  column-gap:10px;
+  column-gap:9px;
   align-items:center;
   justify-items:end;
   text-align:right;
@@ -314,7 +262,7 @@ main{
 .weather-label{
   grid-area:label;
   margin-bottom:2px;
-  font-size:11px;
+  font-size:10px;
   font-weight:900;
   letter-spacing:.13em;
   text-transform:uppercase;
@@ -322,56 +270,66 @@ main{
 
 .weather-icon{
   grid-area:icon;
-  min-width:58px;
+  min-width:54px;
   text-align:center;
-  font-size:46px;
+  font-size:43px;
   line-height:1;
-  filter:drop-shadow(0 2px 2px rgba(0,0,0,.25));
 }
 
 .temp{
   grid-area:temp;
-  font-size:clamp(50px,4.6vw,74px);
+  font-size:clamp(47px,4.4vw,70px);
   line-height:.88;
   font-weight:900;
 }
 
 .cond{
   grid-area:condition;
-  margin-top:5px;
-  font-size:16px;
+  margin-top:4px;
+  font-size:15px;
   font-weight:800;
 }
 
 .weather-detail{
   grid-area:detail;
-  margin-top:4px;
-  font-size:11px;
+  margin-top:3px;
+  font-size:10px;
   opacity:.9;
 }
 
 
 /* =====================================================
-   INFORMATION CARDS
+   INFORMATION BODY
 ===================================================== */
 
 .info-body{
   min-height:0;
-  padding:9px;
+  padding:8px;
   display:grid;
-  grid-template-columns:1.08fr .92fr;
-  gap:9px;
+  grid-template-columns:1.04fr .96fr;
+  gap:8px;
+}
+
+.info-column{
+  min-width:0;
+  min-height:0;
+}
+
+.right-column{
+  display:grid;
+  grid-template-rows:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:7px;
 }
 
 .info-card{
   min-width:0;
   min-height:0;
   display:grid;
-  grid-template-rows:39px minmax(0,1fr);
+  grid-template-rows:35px minmax(0,1fr);
   overflow:hidden;
 
   border:1px solid #45484e;
-  border-radius:8px;
+  border-radius:7px;
 
   background:
     linear-gradient(
@@ -379,35 +337,35 @@ main{
       #0c0d10,
       #070809
     );
-
-  box-shadow:
-    inset 0 0 0 1px rgba(255,255,255,.015),
-    0 0 12px rgba(186,12,47,.05);
 }
 
 .soccer-card{
+  height:100%;
   border-left:3px solid var(--red-bright);
 }
 
-.events-card{
+.sports-card{
   border-right:3px solid var(--red-bright);
 }
 
+.events-card{
+  border-right:3px solid #811124;
+}
+
 .info-title-row{
-  height:39px;
-  padding:0 11px;
+  height:35px;
+  padding:0 10px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:8px;
-
+  gap:7px;
   background:#0a0b0d;
   border-bottom:1px solid #3e4147;
 }
 
 .info-title{
   color:#fff;
-  font-size:13px;
+  font-size:11px;
   font-weight:900;
   letter-spacing:.055em;
   text-transform:uppercase;
@@ -421,64 +379,40 @@ main{
 
 .soccer-links{
   display:flex;
-  gap:5px;
+  gap:4px;
 }
 
 .soccer-links a{
-  display:flex;
-  align-items:center;
-  gap:4px;
-
-  padding:5px 9px;
-
+  padding:4px 7px;
   border-radius:4px;
   border:1px solid #f13b5e;
-
-  background:
-    linear-gradient(
-      #db1d44,
-      #a70a2b
-    );
-
+  background:linear-gradient(#db1d44,#a70a2b);
   color:#fff;
   text-decoration:none;
-
-  font-size:9px;
+  font-size:8px;
   font-weight:900;
   text-transform:uppercase;
 }
 
-.soccer-links a:hover{
-  background:#e5234a;
-}
-
-.button-icon{
-  font-size:11px;
-  line-height:1;
-}
-
 
 /* =====================================================
-   GAME LIST
+   NEXT 3 WOMEN'S SOCCER
 ===================================================== */
 
 .game-list{
   min-height:0;
-  padding:0 11px;
+  padding:0 10px;
   display:grid;
   grid-template-rows:repeat(3,1fr);
 }
 
 .game-row{
   min-height:0;
-
   display:grid;
-  grid-template-columns:76px minmax(0,1fr) 88px;
-  gap:9px;
-
+  grid-template-columns:72px minmax(0,1fr) 82px;
+  gap:8px;
   padding:4px 0;
   align-items:center;
-
   border-bottom:1px solid rgba(255,255,255,.11);
 }
 
@@ -488,7 +422,7 @@ main{
 
 .game-date{
   color:#ff496b;
-  font-size:11px;
+  font-size:10px;
   font-weight:900;
   line-height:1.05;
   text-transform:uppercase;
@@ -501,7 +435,7 @@ main{
   border-radius:3px;
   background:var(--red-bright);
   color:#fff;
-  font-size:8px;
+  font-size:7px;
   font-weight:900;
 }
 
@@ -513,7 +447,7 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  font-size:17px;
+  font-size:15px;
   line-height:1.04;
   font-weight:800;
 }
@@ -524,14 +458,197 @@ main{
   overflow:hidden;
   text-overflow:ellipsis;
   color:var(--muted);
-  font-size:10px;
+  font-size:9px;
 }
 
 .game-time{
   white-space:nowrap;
   text-align:right;
-  font-size:11px;
+  font-size:10px;
   font-weight:900;
+}
+
+
+/* =====================================================
+   SPORTS LIVE
+===================================================== */
+
+.my-sports-wrap{
+  position:relative;
+}
+
+.my-sports-button{
+  border:1px solid #ef3155;
+  border-radius:4px;
+  padding:4px 8px;
+  background:linear-gradient(#d8173e,#920720);
+  color:#fff;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.035em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.sports-menu{
+  position:absolute;
+  z-index:50;
+  right:0;
+  top:28px;
+  width:235px;
+  max-height:320px;
+  overflow:auto;
+  display:none;
+  padding:8px;
+  border:1px solid #555861;
+  border-radius:7px;
+  background:#0d0e11;
+  box-shadow:0 12px 30px rgba(0,0,0,.55);
+}
+
+.sports-menu.open{
+  display:block;
+}
+
+.sports-menu-title{
+  padding:3px 4px 8px;
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.sports-option{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  padding:6px 5px;
+  border-top:1px solid rgba(255,255,255,.07);
+  color:#e9e9eb;
+  font-size:11px;
+  cursor:pointer;
+}
+
+.sports-option input{
+  accent-color:var(--red-bright);
+}
+
+.sports-menu-actions{
+  position:sticky;
+  bottom:0;
+  padding-top:8px;
+  background:#0d0e11;
+}
+
+.sports-menu-done{
+  width:100%;
+  padding:6px;
+  border:1px solid #ed3155;
+  border-radius:4px;
+  background:var(--red);
+  color:#fff;
+  font-size:9px;
+  font-weight:900;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.sports-live-list{
+  min-height:0;
+  padding:0 9px;
+  display:flex;
+  flex-direction:column;
+}
+
+.sports-empty{
+  margin:auto;
+  padding:12px;
+  color:#aeb1b7;
+  text-align:center;
+  font-size:10px;
+  line-height:1.4;
+}
+
+.sport-event{
+  min-height:0;
+  flex:1;
+  display:grid;
+  grid-template-columns:82px minmax(0,1fr) auto;
+  gap:8px;
+  align-items:center;
+  padding:4px 0;
+  border-bottom:1px solid rgba(255,255,255,.10);
+}
+
+.sport-event:last-child{
+  border-bottom:0;
+}
+
+.sport-label{
+  color:#f24465;
+  font-size:8px;
+  font-weight:900;
+  line-height:1.1;
+  text-transform:uppercase;
+}
+
+.live-now{
+  display:inline-block;
+  margin-top:3px;
+  padding:2px 5px;
+  border-radius:3px;
+  background:#ef1744;
+  color:#fff;
+  font-size:7px;
+  font-weight:950;
+  letter-spacing:.04em;
+}
+
+.sport-main{
+  min-width:0;
+}
+
+.sport-opponent{
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color:#fff;
+  font-size:12px;
+  font-weight:800;
+}
+
+.sport-meta{
+  margin-top:2px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  color:#aaaeb5;
+  font-size:8px;
+}
+
+.sport-actions{
+  display:flex;
+  gap:4px;
+  align-items:center;
+}
+
+.sport-action{
+  padding:4px 6px;
+  border:1px solid #4d5057;
+  border-radius:4px;
+  background:#121419;
+  color:#fff;
+  text-decoration:none;
+  font-size:7px;
+  font-weight:900;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.sport-action.watch{
+  border-color:#ef3155;
+  background:var(--red);
 }
 
 
@@ -541,20 +658,17 @@ main{
 
 .event-list{
   min-height:0;
-  padding:0 11px;
+  padding:0 9px;
   display:grid;
-  grid-template-rows:repeat(6,1fr);
+  grid-template-rows:repeat(3,1fr);
 }
 
 .event-row{
   min-height:0;
-
   display:grid;
-  grid-template-columns:67px minmax(0,1fr);
-  gap:9px;
-
+  grid-template-columns:58px minmax(0,1fr);
+  gap:8px;
   align-items:center;
-
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
@@ -564,7 +678,7 @@ main{
 
 .event-date{
   color:#ff496b;
-  font-size:10px;
+  font-size:9px;
   font-weight:900;
   text-transform:uppercase;
 }
@@ -573,24 +687,24 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  font-size:14px;
+  font-size:11px;
   line-height:1.05;
   font-weight:750;
 }
 
 
 /* =====================================================
-   OWU BRAND STRIP
+   OWU BRANDING
 ===================================================== */
 
 .owu-footer{
-  min-height:82px;
-  padding:8px 12px;
+  min-height:72px;
+  padding:7px 11px;
 
   display:grid;
-  grid-template-columns:66px minmax(0,1fr) auto;
+  grid-template-columns:56px minmax(0,1fr) auto;
   align-items:center;
-  gap:13px;
+  gap:11px;
 
   background:
     radial-gradient(
@@ -610,18 +724,16 @@ main{
 
 .owu-shield{
   position:relative;
-
-  width:60px;
-  height:64px;
+  width:52px;
+  height:56px;
 
   display:flex;
   align-items:center;
   justify-content:center;
 
   color:#fff;
-  font-size:16px;
+  font-size:14px;
   font-weight:950;
-  letter-spacing:-.04em;
 
   background:#090a0c;
 
@@ -638,42 +750,20 @@ main{
     inset 0 0 0 3px var(--red-bright);
 }
 
-.owu-shield::before{
-  content:"";
-  position:absolute;
-  inset:5px;
-
-  clip-path:inherit;
-
-  border:2px solid rgba(255,255,255,.22);
-}
-
-.owu-shield-text{
-  position:relative;
-  z-index:2;
-}
-
-.owu-brand{
-  min-width:0;
-}
-
 .owu-name{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(27px,2.35vw,39px);
+  font-size:clamp(23px,2vw,34px);
   line-height:.88;
-  letter-spacing:.015em;
 }
 
 .bishops{
-  margin-top:6px;
+  margin-top:5px;
   color:#e81e47;
-
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(12px,1.15vw,18px);
+  font-size:clamp(10px,1vw,15px);
   font-weight:800;
   letter-spacing:.12em;
 }
@@ -684,15 +774,15 @@ main{
 
 .sync{
   color:#a5a8ae;
-  font-size:9px;
+  font-size:8px;
   letter-spacing:.045em;
   text-transform:uppercase;
 }
 
 .go-bishops{
-  margin-top:8px;
+  margin-top:6px;
   color:#ef284f;
-  font-size:14px;
+  font-size:12px;
   font-weight:950;
   letter-spacing:.07em;
   text-transform:uppercase;
@@ -700,37 +790,29 @@ main{
 
 
 /* =====================================================
-   BOTTOM NAVIGATION
+   NAVIGATION
 ===================================================== */
 
 nav{
   height:var(--nav);
-
   display:grid;
   grid-template-columns:repeat(4,1fr);
-
   padding:4px 5px 5px;
-
   background:#050506;
-
   border-top:3px solid var(--red);
   border-bottom:5px solid var(--red);
 }
 
 nav a{
   min-width:0;
-
   display:flex;
   align-items:center;
   justify-content:center;
-  gap:13px;
-
+  gap:12px;
   border-right:1px solid #3d4046;
-
   color:#fff;
   text-decoration:none;
-
-  font-size:18px;
+  font-size:17px;
   font-weight:900;
   letter-spacing:.01em;
   text-transform:uppercase;
@@ -741,48 +823,28 @@ nav a:nth-child(odd){
 }
 
 nav a:nth-child(even){
-  background:#0f1013;
-}
-
-nav a:first-child{
-  border-radius:7px 0 0 7px;
+  background:#111216;
 }
 
 nav a:last-child{
   border-right:0;
-  border-radius:0 7px 7px 0;
-}
-
-nav a:hover{
-  background:#6f071a;
 }
 
 .nav-icon{
-  width:40px;
-  height:40px;
-
+  width:38px;
+  height:38px;
   display:flex;
   align-items:center;
   justify-content:center;
-
-  flex:0 0 40px;
-
+  flex:0 0 38px;
   border:1px solid #e34360;
   border-radius:6px;
-
-  background:
-    linear-gradient(
-      145deg,
-      #c50e35,
-      #79071d
-    );
-
-  color:#fff;
+  background:linear-gradient(145deg,#c50e35,#79071d);
 }
 
 .nav-icon svg{
-  width:24px;
-  height:24px;
+  width:23px;
+  height:23px;
   fill:none;
   stroke:currentColor;
   stroke-width:2.1;
@@ -866,8 +928,6 @@ nav a:hover{
   }
 
 
-  /* information panel */
-
   .owu-panel{
     display:block;
     height:auto;
@@ -881,10 +941,6 @@ nav a:hover{
   .owu-header::before{
     left:20%;
     font-size:76px;
-  }
-
-  .owu-header::after{
-    display:none;
   }
 
   .owu-location{
@@ -925,9 +981,16 @@ nav a:hover{
     font-size:9px;
   }
 
+
   .info-body{
     height:auto;
     padding:9px;
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+  }
+
+  .right-column{
     display:flex;
     flex-direction:column;
     gap:9px;
@@ -954,10 +1017,6 @@ nav a:hover{
   .soccer-links a{
     padding:4px 6px;
     font-size:8px;
-  }
-
-  .button-icon{
-    display:none;
   }
 
   .game-list,
@@ -988,6 +1047,58 @@ nav a:hover{
     font-size:9px;
   }
 
+
+  .sports-card{
+    min-height:230px;
+  }
+
+  .sports-live-list{
+    min-height:190px;
+  }
+
+  .sport-event{
+    min-height:62px;
+    flex:none;
+    grid-template-columns:76px minmax(0,1fr);
+    grid-template-areas:
+      "label main"
+      "actions actions";
+    padding:7px 0;
+  }
+
+  .sport-label{
+    grid-area:label;
+    font-size:8px;
+  }
+
+  .sport-main{
+    grid-area:main;
+  }
+
+  .sport-opponent{
+    font-size:12px;
+  }
+
+  .sport-meta{
+    font-size:8px;
+  }
+
+  .sport-actions{
+    grid-area:actions;
+    justify-content:flex-end;
+  }
+
+  .sport-action{
+    padding:4px 7px;
+    font-size:7px;
+  }
+
+  .sports-menu{
+    width:min(275px,88vw);
+    right:0;
+  }
+
+
   .event-row{
     min-height:43px;
     padding:4px 0;
@@ -1002,10 +1113,10 @@ nav a:hover{
     font-size:12px;
   }
 
+
   .owu-footer{
     min-height:72px;
     padding:7px 9px;
-
     grid-template-columns:46px minmax(0,1fr) auto;
 
     background:
@@ -1045,21 +1156,15 @@ nav a:hover{
   }
 
 
-  /* phone navigation */
-
   nav{
     position:fixed;
     z-index:100;
-
     left:0;
     right:0;
     bottom:0;
-
     width:100%;
     height:56px;
-
     padding:0;
-
     border-top:3px solid var(--red);
     border-bottom:3px solid var(--red);
   }
@@ -1067,9 +1172,7 @@ nav a:hover{
   nav a{
     gap:4px;
     flex-direction:column;
-
     padding:3px 2px;
-
     font-size:8px;
     line-height:1.02;
     text-align:center;
@@ -1091,6 +1194,7 @@ nav a:hover{
 </style>
 </head>
 
+
 <body>
 
 <main>
@@ -1103,15 +1207,8 @@ nav a:hover{
 <section class="tile camera" id="camera-rock">
 
   <div class="camera-bar">
-
-    <span class="camera-name">
-      Rock Quad
-    </span>
-
-    <span class="live">
-      <span class="live-dot"></span>LIVE
-    </span>
-
+    <span class="camera-name">Rock Quad</span>
+    <span class="live"><span class="live-dot"></span>LIVE</span>
   </div>
 
   <div class="camera-placeholder">
@@ -1126,15 +1223,8 @@ nav a:hover{
 <section class="tile camera" id="camera-gateway">
 
   <div class="camera-bar">
-
-    <span class="camera-name">
-      University Gateway
-    </span>
-
-    <span class="live">
-      <span class="live-dot"></span>LIVE
-    </span>
-
+    <span class="camera-name">University Gateway</span>
+    <span class="live"><span class="live-dot"></span>LIVE</span>
   </div>
 
   <div class="camera-placeholder">
@@ -1149,15 +1239,8 @@ nav a:hover{
 <section class="tile camera" id="camera-jaywalk">
 
   <div class="camera-bar">
-
-    <span class="camera-name">
-      JAYwalk
-    </span>
-
-    <span class="live">
-      <span class="live-dot"></span>LIVE
-    </span>
-
+    <span class="camera-name">JAYwalk</span>
+    <span class="live"><span class="live-dot"></span>LIVE</span>
   </div>
 
   <div class="camera-placeholder">
@@ -1167,7 +1250,7 @@ nav a:hover{
 </section>
 
 
-<!-- OWU INFO PANEL -->
+<!-- OWU INFO -->
 
 <section class="tile">
 
@@ -1201,10 +1284,8 @@ nav a:hover{
         Current Weather
       </div>
 
-      <div
-        class="weather-icon"
-        id="weatherIcon">
-        ☀
+      <div class="weather-icon" id="weatherIcon">
+        ☀️
       </div>
 
       <div class="temp" id="temperature">
@@ -1215,109 +1296,165 @@ nav a:hover{
         Loading…
       </div>
 
-      <div
-        class="weather-detail"
-        id="weatherDetail">
-      </div>
+      <div class="weather-detail" id="weatherDetail"></div>
 
     </div>
 
   </div>
 
 
-  <!-- INFO -->
+  <!-- CONTENT -->
 
   <div class="info-body">
 
 
-    <!-- SOCCER -->
+    <!-- WOMEN'S SOCCER -->
 
-    <section class="info-card soccer-card">
+    <div class="info-column">
 
-      <div class="info-title-row">
+      <section class="info-card soccer-card">
 
-        <div class="info-title">
-          Women's Soccer • Next 3
-        </div>
+        <div class="info-title-row">
 
-        <div class="soccer-links">
+          <div class="info-title">
+            Women's Soccer • Next 3
+          </div>
 
-          <a
-          href="https://battlingbishops.com/sports/womens-soccer/schedule/2026"
-          target="_blank"
-          rel="noopener">
+          <div class="soccer-links">
 
-            <span class="button-icon">▦</span>
+            <a
+            href="https://battlingbishops.com/sports/womens-soccer/schedule"
+            target="_blank"
+            rel="noopener">
             Schedule
+            </a>
 
-          </a>
-
-          <a
-          href="https://battlingbishops.com/sports/womens-soccer/roster"
-          target="_blank"
-          rel="noopener">
-
-            <span class="button-icon">●</span>
+            <a
+            href="https://battlingbishops.com/sports/womens-soccer/roster"
+            target="_blank"
+            rel="noopener">
             Roster
+            </a>
 
-          </a>
-
-          <a
-          href="https://battlingbishops.com/sports/womens-soccer/stats"
-          target="_blank"
-          rel="noopener">
-
-            <span class="button-icon">▥</span>
+            <a
+            href="https://battlingbishops.com/sports/womens-soccer/stats"
+            target="_blank"
+            rel="noopener">
             Stats
+            </a>
 
-          </a>
+          </div>
 
         </div>
 
-      </div>
+        <div class="game-list" id="gameList"></div>
 
-      <div
-        class="game-list"
-        id="gameList">
-      </div>
+      </section>
 
-    </section>
+    </div>
 
 
-    <!-- EVENTS -->
+    <!-- RIGHT COLUMN -->
 
-    <section class="info-card events-card">
+    <div class="info-column right-column">
 
-      <div class="info-title-row">
 
-        <div class="info-title">
-          Upcoming OWU Events
+      <!-- SPORTS LIVE -->
+
+      <section class="info-card sports-card">
+
+        <div class="info-title-row">
+
+          <div class="info-title">
+            🔴 OWU Sports Live
+          </div>
+
+
+          <div class="my-sports-wrap">
+
+            <button
+            class="my-sports-button"
+            id="mySportsButton"
+            type="button">
+              My Sports ▾
+            </button>
+
+
+            <div
+            class="sports-menu"
+            id="sportsMenu">
+
+              <div class="sports-menu-title">
+                Sports I Want To See
+              </div>
+
+              <div id="sportsChoices"></div>
+
+              <div class="sports-menu-actions">
+
+                <button
+                class="sports-menu-done"
+                id="sportsDoneButton"
+                type="button">
+                  Done
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
 
-      <div
+        <div
+        class="sports-live-list"
+        id="sportsLiveList">
+
+          <div class="sports-empty">
+            Loading OWU sports…
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- CAMPUS EVENTS -->
+
+      <section class="info-card events-card">
+
+        <div class="info-title-row">
+
+          <div class="info-title">
+            Upcoming OWU Events
+          </div>
+
+        </div>
+
+        <div
         class="event-list"
         id="eventList">
-      </div>
+        </div>
 
-    </section>
+      </section>
+
+
+    </div>
 
   </div>
 
 
-  <!-- BRAND -->
+  <!-- BRANDING -->
 
   <div class="owu-footer">
 
     <div class="owu-shield">
-      <span class="owu-shield-text">
-        OWU
-      </span>
+      OWU
     </div>
 
-
-    <div class="owu-brand">
+    <div>
 
       <div class="owu-name">
         Ohio Wesleyan
@@ -1329,15 +1466,12 @@ nav a:hover{
 
     </div>
 
-
     <div class="footer-right">
 
       <div
-        class="sync"
-        id="syncStatus">
-
-        Camera auto-sync active • Dashboard v2.1.4
-
+      class="sync"
+      id="syncStatus">
+        Camera auto-sync active • Dashboard v2.2
       </div>
 
       <div class="go-bishops">
@@ -1353,56 +1487,39 @@ nav a:hover{
 
 </section>
 
-
 </section>
 
 </main>
 
 
-<!-- ===================================================
+<!-- =====================================================
      NAVIGATION
-=================================================== -->
+===================================================== -->
 
 <nav>
 
 
-<!-- Academic Calendar -->
-
 <a
-href="https://www.owu.edu/academics/academic-resources/academic-calendar/2026-2027-academic-year-and-2027-summer-session/"
+href="https://www.owu.edu/academics/academic-resources/academic-calendar/"
 target="_blank"
 rel="noopener">
 
   <span class="nav-icon">
-
     <svg viewBox="0 0 24 24">
-
       <rect x="3" y="5" width="18" height="16" rx="2"></rect>
-
       <path d="M7 3v4"></path>
       <path d="M17 3v4"></path>
-
       <path d="M3 10h18"></path>
-
       <path d="M7 14h2"></path>
       <path d="M11 14h2"></path>
       <path d="M15 14h2"></path>
-
-      <path d="M7 18h2"></path>
-      <path d="M11 18h2"></path>
-
     </svg>
-
   </span>
 
-  <span>
-    Academic Calendar
-  </span>
+  <span>Academic Calendar</span>
 
 </a>
 
-
-<!-- Athletics -->
 
 <a
 href="https://battlingbishops.com"
@@ -1410,33 +1527,19 @@ target="_blank"
 rel="noopener">
 
   <span class="nav-icon">
-
     <svg viewBox="0 0 24 24">
-
       <path d="M8 4h8v4c0 4-1.8 7-4 7s-4-3-4-7z"></path>
-
       <path d="M8 6H5c0 4 1 6 4 6"></path>
-
       <path d="M16 6h3c0 4-1 6-4 6"></path>
-
       <path d="M12 15v4"></path>
-
       <path d="M8 21h8"></path>
-
-      <path d="M9 19h6"></path>
-
     </svg>
-
   </span>
 
-  <span>
-    Athletics
-  </span>
+  <span>Athletics</span>
 
 </a>
 
-
-<!-- Campus Events -->
 
 <a
 href="https://www.owu.edu/calendars/"
@@ -1444,30 +1547,19 @@ target="_blank"
 rel="noopener">
 
   <span class="nav-icon">
-
     <svg viewBox="0 0 24 24">
-
       <rect x="3" y="5" width="18" height="16" rx="2"></rect>
-
       <path d="M7 3v4"></path>
       <path d="M17 3v4"></path>
-
       <path d="M3 10h18"></path>
-
       <path d="M12 13l1.2 2.5 2.8.4-2 2 .5 2.8-2.5-1.3-2.5 1.3.5-2.8-2-2 2.8-.4z"></path>
-
     </svg>
-
   </span>
 
-  <span>
-    Campus Events
-  </span>
+  <span>Campus Events</span>
 
 </a>
 
-
-<!-- Campus Map -->
 
 <a
 href="https://www.owu.edu/about/campus-map/"
@@ -1475,20 +1567,13 @@ target="_blank"
 rel="noopener">
 
   <span class="nav-icon">
-
     <svg viewBox="0 0 24 24">
-
       <path d="M12 22s7-7.2 7-13a7 7 0 1 0-14 0c0 5.8 7 13 7 13z"></path>
-
       <circle cx="12" cy="9" r="2.5"></circle>
-
     </svg>
-
   </span>
 
-  <span>
-    Campus Map
-  </span>
+  <span>Campus Map</span>
 
 </a>
 
@@ -1500,22 +1585,18 @@ rel="noopener">
 
 /* =====================================================
    OWU PARENT DASHBOARD
-   VERSION 2.1.4
+   VERSION 2.2
 ===================================================== */
 
 
 /* =====================================================
-   CAMERA SYSTEM
+   CAMERAS
 ===================================================== */
 
 const CAMERA_FALLBACKS = {
-
   rockQuad:"CaKBiuHui0w",
-
   gateway:"LF4FVLWP3Vs",
-
   jaywalk:"l97JBARWgrA"
-
 };
 
 
@@ -1606,7 +1687,6 @@ function renderCamera(
   tile.appendChild(iframe);
 
   tile.appendChild(link);
-
 }
 
 
@@ -1633,16 +1713,12 @@ async function loadCameraLinks(){
         await response.json();
 
 
-      if(
-        data &&
-        data.cameras
-      ){
+      if(data.cameras){
 
         cameras = {
           ...CAMERA_FALLBACKS,
           ...data.cameras
         };
-
       }
 
 
@@ -1668,12 +1744,9 @@ async function loadCameraLinks(){
 
           +
 
-          " • Dashboard v2.1.4";
-
+          " • Dashboard v2.2";
       }
-
     }
-
   }
 
   catch(error){
@@ -1682,7 +1755,6 @@ async function loadCameraLinks(){
       "Using fallback camera IDs.",
       error
     );
-
   }
 
 
@@ -1705,7 +1777,6 @@ async function loadCameraLinks(){
     "JAYwalk",
     cameras.jaywalk
   );
-
 }
 
 
@@ -1748,7 +1819,6 @@ function updateClock(){
       }
     )
     .format(now);
-
 }
 
 
@@ -1757,7 +1827,6 @@ function updateClock(){
 ===================================================== */
 
 const weatherCodes = {
-
   0:"Clear",
   1:"Mostly clear",
   2:"Partly cloudy",
@@ -1779,23 +1848,18 @@ const weatherCodes = {
   95:"Thunderstorms",
   96:"Thunderstorms with hail",
   99:"Severe thunderstorms"
-
 };
 
 
 function getWeatherIcon(code){
 
-  if(code === 0)
-    return "☀️";
+  if(code === 0) return "☀️";
 
-  if(code === 1)
-    return "🌤️";
+  if(code === 1) return "🌤️";
 
-  if(code === 2)
-    return "⛅";
+  if(code === 2) return "⛅";
 
-  if(code === 3)
-    return "☁️";
+  if(code === 3) return "☁️";
 
   if(code === 45 || code === 48)
     return "🌫️";
@@ -1856,11 +1920,6 @@ async function loadWeather(){
       );
 
 
-    if(!response.ok){
-      throw new Error();
-    }
-
-
     const data =
       await response.json();
 
@@ -1880,26 +1939,20 @@ async function loadWeather(){
     document
       .getElementById("temperature")
       .textContent =
-
       Math.round(
         current.temperature_2m
       )
-
       +
-
       "°";
 
 
     document
       .getElementById("condition")
       .textContent =
-
       weatherCodes[
         current.weather_code
       ]
-
       ||
-
       "Current conditions";
 
 
@@ -1940,7 +1993,6 @@ async function loadWeather(){
       +
 
       " mph";
-
   }
 
   catch(error){
@@ -1949,20 +2001,12 @@ async function loadWeather(){
       .getElementById("condition")
       .textContent =
       "Weather unavailable";
-
-
-    document
-      .getElementById("weatherIcon")
-      .textContent =
-      "☁️";
-
   }
-
 }
 
 
 /* =====================================================
-   WOMEN'S SOCCER
+   WOMEN'S SOCCER NEXT 3
 ===================================================== */
 
 const games = [
@@ -2124,10 +2168,7 @@ function renderGames(){
           new Date(game.date) >
           now
       )
-      .slice(
-        0,
-        3
-      );
+      .slice(0,3);
 
 
   const container =
@@ -2144,9 +2185,7 @@ function renderGames(){
     (game,index) => {
 
       const gameDate =
-        new Date(
-          game.date
-        );
+        new Date(game.date);
 
 
       const dayText =
@@ -2157,9 +2196,7 @@ function renderGames(){
             weekday:"short"
           }
         )
-        .format(
-          gameDate
-        );
+        .format(gameDate);
 
 
       const dateText =
@@ -2171,40 +2208,29 @@ function renderGames(){
             day:"numeric"
           }
         )
-        .format(
-          gameDate
-        );
+        .format(gameDate);
 
 
       const timeText =
-
         game.timeTBA
 
-        ?
+        ? "TBA"
 
-        "TBA"
-
-        :
-
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone:"America/New_York",
-            hour:"numeric",
-            minute:"2-digit"
-          }
-        )
-        .format(
-          gameDate
-        );
+        : new Intl.DateTimeFormat(
+            "en-US",
+            {
+              timeZone:"America/New_York",
+              hour:"numeric",
+              minute:"2-digit"
+            }
+          )
+          .format(gameDate);
 
 
       const prefix =
         game.site === "Home"
-        ?
-        "vs."
-        :
-        "at";
+        ? "vs."
+        : "at";
 
 
       const row =
@@ -2227,14 +2253,13 @@ function renderGames(){
 
           ${
             index === 0
-            ?
-            '<br><span class="next-badge">Next</span>'
-            :
-            ''
+
+            ? '<br><span class="next-badge">Next</span>'
+
+            : ''
           }
 
         </div>
-
 
         <div class="game-main">
 
@@ -2247,7 +2272,6 @@ function renderGames(){
           </div>
 
         </div>
-
 
         <div class="game-time">
 
@@ -2263,15 +2287,13 @@ function renderGames(){
       container.appendChild(
         row
       );
-
     }
   );
-
 }
 
 
 /* =====================================================
-   OWU EVENTS
+   CAMPUS EVENTS
 ===================================================== */
 
 const owuEvents = [
@@ -2340,10 +2362,7 @@ function renderEvents(){
           new Date(event.end) >
           now
       )
-      .slice(
-        0,
-        6
-      );
+      .slice(0,3);
 
 
   const container =
@@ -2360,9 +2379,7 @@ function renderEvents(){
     event => {
 
       const eventDate =
-        new Date(
-          event.date
-        );
+        new Date(event.date);
 
 
       const dateText =
@@ -2374,9 +2391,7 @@ function renderEvents(){
             day:"numeric"
           }
         )
-        .format(
-          eventDate
-        );
+        .format(eventDate);
 
 
       const row =
@@ -2405,15 +2420,736 @@ function renderEvents(){
       container.appendChild(
         row
       );
-
     }
   );
-
 }
 
 
 /* =====================================================
-   START
+   SPORTS LIVE + MY SPORTS
+===================================================== */
+
+const SPORTS_STORAGE_KEY =
+  "owuDashboardSelectedSports";
+
+
+let sportsData = {
+  events:[],
+  availableSports:[]
+};
+
+
+function getSelectedSports(){
+
+  try{
+
+    const stored =
+      JSON.parse(
+        localStorage.getItem(
+          SPORTS_STORAGE_KEY
+        )
+      );
+
+
+    if(
+      Array.isArray(stored) &&
+      stored.length
+    ){
+      return stored;
+    }
+
+  }
+
+  catch(error){}
+
+
+  return [
+    "Women's Soccer"
+  ];
+}
+
+
+function saveSelectedSports(
+  sports
+){
+
+  localStorage.setItem(
+    SPORTS_STORAGE_KEY,
+    JSON.stringify(sports)
+  );
+}
+
+
+function buildSportsChoices(){
+
+  const container =
+    document.getElementById(
+      "sportsChoices"
+    );
+
+
+  const selected =
+    getSelectedSports();
+
+
+  const available =
+    sportsData.availableSports?.length
+
+    ? sportsData.availableSports
+
+    : [
+        ...new Set(
+          sportsData.events
+            .map(
+              event =>
+                event.sport
+            )
+            .filter(Boolean)
+        )
+      ];
+
+
+  container.innerHTML =
+    "";
+
+
+  available.forEach(
+    sport => {
+
+      const label =
+        document.createElement(
+          "label"
+        );
+
+
+      label.className =
+        "sports-option";
+
+
+      const checkbox =
+        document.createElement(
+          "input"
+        );
+
+
+      checkbox.type =
+        "checkbox";
+
+
+      checkbox.value =
+        sport;
+
+
+      checkbox.checked =
+        selected.includes(
+          sport
+        );
+
+
+      const text =
+        document.createElement(
+          "span"
+        );
+
+
+      text.textContent =
+        sport;
+
+
+      label.appendChild(
+        checkbox
+      );
+
+
+      label.appendChild(
+        text
+      );
+
+
+      container.appendChild(
+        label
+      );
+    }
+  );
+}
+
+
+function parseSportsDate(
+  event
+){
+
+  if(event.isoDate){
+
+    const parsed =
+      new Date(
+        event.isoDate
+      );
+
+
+    if(
+      !Number.isNaN(
+        parsed.getTime()
+      )
+    ){
+      return parsed;
+    }
+  }
+
+
+  if(!event.date){
+    return null;
+  }
+
+
+  /*
+   * sports.json currently contains date strings like:
+   *
+   * Sep 1 (Tue) 7 p.m.
+   *
+   * Remove the parenthetical weekday before parsing.
+   */
+
+  const cleaned =
+    event.date
+      .replace(
+        /\([^)]*\)/g,
+        ""
+      )
+      .replace(
+        /\bp\.m\./gi,
+        "PM"
+      )
+      .replace(
+        /\ba\.m\./gi,
+        "AM"
+      )
+      .replace(
+        /\s+/g,
+        " "
+      )
+      .trim();
+
+
+  const updatedYear =
+    sportsData.updatedAt
+
+    ? new Date(
+        sportsData.updatedAt
+      ).getFullYear()
+
+    : new Date().getFullYear();
+
+
+  const candidate =
+    /\b20\d{2}\b/.test(cleaned)
+
+    ? cleaned
+
+    : `${cleaned} ${updatedYear}`;
+
+
+  const parsed =
+    new Date(candidate);
+
+
+  if(
+    Number.isNaN(
+      parsed.getTime()
+    )
+  ){
+    return null;
+  }
+
+
+  return parsed;
+}
+
+
+function isLikelyLive(
+  event
+){
+
+  const start =
+    parseSportsDate(event);
+
+
+  if(!start)
+    return false;
+
+
+  const now =
+    new Date();
+
+
+  const difference =
+    now - start;
+
+
+  /*
+   * Treat an event as "live" from 15 minutes before
+   * scheduled start through roughly three hours after.
+   */
+
+  return (
+    difference >=
+      -15 * 60 * 1000
+
+    &&
+
+    difference <=
+      3 * 60 * 60 * 1000
+  );
+}
+
+
+function sportsDisplayDate(
+  event
+){
+
+  const parsed =
+    parseSportsDate(event);
+
+
+  if(parsed){
+
+    return new Intl.DateTimeFormat(
+      "en-US",
+      {
+        timeZone:
+          "America/New_York",
+
+        month:"short",
+        day:"numeric",
+        hour:"numeric",
+        minute:"2-digit"
+      }
+    )
+    .format(parsed);
+  }
+
+
+  return (
+    event.date ||
+    event.time ||
+    "Upcoming"
+  );
+}
+
+
+function renderSportsLive(){
+
+  const container =
+    document.getElementById(
+      "sportsLiveList"
+    );
+
+
+  const selected =
+    getSelectedSports();
+
+
+  let events =
+    sportsData.events
+      .filter(
+        event =>
+          selected.includes(
+            event.sport
+          )
+      );
+
+
+  /*
+   * Put LIVE NOW events first.
+   * Then sort parseable dates.
+   */
+
+  events.sort(
+    (a,b) => {
+
+      const liveA =
+        isLikelyLive(a);
+
+      const liveB =
+        isLikelyLive(b);
+
+
+      if(
+        liveA &&
+        !liveB
+      ){
+        return -1;
+      }
+
+
+      if(
+        liveB &&
+        !liveA
+      ){
+        return 1;
+      }
+
+
+      const dateA =
+        parseSportsDate(a);
+
+      const dateB =
+        parseSportsDate(b);
+
+
+      if(
+        dateA &&
+        dateB
+      ){
+        return dateA - dateB;
+      }
+
+
+      return 0;
+    }
+  );
+
+
+  /*
+   * Desktop layout is intentionally compact.
+   * Show the top three selected sporting events.
+   */
+
+  events =
+    events.slice(
+      0,
+      3
+    );
+
+
+  container.innerHTML =
+    "";
+
+
+  if(!events.length){
+
+    container.innerHTML = `
+
+      <div class="sports-empty">
+
+        No upcoming stream information
+        for your selected sports yet.
+
+        <br><br>
+
+        Use <strong>My Sports</strong>
+        to choose additional teams.
+
+      </div>
+
+    `;
+
+    return;
+  }
+
+
+  events.forEach(
+    event => {
+
+      const row =
+        document.createElement(
+          "div"
+        );
+
+
+      row.className =
+        "sport-event";
+
+
+      const live =
+        isLikelyLive(event);
+
+
+      const watchUrl =
+        event.watchUrl ||
+        sportsData.videoHome ||
+        "";
+
+
+      const statsUrl =
+        event.statsUrl ||
+        "";
+
+
+      const location =
+        event.location
+        ? event.location
+        : "";
+
+
+      const watchButton =
+        watchUrl
+
+        ? `
+          <a
+          class="sport-action watch"
+          href="${watchUrl}"
+          target="_blank"
+          rel="noopener">
+
+            ${live ? "Watch Live" : "Watch"}
+
+          </a>
+        `
+
+        : "";
+
+
+      const statsButton =
+        statsUrl
+
+        ? `
+          <a
+          class="sport-action"
+          href="${statsUrl}"
+          target="_blank"
+          rel="noopener">
+
+            Stats
+
+          </a>
+        `
+
+        : "";
+
+
+      row.innerHTML = `
+
+        <div class="sport-label">
+
+          ${event.sport || "OWU Sport"}
+
+          ${
+            live
+
+            ? '<br><span class="live-now">LIVE NOW</span>'
+
+            : ''
+          }
+
+        </div>
+
+
+        <div class="sport-main">
+
+          <div class="sport-opponent">
+
+            ${
+              event.opponent
+              ? event.opponent
+              : "Upcoming event"
+            }
+
+          </div>
+
+          <div class="sport-meta">
+
+            ${sportsDisplayDate(event)}
+
+            ${
+              location
+              ? " • " + location
+              : ""
+            }
+
+          </div>
+
+        </div>
+
+
+        <div class="sport-actions">
+
+          ${watchButton}
+
+          ${statsButton}
+
+        </div>
+
+      `;
+
+
+      container.appendChild(
+        row
+      );
+    }
+  );
+}
+
+
+async function loadSports(){
+
+  try{
+
+    const response =
+      await fetch(
+        `sports.json?ts=${Date.now()}`,
+        {
+          cache:"no-store"
+        }
+      );
+
+
+    if(!response.ok){
+      throw new Error(
+        "sports.json unavailable"
+      );
+    }
+
+
+    sportsData =
+      await response.json();
+
+
+    if(
+      !Array.isArray(
+        sportsData.events
+      )
+    ){
+      sportsData.events =
+        [];
+    }
+
+
+    buildSportsChoices();
+
+    renderSportsLive();
+
+  }
+
+  catch(error){
+
+    console.warn(
+      "Could not load sports.json",
+      error
+    );
+
+
+    document
+      .getElementById(
+        "sportsLiveList"
+      )
+      .innerHTML = `
+
+        <div class="sports-empty">
+
+          OWU sports information
+          is temporarily unavailable.
+
+        </div>
+
+      `;
+  }
+}
+
+
+/* =====================================================
+   MY SPORTS MENU
+===================================================== */
+
+const sportsMenu =
+  document.getElementById(
+    "sportsMenu"
+  );
+
+
+document
+  .getElementById(
+    "mySportsButton"
+  )
+  .addEventListener(
+    "click",
+    event => {
+
+      event.stopPropagation();
+
+      sportsMenu.classList.toggle(
+        "open"
+      );
+
+    }
+  );
+
+
+document
+  .getElementById(
+    "sportsDoneButton"
+  )
+  .addEventListener(
+    "click",
+    () => {
+
+      const selected =
+        [
+          ...document.querySelectorAll(
+            "#sportsChoices input:checked"
+          )
+        ]
+        .map(
+          input =>
+            input.value
+        );
+
+
+      /*
+       * Always require at least one.
+       * Women's Soccer becomes the fallback.
+       */
+
+      const finalSelection =
+        selected.length
+
+        ? selected
+
+        : [
+            "Women's Soccer"
+          ];
+
+
+      saveSelectedSports(
+        finalSelection
+      );
+
+
+      sportsMenu.classList.remove(
+        "open"
+      );
+
+
+      buildSportsChoices();
+
+      renderSportsLive();
+
+    }
+  );
+
+
+document.addEventListener(
+  "click",
+  event => {
+
+    if(
+      !sportsMenu.contains(
+        event.target
+      )
+      &&
+      event.target.id !==
+        "mySportsButton"
+    ){
+      sportsMenu.classList.remove(
+        "open"
+      );
+    }
+
+  }
+);
+
+
+/* =====================================================
+   START DASHBOARD
 ===================================================== */
 
 loadCameraLinks();
@@ -2425,6 +3161,8 @@ loadWeather();
 renderGames();
 
 renderEvents();
+
+loadSports();
 
 
 setInterval(
@@ -2453,6 +3191,12 @@ setInterval(
 
 setInterval(
   loadCameraLinks,
+  1800000
+);
+
+
+setInterval(
+  loadSports,
   1800000
 );
 
