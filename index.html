@@ -13,13 +13,14 @@
 
 :root{
   --red:#BA0C2F;
-  --red2:#d7163e;
+  --red-bright:#df1742;
+  --red-dark:#760719;
   --black:#050506;
-  --panel:#0a0b0d;
-  --line:#3a3c41;
-  --muted:#b8bac0;
+  --panel:#090a0c;
+  --line:#3d4046;
+  --muted:#b8bbc1;
   --white:#ffffff;
-  --nav:58px;
+  --nav:70px;
 }
 
 *{
@@ -32,7 +33,7 @@ html,body{
   height:100%;
   overflow:hidden;
   background:var(--black);
-  color:var(--white);
+  color:#fff;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
 }
 
@@ -46,11 +47,6 @@ main{
   padding:4px;
 }
 
-
-/* =====================================================
-   MAIN 2 x 2 DASHBOARD
-===================================================== */
-
 .monitor{
   width:100%;
   height:100%;
@@ -58,7 +54,7 @@ main{
   grid-template-columns:1fr 1fr;
   grid-template-rows:1fr 1fr;
   gap:3px;
-  background:#26282d;
+  background:#25272b;
 }
 
 .tile{
@@ -67,7 +63,7 @@ main{
   min-height:0;
   overflow:hidden;
   background:#050506;
-  border:1px solid #26282d;
+  border:1px solid #292b30;
 }
 
 
@@ -98,18 +94,21 @@ main{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  background:linear-gradient(
-    180deg,
-    rgba(2,2,3,.96),
-    rgba(2,2,3,.60)
-  );
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2,2,3,.96),
+      rgba(2,2,3,.60)
+    );
+
   border-bottom:1px solid rgba(255,255,255,.12);
   pointer-events:none;
 }
 
 .camera-name{
   font-size:14px;
-  font-weight:800;
+  font-weight:850;
 }
 
 .live{
@@ -133,7 +132,7 @@ main{
   right:8px;
   bottom:8px;
   padding:6px 10px;
-  border:1px solid rgba(255,255,255,.22);
+  border:1px solid rgba(255,255,255,.24);
   border-radius:5px;
   background:rgba(5,5,7,.88);
   color:#fff;
@@ -154,60 +153,119 @@ main{
 
 
 /* =====================================================
-   OWU INFORMATION PANEL
+   OWU PANEL
 ===================================================== */
 
 .owu-panel{
   height:100%;
   min-height:0;
   display:grid;
-  grid-template-rows:136px minmax(0,1fr) 78px;
+  grid-template-rows:140px minmax(0,1fr) 82px;
   overflow:hidden;
   background:#050506;
 }
 
 
 /* =====================================================
-   RED TIME / WEATHER HEADER
+   HEADER
 ===================================================== */
 
 .owu-header{
   position:relative;
   overflow:hidden;
-  min-height:136px;
-  padding:17px 22px 15px;
+  min-height:140px;
+
   display:grid;
   grid-template-columns:1fr auto;
   align-items:center;
-  gap:18px;
+  gap:20px;
+
+  padding:16px 22px;
 
   background:
     radial-gradient(
-      ellipse at 59% 110%,
-      rgba(0,0,0,.28) 0,
-      rgba(0,0,0,.12) 27%,
-      transparent 48%
+      ellipse at 62% 100%,
+      rgba(0,0,0,.28),
+      transparent 45%
     ),
     linear-gradient(
-      120deg,
+      115deg,
       #85061d 0%,
-      #b6092c 34%,
-      #ca1036 63%,
-      #84061c 100%
+      #b70a2e 38%,
+      #c50d33 66%,
+      #83061c 100%
     );
 
   border-bottom:3px solid #ef3156;
 }
 
+.owu-header::before{
+  content:"OWU";
+  position:absolute;
+  left:27%;
+  top:50%;
+  transform:translateY(-51%);
+  color:rgba(0,0,0,.13);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(90px,8vw,145px);
+  font-weight:900;
+  letter-spacing:-.06em;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
 .owu-header::after{
   content:"";
   position:absolute;
-  width:180px;
-  height:180px;
-  right:26%;
-  top:-38px;
-  border-radius:50%;
-  border:1px solid rgba(0,0,0,.07);
+  left:58%;
+  bottom:-8px;
+  width:145px;
+  height:95px;
+  opacity:.19;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0 5%,
+      #000 5% 12%,
+      transparent 12% 18%,
+      #000 18% 25%,
+      transparent 25% 33%,
+      #000 33% 45%,
+      transparent 45% 52%,
+      #000 52% 63%,
+      transparent 63% 70%,
+      #000 70% 82%,
+      transparent 82%
+    );
+
+  clip-path:polygon(
+    0 100%,
+    0 63%,
+    7% 63%,
+    7% 36%,
+    15% 36%,
+    15% 53%,
+    25% 53%,
+    25% 18%,
+    34% 18%,
+    34% 50%,
+    43% 50%,
+    43% 0,
+    53% 0,
+    53% 45%,
+    62% 45%,
+    62% 21%,
+    72% 21%,
+    72% 52%,
+    83% 52%,
+    83% 31%,
+    92% 31%,
+    92% 65%,
+    100% 65%,
+    100% 100%
+  );
+
   pointer-events:none;
 }
 
@@ -226,7 +284,7 @@ main{
 }
 
 .clock{
-  font-size:clamp(62px,5.7vw,92px);
+  font-size:clamp(62px,5.5vw,90px);
   line-height:.88;
   font-weight:900;
   letter-spacing:-.055em;
@@ -239,46 +297,70 @@ main{
 }
 
 .weather{
+  display:grid;
+  grid-template-columns:auto auto;
+  grid-template-areas:
+    "label label"
+    "icon temp"
+    "icon condition"
+    "detail detail";
+
+  column-gap:10px;
+  align-items:center;
+  justify-items:end;
   text-align:right;
 }
 
 .weather-label{
-  margin-bottom:3px;
-  font-size:12px;
+  grid-area:label;
+  margin-bottom:2px;
+  font-size:11px;
   font-weight:900;
-  letter-spacing:.14em;
+  letter-spacing:.13em;
   text-transform:uppercase;
 }
 
+.weather-icon{
+  grid-area:icon;
+  min-width:58px;
+  text-align:center;
+  font-size:46px;
+  line-height:1;
+  filter:drop-shadow(0 2px 2px rgba(0,0,0,.25));
+}
+
 .temp{
-  font-size:clamp(54px,4.9vw,79px);
-  line-height:.90;
+  grid-area:temp;
+  font-size:clamp(50px,4.6vw,74px);
+  line-height:.88;
   font-weight:900;
 }
 
 .cond{
-  margin-top:6px;
-  font-size:18px;
+  grid-area:condition;
+  margin-top:5px;
+  font-size:16px;
   font-weight:800;
 }
 
 .weather-detail{
-  margin-top:5px;
-  font-size:12px;
+  grid-area:detail;
+  margin-top:4px;
+  font-size:11px;
   opacity:.9;
 }
 
 
 /* =====================================================
-   SOCCER + EVENTS AREA
+   INFORMATION CARDS
 ===================================================== */
 
 .info-body{
   min-height:0;
-  padding:10px;
+  padding:9px;
   display:grid;
   grid-template-columns:1.08fr .92fr;
-  gap:10px;
+  gap:9px;
 }
 
 .info-card{
@@ -287,37 +369,45 @@ main{
   display:grid;
   grid-template-rows:39px minmax(0,1fr);
   overflow:hidden;
-  border:1px solid #4a4d53;
+
+  border:1px solid #45484e;
   border-radius:8px;
-  background:linear-gradient(
-    180deg,
-    #0b0c0f,
-    #070809
-  );
+
+  background:
+    linear-gradient(
+      180deg,
+      #0c0d10,
+      #070809
+    );
+
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,.015),
+    0 0 12px rgba(186,12,47,.05);
 }
 
 .soccer-card{
-  border-left:3px solid #db153d;
+  border-left:3px solid var(--red-bright);
 }
 
 .events-card{
-  border-right:3px solid #db153d;
+  border-right:3px solid var(--red-bright);
 }
 
 .info-title-row{
   height:39px;
-  padding:0 12px;
+  padding:0 11px;
   display:flex;
   align-items:center;
   justify-content:space-between;
   gap:8px;
-  background:#0c0d10;
-  border-bottom:1px solid #42454b;
+
+  background:#0a0b0d;
+  border-bottom:1px solid #3e4147;
 }
 
 .info-title{
   color:#fff;
-  font-size:14px;
+  font-size:13px;
   font-weight:900;
   letter-spacing:.055em;
   text-transform:uppercase;
@@ -326,54 +416,69 @@ main{
 
 
 /* =====================================================
-   SCHEDULE / ROSTER / STATS
+   SOCCER BUTTONS
 ===================================================== */
 
 .soccer-links{
   display:flex;
-  gap:6px;
+  gap:5px;
 }
 
 .soccer-links a{
-  padding:5px 11px;
+  display:flex;
+  align-items:center;
+  gap:4px;
+
+  padding:5px 9px;
+
   border-radius:4px;
-  border:1px solid #ef3155;
-  background:linear-gradient(
-    #db1d44,
-    #a80a2b
-  );
+  border:1px solid #f13b5e;
+
+  background:
+    linear-gradient(
+      #db1d44,
+      #a70a2b
+    );
+
   color:#fff;
   text-decoration:none;
-  font-size:10px;
+
+  font-size:9px;
   font-weight:900;
   text-transform:uppercase;
-  letter-spacing:.03em;
-  box-shadow:inset 0 1px rgba(255,255,255,.16);
 }
 
 .soccer-links a:hover{
-  background:#e8264d;
+  background:#e5234a;
+}
+
+.button-icon{
+  font-size:11px;
+  line-height:1;
 }
 
 
 /* =====================================================
-   NEXT THREE GAMES
+   GAME LIST
 ===================================================== */
 
 .game-list{
   min-height:0;
-  padding:0 12px;
+  padding:0 11px;
   display:grid;
   grid-template-rows:repeat(3,1fr);
 }
 
 .game-row{
   min-height:0;
+
   display:grid;
-  grid-template-columns:82px minmax(0,1fr) 92px;
-  gap:10px;
-  padding:6px 0;
+  grid-template-columns:76px minmax(0,1fr) 88px;
+  gap:9px;
+
+  padding:4px 0;
   align-items:center;
+
   border-bottom:1px solid rgba(255,255,255,.11);
 }
 
@@ -383,22 +488,21 @@ main{
 
 .game-date{
   color:#ff496b;
-  font-size:12px;
+  font-size:11px;
   font-weight:900;
-  line-height:1.08;
+  line-height:1.05;
   text-transform:uppercase;
 }
 
 .next-badge{
   display:inline-block;
-  margin-top:4px;
-  padding:3px 7px;
+  margin-top:3px;
+  padding:2px 6px;
   border-radius:3px;
-  background:var(--red2);
+  background:var(--red-bright);
   color:#fff;
-  font-size:9px;
+  font-size:8px;
   font-weight:900;
-  letter-spacing:.04em;
 }
 
 .game-main{
@@ -409,46 +513,48 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  font-size:18px;
-  line-height:1.05;
+  font-size:17px;
+  line-height:1.04;
   font-weight:800;
 }
 
 .game-location{
-  margin-top:4px;
+  margin-top:3px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
   color:var(--muted);
-  font-size:11px;
+  font-size:10px;
 }
 
 .game-time{
   white-space:nowrap;
   text-align:right;
-  font-size:12px;
+  font-size:11px;
   font-weight:900;
 }
 
 
 /* =====================================================
-   UPCOMING EVENTS
+   EVENTS
 ===================================================== */
 
 .event-list{
   min-height:0;
-  padding:0 12px;
+  padding:0 11px;
   display:grid;
   grid-template-rows:repeat(6,1fr);
 }
 
 .event-row{
   min-height:0;
+
   display:grid;
-  grid-template-columns:70px minmax(0,1fr);
-  gap:10px;
-  padding:4px 0;
+  grid-template-columns:67px minmax(0,1fr);
+  gap:9px;
+
   align-items:center;
+
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
@@ -458,64 +564,93 @@ main{
 
 .event-date{
   color:#ff496b;
-  font-size:11px;
+  font-size:10px;
   font-weight:900;
   text-transform:uppercase;
 }
 
 .event-name{
-  min-width:0;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  font-size:15px;
-  line-height:1.1;
+  font-size:14px;
+  line-height:1.05;
   font-weight:750;
 }
 
 
 /* =====================================================
-   OWU BRANDING FOOTER
+   OWU BRAND STRIP
 ===================================================== */
 
 .owu-footer{
-  min-height:78px;
-  padding:8px 14px;
+  min-height:82px;
+  padding:8px 12px;
+
   display:grid;
-  grid-template-columns:58px minmax(0,1fr) auto;
+  grid-template-columns:66px minmax(0,1fr) auto;
   align-items:center;
   gap:13px;
 
   background:
+    radial-gradient(
+      circle at 95% 50%,
+      rgba(186,12,47,.16),
+      transparent 35%
+    ),
     linear-gradient(
       90deg,
-      #050506 0%,
-      #08090b 58%,
-      #16040a 100%
+      #050506,
+      #08090b 55%,
+      #140309
     );
 
-  border-top:2px solid #3e4147;
+  border-top:2px solid #3f4248;
 }
 
-.owu-mark{
-  width:54px;
-  height:54px;
+.owu-shield{
+  position:relative;
+
+  width:60px;
+  height:64px;
+
   display:flex;
   align-items:center;
   justify-content:center;
+
+  color:#fff;
+  font-size:16px;
+  font-weight:950;
+  letter-spacing:-.04em;
+
+  background:#090a0c;
+
   clip-path:polygon(
     50% 0,
-    92% 22%,
-    92% 78%,
+    90% 15%,
+    90% 71%,
     50% 100%,
-    8% 78%,
-    8% 22%
+    10% 71%,
+    10% 15%
   );
-  background:#090a0c;
-  border:3px solid #ef294f;
-  color:#fff;
-  font-size:15px;
-  font-weight:950;
+
+  box-shadow:
+    inset 0 0 0 3px var(--red-bright);
+}
+
+.owu-shield::before{
+  content:"";
+  position:absolute;
+  inset:5px;
+
+  clip-path:inherit;
+
+  border:2px solid rgba(255,255,255,.22);
+}
+
+.owu-shield-text{
+  position:relative;
+  z-index:2;
 }
 
 .owu-brand{
@@ -526,17 +661,19 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
+
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(25px,2.3vw,38px);
-  line-height:.90;
-  letter-spacing:.02em;
+  font-size:clamp(27px,2.35vw,39px);
+  line-height:.88;
+  letter-spacing:.015em;
 }
 
 .bishops{
   margin-top:6px;
-  color:#e51d46;
+  color:#e81e47;
+
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(12px,1.2vw,18px);
+  font-size:clamp(12px,1.15vw,18px);
   font-weight:800;
   letter-spacing:.12em;
 }
@@ -546,18 +683,18 @@ main{
 }
 
 .sync{
-  color:#a3a6ac;
+  color:#a5a8ae;
   font-size:9px;
-  letter-spacing:.05em;
+  letter-spacing:.045em;
   text-transform:uppercase;
 }
 
 .go-bishops{
-  margin-top:7px;
-  color:#ef244c;
-  font-size:13px;
+  margin-top:8px;
+  color:#ef284f;
+  font-size:14px;
   font-weight:950;
-  letter-spacing:.08em;
+  letter-spacing:.07em;
   text-transform:uppercase;
 }
 
@@ -567,53 +704,90 @@ main{
 ===================================================== */
 
 nav{
-  height:58px;
+  height:var(--nav);
+
   display:grid;
   grid-template-columns:repeat(4,1fr);
-  border-top:2px solid #34363b;
-  border-bottom:5px solid #ba0c2f;
-  background:#060708;
+
+  padding:4px 5px 5px;
+
+  background:#050506;
+
+  border-top:3px solid var(--red);
+  border-bottom:5px solid var(--red);
 }
 
 nav a{
-  position:relative;
+  min-width:0;
+
   display:flex;
   align-items:center;
   justify-content:center;
-  color:#f1f1f2;
+  gap:13px;
+
+  border-right:1px solid #3d4046;
+
+  color:#fff;
   text-decoration:none;
-  font-size:15px;
-  font-weight:800;
-  letter-spacing:.015em;
-  border-right:1px solid #37393e;
+
+  font-size:18px;
+  font-weight:900;
+  letter-spacing:.01em;
+  text-transform:uppercase;
 }
 
-nav a:nth-child(1),
-nav a:nth-child(3){
-  background:#050607;
+nav a:nth-child(odd){
+  background:#060708;
 }
 
-nav a:nth-child(2),
-nav a:nth-child(4){
-  background:#131417;
+nav a:nth-child(even){
+  background:#0f1013;
+}
+
+nav a:first-child{
+  border-radius:7px 0 0 7px;
 }
 
 nav a:last-child{
   border-right:0;
+  border-radius:0 7px 7px 0;
 }
 
 nav a:hover{
-  background:#ba0c2f;
+  background:#6f071a;
 }
 
-nav a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  height:3px;
-  background:#ba0c2f;
+.nav-icon{
+  width:40px;
+  height:40px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  flex:0 0 40px;
+
+  border:1px solid #e34360;
+  border-radius:6px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #c50e35,
+      #79071d
+    );
+
+  color:#fff;
+}
+
+.nav-icon svg{
+  width:24px;
+  height:24px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:2.1;
+  stroke-linecap:round;
+  stroke-linejoin:round;
 }
 
 
@@ -634,7 +808,7 @@ nav a::after{
 
   body{
     display:block;
-    padding-bottom:48px;
+    padding-bottom:56px;
   }
 
   main{
@@ -655,9 +829,6 @@ nav a::after{
     width:100%;
     min-height:0;
   }
-
-
-  /* Camera panes remain horizontal */
 
   .camera{
     position:relative;
@@ -695,17 +866,25 @@ nav a::after{
   }
 
 
-  /* Information panel becomes vertical */
+  /* information panel */
 
   .owu-panel{
-    height:auto;
-    min-height:0;
     display:block;
+    height:auto;
   }
 
   .owu-header{
-    min-height:112px;
+    min-height:116px;
     padding:13px 14px;
+  }
+
+  .owu-header::before{
+    left:20%;
+    font-size:76px;
+  }
+
+  .owu-header::after{
+    display:none;
   }
 
   .owu-location{
@@ -717,12 +896,21 @@ nav a::after{
   }
 
   .date{
-    margin-top:5px;
     font-size:13px;
+    margin-top:5px;
+  }
+
+  .weather{
+    column-gap:5px;
   }
 
   .weather-label{
     font-size:9px;
+  }
+
+  .weather-icon{
+    min-width:38px;
+    font-size:29px;
   }
 
   .temp{
@@ -730,17 +918,12 @@ nav a::after{
   }
 
   .cond{
-    margin-top:4px;
     font-size:13px;
   }
 
   .weather-detail{
-    margin-top:3px;
     font-size:9px;
   }
-
-
-  /* Soccer/events stacked */
 
   .info-body{
     height:auto;
@@ -757,7 +940,7 @@ nav a::after{
 
   .info-title-row{
     height:36px;
-    padding:0 10px;
+    padding:0 9px;
   }
 
   .info-title{
@@ -765,12 +948,16 @@ nav a::after{
   }
 
   .soccer-links{
-    gap:5px;
+    gap:4px;
   }
 
   .soccer-links a{
-    padding:4px 7px;
+    padding:4px 6px;
     font-size:8px;
+  }
+
+  .button-icon{
+    display:none;
   }
 
   .game-list,
@@ -815,30 +1002,27 @@ nav a::after{
     font-size:12px;
   }
 
-
-  /* Stronger iPhone branding strip */
-
   .owu-footer{
-    min-height:66px;
-    padding:7px 10px;
-    grid-template-columns:42px minmax(0,1fr) auto;
+    min-height:72px;
+    padding:7px 9px;
+
+    grid-template-columns:46px minmax(0,1fr) auto;
 
     background:
       linear-gradient(
         90deg,
-        #450714 0%,
-        #120308 24%,
-        #08090b 57%,
-        #35050f 100%
+        #470713,
+        #100207 25%,
+        #070809 60%,
+        #32050e
       );
 
-    border-top:2px solid #ba0c2f;
+    border-top:2px solid var(--red);
   }
 
-  .owu-mark{
-    width:38px;
-    height:38px;
-    border-width:2px;
+  .owu-shield{
+    width:42px;
+    height:47px;
     font-size:11px;
   }
 
@@ -856,46 +1040,56 @@ nav a::after{
   }
 
   .go-bishops{
-    margin-top:4px;
+    margin-top:5px;
     font-size:8px;
   }
 
 
-  /* Fixed phone nav */
+  /* phone navigation */
 
   nav{
     position:fixed;
     z-index:100;
+
     left:0;
     right:0;
     bottom:0;
+
     width:100%;
-    height:48px;
+    height:56px;
+
+    padding:0;
+
+    border-top:3px solid var(--red);
+    border-bottom:3px solid var(--red);
   }
 
   nav a{
-    padding:4px;
+    gap:4px;
+    flex-direction:column;
+
+    padding:3px 2px;
+
+    font-size:8px;
+    line-height:1.02;
     text-align:center;
-    font-size:10px;
-    line-height:1.1;
-    border-right:1px solid #464950;
   }
 
-  nav a:nth-child(1),
-  nav a:nth-child(3){
-    background:#060708;
+  .nav-icon{
+    width:25px;
+    height:25px;
+    flex-basis:25px;
+    border-radius:4px;
   }
 
-  nav a:nth-child(2),
-  nav a:nth-child(4){
-    background:#181a1e;
+  .nav-icon svg{
+    width:16px;
+    height:16px;
   }
-
 }
 
 </style>
 </head>
-
 
 <body>
 
@@ -973,14 +1167,14 @@ nav a::after{
 </section>
 
 
-<!-- OWU INFORMATION -->
+<!-- OWU INFO PANEL -->
 
 <section class="tile">
 
 <div class="owu-panel">
 
 
-  <!-- TIME + WEATHER -->
+  <!-- HEADER -->
 
   <div class="owu-header">
 
@@ -1007,6 +1201,12 @@ nav a::after{
         Current Weather
       </div>
 
+      <div
+        class="weather-icon"
+        id="weatherIcon">
+        ☀
+      </div>
+
       <div class="temp" id="temperature">
         --°
       </div>
@@ -1025,10 +1225,12 @@ nav a::after{
   </div>
 
 
-  <!-- SOCCER + EVENTS -->
+  <!-- INFO -->
 
   <div class="info-body">
 
+
+    <!-- SOCCER -->
 
     <section class="info-card soccer-card">
 
@@ -1044,21 +1246,30 @@ nav a::after{
           href="https://battlingbishops.com/sports/womens-soccer/schedule/2026"
           target="_blank"
           rel="noopener">
-          Schedule
+
+            <span class="button-icon">▦</span>
+            Schedule
+
           </a>
 
           <a
           href="https://battlingbishops.com/sports/womens-soccer/roster"
           target="_blank"
           rel="noopener">
-          Roster
+
+            <span class="button-icon">●</span>
+            Roster
+
           </a>
 
           <a
           href="https://battlingbishops.com/sports/womens-soccer/stats"
           target="_blank"
           rel="noopener">
-          Stats
+
+            <span class="button-icon">▥</span>
+            Stats
+
           </a>
 
         </div>
@@ -1072,6 +1283,8 @@ nav a::after{
 
     </section>
 
+
+    <!-- EVENTS -->
 
     <section class="info-card events-card">
 
@@ -1093,12 +1306,14 @@ nav a::after{
   </div>
 
 
-  <!-- OWU BRAND -->
+  <!-- BRAND -->
 
   <div class="owu-footer">
 
-    <div class="owu-mark">
-      OWU
+    <div class="owu-shield">
+      <span class="owu-shield-text">
+        OWU
+      </span>
     </div>
 
 
@@ -1121,7 +1336,7 @@ nav a::after{
         class="sync"
         id="syncStatus">
 
-        Camera auto-sync active • Dashboard v2.1.3
+        Camera auto-sync active • Dashboard v2.1.4
 
       </div>
 
@@ -1133,6 +1348,7 @@ nav a::after{
 
   </div>
 
+
 </div>
 
 </section>
@@ -1143,52 +1359,161 @@ nav a::after{
 </main>
 
 
-<!-- BOTTOM NAVIGATION -->
+<!-- ===================================================
+     NAVIGATION
+=================================================== -->
 
 <nav>
+
+
+<!-- Academic Calendar -->
 
 <a
 href="https://www.owu.edu/academics/academic-resources/academic-calendar/2026-2027-academic-year-and-2027-summer-session/"
 target="_blank"
 rel="noopener">
-Academic Calendar
+
+  <span class="nav-icon">
+
+    <svg viewBox="0 0 24 24">
+
+      <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+
+      <path d="M7 3v4"></path>
+      <path d="M17 3v4"></path>
+
+      <path d="M3 10h18"></path>
+
+      <path d="M7 14h2"></path>
+      <path d="M11 14h2"></path>
+      <path d="M15 14h2"></path>
+
+      <path d="M7 18h2"></path>
+      <path d="M11 18h2"></path>
+
+    </svg>
+
+  </span>
+
+  <span>
+    Academic Calendar
+  </span>
+
 </a>
+
+
+<!-- Athletics -->
 
 <a
 href="https://battlingbishops.com"
 target="_blank"
 rel="noopener">
-Athletics
+
+  <span class="nav-icon">
+
+    <svg viewBox="0 0 24 24">
+
+      <path d="M8 4h8v4c0 4-1.8 7-4 7s-4-3-4-7z"></path>
+
+      <path d="M8 6H5c0 4 1 6 4 6"></path>
+
+      <path d="M16 6h3c0 4-1 6-4 6"></path>
+
+      <path d="M12 15v4"></path>
+
+      <path d="M8 21h8"></path>
+
+      <path d="M9 19h6"></path>
+
+    </svg>
+
+  </span>
+
+  <span>
+    Athletics
+  </span>
+
 </a>
+
+
+<!-- Campus Events -->
 
 <a
 href="https://www.owu.edu/calendars/"
 target="_blank"
 rel="noopener">
-Campus Events
+
+  <span class="nav-icon">
+
+    <svg viewBox="0 0 24 24">
+
+      <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+
+      <path d="M7 3v4"></path>
+      <path d="M17 3v4"></path>
+
+      <path d="M3 10h18"></path>
+
+      <path d="M12 13l1.2 2.5 2.8.4-2 2 .5 2.8-2.5-1.3-2.5 1.3.5-2.8-2-2 2.8-.4z"></path>
+
+    </svg>
+
+  </span>
+
+  <span>
+    Campus Events
+  </span>
+
 </a>
+
+
+<!-- Campus Map -->
 
 <a
 href="https://www.owu.edu/about/campus-map/"
 target="_blank"
 rel="noopener">
-Campus Map
+
+  <span class="nav-icon">
+
+    <svg viewBox="0 0 24 24">
+
+      <path d="M12 22s7-7.2 7-13a7 7 0 1 0-14 0c0 5.8 7 13 7 13z"></path>
+
+      <circle cx="12" cy="9" r="2.5"></circle>
+
+    </svg>
+
+  </span>
+
+  <span>
+    Campus Map
+  </span>
+
 </a>
+
 
 </nav>
 
 
 <script>
 
+/* =====================================================
+   OWU PARENT DASHBOARD
+   VERSION 2.1.4
+===================================================== */
+
 
 /* =====================================================
-   CAMERA AUTO-SYNC
+   CAMERA SYSTEM
 ===================================================== */
 
 const CAMERA_FALLBACKS = {
 
   rockQuad:"CaKBiuHui0w",
+
   gateway:"LF4FVLWP3Vs",
+
   jaywalk:"l97JBARWgrA"
 
 };
@@ -1281,6 +1606,7 @@ function renderCamera(
   tile.appendChild(iframe);
 
   tile.appendChild(link);
+
 }
 
 
@@ -1316,6 +1642,7 @@ async function loadCameraLinks(){
           ...CAMERA_FALLBACKS,
           ...data.cameras
         };
+
       }
 
 
@@ -1341,7 +1668,7 @@ async function loadCameraLinks(){
 
           +
 
-          " • Dashboard v2.1.3";
+          " • Dashboard v2.1.4";
 
       }
 
@@ -1456,6 +1783,62 @@ const weatherCodes = {
 };
 
 
+function getWeatherIcon(code){
+
+  if(code === 0)
+    return "☀️";
+
+  if(code === 1)
+    return "🌤️";
+
+  if(code === 2)
+    return "⛅";
+
+  if(code === 3)
+    return "☁️";
+
+  if(code === 45 || code === 48)
+    return "🌫️";
+
+  if(
+    code === 51 ||
+    code === 53 ||
+    code === 55
+  )
+    return "🌦️";
+
+  if(
+    code === 61 ||
+    code === 63 ||
+    code === 65
+  )
+    return "🌧️";
+
+  if(
+    code === 71 ||
+    code === 73 ||
+    code === 75
+  )
+    return "❄️";
+
+  if(
+    code === 80 ||
+    code === 81 ||
+    code === 82
+  )
+    return "🌦️";
+
+  if(
+    code === 95 ||
+    code === 96 ||
+    code === 99
+  )
+    return "⛈️";
+
+  return "☁️";
+}
+
+
 async function loadWeather(){
 
   try{
@@ -1487,12 +1870,23 @@ async function loadWeather(){
 
 
     document
+      .getElementById("weatherIcon")
+      .textContent =
+      getWeatherIcon(
+        current.weather_code
+      );
+
+
+    document
       .getElementById("temperature")
       .textContent =
+
       Math.round(
         current.temperature_2m
       )
+
       +
+
       "°";
 
 
@@ -1556,13 +1950,19 @@ async function loadWeather(){
       .textContent =
       "Weather unavailable";
 
+
+    document
+      .getElementById("weatherIcon")
+      .textContent =
+      "☁️";
+
   }
 
 }
 
 
 /* =====================================================
-   WOMEN'S SOCCER SCHEDULE
+   WOMEN'S SOCCER
 ===================================================== */
 
 const games = [
@@ -1724,7 +2124,10 @@ function renderGames(){
           new Date(game.date) >
           now
       )
-      .slice(0,3);
+      .slice(
+        0,
+        3
+      );
 
 
   const container =
@@ -1824,13 +2227,9 @@ function renderGames(){
 
           ${
             index === 0
-
             ?
-
             '<br><span class="next-badge">Next</span>'
-
             :
-
             ''
           }
 
@@ -1938,10 +2337,7 @@ function renderEvents(){
     owuEvents
       .filter(
         event =>
-          new Date(
-            event.end
-          )
-          >
+          new Date(event.end) >
           now
       )
       .slice(
@@ -2017,7 +2413,7 @@ function renderEvents(){
 
 
 /* =====================================================
-   START DASHBOARD
+   START
 ===================================================== */
 
 loadCameraLinks();
