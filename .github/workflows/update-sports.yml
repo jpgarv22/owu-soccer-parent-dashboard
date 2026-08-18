@@ -1,4 +1,4 @@
-name: Update OWU sports live events
+name: Update OWU sports schedules
 
 on:
   workflow_dispatch:
@@ -33,93 +33,30 @@ jobs:
           const { chromium } = require("playwright");
           const fs = require("fs");
 
-          /*
-           * OWU sports we want available in the dashboard.
-           *
-           * We scan the official OWU Athletics schedule for
-           * each sport and keep games that expose Watch
-           * and/or Live Stats links.
-           */
-
           const SPORTS = [
-            {
-              name: "Women's Soccer",
-              slug: "womens-soccer"
-            },
-            {
-              name: "Men's Soccer",
-              slug: "mens-soccer"
-            },
-            {
-              name: "Football",
-              slug: "football"
-            },
-            {
-              name: "Volleyball",
-              slug: "womens-volleyball"
-            },
-            {
-              name: "Field Hockey",
-              slug: "field-hockey"
-            },
-            {
-              name: "Women's Basketball",
-              slug: "womens-basketball"
-            },
-            {
-              name: "Men's Basketball",
-              slug: "mens-basketball"
-            },
-            {
-              name: "Women's Lacrosse",
-              slug: "womens-lacrosse"
-            },
-            {
-              name: "Men's Lacrosse",
-              slug: "mens-lacrosse"
-            },
-            {
-              name: "Softball",
-              slug: "softball"
-            },
-            {
-              name: "Baseball",
-              slug: "baseball"
-            },
-            {
-              name: "Women's Swimming & Diving",
-              slug: "womens-swimming-and-diving"
-            },
-            {
-              name: "Men's Swimming & Diving",
-              slug: "mens-swimming-and-diving"
-            },
-            {
-              name: "Women's Track & Field",
-              slug: "womens-track-and-field"
-            },
-            {
-              name: "Men's Track & Field",
-              slug: "mens-track-and-field"
-            },
-            {
-              name: "Women's Tennis",
-              slug: "womens-tennis"
-            },
-            {
-              name: "Men's Tennis",
-              slug: "mens-tennis"
-            },
-            {
-              name: "Women's Golf",
-              slug: "womens-golf"
-            },
-            {
-              name: "Men's Golf",
-              slug: "mens-golf"
-            }
+            { name: "Men's Baseball", slug: "baseball" },
+            { name: "Men's Basketball", slug: "mens-basketball" },
+            { name: "Men's Football", slug: "football" },
+            { name: "Men's Golf", slug: "mens-golf" },
+            { name: "Men's Lacrosse", slug: "mens-lacrosse" },
+            { name: "Men's Soccer", slug: "mens-soccer" },
+            { name: "Men's Swimming & Diving", slug: "mens-swimming-and-diving" },
+            { name: "Men's Tennis", slug: "mens-tennis" },
+            { name: "Men's Track & Field", slug: "mens-track-and-field" },
+
+            { name: "Women's Basketball", slug: "womens-basketball" },
+            { name: "Women's Field Hockey", slug: "field-hockey" },
+            { name: "Women's Golf", slug: "womens-golf" },
+            { name: "Women's Lacrosse", slug: "womens-lacrosse" },
+            { name: "Women's Soccer", slug: "womens-soccer" },
+            { name: "Women's Softball", slug: "softball" },
+            { name: "Women's Swimming & Diving", slug: "womens-swimming-and-diving" },
+            { name: "Women's Tennis", slug: "womens-tennis" },
+            { name: "Women's Track & Field", slug: "womens-track-and-field" },
+            { name: "Women's Volleyball", slug: "womens-volleyball" }
           ];
 
+          const BASE = "https://battlingbishops.com";
           const VIDEO_HOME =
             "https://www.northcoastnetwork.com/ohiowesleyan/";
 
@@ -133,55 +70,40 @@ jobs:
             if (!href) return "";
 
             try {
-              return new URL(
-                href,
-                "https://battlingbishops.com"
-              ).href;
+              return new URL(href, BASE).href;
             } catch {
               return "";
             }
           }
 
-          /*
-           * Parse common OWU/Sidearm dates into something
-           * sortable.
-           *
-           * If a date cannot be confidently parsed, we keep
-           * the original display text and leave ISO blank.
-           */
+          function parseScheduleDate(dateText, timeText) {
 
-          function buildISO(dateText, timeText) {
-
-            const combined =
+            const text =
               clean(`${dateText} ${timeText}`);
 
-            if (!combined)
+            if (!text)
               return "";
 
-            /*
-             * Add the current year only if the page omitted it.
-             */
+            if (/TBA/i.test(text))
+              return "";
 
-            const currentYear =
-              new Date().getFullYear();
+            let normalized =
+              text
+                .replace(/\([^)]*\)/g, "")
+                .replace(/\bp\.m\./gi, "PM")
+                .replace(/\ba\.m\./gi, "AM")
+                .replace(/\s+/g, " ")
+                .trim();
 
-            let candidate =
-              combined;
-
-            if (!/\b20\d{2}\b/.test(candidate)) {
-              candidate += ` ${currentYear}`;
+            if (!/\b20\d{2}\b/.test(normalized)) {
+              normalized += " 2026";
             }
 
             const parsed =
-              new Date(candidate);
+              new Date(normalized);
 
-            if (
-              Number.isNaN(
-                parsed.getTime()
-              )
-            ) {
+            if (Number.isNaN(parsed.getTime()))
               return "";
-            }
 
             return parsed.toISOString();
           }
@@ -209,7 +131,7 @@ jobs:
                 await context.newPage();
 
               const scheduleUrl =
-                `https://battlingbishops.com/sports/${sport.slug}/schedule`;
+                `${BASE}/sports/${sport.slug}/schedule/2026`;
 
               console.log(
                 `Scanning ${sport.name}: ${scheduleUrl}`
@@ -236,77 +158,33 @@ jobs:
                           .replace(/\s+/g, " ")
                           .trim();
 
-                      /*
-                       * Sidearm normally uses
-                       * .sidearm-schedule-game.
-                       *
-                       * We include several fallbacks in case
-                       * OWU changes markup.
-                       */
-
                       let rows = [
                         ...document.querySelectorAll(
-                          [
-                            ".sidearm-schedule-game",
-                            ".sidearm-schedule-game-row",
-                            "[class*='schedule-game']"
-                          ].join(",")
+                          ".sidearm-schedule-game"
                         )
                       ];
 
-                      /*
-                       * Deduplicate nested matches.
-                       */
+                      if (!rows.length) {
 
-                      rows =
-                        rows.filter(
-                          (row,index,array) =>
-                            !array.some(
-                              (other,otherIndex) =>
-                                otherIndex !== index &&
-                                other.contains(row) &&
-                                other !== row
-                            )
-                        );
+                        rows = [
+                          ...document.querySelectorAll(
+                            [
+                              ".sidearm-schedule-game-row",
+                              "[class*='schedule-game']"
+                            ].join(",")
+                          )
+                        ];
+                      }
 
                       const output = [];
 
                       for (const row of rows) {
 
-                        const links = [
-                          ...row.querySelectorAll("a")
-                        ]
-                        .map(a => ({
-                          text: clean(
-                            a.innerText ||
-                            a.getAttribute("aria-label") ||
-                            a.title
-                          ),
-                          href: a.href || ""
-                        }));
+                        const rowText =
+                          clean(row.innerText);
 
-                        const watch =
-                          links.find(link =>
-                            /watch|video|stream/i.test(
-                              link.text
-                            )
-                          );
-
-                        const stats =
-                          links.find(link =>
-                            /live stats|stats/i.test(
-                              link.text
-                            )
-                          );
-
-                        /*
-                         * We are interested in games that have
-                         * video and/or live statistics available.
-                         */
-
-                        if (!watch && !stats)
+                        if (!rowText)
                           continue;
-
 
                         const opponentNode =
                           row.querySelector(
@@ -317,26 +195,18 @@ jobs:
                             ].join(",")
                           );
 
-
                         let opponent =
                           clean(
                             opponentNode?.innerText
                           );
 
-
-                        /*
-                         * Opponent selectors occasionally include
-                         * "vs" or "at". Keep it readable.
-                         */
-
                         opponent =
                           opponent
-                            .replace(
-                              /^(vs\.?|at)\s+/i,
-                              ""
-                            )
+                            .replace(/^(vs\.?|at)\s+/i, "")
                             .trim();
 
+                        if (!opponent)
+                          continue;
 
                         const dateNode =
                           row.querySelector(
@@ -348,7 +218,6 @@ jobs:
                             ].join(",")
                           );
 
-
                         const timeNode =
                           row.querySelector(
                             [
@@ -356,7 +225,6 @@ jobs:
                               "[class*='game-time']"
                             ].join(",")
                           );
-
 
                         const locationNode =
                           row.querySelector(
@@ -366,43 +234,21 @@ jobs:
                             ].join(",")
                           );
 
-
-                        const resultNode =
-                          row.querySelector(
-                            [
-                              ".sidearm-schedule-game-result",
-                              "[class*='result']"
-                            ].join(",")
-                          );
-
-
-                        const rowText =
-                          clean(row.innerText);
-
-
                         const date =
                           clean(
                             dateNode?.innerText ||
                             dateNode?.getAttribute("datetime")
                           );
 
-
                         const time =
                           clean(
                             timeNode?.innerText
                           );
 
-
                         const location =
                           clean(
                             locationNode?.innerText
                           );
-
-
-                        /*
-                         * Try to determine home / away from the
-                         * visible schedule row.
-                         */
 
                         let site = "";
 
@@ -418,6 +264,39 @@ jobs:
                           site = "Away";
                         }
 
+                        if (
+                          /neutral/i.test(rowText)
+                        ) {
+                          site = "Neutral";
+                        }
+
+                        const links = [
+                          ...row.querySelectorAll("a")
+                        ]
+                        .map(a => ({
+                          text: clean(
+                            a.innerText ||
+                            a.getAttribute("aria-label") ||
+                            a.title
+                          ),
+                          href: a.href || ""
+                        }));
+
+                        const watch =
+                          links.find(
+                            link =>
+                              /watch|video|stream/i.test(
+                                link.text
+                              )
+                          );
+
+                        const stats =
+                          links.find(
+                            link =>
+                              /live stats|stats/i.test(
+                                link.text
+                              )
+                          );
 
                         output.push({
                           sport: sportName,
@@ -444,7 +323,6 @@ jobs:
                     }
                   );
 
-
                 for (const event of events) {
 
                   event.watchUrl =
@@ -458,7 +336,7 @@ jobs:
                     );
 
                   event.isoDate =
-                    buildISO(
+                    parseScheduleDate(
                       event.date,
                       event.time
                     );
@@ -466,9 +344,8 @@ jobs:
                   allEvents.push(event);
                 }
 
-
                 console.log(
-                  `  Found ${events.length} stream/stat events`
+                  `Found ${events.length} ${sport.name} events`
                 );
 
               }
@@ -489,15 +366,8 @@ jobs:
               }
             }
 
-
-            /*
-             * Remove duplicate events.
-             */
-
             const unique = [];
-
-            const seen =
-              new Set();
+            const seen = new Set();
 
             for (const event of allEvents) {
 
@@ -507,7 +377,7 @@ jobs:
                   event.date,
                   event.time,
                   event.opponent,
-                  event.watchUrl
+                  event.location
                 ]
                 .join("|")
                 .toLowerCase();
@@ -516,14 +386,8 @@ jobs:
                 continue;
 
               seen.add(key);
-
               unique.push(event);
             }
-
-
-            /*
-             * Sort events chronologically when possible.
-             */
 
             unique.sort(
               (a,b) => {
@@ -548,14 +412,13 @@ jobs:
               }
             );
 
-
             const result = {
 
               updatedAt:
                 new Date().toISOString(),
 
               source:
-                "https://battlingbishops.com/",
+                BASE,
 
               videoHome:
                 VIDEO_HOME,
@@ -569,7 +432,6 @@ jobs:
                 unique
             };
 
-
             fs.writeFileSync(
               "sports.json",
               JSON.stringify(
@@ -581,31 +443,23 @@ jobs:
               "\n"
             );
 
-
             console.log(
-              `Total OWU streaming/stat events found: ${unique.length}`
+              `TOTAL EVENTS FOUND: ${unique.length}`
             );
-
-
-            /*
-             * Print the first few so the Actions log is useful.
-             */
 
             console.log(
               JSON.stringify(
-                unique.slice(0,10),
+                unique.slice(0,20),
                 null,
                 2
               )
             );
-
 
             await browser.close();
 
           })().catch(error => {
 
             console.error(error);
-
             process.exit(1);
 
           });
@@ -614,33 +468,17 @@ jobs:
 
           node update-sports.js
 
-
       - name: Commit sports data if changed
         run: |
-
-          git config \
-            user.name \
-            "github-actions[bot]"
-
-          git config \
-            user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add sports.json
 
-
           if git diff --cached --quiet; then
-
             echo "No sports changes found."
-
             exit 0
-
           fi
 
-
-          git commit \
-            -m "Auto-update OWU sports live events"
-
-
+          git commit -m "Auto-update full OWU sports schedules"
           git push
