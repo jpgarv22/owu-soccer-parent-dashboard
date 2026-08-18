@@ -301,19 +301,13 @@ main{
   min-height:0;
   padding:8px;
   display:grid;
-  grid-template-columns:1.04fr .96fr;
+  grid-template-columns:1.08fr .92fr;
   gap:8px;
 }
 
 .info-column{
   min-width:0;
   min-height:0;
-}
-
-.right-column{
-  display:grid;
-  grid-template-rows:minmax(0,1.15fr) minmax(0,.85fr);
-  gap:7px;
 }
 
 .info-card{
@@ -332,13 +326,9 @@ main{
     );
 }
 
-.soccer-card{
+.sports-card{
   height:100%;
   border-left:3px solid var(--red-bright);
-}
-
-.sports-card{
-  border-right:3px solid var(--red-bright);
 }
 
 .events-card{
@@ -367,105 +357,7 @@ main{
 
 
 /* =====================================================
-   SOCCER BUTTONS
-===================================================== */
-
-.soccer-links{
-  display:flex;
-  gap:4px;
-}
-
-.soccer-links a{
-  padding:4px 7px;
-  border-radius:4px;
-  border:1px solid #f13b5e;
-  background:linear-gradient(#db1d44,#a70a2b);
-  color:#fff;
-  text-decoration:none;
-  font-size:8px;
-  font-weight:900;
-  text-transform:uppercase;
-}
-
-
-/* =====================================================
-   NEXT 3 WOMEN'S SOCCER
-===================================================== */
-
-.game-list{
-  min-height:0;
-  padding:8px 10px 0;
-  display:flex;
-  flex-direction:column;
-  gap:0;
-  justify-content:flex-start;
-}
-
-.game-row{
-  min-height:72px;
-  display:grid;
-  grid-template-columns:76px minmax(0,1fr) 86px;
-  gap:10px;
-  padding:9px 0;
-  align-items:center;
-  border-bottom:1px solid rgba(255,255,255,.11);
-}
-
-.game-row:last-child{
-  border-bottom:0;
-}
-
-.game-date{
-  color:#ff496b;
-  font-size:10px;
-  font-weight:900;
-  line-height:1.05;
-  text-transform:uppercase;
-}
-
-.next-badge{
-  display:inline-block;
-  margin-top:3px;
-  padding:2px 6px;
-  border-radius:3px;
-  background:var(--red-bright);
-  color:#fff;
-  font-size:7px;
-  font-weight:900;
-}
-
-.game-main{
-  min-width:0;
-}
-
-.game-opponent{
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  font-size:17px;
-  line-height:1.05;
-  font-weight:850;
-}
-
-.game-location{
-  margin-top:3px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  color:var(--muted);
-  font-size:9px;
-}
-
-.game-time{
-  white-space:nowrap;
-  text-align:right;
-  font-size:10px;
-  font-weight:900;
-}
-
-
-/* =====================================================
-   SPORTS LIVE
+   MY SPORTS
 ===================================================== */
 
 .my-sports-wrap{
@@ -551,9 +443,11 @@ main{
 
 .sports-live-list{
   min-height:0;
-  padding:0 9px;
+  padding:0 10px;
   display:flex;
   flex-direction:column;
+  overflow-y:auto;
+  scrollbar-width:thin;
 }
 
 .sports-empty{
@@ -566,13 +460,13 @@ main{
 }
 
 .sport-event{
-  min-height:0;
-  flex:1;
+  min-height:68px;
+  flex:none;
   display:grid;
-  grid-template-columns:82px minmax(0,1fr) auto;
-  gap:8px;
+  grid-template-columns:90px minmax(0,1fr) auto;
+  gap:10px;
   align-items:center;
-  padding:4px 0;
+  padding:7px 0;
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
@@ -584,13 +478,13 @@ main{
   color:#f24465;
   font-size:8px;
   font-weight:900;
-  line-height:1.1;
+  line-height:1.12;
   text-transform:uppercase;
 }
 
 .live-now{
   display:inline-block;
-  margin-top:3px;
+  margin-top:4px;
   padding:2px 5px;
   border-radius:3px;
   background:#ef1744;
@@ -609,33 +503,33 @@ main{
   overflow:hidden;
   text-overflow:ellipsis;
   color:#fff;
-  font-size:12px;
-  font-weight:800;
+  font-size:14px;
+  font-weight:850;
 }
 
 .sport-meta{
-  margin-top:2px;
+  margin-top:3px;
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
   color:#aaaeb5;
-  font-size:8px;
+  font-size:9px;
 }
 
 .sport-actions{
   display:flex;
-  gap:4px;
+  gap:5px;
   align-items:center;
 }
 
 .sport-action{
-  padding:4px 6px;
+  padding:5px 7px;
   border:1px solid #4d5057;
   border-radius:4px;
   background:#121419;
   color:#fff;
   text-decoration:none;
-  font-size:7px;
+  font-size:8px;
   font-weight:900;
   text-transform:uppercase;
   white-space:nowrap;
@@ -648,21 +542,22 @@ main{
 
 
 /* =====================================================
-   EVENTS
+   CAMPUS EVENTS
 ===================================================== */
 
 .event-list{
   min-height:0;
-  padding:0 9px;
-  display:grid;
-  grid-template-rows:repeat(3,1fr);
+  padding:0 10px;
+  display:block;
+  overflow-y:auto;
+  scrollbar-width:thin;
 }
 
 .event-row{
-  min-height:0;
+  min-height:48px;
   display:grid;
-  grid-template-columns:58px minmax(0,1fr);
-  gap:8px;
+  grid-template-columns:64px minmax(0,1fr);
+  gap:9px;
   align-items:center;
   border-bottom:1px solid rgba(255,255,255,.10);
 }
@@ -975,12 +870,6 @@ nav a:last-child{
     gap:9px;
   }
 
-  .right-column{
-    display:flex;
-    flex-direction:column;
-    gap:9px;
-  }
-
   .info-card{
     display:block;
     height:auto;
@@ -995,59 +884,24 @@ nav a:last-child{
     font-size:10px;
   }
 
-  .soccer-links{
-    gap:4px;
-  }
-
-  .soccer-links a{
-    padding:4px 6px;
-    font-size:8px;
-  }
-
-  .game-list,
-  .event-list{
-    display:block;
-    padding:4px 10px;
-  }
-
-  .game-row{
-    min-height:61px;
-    padding:6px 0;
-    grid-template-columns:68px minmax(0,1fr) auto;
-  }
-
-  .game-date{
-    font-size:9px;
-  }
-
-  .game-opponent{
-    font-size:13px;
-  }
-
-  .game-location{
-    font-size:9px;
-  }
-
-  .game-time{
-    font-size:9px;
-  }
-
   .sports-card{
-    min-height:230px;
+    min-height:280px;
   }
 
   .sports-live-list{
-    min-height:190px;
+    min-height:220px;
+    max-height:none;
+    overflow:visible;
   }
 
   .sport-event{
-    min-height:62px;
+    min-height:78px;
     flex:none;
-    grid-template-columns:76px minmax(0,1fr);
+    grid-template-columns:82px minmax(0,1fr);
     grid-template-areas:
       "label main"
       "actions actions";
-    padding:7px 0;
+    padding:8px 0;
   }
 
   .sport-label{
@@ -1060,11 +914,12 @@ nav a:last-child{
   }
 
   .sport-opponent{
-    font-size:12px;
+    font-size:13px;
   }
 
   .sport-meta{
-    font-size:8px;
+    font-size:9px;
+    white-space:normal;
   }
 
   .sport-actions{
@@ -1073,8 +928,8 @@ nav a:last-child{
   }
 
   .sport-action{
-    padding:4px 7px;
-    font-size:7px;
+    padding:5px 8px;
+    font-size:8px;
   }
 
   .sports-menu{
@@ -1082,10 +937,14 @@ nav a:last-child{
     right:0;
   }
 
+  .event-list{
+    overflow:visible;
+  }
+
   .event-row{
-    min-height:43px;
+    min-height:47px;
     padding:4px 0;
-    grid-template-columns:60px minmax(0,1fr);
+    grid-template-columns:62px minmax(0,1fr);
   }
 
   .event-date{
@@ -1225,43 +1084,34 @@ nav a:last-child{
 
   </div>
 
+  <!-- CONTENT -->
+
   <div class="info-body">
 
+    <!-- MY SPORTS -->
+
     <div class="info-column">
-
-      <section class="info-card soccer-card">
-
-        <div class="info-title-row">
-          <div class="info-title">Women's Soccer • Next 3</div>
-
-          <div class="soccer-links">
-            <a href="https://battlingbishops.com/sports/womens-soccer/schedule" target="_blank" rel="noopener">Schedule</a>
-            <a href="https://battlingbishops.com/sports/womens-soccer/roster" target="_blank" rel="noopener">Roster</a>
-            <a href="https://battlingbishops.com/sports/womens-soccer/stats" target="_blank" rel="noopener">Stats</a>
-          </div>
-        </div>
-
-        <div class="game-list" id="gameList"></div>
-
-      </section>
-
-    </div>
-
-    <div class="info-column right-column">
 
       <section class="info-card sports-card">
 
         <div class="info-title-row">
 
-          <div class="info-title">🔴 OWU Sports Live</div>
+          <div class="info-title">
+            My Sports • Upcoming
+          </div>
 
           <div class="my-sports-wrap">
 
-            <button class="my-sports-button" id="mySportsButton" type="button">
+            <button
+            class="my-sports-button"
+            id="mySportsButton"
+            type="button">
               My Sports ▾
             </button>
 
-            <div class="sports-menu" id="sportsMenu">
+            <div
+            class="sports-menu"
+            id="sportsMenu">
 
               <div class="sports-menu-title">
                 Sports I Want To See
@@ -1270,9 +1120,14 @@ nav a:last-child{
               <div id="sportsChoices"></div>
 
               <div class="sports-menu-actions">
-                <button class="sports-menu-done" id="sportsDoneButton" type="button">
+
+                <button
+                class="sports-menu-done"
+                id="sportsDoneButton"
+                type="button">
                   Done
                 </button>
+
               </div>
 
             </div>
@@ -1281,19 +1136,37 @@ nav a:last-child{
 
         </div>
 
-        <div class="sports-live-list" id="sportsLiveList">
-          <div class="sports-empty">Loading OWU sports…</div>
+        <div
+        class="sports-live-list"
+        id="sportsLiveList">
+
+          <div class="sports-empty">
+            Loading your OWU sports…
+          </div>
+
         </div>
 
       </section>
 
-      <section class="info-card events-card">
+    </div>
+
+
+    <!-- CAMPUS EVENTS -->
+
+    <div class="info-column">
+
+      <section class="info-card events-card" style="height:100%;">
 
         <div class="info-title-row">
-          <div class="info-title">Upcoming OWU Events</div>
+          <div class="info-title">
+            Upcoming OWU Campus Events
+          </div>
         </div>
 
-        <div class="event-list" id="eventList"></div>
+        <div
+        class="event-list"
+        id="eventList">
+        </div>
 
       </section>
 
@@ -1301,20 +1174,39 @@ nav a:last-child{
 
   </div>
 
+
+  <!-- BRANDING -->
+
   <div class="owu-footer">
 
-    <div class="owu-shield">OWU</div>
+    <div class="owu-shield">
+      OWU
+    </div>
 
     <div>
-      <div class="owu-name">Ohio Wesleyan</div>
-      <div class="bishops">BATTLING BISHOPS</div>
+
+      <div class="owu-name">
+        Ohio Wesleyan
+      </div>
+
+      <div class="bishops">
+        BATTLING BISHOPS
+      </div>
+
     </div>
 
     <div class="footer-right">
-      <div class="sync" id="syncStatus">
-        Camera auto-sync active • Dashboard v2.2.1
+
+      <div
+      class="sync"
+      id="syncStatus">
+        Camera auto-sync active • Dashboard v2.3
       </div>
-      <div class="go-bishops">Go Bishops!</div>
+
+      <div class="go-bishops">
+        Go Bishops!
+      </div>
+
     </div>
 
   </div>
@@ -1327,9 +1219,14 @@ nav a:last-child{
 
 </main>
 
+
 <nav>
 
-<a href="https://www.owu.edu/academics/academic-resources/academic-calendar/" target="_blank" rel="noopener">
+<a
+href="https://www.owu.edu/academics/academic-resources/academic-calendar/"
+target="_blank"
+rel="noopener">
+
   <span class="nav-icon">
     <svg viewBox="0 0 24 24">
       <rect x="3" y="5" width="18" height="16" rx="2"></rect>
@@ -1341,10 +1238,16 @@ nav a:last-child{
       <path d="M15 14h2"></path>
     </svg>
   </span>
+
   <span>Academic Calendar</span>
+
 </a>
 
-<a href="https://battlingbishops.com" target="_blank" rel="noopener">
+<a
+href="https://battlingbishops.com"
+target="_blank"
+rel="noopener">
+
   <span class="nav-icon">
     <svg viewBox="0 0 24 24">
       <path d="M8 4h8v4c0 4-1.8 7-4 7s-4-3-4-7z"></path>
@@ -1354,10 +1257,16 @@ nav a:last-child{
       <path d="M8 21h8"></path>
     </svg>
   </span>
+
   <span>Athletics</span>
+
 </a>
 
-<a href="https://www.owu.edu/calendars/" target="_blank" rel="noopener">
+<a
+href="https://www.owu.edu/calendars/"
+target="_blank"
+rel="noopener">
+
   <span class="nav-icon">
     <svg viewBox="0 0 24 24">
       <rect x="3" y="5" width="18" height="16" rx="2"></rect>
@@ -1367,26 +1276,40 @@ nav a:last-child{
       <path d="M12 13l1.2 2.5 2.8.4-2 2 .5 2.8-2.5-1.3-2.5 1.3.5-2.8-2-2 2.8-.4z"></path>
     </svg>
   </span>
+
   <span>Campus Events</span>
+
 </a>
 
-<a href="https://www.owu.edu/about/campus-map/" target="_blank" rel="noopener">
+<a
+href="https://www.owu.edu/about/campus-map/"
+target="_blank"
+rel="noopener">
+
   <span class="nav-icon">
     <svg viewBox="0 0 24 24">
       <path d="M12 22s7-7.2 7-13a7 7 0 1 0-14 0c0 5.8 7 13 7 13z"></path>
       <circle cx="12" cy="9" r="2.5"></circle>
     </svg>
   </span>
+
   <span>Campus Map</span>
+
 </a>
 
 </nav>
+
 
 <script>
 
 /* =====================================================
    OWU PARENT DASHBOARD
-   VERSION 2.2.1
+   VERSION 2.3
+===================================================== */
+
+
+/* =====================================================
+   CAMERAS
 ===================================================== */
 
 const CAMERA_FALLBACKS = {
@@ -1395,14 +1318,23 @@ const CAMERA_FALLBACKS = {
   jaywalk:"l97JBARWgrA"
 };
 
-function renderCamera(tileId,name,videoId){
+
+function renderCamera(
+  tileId,
+  name,
+  videoId
+){
 
   const tile =
     document.getElementById(tileId);
 
   tile
-    .querySelectorAll("iframe,.fallback,.camera-placeholder")
-    .forEach(element => element.remove());
+    .querySelectorAll(
+      "iframe,.fallback,.camera-placeholder"
+    )
+    .forEach(
+      element => element.remove()
+    );
 
   if(!videoId){
 
@@ -1460,6 +1392,7 @@ function renderCamera(tileId,name,videoId){
   tile.appendChild(link);
 }
 
+
 async function loadCameraLinks(){
 
   let cameras =
@@ -1505,7 +1438,7 @@ async function loadCameraLinks(){
             }
           )
           +
-          " • Dashboard v2.2.1";
+          " • Dashboard v2.3";
       }
     }
   }
@@ -1538,7 +1471,9 @@ async function loadCameraLinks(){
 }
 
 
-/* CLOCK */
+/* =====================================================
+   CLOCK
+===================================================== */
 
 function updateClock(){
 
@@ -1574,7 +1509,9 @@ function updateClock(){
 }
 
 
-/* WEATHER */
+/* =====================================================
+   WEATHER
+===================================================== */
 
 const weatherCodes = {
   0:"Clear",
@@ -1600,13 +1537,16 @@ const weatherCodes = {
   99:"Severe thunderstorms"
 };
 
+
 function getWeatherIcon(code){
 
   if(code === 0) return "☀️";
   if(code === 1) return "🌤️";
   if(code === 2) return "⛅";
   if(code === 3) return "☁️";
-  if(code === 45 || code === 48) return "🌫️";
+
+  if(code === 45 || code === 48)
+    return "🌫️";
 
   if(code === 51 || code === 53 || code === 55)
     return "🌦️";
@@ -1625,6 +1565,7 @@ function getWeatherIcon(code){
 
   return "☁️";
 }
+
 
 async function loadWeather(){
 
@@ -1708,265 +1649,9 @@ async function loadWeather(){
 }
 
 
-/* WOMEN'S SOCCER NEXT 3 */
-
-const games = [
-
-{
-  date:"2026-08-21T16:00:00-04:00",
-  opponent:"Albion (Exhibition)",
-  site:"Away",
-  location:"Albion, Michigan"
-},
-
-{
-  date:"2026-08-23T15:00:00-04:00",
-  opponent:"Thomas More (Exhibition)",
-  site:"Away",
-  location:"Crestview Hills, Kentucky"
-},
-
-{
-  date:"2026-08-25T17:30:00-04:00",
-  opponent:"Earlham (Exhibition)",
-  site:"Away",
-  location:"Richmond, Indiana"
-},
-
-{
-  date:"2026-09-01T19:00:00-04:00",
-  opponent:"Transylvania",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-09-04T18:00:00-04:00",
-  opponent:"Saint Francis",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-09-05T16:00:00-04:00",
-  opponent:"Sewanee",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-09-12T15:00:00-04:00",
-  opponent:"Asbury",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-09-16T19:00:00-04:00",
-  opponent:"Franciscan",
-  site:"Away",
-  location:"Steubenville, Ohio"
-},
-
-{
-  date:"2026-09-19T16:00:00-04:00",
-  opponent:"Heidelberg",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-09-20T16:00:00-04:00",
-  opponent:"Marietta",
-  site:"Away",
-  location:"Marietta, Ohio"
-},
-
-{
-  date:"2026-09-22T17:00:00-04:00",
-  opponent:"Hanover",
-  site:"Away",
-  location:"Hanover, Indiana"
-},
-
-{
-  date:"2026-09-26T12:00:00-04:00",
-  opponent:"Bethany",
-  site:"Away",
-  location:"Bethany, West Virginia",
-  timeTBA:true
-},
-
-{
-  date:"2026-09-29T19:00:00-04:00",
-  opponent:"Capital",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-10-03T16:00:00-04:00",
-  opponent:"Wooster",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-10-06T15:30:00-04:00",
-  opponent:"Kenyon",
-  site:"Away",
-  location:"Gambier, Ohio"
-},
-
-{
-  date:"2026-10-10T13:00:00-04:00",
-  opponent:"John Carroll",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-10-17T14:30:00-04:00",
-  opponent:"DePauw",
-  site:"Away",
-  location:"Greencastle, Indiana"
-},
-
-{
-  date:"2026-10-20T19:00:00-04:00",
-  opponent:"Oberlin",
-  site:"Away",
-  location:"Oberlin, Ohio"
-},
-
-{
-  date:"2026-10-24T13:00:00-04:00",
-  opponent:"Wittenberg",
-  site:"Home",
-  location:"Jay Martin Soccer Complex"
-},
-
-{
-  date:"2026-10-31T12:00:00-04:00",
-  opponent:"Denison",
-  site:"Away",
-  location:"Granville, Ohio"
-}
-
-];
-
-function renderGames(){
-
-  const now =
-    new Date();
-
-  const upcoming =
-    games
-      .filter(
-        game =>
-          new Date(game.date) >
-          now
-      )
-      .slice(0,3);
-
-  const container =
-    document.getElementById(
-      "gameList"
-    );
-
-  container.innerHTML =
-    "";
-
-  upcoming.forEach(
-    (game,index) => {
-
-      const gameDate =
-        new Date(game.date);
-
-      const dayText =
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone:"America/New_York",
-            weekday:"short"
-          }
-        )
-        .format(gameDate);
-
-      const dateText =
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone:"America/New_York",
-            month:"short",
-            day:"numeric"
-          }
-        )
-        .format(gameDate);
-
-      const timeText =
-        game.timeTBA
-        ? "TBA"
-        : new Intl.DateTimeFormat(
-            "en-US",
-            {
-              timeZone:"America/New_York",
-              hour:"numeric",
-              minute:"2-digit"
-            }
-          )
-          .format(gameDate);
-
-      const prefix =
-        game.site === "Home"
-        ? "vs."
-        : "at";
-
-      const row =
-        document.createElement(
-          "div"
-        );
-
-      row.className =
-        "game-row";
-
-      row.innerHTML = `
-
-        <div class="game-date">
-          ${dayText}<br>
-          ${dateText}
-          ${
-            index === 0
-            ? '<br><span class="next-badge">Next</span>'
-            : ''
-          }
-        </div>
-
-        <div class="game-main">
-          <div class="game-opponent">
-            ${prefix} ${game.opponent}
-          </div>
-          <div class="game-location">
-            ${game.location}
-          </div>
-        </div>
-
-        <div class="game-time">
-          ${timeText}
-          ${game.timeTBA ? "" : " ET"}
-        </div>
-
-      `;
-
-      container.appendChild(
-        row
-      );
-    }
-  );
-}
-
-
-/* CAMPUS EVENTS */
+/* =====================================================
+   CAMPUS EVENTS
+===================================================== */
 
 const owuEvents = [
 
@@ -2020,6 +1705,7 @@ const owuEvents = [
 
 ];
 
+
 function renderEvents(){
 
   const now =
@@ -2031,8 +1717,7 @@ function renderEvents(){
         event =>
           new Date(event.end) >
           now
-      )
-      .slice(0,3);
+      );
 
   const container =
     document.getElementById(
@@ -2068,6 +1753,7 @@ function renderEvents(){
         "event-row";
 
       row.innerHTML = `
+
         <div class="event-date">
           ${dateText}
         </div>
@@ -2075,6 +1761,7 @@ function renderEvents(){
         <div class="event-name">
           ${event.title}
         </div>
+
       `;
 
       container.appendChild(
@@ -2085,15 +1772,19 @@ function renderEvents(){
 }
 
 
-/* SPORTS LIVE + MY SPORTS */
+/* =====================================================
+   SPORTS
+===================================================== */
 
 const SPORTS_STORAGE_KEY =
   "owuDashboardSelectedSports";
+
 
 let sportsData = {
   events:[],
   availableSports:[]
 };
+
 
 function getSelectedSports(){
 
@@ -2122,6 +1813,7 @@ function getSelectedSports(){
   ];
 }
 
+
 function saveSelectedSports(
   sports
 ){
@@ -2131,6 +1823,21 @@ function saveSelectedSports(
     JSON.stringify(sports)
   );
 }
+
+
+function sportDisplayName(sport){
+
+  const names = {
+    "Baseball":"Men's Baseball",
+    "Field Hockey":"Women's Field Hockey",
+    "Football":"Men's Football",
+    "Softball":"Women's Softball",
+    "Volleyball":"Women's Volleyball"
+  };
+
+  return names[sport] || sport;
+}
+
 
 function buildSportsChoices(){
 
@@ -2142,17 +1849,11 @@ function buildSportsChoices(){
   const selected =
     getSelectedSports();
 
-  const sportNameMap = {
-    "Baseball":"Men's Baseball",
-    "Field Hockey":"Women's Field Hockey",
-    "Football":"Men's Football",
-    "Softball":"Women's Softball",
-    "Volleyball":"Women's Volleyball"
-  };
-
-  const rawAvailable =
+  const available =
     sportsData.availableSports?.length
+
     ? sportsData.availableSports
+
     : [
         ...new Set(
           sportsData.events
@@ -2164,29 +1865,19 @@ function buildSportsChoices(){
         )
       ];
 
-  const available =
-    rawAvailable
-      .map(
-        originalSport => ({
-          originalSport,
-          displaySport:
-            sportNameMap[originalSport]
-            ||
-            originalSport
-        })
-      )
-      .sort(
-        (a,b) =>
-          a.displaySport.localeCompare(
-            b.displaySport
-          )
-      );
-
   container.innerHTML =
     "";
 
-  available.forEach(
-    ({originalSport,displaySport}) => {
+  available
+    .slice()
+    .sort(
+      (a,b) =>
+        sportDisplayName(a).localeCompare(
+          sportDisplayName(b)
+        )
+    )
+    .forEach(
+    sport => {
 
       const label =
         document.createElement(
@@ -2205,11 +1896,11 @@ function buildSportsChoices(){
         "checkbox";
 
       checkbox.value =
-        originalSport;
+        sport;
 
       checkbox.checked =
         selected.includes(
-          originalSport
+          sport
         );
 
       const text =
@@ -2218,7 +1909,7 @@ function buildSportsChoices(){
         );
 
       text.textContent =
-        displaySport;
+        sportDisplayName(sport);
 
       label.appendChild(
         checkbox
@@ -2234,6 +1925,7 @@ function buildSportsChoices(){
     }
   );
 }
+
 
 function parseSportsDate(
   event
@@ -2281,14 +1973,18 @@ function parseSportsDate(
 
   const updatedYear =
     sportsData.updatedAt
+
     ? new Date(
         sportsData.updatedAt
       ).getFullYear()
+
     : new Date().getFullYear();
 
   const candidate =
     /\b20\d{2}\b/.test(cleaned)
+
     ? cleaned
+
     : `${cleaned} ${updatedYear}`;
 
   const parsed =
@@ -2304,6 +2000,7 @@ function parseSportsDate(
 
   return parsed;
 }
+
 
 function isLikelyLive(
   event
@@ -2329,6 +2026,7 @@ function isLikelyLive(
       3 * 60 * 60 * 1000
   );
 }
+
 
 function sportsDisplayDate(
   event
@@ -2359,6 +2057,27 @@ function sportsDisplayDate(
   );
 }
 
+
+function sportsOpponentDisplay(event){
+
+  const opponent =
+    event.opponent ||
+    "Upcoming event";
+
+  const location =
+    (event.location || "")
+      .toLowerCase();
+
+  const home =
+    location.includes("delaware") ||
+    location.includes("jay martin") ||
+    location.includes("selby") ||
+    location.includes("branch rickey");
+
+  return `${home ? "vs." : "at"} ${opponent}`;
+}
+
+
 function renderSportsLive(){
 
   const container =
@@ -2387,11 +2106,19 @@ function renderSportsLive(){
       const liveB =
         isLikelyLive(b);
 
-      if(liveA && !liveB)
+      if(
+        liveA &&
+        !liveB
+      ){
         return -1;
+      }
 
-      if(liveB && !liveA)
+      if(
+        liveB &&
+        !liveA
+      ){
         return 1;
+      }
 
       const dateA =
         parseSportsDate(a);
@@ -2399,7 +2126,10 @@ function renderSportsLive(){
       const dateB =
         parseSportsDate(b);
 
-      if(dateA && dateB){
+      if(
+        dateA &&
+        dateB
+      ){
         return dateA - dateB;
       }
 
@@ -2407,10 +2137,25 @@ function renderSportsLive(){
     }
   );
 
+  const now =
+    new Date();
+
   events =
-    events.slice(
-      0,
-      3
+    events.filter(
+      event => {
+
+        const date =
+          parseSportsDate(event);
+
+        return (
+          !date ||
+          date >=
+            new Date(
+              now.getTime() -
+              3 * 60 * 60 * 1000
+            )
+        );
+      }
     );
 
   container.innerHTML =
@@ -2419,13 +2164,19 @@ function renderSportsLive(){
   if(!events.length){
 
     container.innerHTML = `
+
       <div class="sports-empty">
-        No upcoming stream information
+
+        No upcoming coverage information
         for your selected sports yet.
+
         <br><br>
+
         Use <strong>My Sports</strong>
         to choose additional teams.
+
       </div>
+
     `;
 
     return;
@@ -2461,39 +2212,52 @@ function renderSportsLive(){
 
       const watchButton =
         watchUrl
+
         ? `
           <a
           class="sport-action watch"
           href="${watchUrl}"
           target="_blank"
           rel="noopener">
+
             ${live ? "Watch Live" : "Watch"}
+
           </a>
         `
+
         : "";
 
       const statsButton =
         statsUrl
+
         ? `
           <a
           class="sport-action"
           href="${statsUrl}"
           target="_blank"
           rel="noopener">
+
             Stats
+
           </a>
         `
+
         : "";
 
       row.innerHTML = `
 
         <div class="sport-label">
 
-          ${event.sport || "OWU Sport"}
+          ${sportDisplayName(
+            event.sport ||
+            "OWU Sport"
+          )}
 
           ${
             live
+
             ? '<br><span class="live-now">LIVE NOW</span>'
+
             : ''
           }
 
@@ -2502,11 +2266,7 @@ function renderSportsLive(){
         <div class="sport-main">
 
           <div class="sport-opponent">
-            ${
-              event.opponent
-              ? event.opponent
-              : "Upcoming event"
-            }
+            ${sportsOpponentDisplay(event)}
           </div>
 
           <div class="sport-meta">
@@ -2524,8 +2284,11 @@ function renderSportsLive(){
         </div>
 
         <div class="sport-actions">
+
           ${watchButton}
+
           ${statsButton}
+
         </div>
 
       `;
@@ -2536,6 +2299,7 @@ function renderSportsLive(){
     }
   );
 }
+
 
 async function loadSports(){
 
@@ -2550,6 +2314,7 @@ async function loadSports(){
       );
 
     if(!response.ok){
+
       throw new Error(
         "sports.json unavailable"
       );
@@ -2568,6 +2333,7 @@ async function loadSports(){
     }
 
     buildSportsChoices();
+
     renderSportsLive();
 
   }
@@ -2584,21 +2350,28 @@ async function loadSports(){
         "sportsLiveList"
       )
       .innerHTML = `
+
         <div class="sports-empty">
+
           OWU sports information
           is temporarily unavailable.
+
         </div>
+
       `;
   }
 }
 
 
-/* MY SPORTS MENU */
+/* =====================================================
+   MY SPORTS MENU
+===================================================== */
 
 const sportsMenu =
   document.getElementById(
     "sportsMenu"
   );
+
 
 document
   .getElementById(
@@ -2615,6 +2388,7 @@ document
       );
     }
   );
+
 
 document
   .getElementById(
@@ -2637,7 +2411,9 @@ document
 
       const finalSelection =
         selected.length
+
         ? selected
+
         : [
             "Women's Soccer"
           ];
@@ -2651,9 +2427,11 @@ document
       );
 
       buildSportsChoices();
+
       renderSportsLive();
     }
   );
+
 
 document.addEventListener(
   "click",
@@ -2675,39 +2453,44 @@ document.addEventListener(
 );
 
 
-/* START DASHBOARD */
+/* =====================================================
+   START DASHBOARD
+===================================================== */
 
 loadCameraLinks();
+
 updateClock();
+
 loadWeather();
-renderGames();
+
 renderEvents();
+
 loadSports();
+
 
 setInterval(
   updateClock,
   1000
 );
 
+
 setInterval(
   loadWeather,
   600000
 );
 
-setInterval(
-  renderGames,
-  60000
-);
 
 setInterval(
   renderEvents,
   60000
 );
 
+
 setInterval(
   loadCameraLinks,
   1800000
 );
+
 
 setInterval(
   loadSports,
