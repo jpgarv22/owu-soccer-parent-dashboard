@@ -110,8 +110,8 @@ main{
 }
 
 .camera-name{
-  font-size:14px;
-  font-weight:850;
+  font-size:16px;
+  font-weight:900;
 }
 
 .live{
@@ -181,7 +181,7 @@ main{
   grid-template-columns:1fr auto;
   align-items:center;
   gap:20px;
-  padding:15px 21px;
+  padding:13px 21px 19px;
   background:
     radial-gradient(
       ellipse at 62% 100%,
@@ -235,8 +235,9 @@ main{
 }
 
 .date{
-  margin-top:7px;
+  margin-top:8px;
   font-size:16px;
+  line-height:1.15;
   font-weight:600;
 }
 
@@ -287,7 +288,8 @@ main{
 
 .weather-detail{
   grid-area:detail;
-  margin-top:3px;
+  margin-top:5px;
+  padding-bottom:2px;
   font-size:10px;
   opacity:.9;
 }
@@ -460,13 +462,13 @@ main{
 }
 
 .sport-event{
-  min-height:68px;
+  min-height:76px;
   flex:none;
   display:grid;
-  grid-template-columns:90px minmax(0,1fr) auto;
-  gap:10px;
+  grid-template-columns:105px minmax(0,1fr) auto;
+  gap:12px;
   align-items:center;
-  padding:7px 0;
+  padding:8px 0;
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
@@ -476,8 +478,8 @@ main{
 
 .sport-label{
   color:#f24465;
-  font-size:8px;
-  font-weight:900;
+  font-size:10px;
+  font-weight:950;
   line-height:1.12;
   text-transform:uppercase;
 }
@@ -512,8 +514,8 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  color:#aaaeb5;
-  font-size:9px;
+  color:#c3c5ca;
+  font-size:10.5px;
 }
 
 .sport-actions{
@@ -815,8 +817,8 @@ nav a:last-child{
   }
 
   .owu-header{
-    min-height:116px;
-    padding:13px 14px;
+    min-height:122px;
+    padding:12px 14px 18px;
   }
 
   .owu-header::before{
@@ -892,21 +894,24 @@ nav a:last-child{
     min-height:220px;
     max-height:none;
     overflow:visible;
+    padding:0 12px;
   }
 
   .sport-event{
-    min-height:78px;
+    min-height:84px;
     flex:none;
-    grid-template-columns:82px minmax(0,1fr);
+    grid-template-columns:112px minmax(0,1fr);
     grid-template-areas:
       "label main"
       "actions actions";
-    padding:8px 0;
+    gap:4px 12px;
+    padding:10px 0;
   }
 
   .sport-label{
     grid-area:label;
-    font-size:8px;
+    font-size:11px;
+    letter-spacing:.02em;
   }
 
   .sport-main{
@@ -914,12 +919,15 @@ nav a:last-child{
   }
 
   .sport-opponent{
-    font-size:13px;
+    font-size:16px;
+    line-height:1.12;
   }
 
   .sport-meta{
-    font-size:9px;
+    font-size:11px;
+    line-height:1.25;
     white-space:normal;
+    color:#c5c7cc;
   }
 
   .sport-actions{
@@ -1200,7 +1208,7 @@ nav a:last-child{
       <div
       class="sync"
       id="syncStatus">
-        Camera auto-sync active • Dashboard v2.4
+        Camera auto-sync active • Dashboard v2.5
       </div>
 
       <div class="go-bishops">
@@ -1304,7 +1312,7 @@ rel="noopener">
 
 /* =====================================================
    OWU PARENT DASHBOARD
-   VERSION 2.4
+   VERSION 2.5
 ===================================================== */
 
 
@@ -1438,7 +1446,7 @@ async function loadCameraLinks(){
             }
           )
           +
-          " • Dashboard v2.4";
+          " • Dashboard v2.5";
       }
     }
   }
@@ -1948,10 +1956,30 @@ function buildSportsChoices(){
 }
 
 
+function extractOfficialTime(event){
+  const combined = `${event.time || ""} ${event.date || ""}`;
+  const match = combined.match(
+    /\b(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)\b/i
+  );
+
+  if(!match){
+    return null;
+  }
+
+  let hour = Number(match[1]);
+  const minute = Number(match[2] || 0);
+  const meridiem = match[3].toLowerCase();
+
+  if(meridiem.startsWith("p") && hour !== 12) hour += 12;
+  if(meridiem.startsWith("a") && hour === 12) hour = 0;
+
+  return { hour, minute };
+}
+
+
 function parseSportsDate(event){
 
   const dateText = String(event.date || "");
-  const timeText = String(event.time || "");
 
   const monthMatch = dateText.match(
     /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+(\d{1,2})\b/i
@@ -1974,23 +2002,13 @@ function parseSportsDate(event){
     ? new Date(sportsData.updatedAt).getFullYear()
     : new Date().getFullYear();
 
-  let hour = 12;
-  let minute = 0;
+  const officialTime = extractOfficialTime(event);
+  const hour = officialTime ? officialTime.hour : 12;
+  const minute = officialTime ? officialTime.minute : 0;
 
-  const timeMatch = timeText.match(
-    /\b(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)\b/i
-  );
-
-  if(timeMatch){
-    hour = Number(timeMatch[1]);
-    minute = Number(timeMatch[2] || 0);
-    const meridiem = timeMatch[3].toLowerCase();
-    if(meridiem.startsWith("p") && hour !== 12) hour += 12;
-    if(meridiem.startsWith("a") && hour === 12) hour = 0;
-  }
-
-  // OWU schedule times are Delaware, Ohio local time.
-  // Convert that Eastern wall-clock time to a real instant, accounting for DST.
+  // OWU publishes schedule times in Delaware, Ohio local time.
+  // Build the real UTC instant represented by that Eastern wall-clock
+  // time, then let Intl display it in the viewer's device time zone.
   const month = months[monthMatch[1].toLowerCase()];
   const day = Number(monthMatch[2]);
   const wallUtc = Date.UTC(year, month, day, hour, minute, 0);
@@ -1998,19 +2016,30 @@ function parseSportsDate(event){
   const probe = new Date(wallUtc);
   const easternParts = new Intl.DateTimeFormat("en-US", {
     timeZone:"America/New_York",
-    year:"numeric", month:"2-digit", day:"2-digit",
-    hour:"2-digit", minute:"2-digit", hourCycle:"h23"
+    year:"numeric",
+    month:"2-digit",
+    day:"2-digit",
+    hour:"2-digit",
+    minute:"2-digit",
+    hourCycle:"h23"
   }).formatToParts(probe);
 
-  const part = type => Number(easternParts.find(p => p.type === type)?.value || 0);
+  const part = type =>
+    Number(easternParts.find(p => p.type === type)?.value || 0);
+
   const easternAsUtc = Date.UTC(
-    part("year"), part("month") - 1, part("day"), part("hour"), part("minute"), 0
+    part("year"),
+    part("month") - 1,
+    part("day"),
+    part("hour"),
+    part("minute"),
+    0
   );
+
   const offset = easternAsUtc - wallUtc;
 
   return new Date(wallUtc - offset);
 }
-
 
 function isLikelyLive(
   event
@@ -2041,29 +2070,34 @@ function isLikelyLive(
 function sportsDisplayDate(event){
 
   const parsed = parseSportsDate(event);
+  const officialTime = extractOfficialTime(event);
 
   if(parsed){
-    const hasOfficialTime = /\d/.test(String(event.time || ""));
-
     const options = {
       month:"short",
       day:"numeric"
     };
 
-    if(hasOfficialTime){
+    if(officialTime){
       options.hour = "numeric";
       options.minute = "2-digit";
       options.timeZoneName = "short";
     }
 
-    // No timeZone is specified intentionally: the browser/device's
-    // current local time zone is used for parents wherever they are.
+    // Intentionally omit timeZone: this displays the event in the
+    // viewer's current device/browser time zone (Arizona, Ohio, etc.).
     return new Intl.DateTimeFormat("en-US", options).format(parsed);
+  }
+
+  if(/TBA/i.test(String(event.date || ""))){
+    const monthDay = String(event.date || "").match(
+      /\b(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+\d{1,2}\b/i
+    );
+    return monthDay ? `${monthDay[0]} • TBA` : "TBA";
   }
 
   return event.date || event.time || "Upcoming";
 }
-
 
 function sportsOpponentDisplay(event){
 
@@ -2075,13 +2109,20 @@ function sportsOpponentDisplay(event){
     (event.location || "")
       .toLowerCase();
 
-  const home =
-    location.includes("delaware") ||
-    location.includes("jay martin") ||
-    location.includes("selby") ||
-    location.includes("branch rickey");
+  const explicitSite = String(event.site || "").toLowerCase();
 
-  return `${home ? "vs." : "at"} ${opponent}`;
+  const home =
+    explicitSite === "home" ||
+    (!explicitSite && (
+      location.includes("delaware") ||
+      location.includes("jay martin") ||
+      location.includes("selby") ||
+      location.includes("branch rickey")
+    ));
+
+  const away = explicitSite === "away";
+
+  return `${home ? "vs." : away ? "at" : "vs."} ${opponent}`;
 }
 
 
