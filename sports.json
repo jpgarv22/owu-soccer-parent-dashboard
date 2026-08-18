@@ -1,6 +1,88 @@
 {
-  "updatedAt": "2026-08-18T13:08:48.097Z",
-  "source": "https://battlingbishops.com/coverage",
+  "updatedAt": "2026-08-18T13:20:40.056Z",
+  "source": "https://battlingbishops.com/",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
-  "events": []
+  "availableSports": [
+    "Women's Soccer",
+    "Men's Soccer",
+    "Football",
+    "Volleyball",
+    "Field Hockey",
+    "Women's Basketball",
+    "Men's Basketball",
+    "Women's Lacrosse",
+    "Men's Lacrosse",
+    "Softball",
+    "Baseball",
+    "Women's Swimming & Diving",
+    "Men's Swimming & Diving",
+    "Women's Track & Field",
+    "Men's Track & Field",
+    "Women's Tennis",
+    "Men's Tennis",
+    "Women's Golf",
+    "Men's Golf"
+  ],
+  "events": [
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Transylvania",
+      "date": "Sep 1 (Tue) 7 p.m.",
+      "time": "",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule",
+      "isoDate": ""
+    },
+    {
+      "sport": "Men's Soccer",
+      "opponent": "Ashland (Exh.)",
+      "date": "Aug 22 (Sat) 6:30 p.m.",
+      "time": "",
+      "location": "Ashland, Ohio",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/msoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule",
+      "isoDate": ""
+    },
+    {
+      "sport": "Football",
+      "opponent": "Bluffton",
+      "date": "Sep 3 (Thu) 7 p.m.",
+      "time": "",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule",
+      "isoDate": ""
+    },
+    {
+      "sport": "Volleyball",
+      "opponent": "Heidelberg",
+      "date": "Sep 1 (Tue) 7 p.m.",
+      "time": "",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule",
+      "isoDate": ""
+    },
+    {
+      "sport": "Field Hockey",
+      "opponent": "Lycoming",
+      "date": "Sep 1 (Tue) 3:30 p.m.",
+      "time": "",
+      "location": "Williamsport, Pa.",
+      "site": "Away",
+      "watchUrl": "https://go.flocollege.com/partner/landmark?utm_medium=partner&utm_source=multiple&utm_content=landingpage&utm_term=lycoming-college&contract_id=0063m00000u4k10aaa",
+      "statsUrl": "https://lycomingathletics.com/sidearmstats/fhockey/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule",
+      "isoDate": ""
+    }
+  ]
 }
