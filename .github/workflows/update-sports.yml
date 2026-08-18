@@ -1,0 +1,339 @@
+name: Update OWU sports live events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-sports:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm install playwright
+          npx playwright install --with-deps chromium
+
+      - name: Collect OWU live sports
+        run: |
+          cat > update-sports.js <<'EOF'
+          const { chromium } = require("playwright");
+          const fs = require("fs");
+
+          const SOURCE =
+            "https://battlingbishops.com/coverage";
+
+          const VIDEO_HOME =
+            "https://www.northcoastnetwork.com/ohiowesleyan/";
+
+          function clean(value) {
+            return (value || "")
+              .replace(/\s+/g, " ")
+              .trim();
+          }
+
+          function absoluteUrl(href) {
+            if (!href) return "";
+
+            try {
+              return new URL(
+                href,
+                "https://battlingbishops.com"
+              ).href;
+            } catch {
+              return "";
+            }
+          }
+
+          (async () => {
+
+            const browser =
+              await chromium.launch({
+                headless: true
+              });
+
+            const page =
+              await browser.newPage({
+                viewport: {
+                  width: 1600,
+                  height: 1200
+                }
+              });
+
+            await page.goto(
+              SOURCE,
+              {
+                waitUntil: "networkidle",
+                timeout: 90000
+              }
+            );
+
+            await page.waitForTimeout(5000);
+
+            /*
+             * Sidearm's coverage page can change its exact
+             * class names, so this deliberately uses several
+             * possible selectors instead of depending on one.
+             */
+
+            const events =
+              await page.evaluate(() => {
+
+                const clean = value =>
+                  (value || "")
+                    .replace(/\s+/g, " ")
+                    .trim();
+
+                const candidates = [
+                  ...document.querySelectorAll(
+                    [
+                      ".sidearm-schedule-game",
+                      ".sidearm-schedule-game-row",
+                      ".sidearm-calendar-list-item",
+                      ".sidearm-events-list-item",
+                      "[class*='schedule-game']",
+                      "[class*='event-item']"
+                    ].join(",")
+                  )
+                ];
+
+                const output = [];
+
+                for (const item of candidates) {
+
+                  const text =
+                    clean(item.innerText);
+
+                  if (!text)
+                    continue;
+
+                  const links =
+                    [...item.querySelectorAll("a")]
+                      .map(a => ({
+                        text: clean(a.innerText),
+                        href: a.href || ""
+                      }));
+
+                  const watchLink =
+                    links.find(link =>
+                      /watch|video|stream/i.test(
+                        link.text
+                      )
+                    );
+
+                  const statsLink =
+                    links.find(link =>
+                      /live stats|stats/i.test(
+                        link.text
+                      )
+                    );
+
+                  const sportEl =
+                    item.querySelector(
+                      [
+                        ".sidearm-schedule-game-sport",
+                        "[class*='sport']"
+                      ].join(",")
+                    );
+
+                  const opponentEl =
+                    item.querySelector(
+                      [
+                        ".sidearm-schedule-game-opponent-name",
+                        ".sidearm-schedule-game-opponent-text",
+                        "[class*='opponent']"
+                      ].join(",")
+                    );
+
+                  const dateEl =
+                    item.querySelector(
+                      [
+                        "time",
+                        ".sidearm-schedule-game-opponent-date",
+                        ".sidearm-schedule-game-date",
+                        "[class*='date']"
+                      ].join(",")
+                    );
+
+                  const timeEl =
+                    item.querySelector(
+                      [
+                        ".sidearm-schedule-game-time",
+                        "[class*='time']"
+                      ].join(",")
+                    );
+
+                  const sport =
+                    clean(
+                      sportEl?.innerText
+                    );
+
+                  const opponent =
+                    clean(
+                      opponentEl?.innerText
+                    );
+
+                  let date =
+                    dateEl?.getAttribute(
+                      "datetime"
+                    )
+                    ||
+                    clean(
+                      dateEl?.innerText
+                    );
+
+                  const time =
+                    clean(
+                      timeEl?.innerText
+                    );
+
+                  /*
+                   * Only keep rows that look like actual
+                   * athletic events and that have some kind
+                   * of streaming or stats link.
+                   */
+
+                  if (
+                    !sport &&
+                    !opponent
+                  )
+                    continue;
+
+                  if (
+                    !watchLink &&
+                    !statsLink
+                  )
+                    continue;
+
+                  output.push({
+                    sport,
+                    opponent,
+                    date,
+                    time,
+                    watchUrl:
+                      watchLink?.href || "",
+                    statsUrl:
+                      statsLink?.href || ""
+                  });
+                }
+
+                return output;
+              });
+
+
+            /*
+             * Remove duplicate rows.
+             */
+
+            const deduped = [];
+
+            const seen =
+              new Set();
+
+            for (const event of events) {
+
+              const key =
+                [
+                  event.sport,
+                  event.opponent,
+                  event.date,
+                  event.time
+                ]
+                .join("|")
+                .toLowerCase();
+
+              if (seen.has(key))
+                continue;
+
+              seen.add(key);
+
+              deduped.push(event);
+            }
+
+
+            /*
+             * If Sidearm's current Live Events page happens
+             * to be empty, keep a valid JSON file rather than
+             * failing the workflow.
+             */
+
+            const result = {
+              updatedAt:
+                new Date().toISOString(),
+
+              source:
+                SOURCE,
+
+              videoHome:
+                VIDEO_HOME,
+
+              events:
+                deduped
+            };
+
+
+            fs.writeFileSync(
+              "sports.json",
+              JSON.stringify(
+                result,
+                null,
+                2
+              )
+              +
+              "\n"
+            );
+
+
+            console.log(
+              `Found ${deduped.length} OWU live sports events.`
+            );
+
+            console.log(
+              JSON.stringify(
+                result,
+                null,
+                2
+              )
+            );
+
+
+            await browser.close();
+
+          })().catch(error => {
+
+            console.error(error);
+
+            process.exit(1);
+
+          });
+          EOF
+
+          node update-sports.js
+
+      - name: Commit sports data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add sports.json
+
+          if git diff --cached --quiet; then
+            echo "No sports changes found."
+            exit 0
+          fi
+
+          git commit -m "Auto-update OWU sports live events"
+          git push
