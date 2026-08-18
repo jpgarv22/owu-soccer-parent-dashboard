@@ -86,7 +86,13 @@ main{
   border:0;
   display:block;
   background:#000;
-  transform:translate(-50%,-50%) scale(1.15);
+  transform:translate(-50%,-50%) scale(1.14);
+  pointer-events:none;
+}
+
+#camera-gateway iframe,
+#camera-jaywalk iframe{
+  transform:translate(-50%,-50%) scale(1.23);
 }
 
 .camera-bar{
@@ -181,7 +187,7 @@ main{
   grid-template-columns:1fr auto;
   align-items:center;
   gap:20px;
-  padding:13px 21px 24px;
+  padding:9px 21px 13px;
   background:
     radial-gradient(
       ellipse at 62% 100%,
@@ -228,16 +234,16 @@ main{
 }
 
 .clock{
-  font-size:clamp(58px,5.3vw,86px);
+  font-size:clamp(56px,5.0vw,80px);
   line-height:.88;
   font-weight:900;
   letter-spacing:-.055em;
 }
 
 .date{
-  margin-top:8px;
-  font-size:16px;
-  line-height:1.15;
+  margin-top:4px;
+  font-size:15px;
+  line-height:1.1;
   font-weight:600;
 }
 
@@ -288,11 +294,10 @@ main{
 
 .weather-detail{
   grid-area:detail;
-  margin-top:5px;
-  padding-bottom:2px;
+  margin-top:2px;
+  padding-bottom:0;
   font-size:10px;
   opacity:.9;
-  transform:translateY(-4px);
 }
 
 
@@ -373,7 +378,7 @@ main{
   padding:4px 8px;
   background:linear-gradient(#d8173e,#920720);
   color:#fff;
-  font-size:8px;
+  font-size:clamp(8px,.36vw,10px);
   font-weight:900;
   letter-spacing:.035em;
   text-transform:uppercase;
@@ -438,7 +443,7 @@ main{
   border-radius:4px;
   background:var(--red);
   color:#fff;
-  font-size:9px;
+  font-size:clamp(9px,.42vw,12px);
   font-weight:900;
   text-transform:uppercase;
   cursor:pointer;
@@ -463,13 +468,13 @@ main{
 }
 
 .sport-event{
-  min-height:76px;
+  min-height:64px;
   flex:none;
   display:grid;
-  grid-template-columns:105px minmax(0,1fr) auto;
-  gap:12px;
+  grid-template-columns:clamp(92px,6.8vw,128px) minmax(0,1fr) auto;
+  gap:10px;
   align-items:center;
-  padding:8px 0;
+  padding:6px 0;
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
@@ -479,7 +484,7 @@ main{
 
 .sport-label{
   color:#f24465;
-  font-size:11.5px;
+  font-size:clamp(10.5px,.48vw,14px);
   font-weight:950;
   line-height:1.12;
   text-transform:uppercase;
@@ -506,7 +511,8 @@ main{
   overflow:hidden;
   text-overflow:ellipsis;
   color:#fff;
-  font-size:16px;
+  font-size:clamp(15px,.76vw,21px);
+  line-height:1.08;
   font-weight:850;
 }
 
@@ -516,7 +522,7 @@ main{
   overflow:hidden;
   text-overflow:ellipsis;
   color:#c3c5ca;
-  font-size:11.5px;
+  font-size:clamp(10.5px,.50vw,14px);
 }
 
 .sport-actions{
@@ -557,7 +563,7 @@ main{
 }
 
 .event-row{
-  min-height:48px;
+  min-height:44px;
   display:grid;
   grid-template-columns:64px minmax(0,1fr);
   gap:9px;
@@ -580,9 +586,9 @@ main{
   white-space:nowrap;
   overflow:hidden;
   text-overflow:ellipsis;
-  font-size:11px;
+  font-size:clamp(11px,.55vw,15px);
   line-height:1.05;
-  font-weight:750;
+  font-weight:780;
 }
 
 
@@ -781,15 +787,22 @@ nav a:last-child{
     position:relative;
     width:100%;
     height:auto;
-    aspect-ratio:16 / 9;
+    aspect-ratio:1.95 / 1;
   }
 
   .camera iframe{
     position:absolute;
-    inset:0;
+    top:50%;
+    left:50%;
     width:100%;
     height:100%;
-    transform:none;
+    transform:translate(-50%,-50%) scale(1.16);
+    pointer-events:none;
+  }
+
+  #camera-gateway iframe,
+  #camera-jaywalk iframe{
+    transform:translate(-50%,-50%) scale(1.27);
   }
 
   .camera-bar{
@@ -819,7 +832,7 @@ nav a:last-child{
 
   .owu-header{
     min-height:122px;
-    padding:12px 14px 23px;
+    padding:10px 14px 14px;
   }
 
   .owu-header::before{
@@ -836,9 +849,9 @@ nav a:last-child{
   }
 
   .date{
-    font-size:13px;
-    margin-top:5px;
-    transform:translateY(-4px);
+    font-size:14px;
+    margin-top:4px;
+    transform:none;
   }
 
   .weather{
@@ -863,8 +876,8 @@ nav a:last-child{
   }
 
   .weather-detail{
-    font-size:9px;
-    transform:translateY(-4px);
+    font-size:10px;
+    transform:none;
   }
 
   .info-body{
@@ -901,20 +914,20 @@ nav a:last-child{
   }
 
   .sport-event{
-    min-height:78px;
+    min-height:72px;
     flex:none;
-    grid-template-columns:112px minmax(0,1fr);
+    grid-template-columns:108px minmax(0,1fr);
     grid-template-areas:
       "label main"
       "actions actions";
-    gap:4px 12px;
-    padding:8px 0;
+    gap:4px 10px;
+    padding:7px 0;
   }
 
   .sport-label{
     grid-area:label;
-    font-size:12.5px;
-    letter-spacing:.02em;
+    font-size:13.5px;
+    letter-spacing:.015em;
   }
 
   .sport-main{
@@ -922,13 +935,13 @@ nav a:last-child{
   }
 
   .sport-opponent{
-    font-size:18px;
-    line-height:1.12;
+    font-size:20px;
+    line-height:1.08;
   }
 
   .sport-meta{
-    font-size:12.5px;
-    line-height:1.25;
+    font-size:13.5px;
+    line-height:1.22;
     white-space:normal;
     color:#c5c7cc;
   }
@@ -959,11 +972,11 @@ nav a:last-child{
   }
 
   .event-date{
-    font-size:9px;
+    font-size:11px;
   }
 
   .event-name{
-    font-size:12px;
+    font-size:14px;
   }
 
   .owu-footer{
@@ -1315,7 +1328,7 @@ rel="noopener">
 
 /* =====================================================
    OWU PARENT DASHBOARD
-   VERSION 2.5
+   VERSION 2.6 VISUAL TEST
 ===================================================== */
 
 
@@ -1367,7 +1380,7 @@ function renderCamera(
     document.createElement("iframe");
 
   iframe.src =
-    `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1`;
+    `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&mute=1&playsinline=1&rel=0&modestbranding=1&controls=0&disablekb=1&fs=0`;
 
   iframe.title =
     `${name} live camera`;
