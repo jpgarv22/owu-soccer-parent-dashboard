@@ -8,7 +8,319 @@
 <meta name="theme-color" content="#050506">
 
 <title>OWU Parent Dashboard</title>
+/* =====================================================
+   V2.1.3 DESKTOP VISUAL REBUILD
+   Approved mockup proportions
+===================================================== */
 
+@media (min-width:761px){
+
+  /* Fourth quadrant */
+  .owu-panel{
+    grid-template-rows:136px minmax(0,1fr) 78px;
+    background:#050506;
+  }
+
+
+  /* ===============================================
+     LARGE OWU RED HEADER
+  =============================================== */
+
+  .owu-header{
+    min-height:136px;
+    padding:17px 22px 15px;
+    background:
+      radial-gradient(
+        ellipse at 59% 110%,
+        rgba(0,0,0,.27) 0,
+        rgba(0,0,0,.12) 27%,
+        transparent 48%
+      ),
+      linear-gradient(
+        120deg,
+        #85061d 0%,
+        #b6092c 34%,
+        #ca1036 63%,
+        #84061c 100%
+      );
+    border-bottom:3px solid #ef3156;
+  }
+
+  .owu-location{
+    margin-bottom:5px;
+    font-size:13px;
+    letter-spacing:.16em;
+  }
+
+  .clock{
+    font-size:clamp(62px,5.7vw,92px);
+    line-height:.88;
+    letter-spacing:-.055em;
+  }
+
+  .date{
+    margin-top:8px;
+    font-size:17px;
+  }
+
+  .weather-label{
+    font-size:12px;
+    letter-spacing:.14em;
+  }
+
+  .temp{
+    font-size:clamp(54px,4.9vw,79px);
+  }
+
+  .cond{
+    margin-top:6px;
+    font-size:18px;
+  }
+
+  .weather-detail{
+    margin-top:5px;
+    font-size:12px;
+  }
+
+
+  /* ===============================================
+     TWO DENSE INFORMATION CARDS
+  =============================================== */
+
+  .info-body{
+    padding:10px;
+    grid-template-columns:1.08fr .92fr;
+    gap:10px;
+  }
+
+  .info-card{
+    grid-template-rows:39px minmax(0,1fr);
+    border-radius:8px;
+    border-color:#4a4d53;
+    background:
+      linear-gradient(
+        180deg,
+        #0b0c0f,
+        #070809
+      );
+  }
+
+  .soccer-card{
+    border-left:3px solid #db153d;
+  }
+
+  .events-card{
+    border-right:3px solid #db153d;
+  }
+
+  .info-title-row{
+    height:39px;
+    padding:0 12px;
+    background:#0c0d10;
+  }
+
+  .info-title{
+    font-size:14px;
+    letter-spacing:.055em;
+  }
+
+
+  /* Schedule / Roster / Stats */
+
+  .soccer-links{
+    gap:6px;
+  }
+
+  .soccer-links a{
+    padding:5px 11px;
+    border-radius:4px;
+    font-size:10px;
+    letter-spacing:.03em;
+    box-shadow:
+      inset 0 1px rgba(255,255,255,.16);
+  }
+
+
+  /* ===============================================
+     SOCCER ROWS
+  =============================================== */
+
+  .game-list{
+    padding:0 12px;
+  }
+
+  .game-row{
+    grid-template-columns:82px minmax(0,1fr) 92px;
+    gap:10px;
+    padding:6px 0;
+  }
+
+  .game-date{
+    font-size:12px;
+    line-height:1.08;
+  }
+
+  .next-badge{
+    margin-top:4px;
+    padding:3px 7px;
+    font-size:9px;
+  }
+
+  .game-opponent{
+    font-size:18px;
+    line-height:1.05;
+  }
+
+  .game-location{
+    margin-top:4px;
+    font-size:11px;
+  }
+
+  .game-time{
+    font-size:12px;
+    text-align:right;
+  }
+
+
+  /* ===============================================
+     EVENT ROWS
+  =============================================== */
+
+  .event-list{
+    padding:0 12px;
+  }
+
+  .event-row{
+    grid-template-columns:70px minmax(0,1fr);
+    gap:10px;
+    padding:4px 0;
+  }
+
+  .event-date{
+    font-size:11px;
+  }
+
+  .event-name{
+    font-size:15px;
+    line-height:1.1;
+  }
+
+
+  /* ===============================================
+     LARGE OWU BRANDING BAR
+  =============================================== */
+
+  .owu-footer{
+    min-height:78px;
+    padding:8px 14px;
+    grid-template-columns:58px minmax(0,1fr) auto;
+    gap:13px;
+    background:
+      linear-gradient(
+        90deg,
+        #050506 0%,
+        #08090b 58%,
+        #16040a 100%
+      );
+    border-top:2px solid #3e4147;
+  }
+
+  .owu-mark{
+    width:54px;
+    height:54px;
+    border:3px solid #ef294f;
+    font-size:15px;
+  }
+
+  .owu-name{
+    font-size:clamp(25px,2.3vw,38px);
+    line-height:.9;
+  }
+
+  .bishops{
+    margin-top:6px;
+    font-size:clamp(12px,1.2vw,18px);
+    letter-spacing:.12em;
+  }
+
+  .sync{
+    font-size:9px;
+  }
+
+  .go-bishops{
+    margin-top:7px;
+    font-size:13px;
+  }
+
+
+  /* ===============================================
+     BOTTOM NAVIGATION
+  =============================================== */
+
+  nav{
+    height:58px;
+    border-top:2px solid #34363b;
+    border-bottom:5px solid #ba0c2f;
+  }
+
+  nav a{
+    font-size:15px;
+    letter-spacing:.015em;
+  }
+
+  nav a:nth-child(1),
+  nav a:nth-child(3){
+    background:#050607;
+  }
+
+  nav a:nth-child(2),
+  nav a:nth-child(4){
+    background:#131417;
+  }
+
+  nav a:hover{
+    background:#ba0c2f;
+  }
+}
+
+
+/* =====================================================
+   V2.1.3 IPHONE BOTTOM COLOR SEPARATION
+===================================================== */
+
+@media (max-width:760px) and (orientation:portrait){
+
+  .owu-footer{
+    background:
+      linear-gradient(
+        90deg,
+        #450714 0%,
+        #120308 24%,
+        #08090b 57%,
+        #35050f 100%
+      );
+    border-top:2px solid #ba0c2f;
+  }
+
+  nav a:nth-child(1),
+  nav a:nth-child(3){
+    background:#060708;
+  }
+
+  nav a:nth-child(2),
+  nav a:nth-child(4){
+    background:#181a1e;
+  }
+
+  nav a{
+    border-right:1px solid #464950;
+  }
+
+  nav a::after{
+    height:3px;
+    background:#ba0c2f;
+  }
+}
 <style>
 :root{
   --red:#BA0C2F;
