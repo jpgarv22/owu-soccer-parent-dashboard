@@ -1,4 +1,4 @@
-name: Update OWU sports schedules
+name: Update OWU sports live events
 
 on:
   workflow_dispatch:
@@ -27,12 +27,19 @@ jobs:
           npm install playwright
           npx playwright install --with-deps chromium
 
-      - name: Collect OWU sports schedules
+      - name: Collect full OWU sports schedules
         run: |
           cat > update-sports.js <<'EOF'
           const { chromium } = require("playwright");
           const fs = require("fs");
 
+          /*
+           * OWU sports available in the dashboard.
+           *
+           * The order here is alphabetical with Men's sports first
+           * followed by Women's sports. The dashboard itself can
+           * alphabetize these when displaying the My Sports menu.
+           */
           const SPORTS = [
             { name: "Men's Baseball", slug: "baseball" },
             { name: "Men's Basketball", slug: "mens-basketball" },
@@ -56,422 +63,356 @@ jobs:
             { name: "Women's Volleyball", slug: "womens-volleyball" }
           ];
 
-          const BASE = "https://battlingbishops.com";
-          const VIDEO_HOME =
-            "https://www.northcoastnetwork.com/ohiowesleyan/";
+          /*
+           * Convert OWU date text into a dependable ISO date.
+           *
+           * Examples:
+           *   "Sep 1 (Tue)"                -> 2026-09-01
+           *   "May 1 (Fri) May 2 (Sat)"   -> 2026-05-01
+           *   "Nov 21 (Sat)"              -> 2026-11-21
+           *
+           * We deliberately DO NOT use new Date(rawDateString).
+           * JavaScript can interpret strings containing two day
+           * numbers as a year, which caused 2026 events to become 2002.
+           */
+          function makeIsoDate(dateText, seasonYear) {
+            if (!dateText) return "";
 
-          function clean(value) {
-            return (value || "")
+            const months = {
+              jan: 0,
+              feb: 1,
+              mar: 2,
+              apr: 3,
+              may: 4,
+              jun: 5,
+              jul: 6,
+              aug: 7,
+              sep: 8,
+              sept: 8,
+              oct: 9,
+              nov: 10,
+              dec: 11
+            };
+
+            const cleaned = String(dateText)
+              .replace(/\s+/g, " ")
+              .trim();
+
+            const match = cleaned.match(
+              /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.?\s+(\d{1,2})\b/i
+            );
+
+            if (!match) return "";
+
+            const month = months[match[1].toLowerCase()];
+            const day = Number(match[2]);
+
+            if (
+              month === undefined ||
+              !Number.isInteger(day) ||
+              day < 1 ||
+              day > 31
+            ) {
+              return "";
+            }
+
+            /*
+             * OWU's current schedule pages are the 2026 season.
+             * Use noon UTC instead of midnight to avoid accidental
+             * date movement when browsers convert time zones.
+             */
+            return new Date(
+              Date.UTC(seasonYear, month, day, 12, 0, 0)
+            ).toISOString();
+          }
+
+          function cleanText(value) {
+            return String(value || "")
               .replace(/\s+/g, " ")
               .trim();
           }
 
-          function absoluteUrl(href) {
-            if (!href) return "";
+          function absoluteUrl(value, base) {
+            if (!value) return "";
 
             try {
-              return new URL(href, BASE).href;
+              return new URL(value, base).href;
             } catch {
               return "";
             }
           }
 
-          function parseScheduleDate(dateText, timeText) {
-
-            const text =
-              clean(`${dateText} ${timeText}`);
-
-            if (!text)
-              return "";
-
-            if (/TBA/i.test(text))
-              return "";
-
-            let normalized =
-              text
-                .replace(/\([^)]*\)/g, "")
-                .replace(/\bp\.m\./gi, "PM")
-                .replace(/\ba\.m\./gi, "AM")
-                .replace(/\s+/g, " ")
-                .trim();
-
-            if (!/\b20\d{2}\b/.test(normalized)) {
-              normalized += " 2026";
-            }
-
-            const parsed =
-              new Date(normalized);
-
-            if (Number.isNaN(parsed.getTime()))
-              return "";
-
-            return parsed.toISOString();
-          }
-
           (async () => {
+            const browser = await chromium.launch({
+              headless: true
+            });
 
-            const browser =
-              await chromium.launch({
-                headless: true
-              });
+            const page = await browser.newPage({
+              viewport: {
+                width: 1440,
+                height: 1800
+              }
+            });
 
-            const context =
-              await browser.newContext({
-                viewport: {
-                  width: 1600,
-                  height: 1200
-                }
-              });
-
-            const allEvents = [];
+            const events = [];
+            const seasonYear = 2026;
 
             for (const sport of SPORTS) {
-
-              const page =
-                await context.newPage();
-
               const scheduleUrl =
-                `${BASE}/sports/${sport.slug}/schedule/2026`;
+                `https://battlingbishops.com/sports/${sport.slug}/schedule/${seasonYear}`;
 
-              console.log(
-                `Scanning ${sport.name}: ${scheduleUrl}`
-              );
+              console.log(`Reading ${sport.name}: ${scheduleUrl}`);
 
               try {
+                await page.goto(scheduleUrl, {
+                  waitUntil: "domcontentloaded",
+                  timeout: 60000
+                });
 
-                await page.goto(
-                  scheduleUrl,
-                  {
-                    waitUntil: "domcontentloaded",
-                    timeout: 60000
+                await page.waitForTimeout(1200);
+
+                /*
+                 * Sidearm schedule pages have changed markup over time,
+                 * so we look for several common schedule-item containers.
+                 */
+                const rawGames = await page.evaluate(() => {
+                  const selectors = [
+                    "li.sidearm-schedule-game",
+                    ".sidearm-schedule-game",
+                    ".sidearm-schedule-game-row",
+                    ".sidearm-schedule-game-list-item",
+                    "[class*='sidearm-schedule-game']"
+                  ];
+
+                  let nodes = [];
+
+                  for (const selector of selectors) {
+                    nodes = Array.from(
+                      document.querySelectorAll(selector)
+                    );
+
+                    if (nodes.length) break;
                   }
-                );
 
-                await page.waitForTimeout(2500);
+                  return nodes.map(node => {
+                    const text = selector => {
+                      const el = node.querySelector(selector);
+                      return el ? el.textContent.trim() : "";
+                    };
 
-                const events =
-                  await page.evaluate(
-                    ({ sportName, scheduleUrl }) => {
-
-                      const clean = value =>
-                        (value || "")
-                          .replace(/\s+/g, " ")
-                          .trim();
-
-                      let rows = [
-                        ...document.querySelectorAll(
-                          ".sidearm-schedule-game"
-                        )
-                      ];
-
-                      if (!rows.length) {
-
-                        rows = [
-                          ...document.querySelectorAll(
-                            [
-                              ".sidearm-schedule-game-row",
-                              "[class*='schedule-game']"
-                            ].join(",")
-                          )
-                        ];
+                    const firstText = selectors => {
+                      for (const selector of selectors) {
+                        const value = text(selector);
+                        if (value) return value;
                       }
+                      return "";
+                    };
 
-                      const output = [];
-
-                      for (const row of rows) {
-
-                        const rowText =
-                          clean(row.innerText);
-
-                        if (!rowText)
-                          continue;
-
-                        const opponentNode =
-                          row.querySelector(
-                            [
-                              ".sidearm-schedule-game-opponent-name",
-                              ".sidearm-schedule-game-opponent-text",
-                              "[class*='opponent-name']"
-                            ].join(",")
-                          );
-
-                        let opponent =
-                          clean(
-                            opponentNode?.innerText
-                          );
-
-                        opponent =
-                          opponent
-                            .replace(/^(vs\.?|at)\s+/i, "")
-                            .trim();
-
-                        if (!opponent)
-                          continue;
-
-                        const dateNode =
-                          row.querySelector(
-                            [
-                              ".sidearm-schedule-game-opponent-date",
-                              ".sidearm-schedule-game-date",
-                              "[class*='game-date']",
-                              "time"
-                            ].join(",")
-                          );
-
-                        const timeNode =
-                          row.querySelector(
-                            [
-                              ".sidearm-schedule-game-time",
-                              "[class*='game-time']"
-                            ].join(",")
-                          );
-
-                        const locationNode =
-                          row.querySelector(
-                            [
-                              ".sidearm-schedule-game-location",
-                              "[class*='location']"
-                            ].join(",")
-                          );
-
-                        const date =
-                          clean(
-                            dateNode?.innerText ||
-                            dateNode?.getAttribute("datetime")
-                          );
-
-                        const time =
-                          clean(
-                            timeNode?.innerText
-                          );
-
-                        const location =
-                          clean(
-                            locationNode?.innerText
-                          );
-
-                        let site = "";
-
-                        if (
-                          /\bvs\.?\b/i.test(rowText)
-                        ) {
-                          site = "Home";
-                        }
-
-                        if (
-                          /\bat\b/i.test(rowText)
-                        ) {
-                          site = "Away";
-                        }
-
-                        if (
-                          /neutral/i.test(rowText)
-                        ) {
-                          site = "Neutral";
-                        }
-
-                        const links = [
-                          ...row.querySelectorAll("a")
-                        ]
-                        .map(a => ({
-                          text: clean(
-                            a.innerText ||
-                            a.getAttribute("aria-label") ||
-                            a.title
-                          ),
-                          href: a.href || ""
-                        }));
-
-                        const watch =
-                          links.find(
-                            link =>
-                              /watch|video|stream/i.test(
-                                link.text
-                              )
-                          );
-
-                        const stats =
-                          links.find(
-                            link =>
-                              /live stats|stats/i.test(
-                                link.text
-                              )
-                          );
-
-                        output.push({
-                          sport: sportName,
-                          opponent,
-                          date,
-                          time,
-                          location,
-                          site,
-                          watchUrl:
-                            watch?.href || "",
-                          statsUrl:
-                            stats?.href || "",
-                          scheduleUrl
-                        });
+                    const firstHref = selectors => {
+                      for (const selector of selectors) {
+                        const el = node.querySelector(selector);
+                        if (el && el.href) return el.href;
                       }
+                      return "";
+                    };
 
-                      return output;
+                    const date = firstText([
+                      ".sidearm-schedule-game-opponent-date",
+                      ".sidearm-schedule-game-date",
+                      "[class*='date']"
+                    ]);
 
-                    },
-                    {
-                      sportName:
-                        sport.name,
+                    const time = firstText([
+                      ".sidearm-schedule-game-opponent-time",
+                      ".sidearm-schedule-game-time",
+                      "[class*='time']"
+                    ]);
+
+                    const opponent = firstText([
+                      ".sidearm-schedule-game-opponent-name",
+                      ".sidearm-schedule-game-opponent-text",
+                      "[class*='opponent-name']",
+                      "[class*='opponent']"
+                    ]);
+
+                    const location = firstText([
+                      ".sidearm-schedule-game-location",
+                      "[class*='location']"
+                    ]);
+
+                    const watchUrl = firstHref([
+                      "a[href*='northcoastnetwork']",
+                      "a[aria-label*='Watch']",
+                      "a[title*='Watch']",
+                      "a[href*='watch']",
+                      "a[href*='video']"
+                    ]);
+
+                    const statsUrl = firstHref([
+                      "a[aria-label*='Live Stats']",
+                      "a[title*='Live Stats']",
+                      "a[href*='stats']",
+                      "a[href*='sidearmstats']"
+                    ]);
+
+                    return {
+                      date,
+                      time,
+                      opponent,
+                      location,
+                      watchUrl,
+                      statsUrl,
+                      allText: node.textContent || ""
+                    };
+                  });
+                });
+
+                for (const raw of rawGames) {
+                  const date = cleanText(raw.date);
+                  const time = cleanText(raw.time);
+                  let opponent = cleanText(raw.opponent);
+                  const location = cleanText(raw.location);
+
+                  /*
+                   * Skip blank/non-game containers accidentally returned
+                   * by broad Sidearm selectors.
+                   */
+                  if (!date || !opponent) continue;
+
+                  /*
+                   * Remove some common schedule-page noise if it becomes
+                   * attached to the opponent field.
+                   */
+                  opponent = opponent
+                    .replace(/\s+/g, " ")
+                    .trim();
+
+                  const isoDate = makeIsoDate(date, seasonYear);
+
+                  events.push({
+                    sport: sport.name,
+                    opponent,
+                    date,
+                    time,
+                    location,
+                    site:
+                      /\bat\b/i.test(raw.allText || "")
+                        ? "Away"
+                        : "Home",
+                    watchUrl: absoluteUrl(
+                      raw.watchUrl,
                       scheduleUrl
-                    }
-                  );
-
-                for (const event of events) {
-
-                  event.watchUrl =
-                    absoluteUrl(
-                      event.watchUrl
-                    );
-
-                  event.statsUrl =
-                    absoluteUrl(
-                      event.statsUrl
-                    );
-
-                  event.isoDate =
-                    parseScheduleDate(
-                      event.date,
-                      event.time
-                    );
-
-                  allEvents.push(event);
+                    ),
+                    statsUrl: absoluteUrl(
+                      raw.statsUrl,
+                      scheduleUrl
+                    ),
+                    scheduleUrl,
+                    isoDate
+                  });
                 }
-
-                console.log(
-                  `Found ${events.length} ${sport.name} events`
-                );
-
-              }
-
-              catch(error) {
-
-                console.warn(
-                  `Could not scan ${sport.name}:`,
+              } catch (error) {
+                console.error(
+                  `Unable to read ${sport.name}:`,
                   error.message
                 );
-
-              }
-
-              finally {
-
-                await page.close();
-
               }
             }
 
-            const unique = [];
-            const seen = new Set();
+            /*
+             * Remove duplicate schedule entries.
+             */
+            const uniqueMap = new Map();
 
-            for (const event of allEvents) {
-
-              const key =
-                [
-                  event.sport,
-                  event.date,
-                  event.time,
-                  event.opponent,
-                  event.location
-                ]
+            for (const event of events) {
+              const key = [
+                event.sport,
+                event.opponent,
+                event.date,
+                event.time,
+                event.location
+              ]
                 .join("|")
                 .toLowerCase();
 
-              if (seen.has(key))
-                continue;
+              if (!uniqueMap.has(key)) {
+                uniqueMap.set(key, event);
+              } else {
+                /*
+                 * If a duplicate contains a Watch or Stats URL that the
+                 * first copy lacked, preserve the better information.
+                 */
+                const existing = uniqueMap.get(key);
 
-              seen.add(key);
-              unique.push(event);
-            }
-
-            unique.sort(
-              (a,b) => {
-
-                if (
-                  a.isoDate &&
-                  b.isoDate
-                ) {
-                  return (
-                    new Date(a.isoDate) -
-                    new Date(b.isoDate)
-                  );
+                if (!existing.watchUrl && event.watchUrl) {
+                  existing.watchUrl = event.watchUrl;
                 }
 
-                if (a.isoDate)
-                  return -1;
-
-                if (b.isoDate)
-                  return 1;
-
-                return 0;
+                if (!existing.statsUrl && event.statsUrl) {
+                  existing.statsUrl = event.statsUrl;
+                }
               }
-            );
+            }
 
-            const result = {
+            const unique = Array.from(uniqueMap.values());
 
-              updatedAt:
-                new Date().toISOString(),
+            /*
+             * Put valid dated events in chronological order.
+             * Undated entries go to the bottom.
+             */
+            unique.sort((a, b) => {
+              if (a.isoDate && b.isoDate) {
+                return a.isoDate.localeCompare(b.isoDate);
+              }
 
-              source:
-                BASE,
+              if (a.isoDate) return -1;
+              if (b.isoDate) return 1;
 
+              return a.sport.localeCompare(b.sport);
+            });
+
+            const output = {
+              updatedAt: new Date().toISOString(),
+              source: "https://battlingbishops.com/",
               videoHome:
-                VIDEO_HOME,
-
-              availableSports:
-                SPORTS.map(
-                  sport => sport.name
-                ),
-
-              events:
-                unique
+                "https://www.northcoastnetwork.com/ohiowesleyan/",
+              availableSports: SPORTS
+                .map(sport => sport.name)
+                .sort((a, b) => a.localeCompare(b)),
+              events: unique
             };
 
             fs.writeFileSync(
               "sports.json",
-              JSON.stringify(
-                result,
-                null,
-                2
-              )
-              +
-              "\n"
+              JSON.stringify(output, null, 2)
             );
 
             console.log(
-              `TOTAL EVENTS FOUND: ${unique.length}`
+              `Saved ${unique.length} OWU sporting events to sports.json`
             );
 
             console.log(
-              JSON.stringify(
-                unique.slice(0,20),
-                null,
-                2
-              )
+              JSON.stringify(unique.slice(0, 20), null, 2)
             );
 
             await browser.close();
-
           })().catch(error => {
-
             console.error(error);
             process.exit(1);
-
           });
-
           EOF
 
           node update-sports.js
 
       - name: Commit sports data if changed
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config \
+            user.name \
+            "github-actions[bot]"
+
+          git config \
+            user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add sports.json
 
@@ -480,5 +421,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Auto-update full OWU sports schedules"
+          git commit \
+            -m "Auto-update full OWU sports schedules"
+
           git push
