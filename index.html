@@ -181,7 +181,7 @@ main{
   grid-template-columns:1fr auto;
   align-items:center;
   gap:20px;
-  padding:13px 21px 19px;
+  padding:13px 21px 24px;
   background:
     radial-gradient(
       ellipse at 62% 100%,
@@ -292,6 +292,7 @@ main{
   padding-bottom:2px;
   font-size:10px;
   opacity:.9;
+  transform:translateY(-4px);
 }
 
 
@@ -478,7 +479,7 @@ main{
 
 .sport-label{
   color:#f24465;
-  font-size:10px;
+  font-size:11.5px;
   font-weight:950;
   line-height:1.12;
   text-transform:uppercase;
@@ -505,7 +506,7 @@ main{
   overflow:hidden;
   text-overflow:ellipsis;
   color:#fff;
-  font-size:14px;
+  font-size:16px;
   font-weight:850;
 }
 
@@ -515,7 +516,7 @@ main{
   overflow:hidden;
   text-overflow:ellipsis;
   color:#c3c5ca;
-  font-size:10.5px;
+  font-size:11.5px;
 }
 
 .sport-actions{
@@ -818,7 +819,7 @@ nav a:last-child{
 
   .owu-header{
     min-height:122px;
-    padding:12px 14px 18px;
+    padding:12px 14px 23px;
   }
 
   .owu-header::before{
@@ -837,6 +838,7 @@ nav a:last-child{
   .date{
     font-size:13px;
     margin-top:5px;
+    transform:translateY(-4px);
   }
 
   .weather{
@@ -862,6 +864,7 @@ nav a:last-child{
 
   .weather-detail{
     font-size:9px;
+    transform:translateY(-4px);
   }
 
   .info-body{
@@ -898,19 +901,19 @@ nav a:last-child{
   }
 
   .sport-event{
-    min-height:84px;
+    min-height:78px;
     flex:none;
     grid-template-columns:112px minmax(0,1fr);
     grid-template-areas:
       "label main"
       "actions actions";
     gap:4px 12px;
-    padding:10px 0;
+    padding:8px 0;
   }
 
   .sport-label{
     grid-area:label;
-    font-size:11px;
+    font-size:12.5px;
     letter-spacing:.02em;
   }
 
@@ -919,12 +922,12 @@ nav a:last-child{
   }
 
   .sport-opponent{
-    font-size:16px;
+    font-size:18px;
     line-height:1.12;
   }
 
   .sport-meta{
-    font-size:11px;
+    font-size:12.5px;
     line-height:1.25;
     white-space:normal;
     color:#c5c7cc;
@@ -1208,7 +1211,7 @@ nav a:last-child{
       <div
       class="sync"
       id="syncStatus">
-        Camera auto-sync active • Dashboard v2.5
+        Camera auto-sync active • Dashboard v2.6
       </div>
 
       <div class="go-bishops">
@@ -1446,7 +1449,7 @@ async function loadCameraLinks(){
             }
           )
           +
-          " • Dashboard v2.5";
+          " • Dashboard v2.6";
       }
     }
   }
@@ -2086,7 +2089,12 @@ function sportsDisplayDate(event){
 
     // Intentionally omit timeZone: this displays the event in the
     // viewer's current device/browser time zone (Arizona, Ohio, etc.).
-    return new Intl.DateTimeFormat("en-US", options).format(parsed);
+    const formatted = new Intl.DateTimeFormat("en-US", options).format(parsed);
+
+    // Compact dashboard style: Sep 1 • 4:00 PM MST
+    return officialTime
+      ? formatted.replace(/,?\s+at\s+/i, " • ")
+      : formatted;
   }
 
   if(/TBA/i.test(String(event.date || ""))){
