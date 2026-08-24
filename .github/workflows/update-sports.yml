@@ -295,4 +295,5 @@ jobs:
           fi
 
           git commit -m "Auto-update complete OWU sports schedules"
-          git push
+          git pull --rebase origin main
+          git push origin main
