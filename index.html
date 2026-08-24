@@ -471,7 +471,7 @@ main{
   min-height:64px;
   flex:none;
   display:grid;
-  grid-template-columns:clamp(92px,6.8vw,128px) minmax(0,1fr) auto;
+  grid-template-columns:clamp(62px,4.8vw,82px) minmax(0,1fr) auto;
   gap:10px;
   align-items:center;
   padding:6px 0;
@@ -482,12 +482,64 @@ main{
   border-bottom:0;
 }
 
-.sport-label{
-  color:#f24465;
-  font-size:clamp(10.5px,.48vw,14px);
+.sport-icon-cell{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  min-width:0;
+}
+
+.sport-icon{
+  width:38px;
+  height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  line-height:1;
+  flex:none;
+}
+
+.sport-icon.baseball{
+  transform:scale(.88);
+}
+
+.sport-icon.cross-country{
+  width:42px;
+  height:30px;
+  border:2px solid #fff;
+  border-radius:4px;
+  color:#fff;
+  font-size:12px;
   font-weight:950;
-  line-height:1.12;
-  text-transform:uppercase;
+  letter-spacing:-.06em;
+  position:relative;
+}
+
+.sport-icon.cross-country::after{
+  content:"➜";
+  position:absolute;
+  right:-12px;
+  top:50%;
+  transform:translateY(-52%);
+  color:#fff;
+  font-size:18px;
+}
+
+.sport-icon.track-field{
+  width:42px;
+  font-size:25px;
+  gap:0;
+  letter-spacing:-7px;
+}
+
+.sport-gender{
+  color:#f24465;
+  font-size:clamp(10px,.44vw,13px);
+  font-weight:950;
+  line-height:1;
+  white-space:nowrap;
 }
 
 .live-now{
@@ -1055,6 +1107,30 @@ nav a:last-child{
   }
 }
 
+
+/* Sports icon visual test */
+@media (max-width:700px){
+  .sport-event{
+    grid-template-columns:86px minmax(0,1fr);
+  }
+  .sport-icon{
+    width:42px;
+    height:42px;
+    font-size:36px;
+  }
+  .sport-icon.cross-country{
+    width:46px;
+    height:32px;
+    font-size:13px;
+  }
+  .sport-icon.track-field{
+    width:46px;
+    font-size:28px;
+  }
+  .sport-gender{
+    font-size:15px;
+  }
+}
 </style>
 </head>
 
@@ -1871,6 +1947,43 @@ function sportShortName(sport){
   return full;
 }
 
+function sportIconInfo(sport){
+  const full = sportDisplayName(sport || "");
+  const base = full.replace(/^(Men's|Women's)\s+/i, "");
+  const gender = full.startsWith("Men's ") ? "M" : full.startsWith("Women's ") ? "W" : "";
+
+  const singleTeam = new Set([
+    "Football",
+    "Baseball",
+    "Softball",
+    "Volleyball",
+    "Field Hockey",
+    "Wrestling"
+  ]);
+
+  const icons = {
+    "Soccer": { html:"⚽", cls:"soccer" },
+    "Football": { html:"🏈", cls:"football" },
+    "Basketball": { html:"🏀", cls:"basketball" },
+    "Baseball": { html:"⚾", cls:"baseball" },
+    "Softball": { html:"🥎", cls:"softball" },
+    "Volleyball": { html:"🏐", cls:"volleyball" },
+    "Field Hockey": { html:"🏑", cls:"field-hockey" },
+    "Lacrosse": { html:"🥍", cls:"lacrosse" },
+    "Golf": { html:"⛳", cls:"golf" },
+    "Tennis": { html:"🎾", cls:"tennis" },
+    "Swimming & Diving": { html:"🏊", cls:"swimming-diving" },
+    "Cross Country": { html:"CC", cls:"cross-country" },
+    "Track & Field": { html:"🪽👟", cls:"track-field" },
+    "Wrestling": { html:"🤼", cls:"wrestling" }
+  };
+
+  return {
+    ...(icons[base] || { html:"🏅", cls:"other" }),
+    gender: singleTeam.has(base) ? "" : gender
+  };
+}
+
 
 function buildSportsChoices(){
 
@@ -2314,19 +2427,20 @@ function renderSportsLive(){
 
         : "";
 
+      const icon = sportIconInfo(event.sport || "OWU Sport");
+
       row.innerHTML = `
 
-        <div class="sport-label">
+        <div class="sport-icon-cell">
 
-          ${sportShortName(
-            event.sport ||
-            "OWU Sport"
-          )}
+          <span class="sport-icon ${icon.cls}" aria-hidden="true">${icon.html}</span>
+
+          ${icon.gender ? `<span class="sport-gender">(${icon.gender})</span>` : ""}
 
           ${
             live
 
-            ? '<br><span class="live-now">LIVE NOW</span>'
+            ? '<span class="live-now">LIVE</span>'
 
             : ''
           }
