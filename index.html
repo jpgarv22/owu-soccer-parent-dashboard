@@ -976,11 +976,28 @@ nav a:last-child{
     padding:7px 0;
   }
 
-  .sport-label{
-    grid-area:label;
-    font-size:13.5px;
-    letter-spacing:.015em;
-  }
+.sport-label{
+  grid-area:label;
+  display:flex;
+  align-items:center;
+  gap:4px;
+  white-space:nowrap;
+  font-size:13.5px;
+  letter-spacing:.015em;
+}
+
+.sport-icon{
+  font-size:25px;
+  line-height:1;
+  flex-shrink:0;
+}
+
+.sport-gender{
+  font-size:11px;
+  font-weight:800;
+  color:#ff4167;
+  letter-spacing:.02em;
+}
 
   .sport-main{
     grid-area:main;
