@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T10:58:52.179Z",
+  "updatedAt": "2026-08-25T14:08:10.443Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2531,6 +2531,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-08-25T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Field Hockey",
+      "opponent": "Slippery Rock (Scr.)",
+      "date": "Aug 29 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Slippery Rock, Pa.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-08-29T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
