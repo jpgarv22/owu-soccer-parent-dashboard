@@ -2,7 +2,6 @@ name: Update OWU campus events
 
 on:
   schedule:
-    # Run every hour
     - cron: "17 * * * *"
   workflow_dispatch:
 
@@ -34,13 +33,13 @@ jobs:
           python <<'PY'
           import json
           import re
-          from datetime import datetime
+          import time
+          from datetime import datetime, timedelta
           from urllib.parse import urljoin
 
           import requests
           from bs4 import BeautifulSoup
 
-          URL = "https://www.owu.edu/calendars/"
           BASE = "https://www.owu.edu"
 
           headers = {
@@ -50,194 +49,233 @@ jobs:
               )
           }
 
-          response = requests.get(URL, headers=headers, timeout=30)
-          response.raise_for_status()
-
-          soup = BeautifulSoup(response.text, "html.parser")
-
-          month_names = (
-              "January|February|March|April|May|June|"
-              "July|August|September|October|November|December"
-          )
-
-          date_re = re.compile(
-              rf"\b({month_names})\s+(\d{{1,2}})\b",
-              re.IGNORECASE
-          )
+          session = requests.Session()
+          session.headers.update(headers)
 
           time_re = re.compile(
               r"(\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?))"
-              r"(?:\s*[–—-]\s*"
-              r"(\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?)))?",
+              r"\s*[–—-]\s*"
+              r"(\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?))",
               re.IGNORECASE
           )
 
-          now = datetime.now()
-          current_year = now.year
+          single_time_re = re.compile(
+              r"(\d{1,2}(?::\d{2})?\s*(?:a\.?m\.?|p\.?m\.?))",
+              re.IGNORECASE
+          )
+
+          # Start today and collect the next 30 days.
+          today = datetime.now().date()
+
           events = []
           seen = set()
 
-          # OWU's calendar is rendered as repeating event blocks.
-          # Find links to individual calendar detail pages and use
-          # their surrounding block for the date/time information.
-          detail_links = soup.find_all(
-              "a",
-              href=re.compile(r"/calendars/details/", re.IGNORECASE)
-          )
+          for offset in range(30):
 
-          for link in detail_links:
-              href = link.get("href", "").strip()
-              if not href:
-                  continue
+              day = today + timedelta(days=offset)
 
-              event_url = urljoin(BASE, href)
+              day_string = day.strftime("%Y-%m-%d")
 
-              # Work upward until we have a block containing a date.
-              block = link
-              block_text = ""
+              url = (
+                  f"{BASE}/calendars/day/"
+                  f"{day_string}/"
+              )
 
-              for _ in range(8):
-                  if block is None:
-                      break
+              print(f"Reading {url}")
 
-                  text = " ".join(
-                      block.get_text(" ", strip=True).split()
+              response = session.get(
+                  url,
+                  timeout=30
+              )
+
+              response.raise_for_status()
+
+              soup = BeautifulSoup(
+                  response.text,
+                  "html.parser"
+              )
+
+              # Each event title on OWU's calendar is an H3.
+              headings = soup.find_all("h3")
+
+              for heading in headings:
+
+                  title = " ".join(
+                      heading.get_text(
+                          " ",
+                          strip=True
+                      ).split()
                   )
 
-                  if date_re.search(text):
-                      block_text = text
-                      break
+                  if not title:
+                      continue
 
-                  block = block.parent
+                  # Find the event's More Information link
+                  # and time text near this heading.
+                  container = heading.parent
 
-              if not block_text:
-                  continue
+                  more_link = None
+                  event_text = ""
 
-              date_match = date_re.search(block_text)
-              if not date_match:
-                  continue
+                  for _ in range(5):
 
-              month = date_match.group(1)
-              day = int(date_match.group(2))
-
-              # Prefer heading text for the event title.
-              title = ""
-
-              if block:
-                  headings = block.find_all(
-                      ["h2", "h3", "h4", "h5", "h6"]
-                  )
-
-                  for heading in headings:
-                      candidate = " ".join(
-                          heading.get_text(" ", strip=True).split()
-                      )
-
-                      if (
-                          candidate
-                          and not date_re.fullmatch(candidate)
-                          and candidate.lower() != "more information"
-                      ):
-                          title = candidate
+                      if container is None:
                           break
 
-              if not title:
-                  candidate = " ".join(
-                      link.get_text(" ", strip=True).split()
+                      event_text = " ".join(
+                          container.get_text(
+                              " ",
+                              strip=True
+                          ).split()
+                      )
+
+                      links = container.find_all(
+                          "a",
+                          href=True
+                      )
+
+                      for link in links:
+
+                          href = link.get(
+                              "href",
+                              ""
+                          )
+
+                          if (
+                              "/calendars/details/"
+                              in href
+                          ):
+                              more_link = link
+                              break
+
+                      if more_link:
+                          break
+
+                      container = container.parent
+
+                  if not more_link:
+                      continue
+
+                  event_url = urljoin(
+                      BASE,
+                      more_link["href"]
                   )
 
-                  if candidate.lower() != "more information":
-                      title = candidate
+                  # Make sure this detail page is
+                  # actually for the date being read.
+                  if day_string not in event_url:
+                      continue
 
-              if not title:
-                  continue
+                  # Shorter title for dashboard.
+                  display_title = re.sub(
+                      r"^OWU Students:\s*",
+                      "",
+                      title,
+                      flags=re.IGNORECASE
+                  ).strip()
 
-              # Remove the OWU student prefix to save dashboard space.
-              display_title = re.sub(
-                  r"^OWU Students:\s*",
-                  "",
-                  title,
-                  flags=re.IGNORECASE
-              ).strip()
+                  # Exclude athletic contests because
+                  # My Sports already handles those.
+                  lower = display_title.lower()
 
-              # We already have a dedicated My Sports section.
-              # Do not duplicate athletic contests here.
-              athletic_phrases = [
-                  "ohio wesleyan university women's soccer",
-                  "ohio wesleyan university men's soccer",
-                  "ohio wesleyan university football",
-                  "ohio wesleyan university volleyball",
-                  "ohio wesleyan university field hockey",
-                  "ohio wesleyan university basketball",
-                  "ohio wesleyan university baseball",
-                  "ohio wesleyan university softball",
-                  "ohio wesleyan university lacrosse",
-                  "ohio wesleyan university tennis",
-                  "ohio wesleyan university golf",
-                  "ohio wesleyan university wrestling",
-                  "ohio wesleyan university swimming",
-                  "ohio wesleyan university track",
-                  "ohio wesleyan university cross country",
-              ]
+                  athletics_terms = [
+                      "women's soccer",
+                      "mens soccer",
+                      "men's soccer",
+                      "football vs",
+                      "football at",
+                      "field hockey vs",
+                      "field hockey at",
+                      "volleyball vs",
+                      "volleyball at",
+                      "basketball vs",
+                      "basketball at",
+                      "baseball vs",
+                      "baseball at",
+                      "softball vs",
+                      "softball at",
+                      "lacrosse vs",
+                      "lacrosse at",
+                      "tennis vs",
+                      "tennis at",
+                      "golf vs",
+                      "golf at",
+                      "wrestling vs",
+                      "wrestling at",
+                      "swimming & diving",
+                      "track & field",
+                      "cross country"
+                  ]
 
-              lower_title = title.lower()
+                  if any(
+                      term in lower
+                      for term in athletics_terms
+                  ):
+                      continue
 
-              if any(
-                  phrase in lower_title
-                  for phrase in athletic_phrases
-              ):
-                  continue
+                  start_time = None
+                  end_time = None
+                  all_day = False
 
-              time_match = time_re.search(block_text)
+                  range_match = time_re.search(
+                      event_text
+                  )
 
-              start_time = None
-              end_time = None
-              all_day = False
+                  if range_match:
 
-              if time_match:
-                  start_time = time_match.group(1)
-                  end_time = time_match.group(2)
-              else:
-                  all_day = True
+                      start_time = (
+                          range_match
+                          .group(1)
+                          .strip()
+                      )
 
-              # Determine year from the detail-page URL when possible.
-              year_match = re.search(
-                  r"/(20\d{2})-\d{2}-\d{2}/?",
-                  event_url
-              )
+                      end_time = (
+                          range_match
+                          .group(2)
+                          .strip()
+                      )
 
-              year = (
-                  int(year_match.group(1))
-                  if year_match
-                  else current_year
-              )
+                  else:
 
-              month_number = datetime.strptime(
-                  month[:3],
-                  "%b"
-              ).month
+                      single_match = (
+                          single_time_re.search(
+                              event_text
+                          )
+                      )
 
-              event_date = (
-                  f"{year:04d}-"
-                  f"{month_number:02d}-"
-                  f"{day:02d}"
-              )
+                      if single_match:
 
-              key = (event_date, display_title, event_url)
+                          start_time = (
+                              single_match
+                              .group(1)
+                              .strip()
+                          )
 
-              if key in seen:
-                  continue
+                      else:
+                          all_day = True
 
-              seen.add(key)
+                  key = (
+                      day_string,
+                      display_title,
+                      event_url
+                  )
 
-              events.append({
-                  "date": event_date,
-                  "title": display_title,
-                  "startTime": start_time,
-                  "endTime": end_time,
-                  "allDay": all_day,
-                  "url": event_url
-              })
+                  if key in seen:
+                      continue
+
+                  seen.add(key)
+
+                  events.append({
+                      "date": day_string,
+                      "title": display_title,
+                      "startTime": start_time,
+                      "endTime": end_time,
+                      "allDay": all_day,
+                      "url": event_url
+                  })
+
+              # Be polite to OWU's server.
+              time.sleep(0.15)
 
           events.sort(
               key=lambda e: (
@@ -248,12 +286,24 @@ jobs:
           )
 
           output = {
-              "source": URL,
-              "updated": datetime.now().astimezone().isoformat(),
+              "source": (
+                  "https://www.owu.edu/calendars/"
+              ),
+              "updated": (
+                  datetime.now()
+                  .astimezone()
+                  .isoformat()
+              ),
+              "daysCollected": 30,
               "events": events
           }
 
-          with open("events.json", "w", encoding="utf-8") as f:
+          with open(
+              "events.json",
+              "w",
+              encoding="utf-8"
+          ) as f:
+
               json.dump(
                   output,
                   f,
@@ -261,16 +311,25 @@ jobs:
                   ensure_ascii=False
               )
 
-          print(f"Saved {len(events)} OWU campus events.")
+          print()
+          print(
+              f"Saved {len(events)} "
+              "OWU campus events."
+          )
+          print()
 
-          for event in events[:20]:
+          for event in events:
+
               print(
                   event["date"],
+                  "|",
                   event["startTime"],
                   "-",
                   event["endTime"],
+                  "|",
                   event["title"]
               )
+
           PY
 
       - name: Commit events data if changed
@@ -287,7 +346,5 @@ jobs:
 
           git commit -m "Auto-update OWU campus events"
 
-          # Protect against another workflow updating main
-          # while this workflow was running.
           git pull --rebase origin main
           git push origin main
