@@ -1,0 +1,552 @@
+{
+  "source": "https://www.owu.edu/academics/academic-resources/academic-calendar/2026-2027-academic-year-and-2027-summer-session/",
+  "updated": "2026-08-26T17:47:10.006247+00:00",
+  "events": [
+    {
+      "startDate": "2026-08-20",
+      "endDate": "2026-08-20",
+      "title": "Opening Convocation Ceremony",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/new-students/opening-convocation/"
+    },
+    {
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-26",
+      "title": "Full Semester and First Module Courses Begin",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-09-03",
+      "endDate": "2026-09-03",
+      "title": "Last Day to Add/Drop Full Semester and First Module Courses",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/add-drop-classes/"
+    },
+    {
+      "startDate": "2026-09-04",
+      "endDate": "2026-09-04",
+      "title": "Temporary Incomplete Coursework Due (Spring/Summer 2026 Incompletes)",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-09-18",
+      "endDate": "2026-09-18",
+      "title": "Temporary Incomplete Final Grades Due (Spring/Summer 2026 Incompletes)",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-24",
+      "title": "Last Day to Withdraw from First Module Courses",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2026-09-24",
+      "endDate": "2026-09-24",
+      "title": "OWU Connection Conference",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/the-owu-connection/owu-connection-conference/"
+    },
+    {
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-11",
+      "title": "Midsemester Break (no classes)",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-10-07",
+      "endDate": "2026-10-07",
+      "title": "Spring Pre-Registration Begins (add courses to carts on Self-Service )",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "title": "First Module Ends",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "title": "Midsemester Grades Due / First Module Grades Due by 4:30 p.m. EDT",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
+      "title": "Second Module Begins",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-10-26",
+      "endDate": "2026-10-26",
+      "title": "Seniors Spring Registration Opens (7 a.m. EDT)",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-10-27",
+      "endDate": "2026-10-27",
+      "title": "Last Day to Add/Drop Second Module Courses",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/add-drop-classes/"
+    },
+    {
+      "startDate": "2026-11-02",
+      "endDate": "2026-11-02",
+      "title": "Juniors Spring Registration Opens (7 a.m. EST)",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "title": "Last Day to Withdraw from Full Semester Courses",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2026-11-09",
+      "endDate": "2026-11-09",
+      "title": "Sophomores Spring Registration Opens (7 a.m. EST)",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-11-16",
+      "endDate": "2026-11-16",
+      "title": "Freshmen Spring Registration Opens (7 a.m. EST)",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "title": "Last Day to Withdraw from Second Module Courses",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2026-11-19",
+      "endDate": "2026-11-19",
+      "title": "Additional Course / Late Spring Registration Opens (7 a.m. EST)",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-29",
+      "title": "Thanksgiving Break (no classes)",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-12-11",
+      "endDate": "2026-12-11",
+      "title": "Last Day of Classes",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-12-11",
+      "endDate": "2026-12-11",
+      "title": "Spring Registration Closes (11:59 p.m. EST)",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-13",
+      "title": "Reading Days",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-12-14",
+      "endDate": "2026-12-14",
+      "title": "Final Examinations",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/fall-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2026-12-15",
+      "endDate": "2026-12-15",
+      "title": "Final Examinations",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/fall-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2026-12-16",
+      "endDate": "2026-12-16",
+      "title": "Final Examinations",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/fall-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "title": "Final Examinations",
+      "section": "Fall Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/fall-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2026-12-17",
+      "endDate": "2026-12-17",
+      "title": "Full Semester and Second Module Ends (10:30 p.m. EST)",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2026-12-21",
+      "endDate": "2026-12-21",
+      "title": "Final Grades Due (4:30 p.m. EST)",
+      "section": "Fall Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-01-13",
+      "endDate": "2027-01-13",
+      "title": "Full Semester and First Module Courses Begin",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-01-21",
+      "endDate": "2027-01-21",
+      "title": "Last Day to Add/Drop Full Semester and First Module Courses",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/add-drop-classes/"
+    },
+    {
+      "startDate": "2027-01-29",
+      "endDate": "2027-01-29",
+      "title": "Temporary Incomplete Coursework Due (Fall 2026 Incompletes)",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-02-11",
+      "endDate": "2027-02-11",
+      "title": "Last Day to Withdraw from First Module Courses",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2027-02-12",
+      "endDate": "2027-02-12",
+      "title": "Temporary Incomplete Final Grades Due (Fall 2026 Incompletes)",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-02-25",
+      "endDate": "2027-02-25",
+      "title": "OWU Connection Conference",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/the-owu-connection/owu-connection-conference/"
+    },
+    {
+      "startDate": "2027-03-02",
+      "endDate": "2027-03-02",
+      "title": "First Module Courses End",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-03-03",
+      "endDate": "2027-03-03",
+      "title": "Second Module Courses Begin",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-03-03",
+      "endDate": "2027-03-03",
+      "title": "Summer / Fall Pre-Registration Begins (add courses to carts on Self-Service )",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-03-06",
+      "endDate": "2027-03-14",
+      "title": "Spring Break (no classes)",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-03-08",
+      "endDate": "2027-03-08",
+      "title": "Midsemester Grades Due / First Module Grades Due by 4:30 p.m. EST",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-03-18",
+      "endDate": "2027-03-18",
+      "title": "Last Day to Add/Drop Second Module Courses",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/add-drop-classes/"
+    },
+    {
+      "startDate": "2027-03-22",
+      "endDate": "2027-03-22",
+      "title": "Registration opens for Fall / Summer (Continuing Seniors) at 7 a.m. EDT",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-03-29",
+      "endDate": "2027-03-29",
+      "title": "Registration opens for Fall / Summer (Juniors) at 7 a.m. EDT",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-03-30",
+      "endDate": "2027-03-30",
+      "title": "Last Day to Withdraw from Full Semester Courses",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2027-04-05",
+      "endDate": "2027-04-05",
+      "title": "Registration opens for Fall / Summer (Sophomores) at 7 a.m. EDT",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-04-08",
+      "endDate": "2027-04-08",
+      "title": "Last Day to Withdraw from Second Module Courses",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2027-04-12",
+      "endDate": "2027-04-12",
+      "title": "Registration opens for Fall / Summer (Returning Freshmen) at 7 a.m. EDT",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-04-15",
+      "endDate": "2027-04-15",
+      "title": "Additional Course / Late Registration opens for Fall / Summer (All Returning Students) at 7 a.m. EDT",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-04-27",
+      "endDate": "2027-04-27",
+      "title": "Last Day of Full Semester / Second Module Classes",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-04-27",
+      "endDate": "2027-04-27",
+      "title": "Registration closes for Fall / Summer at 11:59 p.m. EDT",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-04-28",
+      "endDate": "2027-04-28",
+      "title": "Reading Day",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-04-29",
+      "endDate": "2027-04-29",
+      "title": "Final Examinations",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/spring-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2027-04-30",
+      "endDate": "2027-04-30",
+      "title": "Final Examinations",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/spring-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2027-05-01",
+      "endDate": "2027-05-01",
+      "title": "Final Examinations (a.m.), Reading Day (p.m.)",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/spring-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2027-05-02",
+      "endDate": "2027-05-02",
+      "title": "Reading Day",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-05-03",
+      "endDate": "2027-05-03",
+      "title": "Final Examinations",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/spring-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2027-05-04",
+      "endDate": "2027-05-04",
+      "title": "Final Examinations",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/spring-2026-final-exam-schedule/"
+    },
+    {
+      "startDate": "2027-05-04",
+      "endDate": "2027-05-04",
+      "title": "Full Semester and Second Module Ends at 5 p.m. EDT",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-05-05",
+      "endDate": "2027-05-05",
+      "title": "Graduating Senior Grades Due by 5 p.m. EDT",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-05-08",
+      "endDate": "2027-05-08",
+      "title": "Commencement Ceremony",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/commencement-week/"
+    },
+    {
+      "startDate": "2027-05-10",
+      "endDate": "2027-05-10",
+      "title": "Remaining Grades Due by 4:30 p.m. EDT",
+      "section": "Spring Semester",
+      "url": null
+    },
+    {
+      "startDate": "2027-05-17",
+      "endDate": "2027-05-17",
+      "title": "Full Session and First Module Courses Begin",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-05-19",
+      "endDate": "2027-05-19",
+      "title": "Last Day to Add/Drop Full Session and First Module Courses",
+      "section": "Summer Session",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/add-drop-classes/"
+    },
+    {
+      "startDate": "2027-05-28",
+      "endDate": "2027-05-28",
+      "title": "Last Day to Withdraw from First Module Courses",
+      "section": "Summer Session",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2027-05-31",
+      "endDate": "2027-05-31",
+      "title": "Memorial Day (no classes)",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-06-16",
+      "endDate": "2027-06-16",
+      "title": "Last Day of First Module Classes",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-06-17",
+      "endDate": "2027-06-18",
+      "title": "Final Examinations in First Module Courses",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-06-18",
+      "endDate": "2027-06-18",
+      "title": "First Module Courses End at 4:30 p.m. EDT",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-06-22",
+      "endDate": "2027-06-22",
+      "title": "First Module Grades Due by 4:30 p.m. EDT",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-06-25",
+      "endDate": "2027-06-25",
+      "title": "Last Day to Withdraw from Full Session Courses",
+      "section": "Summer Session",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
+    },
+    {
+      "startDate": "2027-06-30",
+      "endDate": "2027-06-30",
+      "title": "June Degree Conferral Date (no ceremony)",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-05",
+      "endDate": "2027-07-05",
+      "title": "Independence Day Observed (no classes)",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-21",
+      "endDate": "2027-07-21",
+      "title": "Last Day of Full Session Classes",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-22",
+      "endDate": "2027-07-23",
+      "title": "Final Examinations in Full Session Courses",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-23",
+      "endDate": "2027-07-23",
+      "title": "Full Session Courses End at 4:30 p.m. EDT",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-27",
+      "endDate": "2027-07-27",
+      "title": "Full Session Grades Due by 4:30 p.m. EDT",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-30",
+      "endDate": "2027-07-30",
+      "title": "July Degree Conferral Date (no ceremony)",
+      "section": "Summer Session",
+      "url": null
+    }
+  ]
+}
