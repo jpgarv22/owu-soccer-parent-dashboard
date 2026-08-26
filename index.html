@@ -606,6 +606,35 @@ main{
    CAMPUS EVENTS
 ===================================================== */
 
+.events-card{
+  grid-template-rows:35px minmax(0,1fr);
+}
+
+.event-tabs{
+  display:flex;
+  align-items:center;
+  gap:5px;
+}
+
+.event-tab{
+  padding:4px 7px;
+  border:1px solid #4d5057;
+  border-radius:4px;
+  background:#121419;
+  color:#d8d9dd;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:.025em;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+
+.event-tab.active{
+  border-color:#ef3155;
+  background:var(--red);
+  color:#fff;
+}
+
 .event-list{
   min-height:0;
   padding:0 10px;
@@ -614,35 +643,57 @@ main{
   scrollbar-width:thin;
 }
 
+.event-day{
+  padding:7px 0 2px;
+  color:#ff496b;
+  font-size:clamp(9px,.46vw,12px);
+  font-weight:950;
+  letter-spacing:.055em;
+  text-transform:uppercase;
+  border-bottom:1px solid rgba(255,255,255,.16);
+}
+
 .event-row{
   min-height:44px;
   display:grid;
-  grid-template-columns:64px minmax(0,1fr);
+  grid-template-columns:76px minmax(0,1fr);
   gap:9px;
   align-items:center;
+  padding:5px 0;
   border-bottom:1px solid rgba(255,255,255,.10);
 }
 
-.event-row:last-child{
-  border-bottom:0;
-}
-
-.event-date{
-  color:#ff496b;
-  font-size:clamp(10px,.52vw,14px);
-  font-weight:900;
-  text-transform:uppercase;
+.event-time{
+  color:#c3c5ca;
+  font-size:clamp(8.5px,.42vw,11px);
+  font-weight:750;
+  line-height:1.18;
 }
 
 .event-name{
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  font-size:clamp(13px,.72vw,18px);
-  line-height:1.08;
+  min-width:0;
+  font-size:clamp(11px,.60vw,15px);
+  line-height:1.12;
   font-weight:800;
 }
 
+.event-link{
+  color:#fff;
+  text-decoration:none;
+}
+
+.event-link:hover{
+  color:#ff5a79;
+  text-decoration:underline;
+}
+
+.event-empty{
+  padding:18px 10px;
+  color:#aeb1b7;
+  text-align:center;
+  font-size:10px;
+  line-height:1.4;
+}
 
 /* =====================================================
    OWU BRANDING
@@ -1277,8 +1328,12 @@ nav a:last-child{
       <section class="info-card events-card" style="height:100%;">
 
         <div class="info-title-row">
-          <div class="info-title">
-            Upcoming OWU Campus Events
+          <div class="info-title" id="eventsTitle">
+            OWU Events
+          </div>
+          <div class="event-tabs" role="tablist" aria-label="OWU event view">
+            <button class="event-tab active" id="campusEventsTab" type="button">Campus</button>
+            <button class="event-tab" id="academicEventsTab" type="button">Academic</button>
           </div>
         </div>
 
@@ -1772,124 +1827,149 @@ async function loadWeather(){
    CAMPUS EVENTS
 ===================================================== */
 
-const owuEvents = [
-
-{
-  date:"2026-08-20T16:00:00-04:00",
-  end:"2026-08-20T23:59:00-04:00",
-  title:"Opening Convocation"
-},
-
-{
-  date:"2026-08-21T08:00:00-04:00",
-  end:"2026-08-23T23:59:00-04:00",
-  title:"Camp Oh-Wooo"
-},
-
-{
-  date:"2026-08-24T08:00:00-04:00",
-  end:"2026-08-28T23:59:00-04:00",
-  title:"Welcome Week"
-},
-
-{
-  date:"2026-08-26T08:00:00-04:00",
-  end:"2026-08-26T23:59:00-04:00",
-  title:"Fall Semester Courses Begin"
-},
-
-{
-  date:"2026-09-03T08:00:00-04:00",
-  end:"2026-09-03T23:59:00-04:00",
-  title:"Last Day to Add/Drop"
-},
-
-{
-  date:"2026-10-02T08:00:00-04:00",
-  end:"2026-10-03T23:59:00-04:00",
-  title:"Homecoming & Family Weekend"
-},
-
-{
-  date:"2026-10-07T08:00:00-04:00",
-  end:"2026-10-11T23:59:00-04:00",
-  title:"Midsemester Break"
-},
-
-{
-  date:"2026-11-21T08:00:00-05:00",
-  end:"2026-11-29T23:59:00-05:00",
-  title:"Thanksgiving Break"
-}
-
+const academicEvents = [
+  { date:"2026-08-20", end:"2026-08-20", title:"Opening Convocation" },
+  { date:"2026-08-21", end:"2026-08-23", title:"Camp Oh-Wooo" },
+  { date:"2026-08-24", end:"2026-08-28", title:"Welcome Week" },
+  { date:"2026-08-26", end:"2026-08-26", title:"Fall Semester Courses Begin" },
+  { date:"2026-09-03", end:"2026-09-03", title:"Last Day to Add/Drop" },
+  { date:"2026-10-02", end:"2026-10-03", title:"Homecoming & Family Weekend" },
+  { date:"2026-10-07", end:"2026-10-11", title:"Midsemester Break" },
+  { date:"2026-11-21", end:"2026-11-29", title:"Thanksgiving Break" }
 ];
 
+let campusEventsData = { events:[] };
+let currentEventsView = "campus";
 
-function renderEvents(){
-
-  const now =
-    new Date();
-
-  const upcoming =
-    owuEvents
-      .filter(
-        event =>
-          new Date(event.end) >
-          now
-      );
-
-  const container =
-    document.getElementById(
-      "eventList"
-    );
-
-  container.innerHTML =
-    "";
-
-  upcoming.forEach(
-    event => {
-
-      const eventDate =
-        new Date(event.date);
-
-      const dateText =
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone:"America/New_York",
-            month:"short",
-            day:"numeric"
-          }
-        )
-        .format(eventDate);
-
-      const row =
-        document.createElement(
-          "div"
-        );
-
-      row.className =
-        "event-row";
-
-      row.innerHTML = `
-
-        <div class="event-date">
-          ${dateText}
-        </div>
-
-        <div class="event-name">
-          ${event.title}
-        </div>
-
-      `;
-
-      container.appendChild(
-        row
-      );
-    }
-  );
+function easternDateKey(date = new Date()){
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone:"America/New_York",
+    year:"numeric", month:"2-digit", day:"2-digit"
+  }).formatToParts(date);
+  const get = type => parts.find(p => p.type === type)?.value;
+  return `${get("year")}-${get("month")}-${get("day")}`;
 }
 
+function easternMinutesNow(){
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone:"America/New_York",
+    hour:"2-digit", minute:"2-digit", hourCycle:"h23"
+  }).formatToParts(new Date());
+  const get = type => Number(parts.find(p => p.type === type)?.value || 0);
+  return get("hour") * 60 + get("minute");
+}
+
+function timeToMinutes(text){
+  const match = String(text || "").match(/(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)/i);
+  if(!match) return null;
+  let hour = Number(match[1]);
+  const minute = Number(match[2] || 0);
+  const pm = match[3].toLowerCase().startsWith("p");
+  if(pm && hour !== 12) hour += 12;
+  if(!pm && hour === 12) hour = 0;
+  return hour * 60 + minute;
+}
+
+function campusEventIsUpcoming(event){
+  const today = easternDateKey();
+  if(event.date > today) return true;
+  if(event.date < today) return false;
+  if(event.allDay) return true;
+  const end = timeToMinutes(event.endTime);
+  if(end !== null) return end > easternMinutesNow();
+  const start = timeToMinutes(event.startTime);
+  return start === null || start >= easternMinutesNow();
+}
+
+function formatEventDay(dateKey){
+  const [year,month,day] = dateKey.split("-").map(Number);
+  return new Intl.DateTimeFormat("en-US", {
+    weekday:"short", month:"short", day:"numeric"
+  }).format(new Date(year,month-1,day,12));
+}
+
+function eventTimeText(event){
+  if(event.allDay) return "All day";
+  if(event.startTime && event.endTime) return `${event.startTime} – ${event.endTime}`;
+  return event.startTime || event.endTime || "All day";
+}
+
+function renderCampusEvents(){
+  const container = document.getElementById("eventList");
+  const events = (campusEventsData.events || [])
+    .filter(campusEventIsUpcoming)
+    .sort((a,b) => a.date.localeCompare(b.date) || (timeToMinutes(a.startTime) ?? -1) - (timeToMinutes(b.startTime) ?? -1));
+
+  container.innerHTML = "";
+  if(!events.length){
+    container.innerHTML = '<div class="event-empty">No upcoming campus events are available right now.</div>';
+    return;
+  }
+
+  let lastDate = "";
+  events.forEach(event => {
+    if(event.date !== lastDate){
+      const day = document.createElement("div");
+      day.className = "event-day";
+      day.textContent = formatEventDay(event.date);
+      container.appendChild(day);
+      lastDate = event.date;
+    }
+
+    const row = document.createElement("div");
+    row.className = "event-row";
+    const title = event.url
+      ? `<a class="event-link" href="${event.url}" target="_blank" rel="noopener">${event.title}</a>`
+      : event.title;
+    row.innerHTML = `<div class="event-time">${eventTimeText(event)}</div><div class="event-name">${title}</div>`;
+    container.appendChild(row);
+  });
+}
+
+function renderAcademicEvents(){
+  const container = document.getElementById("eventList");
+  const today = easternDateKey();
+  const events = academicEvents.filter(event => event.end >= today);
+  container.innerHTML = "";
+
+  events.forEach(event => {
+    const row = document.createElement("div");
+    row.className = "event-row";
+    row.innerHTML = `<div class="event-time">${formatEventDay(event.date)}</div><div class="event-name">${event.title}</div>`;
+    container.appendChild(row);
+  });
+}
+
+function renderEvents(){
+  document.getElementById("campusEventsTab").classList.toggle("active", currentEventsView === "campus");
+  document.getElementById("academicEventsTab").classList.toggle("active", currentEventsView === "academic");
+  document.getElementById("eventsTitle").textContent = currentEventsView === "campus" ? "OWU Campus Events" : "Academic Calendar";
+  if(currentEventsView === "campus") renderCampusEvents();
+  else renderAcademicEvents();
+}
+
+async function loadCampusEvents(){
+  try{
+    const response = await fetch(`events.json?ts=${Date.now()}`, { cache:"no-store" });
+    if(!response.ok) throw new Error("events.json unavailable");
+    campusEventsData = await response.json();
+    if(!Array.isArray(campusEventsData.events)) campusEventsData.events = [];
+  }catch(error){
+    console.warn("Could not load events.json", error);
+    campusEventsData = { events:[] };
+  }
+  renderEvents();
+}
+
+document.getElementById("campusEventsTab").addEventListener("click", () => {
+  currentEventsView = "campus";
+  renderEvents();
+});
+
+document.getElementById("academicEventsTab").addEventListener("click", () => {
+  currentEventsView = "academic";
+  renderEvents();
+});
 
 /* =====================================================
    SPORTS
@@ -2664,7 +2744,7 @@ updateClock();
 
 loadWeather();
 
-renderEvents();
+loadCampusEvents();
 
 loadSports();
 
@@ -2684,6 +2764,11 @@ setInterval(
 setInterval(
   renderEvents,
   60000
+);
+
+setInterval(
+  loadCampusEvents,
+  1800000
 );
 
 
