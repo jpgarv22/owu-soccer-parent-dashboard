@@ -1851,48 +1851,304 @@ function easternDateKey(date = new Date()){
   return `${get("year")}-${get("month")}-${get("day")}`;
 }
 
-function easternMinutesNow(){
-  const parts = new Intl.DateTimeFormat("en-US", {
-    timeZone:"America/New_York",
-    hour:"2-digit", minute:"2-digit", hourCycle:"h23"
-  }).formatToParts(new Date());
-  const get = type => Number(parts.find(p => p.type === type)?.value || 0);
-  return get("hour") * 60 + get("minute");
-}
-
 function timeToMinutes(text){
-  const match = String(text || "").match(/(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)/i);
+  const match = String(text || "").match(
+    /(\d{1,2})(?::(\d{2}))?\s*(a\.?m\.?|p\.?m\.?)/i
+  );
+
   if(!match) return null;
+
   let hour = Number(match[1]);
   const minute = Number(match[2] || 0);
   const pm = match[3].toLowerCase().startsWith("p");
+
   if(pm && hour !== 12) hour += 12;
   if(!pm && hour === 12) hour = 0;
+
   return hour * 60 + minute;
 }
 
-function campusEventIsUpcoming(event){
-  const today = easternDateKey();
-  if(event.date > today) return true;
-  if(event.date < today) return false;
-  if(event.allDay) return true;
-  const end = timeToMinutes(event.endTime);
-  if(end !== null) return end > easternMinutesNow();
-  const start = timeToMinutes(event.startTime);
-  return start === null || start >= easternMinutesNow();
+
+function easternWallClockToDate(
+  dateKey,
+  minutes,
+  dayOffset = 0
+){
+  const [year,month,day] =
+    dateKey.split("-").map(Number);
+
+  const hour =
+    Math.floor(minutes / 60);
+
+  const minute =
+    minutes % 60;
+
+  const wallUtc =
+    Date.UTC(
+      year,
+      month - 1,
+      day + dayOffset,
+      hour,
+      minute,
+      0
+    );
+
+  const probe =
+    new Date(wallUtc);
+
+  const easternParts =
+    new Intl.DateTimeFormat(
+      "en-US",
+      {
+        timeZone:"America/New_York",
+        year:"numeric",
+        month:"2-digit",
+        day:"2-digit",
+        hour:"2-digit",
+        minute:"2-digit",
+        hourCycle:"h23"
+      }
+    )
+    .formatToParts(probe);
+
+  const part = type =>
+    Number(
+      easternParts
+        .find(p => p.type === type)
+        ?.value || 0
+    );
+
+  const easternAsUtc =
+    Date.UTC(
+      part("year"),
+      part("month") - 1,
+      part("day"),
+      part("hour"),
+      part("minute"),
+      0
+    );
+
+  const offset =
+    easternAsUtc - wallUtc;
+
+  return new Date(
+    wallUtc - offset
+  );
 }
 
-function formatEventDay(dateKey){
-  const [year,month,day] = dateKey.split("-").map(Number);
-  return new Intl.DateTimeFormat("en-US", {
-    weekday:"short", month:"short", day:"numeric"
-  }).format(new Date(year,month-1,day,12));
+
+function campusEventTimes(event){
+
+  if(event.allDay){
+    return {
+      start:null,
+      end:null
+    };
+  }
+
+  const startMinutes =
+    timeToMinutes(event.startTime);
+
+  const endMinutes =
+    timeToMinutes(event.endTime);
+
+  const start =
+    startMinutes !== null
+      ? easternWallClockToDate(
+          event.date,
+          startMinutes
+        )
+      : null;
+
+  let end = null;
+
+  if(endMinutes !== null){
+
+    const crossesMidnight =
+      startMinutes !== null &&
+      endMinutes < startMinutes;
+
+    end =
+      easternWallClockToDate(
+        event.date,
+        endMinutes,
+        crossesMidnight ? 1 : 0
+      );
+  }
+
+  return {
+    start,
+    end
+  };
 }
+
+
+function campusEventIsUpcoming(event){
+
+  const now =
+    new Date();
+
+  if(event.allDay){
+
+    const endOfDay =
+      easternWallClockToDate(
+        event.date,
+        (23 * 60) + 59
+      );
+
+    return endOfDay > now;
+  }
+
+  const {
+    start,
+    end
+  } = campusEventTimes(event);
+
+  if(end){
+    return end > now;
+  }
+
+  /*
+    If OWU supplies only a start time,
+    keep the event visible for two hours
+    after it begins.
+  */
+  if(start){
+    return (
+      new Date(
+        start.getTime() +
+        (2 * 60 * 60 * 1000)
+      ) > now
+    );
+  }
+
+  return true;
+}
+
+
+function localTimeParts(date){
+
+  const parts =
+    new Intl.DateTimeFormat(
+      "en-US",
+      {
+        hour:"numeric",
+        minute:"2-digit",
+        hour12:true
+      }
+    )
+    .formatToParts(date);
+
+  const get = type =>
+    parts.find(
+      p => p.type === type
+    )?.value || "";
+
+  return {
+    time:
+      `${get("hour")}:${get("minute")}`,
+    period:
+      get("dayPeriod").toUpperCase()
+  };
+}
+
+
+function localTimeZoneName(date){
+
+  const parts =
+    new Intl.DateTimeFormat(
+      "en-US",
+      {
+        timeZoneName:"short"
+      }
+    )
+    .formatToParts(date);
+
+  return (
+    parts.find(
+      p => p.type === "timeZoneName"
+    )?.value || ""
+  );
+}
+
 
 function eventTimeText(event){
-  if(event.allDay) return "All day";
-  if(event.startTime && event.endTime) return `${event.startTime} – ${event.endTime}`;
-  return event.startTime || event.endTime || "All day";
+
+  if(event.allDay){
+    return "ALL DAY";
+  }
+
+  const {
+    start,
+    end
+  } = campusEventTimes(event);
+
+  if(!start && !end){
+    return "ALL DAY";
+  }
+
+  if(start && !end){
+
+    const startParts =
+      localTimeParts(start);
+
+    const zone =
+      localTimeZoneName(start);
+
+    return (
+      `${startParts.time} ` +
+      `${startParts.period} ${zone}`
+    );
+  }
+
+  if(!start && end){
+
+    const endParts =
+      localTimeParts(end);
+
+    const zone =
+      localTimeZoneName(end);
+
+    return (
+      `${endParts.time} ` +
+      `${endParts.period} ${zone}`
+    );
+  }
+
+  const startParts =
+    localTimeParts(start);
+
+  const endParts =
+    localTimeParts(end);
+
+  const zone =
+    localTimeZoneName(start);
+
+  /*
+    Same AM/PM:
+    3:00–4:00 PM MST
+
+    Different AM/PM:
+    11:30 AM–1:00 PM MST
+  */
+
+  if(
+    startParts.period ===
+    endParts.period
+  ){
+    return (
+      `${startParts.time}–` +
+      `${endParts.time} ` +
+      `${endParts.period} ${zone}`
+    );
+  }
+
+  return (
+    `${startParts.time} ` +
+    `${startParts.period}–` +
+    `${endParts.time} ` +
+    `${endParts.period} ${zone}`
+  );
 }
 
 function renderCampusEvents(){
