@@ -2151,7 +2151,30 @@ function eventTimeText(event){
   );
 }
 
-function renderCampusEvents(){
+function formatEventDay(dateKey){
+
+  const [year,month,day] =
+    dateKey.split("-").map(Number);
+
+  return new Intl.DateTimeFormat(
+    "en-US",
+    {
+      weekday:"short",
+      month:"short",
+      day:"numeric"
+    }
+  )
+  .format(
+    new Date(
+      year,
+      month - 1,
+      day,
+      12
+    )
+  );
+}
+  
+  function renderCampusEvents(){
   const container = document.getElementById("eventList");
   const events = (campusEventsData.events || [])
     .filter(campusEventIsUpcoming)
