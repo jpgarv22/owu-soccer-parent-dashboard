@@ -1837,15 +1837,9 @@ async function loadWeather(){
 ===================================================== */
 
 const academicEvents = [
-  { date:"2026-08-20", end:"2026-08-20", title:"Opening Convocation" },
-  { date:"2026-08-21", end:"2026-08-23", title:"Camp Oh-Wooo" },
-  { date:"2026-08-24", end:"2026-08-28", title:"Welcome Week" },
-  { date:"2026-08-26", end:"2026-08-26", title:"Fall Semester Courses Begin" },
-  { date:"2026-09-03", end:"2026-09-03", title:"Last Day to Add/Drop" },
-  { date:"2026-10-02", end:"2026-10-03", title:"Homecoming & Family Weekend" },
-  { date:"2026-10-07", end:"2026-10-11", title:"Midsemester Break" },
-  { date:"2026-11-21", end:"2026-11-29", title:"Thanksgiving Break" }
-];
+let academicEventsData = {
+  events:[]
+};
 
 let campusEventsData = { events:[] };
 let currentEventsView = "campus";
@@ -2215,19 +2209,104 @@ function formatEventDay(dateKey){
 }
 
 function renderAcademicEvents(){
-  const container = document.getElementById("eventList");
-  const today = easternDateKey();
-  const events = academicEvents.filter(event => event.end >= today);
+
+  const container =
+    document.getElementById("eventList");
+
+  const today =
+    easternDateKey();
+
+  const events =
+    (academicEventsData.events || [])
+      .filter(
+        event =>
+          event.endDate >= today
+      )
+      .sort(
+        (a,b) =>
+          a.startDate.localeCompare(
+            b.startDate
+          )
+      );
+
   container.innerHTML = "";
 
-  events.forEach(event => {
-    const row = document.createElement("div");
-    row.className = "event-row";
-    row.innerHTML = `<div class="event-time">${formatEventDay(event.date)}</div><div class="event-name">${event.title}</div>`;
-    container.appendChild(row);
-  });
-}
+  if(!events.length){
 
+    container.innerHTML =
+      '<div class="event-empty">No upcoming academic dates are available right now.</div>';
+
+    return;
+  }
+
+  events.forEach(
+    event => {
+
+      const row =
+        document.createElement("div");
+
+      row.className =
+        "event-row";
+
+      let dateText =
+        formatEventDay(
+          event.startDate
+        );
+
+      if(
+        event.endDate &&
+        event.endDate !== event.startDate
+      ){
+
+        const [year,month,day] =
+          event.endDate
+            .split("-")
+            .map(Number);
+
+        const endText =
+          new Intl.DateTimeFormat(
+            "en-US",
+            {
+              month:"short",
+              day:"numeric"
+            }
+          )
+          .format(
+            new Date(
+              year,
+              month - 1,
+              day,
+              12
+            )
+          );
+
+        dateText += ` – ${endText}`;
+      }
+
+      const title =
+        event.url
+
+        ? `<a class="event-link"
+             href="${event.url}"
+             target="_blank"
+             rel="noopener">${event.title}</a>`
+
+        : event.title;
+
+      row.innerHTML = `
+        <div class="event-time">
+          ${dateText}
+        </div>
+
+        <div class="event-name">
+          ${title}
+        </div>
+      `;
+
+      container.appendChild(row);
+    }
+  );
+}
 function renderEvents(){
   document.getElementById("campusEventsTab").classList.toggle("active", currentEventsView === "campus");
   document.getElementById("academicEventsTab").classList.toggle("active", currentEventsView === "academic");
@@ -2259,6 +2338,52 @@ document.getElementById("academicEventsTab").addEventListener("click", () => {
   renderEvents();
 });
 
+async function loadAcademicEvents(){
+
+  try{
+
+    const response =
+      await fetch(
+        `academic.json?ts=${Date.now()}`,
+        {
+          cache:"no-store"
+        }
+      );
+
+    if(!response.ok){
+      throw new Error(
+        "academic.json unavailable"
+      );
+    }
+
+    academicEventsData =
+      await response.json();
+
+    if(
+      !Array.isArray(
+        academicEventsData.events
+      )
+    ){
+      academicEventsData.events = [];
+    }
+
+  }
+
+  catch(error){
+
+    console.warn(
+      "Could not load academic.json",
+      error
+    );
+
+    academicEventsData = {
+      events:[]
+    };
+  }
+
+  renderEvents();
+}
+  
 /* =====================================================
    SPORTS
 ===================================================== */
@@ -3033,7 +3158,9 @@ updateClock();
 loadWeather();
 
 loadCampusEvents();
-
+  
+loadAcademicEvents();
+  
 loadSports();
 
 
