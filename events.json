@@ -1,10 +1,27 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-08-26T15:58:37.943880+00:00",
+  "updated": "2026-08-26T16:22:51.292106+00:00",
+  "daysCollected": 30,
   "events": [
     {
       "date": "2026-08-26",
-      "title": "Today August 26",
+      "title": "Senior Class Toast",
+      "startTime": "6 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-senior-class-toast/2026-08-26/"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "OWU Esports Info Meeting",
+      "startTime": "7 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-owu-esports-info-meeting/2026-08-26/"
+    },
+    {
+      "date": "2026-08-26",
+      "title": "First Day of School Photo Stop",
       "startTime": "8 a.m.",
       "endTime": "1 p.m.",
       "allDay": false,
@@ -12,27 +29,579 @@
     },
     {
       "date": "2026-08-26",
-      "title": "Today August 26",
-      "startTime": "8 a.m.",
-      "endTime": "1 p.m.",
+      "title": "Free Coffee on the JAYwalk",
+      "startTime": "9 a.m.",
+      "endTime": "11 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-free-coffee-on-the-jaywalk/2026-08-26/"
     },
     {
-      "date": "2026-08-26",
-      "title": "Today August 26",
-      "startTime": "8 a.m.",
-      "endTime": "1 p.m.",
+      "date": "2026-08-27",
+      "title": "Lunar Eclipse Watch Party",
+      "startTime": "10 p.m.",
+      "endTime": "12:30 a.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-senior-class-toast/2026-08-26/"
+      "url": "https://www.owu.edu/calendars/details/owu-students-lunar-eclipse-watch-party/2026-08-27/"
     },
     {
-      "date": "2026-08-26",
-      "title": "Today August 26",
-      "startTime": "8 a.m.",
-      "endTime": "1 p.m.",
+      "date": "2026-08-27",
+      "title": "Counseling Services Open House",
+      "startTime": "10:30 a.m.",
+      "endTime": "1:30 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-owu-esports-info-meeting/2026-08-26/"
+      "url": "https://www.owu.edu/calendars/details/owu-students-counseling-services-open-house/2026-08-27/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Muslim Faith Reception",
+      "startTime": "4:30 p.m.",
+      "endTime": "5:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-muslim-faith-reception/2026-08-27/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Jewish Faith Reception",
+      "startTime": "5 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-jewish-faith-reception/2026-08-27/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "Dharmic Faith Reception",
+      "startTime": "5:30 p.m.",
+      "endTime": "6:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-dharmic-faith-reception/2026-08-27/"
+    },
+    {
+      "date": "2026-08-27",
+      "title": "The 1842: Board Game Night",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-board-game-night-2/2026-08-27/"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "The 1842: Craft Night – Door Hanger",
+      "startTime": "6 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-door-hanger/2026-08-28/"
+    },
+    {
+      "date": "2026-08-28",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "9 p.m.",
+      "endTime": "11 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-43/2026-08-28/"
+    },
+    {
+      "date": "2026-08-29",
+      "title": "The 1842: Craft Night – Door Hanger",
+      "startTime": "12 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-door-hanger-2/2026-08-29/"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "The 1842: Craft Night – Door Hanger",
+      "startTime": "12 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-door-hanger-3/2026-08-30/"
+    },
+    {
+      "date": "2026-08-30",
+      "title": "The 1842: Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-08-30/"
+    },
+    {
+      "date": "2026-09-01",
+      "title": "The 1842: Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-01/"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Student Involvement Fair",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-student-involvement-fair-2/2026-09-03/"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "The 1842: Craft Night – Football Keychain",
+      "startTime": "6 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-football-keychain/2026-09-03/"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "Film Screening: \"Contagion\"",
+      "startTime": "6:30 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/film-screening-contagion/2026-09-03/"
+    },
+    {
+      "date": "2026-09-03",
+      "title": "The 1842: Board Game Night",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-board-game-night/2026-09-03/"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "The 1842: Craft Night – Coloring Pages",
+      "startTime": "12 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-coloring-pages/2026-09-05/"
+    },
+    {
+      "date": "2026-09-05",
+      "title": "Guest Artist Recital: Alexander Goldberg, violin, and Mariko Kaneda, piano",
+      "startTime": "7 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/guest-artist-recital-alexander-goldberg-violin-and-mariko-kaneda-piano-2/2026-09-05/"
+    },
+    {
+      "date": "2026-09-06",
+      "title": "The 1842: Craft Night – Coloring Pages",
+      "startTime": "12 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-coloring-pages-2/2026-09-06/"
+    },
+    {
+      "date": "2026-09-06",
+      "title": "The 1842: Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-09-06/"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "Katherine Kearney Carpenter Lecture: Wil Haygood",
+      "startTime": "4:15 p.m.",
+      "endTime": "5:15 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/katherine-kearney-carpenter-lecture-wil-haygood/2026-09-08/"
+    },
+    {
+      "date": "2026-09-08",
+      "title": "The 1842: Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-08/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "OWU Near You - Philadelphia, PA",
+      "startTime": "5:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-philadelphia-pa/2026-09-09/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "OWU Near You - Toledo, OH",
+      "startTime": "5:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-toledo-oh-2/2026-09-09/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "OWU Near You - Cleveland/Willowick, OH",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-cleveland-willowick-oh/2026-09-09/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "OWU Near You - Somerville/Boston, MA",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-somerville-boston-ma/2026-09-09/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "OWU Near You - St. Louis, MO",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-st-louis-mo/2026-09-09/"
+    },
+    {
+      "date": "2026-09-09",
+      "title": "OWU Near You - Atlanta/Sandy Springs, GA",
+      "startTime": "6:30 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-atlanta-sandy-springs-ga/2026-09-09/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "OWU Near You - Phoenix, AZ",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-phoenix-az/2026-09-10/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "OWU Near You - Denver, CO",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-denver-co-2/2026-09-10/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Ross Art Museum Artist Discussion: Nicholas Hill",
+      "startTime": "6:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-artist-discussion-nicholas-hill/2026-09-10/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "OWU Near You - Detroit, MI",
+      "startTime": "5:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-detroit-mi/2026-09-11/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "OWU Near You - Chicago, IL",
+      "startTime": "6:30 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-chicago-il-2/2026-09-11/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-09-11/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Durham, NC",
+      "startTime": "1 p.m.",
+      "endTime": "3 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-durham-nc-2/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Louisville/Crestwood, KY",
+      "startTime": "1 p.m.",
+      "endTime": "3 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-louisville-crestwood-ky/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Bishop Backers Fall Community Day 2026",
+      "startTime": "12 p.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/bishop-backers-fall-community-day-2026/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Cherry Hill/Mount Laurel, NJ",
+      "startTime": "2 p.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-cherry-hill-mount-laurel-nj/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Tokyo, Japan",
+      "startTime": "2 p.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-tokyo-japan/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Charlotte, NC",
+      "startTime": "3 p.m.",
+      "endTime": "5 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-charlotte-nc/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Nairobi, Kenya",
+      "startTime": "4 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-nairobi-kenya/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "Maryland Zoo in Baltimore - Ohio Wesleyan Exclusive!",
+      "startTime": "5 p.m.",
+      "endTime": "7:15 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/maryland-zoo-in-baltimore-ohio-wesleyan-exclusive/2026-09-12/"
+    },
+    {
+      "date": "2026-09-12",
+      "title": "OWU Near You - Arlington, VA",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-arlington-va/2026-09-12/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "OWU Near You - Tokyo",
+      "startTime": "2 p.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-tokyo/2026-09-13/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "OWU Near You - Portland/Newberg, OR",
+      "startTime": "3 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-portland-newberg-or/2026-09-13/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "OWU Near You - Indianapolis/Carmel, IN",
+      "startTime": "4 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-indianapolis-carmel-in/2026-09-13/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "OWU Near You - Los Angeles/El Segundo, CA",
+      "startTime": "4 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-los-angeles-el-segundo-ca/2026-09-13/"
+    },
+    {
+      "date": "2026-09-13",
+      "title": "The 1842: Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-09-13/"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "OWU Near You - Columbus, OH",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-columbus-oh-3/2026-09-14/"
+    },
+    {
+      "date": "2026-09-14",
+      "title": "OWU Near You - Tampa, FL",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-tampa-fl/2026-09-14/"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "OWU Near You - Houston, TX",
+      "startTime": "5:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-houston-tx-2/2026-09-15/"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "OWU Near You - New York City",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-new-york-city/2026-09-15/"
+    },
+    {
+      "date": "2026-09-15",
+      "title": "The 1842: Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-15/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "OWU Near You - Nashville, TN",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-nashville-tn/2026-09-16/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "OWU Near You - Ann Arbor, MI",
+      "startTime": "5:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-ann-arbor-mi-3/2026-09-16/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "OWU Near You - Huntsville, AL",
+      "startTime": "5:30 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-huntsville-al/2026-09-16/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "OWU Near You - Boise, ID",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-boise-id-2/2026-09-16/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "OWU Near You - White Plains, NY",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-white-plains-ny/2026-09-16/"
+    },
+    {
+      "date": "2026-09-16",
+      "title": "OWU Near You - Pittsburgh, PA",
+      "startTime": "6:30 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-pittsburgh-pa/2026-09-16/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "OWU Near You - Cincinnati, OH",
+      "startTime": "5:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-cincinnati-oh-2/2026-09-17/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "OWU Near You - Charleston, SC",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-charleston-sc/2026-09-17/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "OWU Near You - Missoula, MT",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-near-you-missoula-mt/2026-09-17/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "The 1842: Singo",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-singo/2026-09-17/"
+    },
+    {
+      "date": "2026-09-18",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-09-18/"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Earthdance Revival",
+      "startTime": "4 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/earthdance-revival/2026-09-19/"
+    },
+    {
+      "date": "2026-09-19",
+      "title": "The 1842: Soccer Trivia Spin the Wheel",
+      "startTime": "6 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-soccer-trivia-spin-the-wheel/2026-09-19/"
+    },
+    {
+      "date": "2026-09-20",
+      "title": "Faculty Recital: Adrienne Lape",
+      "startTime": "3 p.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/faculty-recital-adrienne-lape/2026-09-20/"
+    },
+    {
+      "date": "2026-09-20",
+      "title": "The 1842: Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-09-20/"
+    },
+    {
+      "date": "2026-09-22",
+      "title": "The 1842: Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-22/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "The 1842: Craft Night – Iron Bead Coasters",
+      "startTime": "6 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-iron-bead-coasters/2026-09-24/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "'Exposure' (OWU student/faculty jazz group) Concert",
+      "startTime": "8 p.m.",
+      "endTime": "9:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/exposure-owu-student-faculty-jazz-group-concert/2026-09-24/"
     }
   ]
 }
