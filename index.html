@@ -1087,11 +1087,19 @@ nav a:last-child{
   }
 
   .event-row{
-    min-height:47px;
-    padding:4px 0;
-    grid-template-columns:62px minmax(0,1fr);
-  }
-
+  min-height:47px;
+  padding:6px 0;
+  grid-template-columns:max-content minmax(0,1fr);
+  gap:14px;
+  align-items:center;
+}
+  
+.event-time{
+  font-size:13px;
+  line-height:1.15;
+  white-space:nowrap;
+}
+  
   .event-date{
     font-size:14px;
   }
