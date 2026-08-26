@@ -1,1 +1,262 @@
+name: Update OWU academic calendar
 
+on:
+  schedule:
+    # Academic dates change infrequently; update once each morning.
+    - cron: "23 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-academic:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+
+      - name: Collect OWU academic calendar
+        run: |
+          python <<'PY'
+          import json
+          import re
+          from datetime import datetime
+          from urllib.parse import urljoin
+
+          import requests
+          from bs4 import BeautifulSoup
+
+          URL = (
+              "https://www.owu.edu/academics/"
+              "academic-resources/academic-calendar/"
+              "2026-2027-academic-year-and-2027-summer-session/"
+          )
+
+          BASE = "https://www.owu.edu"
+
+          MONTHS = {
+              "January": 1,
+              "February": 2,
+              "March": 3,
+              "April": 4,
+              "May": 5,
+              "June": 6,
+              "July": 7,
+              "August": 8,
+              "September": 9,
+              "October": 10,
+              "November": 11,
+              "December": 12,
+          }
+
+          month_pattern = "|".join(MONTHS.keys())
+
+          date_re = re.compile(
+              rf"^({month_pattern})\s+"
+              r"(\d{1,2})"
+              r"(?:\s*[-–—]\s*(\d{1,2}))?"
+              r",\s*(20\d{2})"
+              r"\s*[-–—]\s*"
+              r"(.+)$",
+              re.IGNORECASE
+          )
+
+          headers = {
+              "User-Agent": (
+                  "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                  "AppleWebKit/537.36 Chrome/140 Safari/537.36"
+              )
+          }
+
+          response = requests.get(
+              URL,
+              headers=headers,
+              timeout=30
+          )
+
+          response.raise_for_status()
+
+          soup = BeautifulSoup(
+              response.text,
+              "html.parser"
+          )
+
+          events = []
+          seen = set()
+
+          valid_sections = {
+              "Fall Semester",
+              "Spring Semester",
+              "Summer Session"
+          }
+
+          for item in soup.find_all("li"):
+
+              text = " ".join(
+                  item.get_text(
+                      " ",
+                      strip=True
+                  ).split()
+              )
+
+              match = date_re.match(text)
+
+              if not match:
+                  continue
+
+              month_name = match.group(1).title()
+              start_day = int(match.group(2))
+              end_day = (
+                  int(match.group(3))
+                  if match.group(3)
+                  else start_day
+              )
+              year = int(match.group(4))
+              title = match.group(5).strip()
+
+              # Determine which semester section this item belongs to.
+              heading = item.find_previous(
+                  ["h4", "h3"]
+              )
+
+              section = (
+                  "Academic Calendar"
+              )
+
+              if heading:
+                  heading_text = " ".join(
+                      heading.get_text(
+                          " ",
+                          strip=True
+                      ).split()
+                  )
+
+                  if heading_text in valid_sections:
+                      section = heading_text
+
+              month_number = MONTHS[month_name]
+
+              start_date = (
+                  f"{year:04d}-"
+                  f"{month_number:02d}-"
+                  f"{start_day:02d}"
+              )
+
+              end_date = (
+                  f"{year:04d}-"
+                  f"{month_number:02d}-"
+                  f"{end_day:02d}"
+              )
+
+              # Preserve a useful OWU link when the calendar item
+              # contains one.
+              event_url = None
+
+              first_link = item.find(
+                  "a",
+                  href=True
+              )
+
+              if first_link:
+                  event_url = urljoin(
+                      BASE,
+                      first_link["href"]
+                  )
+
+              key = (
+                  start_date,
+                  end_date,
+                  title
+              )
+
+              if key in seen:
+                  continue
+
+              seen.add(key)
+
+              events.append({
+                  "startDate": start_date,
+                  "endDate": end_date,
+                  "title": title,
+                  "section": section,
+                  "url": event_url
+              })
+
+          events.sort(
+              key=lambda event: (
+                  event["startDate"],
+                  event["title"]
+              )
+          )
+
+          output = {
+              "source": URL,
+              "updated": (
+                  datetime.now()
+                  .astimezone()
+                  .isoformat()
+              ),
+              "events": events
+          }
+
+          with open(
+              "academic.json",
+              "w",
+              encoding="utf-8"
+          ) as file:
+
+              json.dump(
+                  output,
+                  file,
+                  indent=2,
+                  ensure_ascii=False
+              )
+
+          print()
+          print(
+              f"Saved {len(events)} academic calendar entries."
+          )
+          print()
+
+          for event in events:
+              print(
+                  event["startDate"],
+                  "to",
+                  event["endDate"],
+                  "|",
+                  event["section"],
+                  "|",
+                  event["title"]
+              )
+          PY
+
+      - name: Commit academic data if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add academic.json
+
+          if git diff --cached --quiet; then
+            echo "No academic calendar changes."
+            exit 0
+          fi
+
+          git commit -m "Auto-update OWU academic calendar"
+
+          git pull --rebase origin main
+          git push origin main
