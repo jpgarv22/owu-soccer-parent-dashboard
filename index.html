@@ -2309,7 +2309,7 @@ function renderAcademicEvents(){
 function renderEvents(){
   document.getElementById("campusEventsTab").classList.toggle("active", currentEventsView === "campus");
   document.getElementById("academicEventsTab").classList.toggle("active", currentEventsView === "academic");
-  document.getElementById("eventsTitle").textContent = currentEventsView === "campus" ? "OWU Campus Events" : "Academic Calendar";
+  document.getElementById("eventsTitle").textContent = "OWU EVENTS";
   if(currentEventsView === "campus") renderCampusEvents();
   else renderAcademicEvents();
 }
