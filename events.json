@@ -1,87 +1,15 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-08-26T16:22:51.292106+00:00",
+  "updated": "2026-08-28T01:10:57.453358+00:00",
   "daysCollected": 30,
   "events": [
     {
-      "date": "2026-08-26",
-      "title": "Senior Class Toast",
-      "startTime": "6 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-senior-class-toast/2026-08-26/"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "OWU Esports Info Meeting",
-      "startTime": "7 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-owu-esports-info-meeting/2026-08-26/"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "First Day of School Photo Stop",
-      "startTime": "8 a.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-first-day-of-school-photo-stop/2026-08-26/"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "Free Coffee on the JAYwalk",
-      "startTime": "9 a.m.",
-      "endTime": "11 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-free-coffee-on-the-jaywalk/2026-08-26/"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Lunar Eclipse Watch Party",
-      "startTime": "10 p.m.",
-      "endTime": "12:30 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-lunar-eclipse-watch-party/2026-08-27/"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Counseling Services Open House",
-      "startTime": "10:30 a.m.",
+      "date": "2026-08-28",
+      "title": "Day on the JAY",
+      "startTime": "11:30 a.m.",
       "endTime": "1:30 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-counseling-services-open-house/2026-08-27/"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Muslim Faith Reception",
-      "startTime": "4:30 p.m.",
-      "endTime": "5:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-muslim-faith-reception/2026-08-27/"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Jewish Faith Reception",
-      "startTime": "5 p.m.",
-      "endTime": "6 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-jewish-faith-reception/2026-08-27/"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "Dharmic Faith Reception",
-      "startTime": "5:30 p.m.",
-      "endTime": "6:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-dharmic-faith-reception/2026-08-27/"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "The 1842: Board Game Night",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-board-game-night-2/2026-08-27/"
+      "url": "https://www.owu.edu/calendars/details/day-on-the-jay-8/2026-08-28/"
     },
     {
       "date": "2026-08-28",
@@ -602,6 +530,14 @@
       "endTime": "9:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/exposure-owu-student-faculty-jazz-group-concert/2026-09-24/"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-09-25/"
     }
   ]
 }
