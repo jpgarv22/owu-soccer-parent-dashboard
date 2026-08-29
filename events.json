@@ -1,32 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-08-28T23:21:18.417147+00:00",
+  "updated": "2026-08-29T00:21:34.183629+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-08-28",
-      "title": "Day on the JAY",
-      "startTime": "11:30 a.m.",
-      "endTime": "1:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/day-on-the-jay-8/2026-08-28/"
-    },
-    {
-      "date": "2026-08-28",
-      "title": "The 1842: Craft Night – Door Hanger",
-      "startTime": "6 p.m.",
-      "endTime": "1 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-door-hanger/2026-08-28/"
-    },
-    {
-      "date": "2026-08-28",
-      "title": "Perkins Observatory: Friday Evening Program",
-      "startTime": "9 p.m.",
-      "endTime": "11 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-43/2026-08-28/"
-    },
     {
       "date": "2026-08-29",
       "title": "The 1842: Craft Night – Door Hanger",
@@ -538,6 +514,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-09-25/"
+    },
+    {
+      "date": "2026-09-27",
+      "title": "The 1842: Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-09-27/"
     }
   ]
 }
