@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-08-30T23:30:32.103119+00:00",
+  "updated": "2026-08-31T05:36:01.776691+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-08-30",
-      "title": "The 1842: Craft Night – Door Hanger",
-      "startTime": "12 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-door-hanger-3/2026-08-30/"
-    },
-    {
-      "date": "2026-08-30",
-      "title": "The 1842: Karaoke Sunday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-08-30/"
-    },
     {
       "date": "2026-09-01",
       "title": "The 1842: Karaoke Tuesday",
@@ -514,6 +498,22 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-sunday/2026-09-27/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "The 1842: Baseball Trivia Spin the Wheel",
+      "startTime": "6 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-baseball-trivia-spin-the-wheel/2026-09-29/"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "The 1842: Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-29/"
     }
   ]
 }
