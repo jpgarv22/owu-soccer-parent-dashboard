@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T00:11:19.160Z",
+  "updatedAt": "2026-09-02T04:28:42.324Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2551,8 +2551,8 @@
       "time": "7:30 p.m",
       "location": "Cleveland, Ohio",
       "site": "Away",
-      "watchUrl": "https://flosports.link/3RQM6o1",
-      "statsUrl": "https://athletics.case.edu/sidearmstats/msoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-soccer/stats/2026/case-western-reserve/boxscore/10153",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-09-01T12:00:00.000Z"
     },
@@ -2563,8 +2563,8 @@
       "time": "3:30 p.m",
       "location": "Williamsport, Pa.",
       "site": "Away",
-      "watchUrl": "https://go.flocollege.com/partner/landmark?utm_medium=partner&utm_source=multiple&utm_content=landingpage&utm_term=lycoming-college&contract_id=0063m00000u4k10aaa",
-      "statsUrl": "https://lycomingathletics.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/lycoming/boxscore/10187",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-01T12:00:00.000Z"
     },
@@ -2575,8 +2575,8 @@
       "time": "7 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/transylvania/boxscore/10238",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-01T12:00:00.000Z"
     },
@@ -2587,8 +2587,8 @@
       "time": "7 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/30/watchowu-volleyball.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/heidelberg/boxscore/10207",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-01T12:00:00.000Z"
     },
