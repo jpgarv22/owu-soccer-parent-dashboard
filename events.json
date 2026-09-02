@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-01T21:47:23.229058+00:00",
+  "updated": "2026-09-02T00:15:22.816321+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-01",
-      "title": "The 1842: Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-01/"
-    },
     {
       "date": "2026-09-03",
       "title": "Student Involvement Fair",
@@ -514,6 +506,22 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-29/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Milligan Lecture: Wandia Chiuri '05",
+      "startTime": "7:30 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/milligan-lecture-wandia-chiuri-05/2026-10-01/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "The 1842: Board Game Night",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-board-game-night/2026-10-01/"
     }
   ]
 }
