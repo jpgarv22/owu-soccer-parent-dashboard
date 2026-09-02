@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T09:37:29.008Z",
+  "updatedAt": "2026-09-02T14:28:01.079Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -661,6 +661,30 @@
       "isoDate": "2026-02-20T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Geneva (DH)",
+      "date": "Feb 21 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Lewis Center, Ohio / Jennings Park",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/geneva/boxscore/10059",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Geneva (DH)",
+      "date": "Feb 21 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Lewis Center, Ohio / Jennings Park",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/geneva/boxscore/10099",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-21T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Basketball",
       "opponent": "Denison",
       "date": "Feb 21 (Sat) 3 p.m.",
@@ -769,6 +793,18 @@
       "isoDate": "2026-02-26T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Earlham",
+      "date": "Feb 27 (Fri) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Richmond, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/earlham/boxscore/10062",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-27T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "RV Franklin & Marshall",
       "date": "Feb 27 (Fri) 4 p.m.",
@@ -803,6 +839,42 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-02-27T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Earlham (DH)",
+      "date": "Feb 28 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Richmond, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/earlham/boxscore/10060",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Earlham (DH)",
+      "date": "Feb 28 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Richmond, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/earlham/boxscore/10061",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Heidelberg",
+      "date": "Mar 3 (Tue) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-03T12:00:00.000Z"
     },
     {
       "sport": "Women's Lacrosse",
@@ -851,6 +923,30 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-03-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 7 (Sat) 11 a.m.",
+      "time": "11 a.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10064",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 7 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10065",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-07T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -911,6 +1007,30 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 9 (Mon) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10066",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-09T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 9 (Mon) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10067",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-09T12:00:00.000Z"
     },
     {
       "sport": "Women's Softball",
@@ -1021,6 +1141,30 @@
       "isoDate": "2026-03-12T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Christian",
+      "date": "Mar 13 (Fri) 11 a.m.",
+      "time": "11 a.m",
+      "location": "Lancaster, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-christian/boxscore/10068",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Roosevelt",
+      "date": "Mar 13 (Fri) 1:30 p.m.",
+      "time": "1:30 p.m",
+      "location": "Lancaster, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/roosevelt/boxscore/10069",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Track & Field",
       "opponent": "NCAA Indoor National Championship",
       "date": "Mar 13 (Fri) Mar 14 (Sat)",
@@ -1069,6 +1213,18 @@
       "isoDate": "2026-03-13T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Roosevelt",
+      "date": "Mar 14 (Sat) 1:30 p.m.",
+      "time": "1:30 p.m",
+      "location": "Chillicothe, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/roosevelt/boxscore/10070",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "#6 York (Pa.)",
       "date": "Mar 14 (Sat) 3 p.m.",
@@ -1105,6 +1261,30 @@
       "isoDate": "2026-03-14T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Capital",
+      "date": "Mar 18 (Wed) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Capital",
+      "date": "Mar 19 (Thu) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/capital/boxscore/10072",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-19T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Track & Field",
       "opponent": "Washington & Lee Carnival",
       "date": "Mar 20 (Fri) Mar 21 (Sat)",
@@ -1127,6 +1307,30 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-03-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Olivet (DH)",
+      "date": "Mar 21 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/olivet/boxscore/10073",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Olivet (DH)",
+      "date": "Mar 21 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/olivet/boxscore/10074",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-21T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -1177,6 +1381,18 @@
       "isoDate": "2026-03-21T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Olivet",
+      "date": "Mar 22 (Sun) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/olivet/boxscore/10075",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-22T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Softball",
       "opponent": "Ohio Northern",
       "date": "Mar 22 (Sun) 10 a.m.",
@@ -1201,6 +1417,18 @@
       "isoDate": "2026-03-22T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "#25 Baldwin Wallace",
+      "date": "Mar 25 (Wed) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Berea, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/baldwin-wallace/boxscore/10076",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-25T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "WashU Distance Carnival",
       "date": "Mar 27 (Fri)",
@@ -1211,6 +1439,30 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-03-27T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Wooster (DH)",
+      "date": "Mar 28 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wooster/boxscore/10077",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Wooster (DH)",
+      "date": "Mar 28 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wooster/boxscore/10078",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -1285,6 +1537,30 @@
       "isoDate": "2026-03-28T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Wilmington",
+      "date": "Mar 31 (Tue) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wilmington/boxscore/10079",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "John Carroll",
+      "date": "Apr 2 (Thu) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/john-carroll/boxscore/10082",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-02T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Softball",
       "opponent": "Capital (DH)",
       "date": "Apr 2 (Thu) 3:30 p.m.",
@@ -1307,6 +1583,18 @@
       "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/capital/boxscore/10037",
       "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
       "isoDate": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "John Carroll",
+      "date": "Apr 3 (Fri) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/john-carroll/boxscore/10081",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-03T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -1393,6 +1681,30 @@
       "isoDate": "2026-04-07T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "DePauw (DH)",
+      "date": "Apr 8 (Wed) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/depauw/boxscore/10083",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-08T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "DePauw (DH)",
+      "date": "Apr 8 (Wed) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/depauw/boxscore/10084",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-08T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Wooster",
       "date": "Apr 8 (Wed) 7 p.m.",
@@ -1465,6 +1777,30 @@
       "isoDate": "2026-04-10T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Wabash (DH)",
+      "date": "Apr 11 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Crawfordsville, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wabash/boxscore/10085",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Wabash (DH)",
+      "date": "Apr 11 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Crawfordsville, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wabash/boxscore/10086",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Wittenberg",
       "date": "Apr 11 (Sat) 1 p.m.",
@@ -1525,6 +1861,18 @@
       "isoDate": "2026-04-12T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Otterbein",
+      "date": "Apr 14 (Tue) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/otterbein/boxscore/10087",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-14T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "DePauw",
       "date": "Apr 14 (Tue) 7 p.m.",
@@ -1571,6 +1919,42 @@
       "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wilmington/boxscore/10047",
       "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
       "isoDate": "2026-04-15T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Otterbein",
+      "date": "Apr 16 (Thu) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Westerville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/otterbein/boxscore/10088",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Christian",
+      "date": "Apr 18 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-christian/boxscore/10146",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Christian",
+      "date": "Apr 18 (Sat) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-christian/boxscore/10148",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -1645,6 +2029,18 @@
       "isoDate": "2026-04-18T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Northern",
+      "date": "Apr 20 (Mon) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-northern/boxscore/10080",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-20T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Lacrosse",
       "opponent": "John Carroll",
       "date": "Apr 21 (Tue) 7 p.m.",
@@ -1681,6 +2077,30 @@
       "isoDate": "2026-04-21T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Kenyon (DH)",
+      "date": "Apr 22 (Wed) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/kenyon/boxscore/10089",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-22T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Kenyon (DH)",
+      "date": "Apr 22 (Wed) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/kenyon/boxscore/10090",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-22T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Wabash",
       "date": "Apr 22 (Wed) 5 p.m.",
@@ -1715,6 +2135,30 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-04-24T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Oberlin (DH)",
+      "date": "Apr 25 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/oberlin/boxscore/10091",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Oberlin (DH)",
+      "date": "Apr 25 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/oberlin/boxscore/10092",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -1801,6 +2245,30 @@
       "isoDate": "2026-04-25T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "#1 Denison (DH)",
+      "date": "Apr 28 (Tue) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/denison/boxscore/10094",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "#1 Denison (DH)",
+      "date": "Apr 28 (Tue) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/denison/boxscore/10093",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-28T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Denison",
       "date": "Apr 29 (Wed) 7 p.m.",
@@ -1861,6 +2329,18 @@
       "isoDate": "2026-05-01T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "#16 Wittenberg (DH)",
+      "date": "May 2 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wittenberg/boxscore/10096",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-05-02T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Oberlin",
       "date": "May 2 (Sat) 7 p.m.",
@@ -1871,6 +2351,18 @@
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/oberlin/boxscore/10003",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
       "isoDate": "2026-05-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "#16 Wittenberg (DH)",
+      "date": "May 3 (Sun) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wittenberg/boxscore/10095",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-05-03T12:00:00.000Z"
     },
     {
       "sport": "Women's Softball",
