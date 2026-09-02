@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-02T14:28:01.079Z",
+  "updatedAt": "2026-09-02T18:40:24.667Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2708,7 +2708,7 @@
       "location": "Erie, Pa.",
       "site": "Home",
       "watchUrl": "",
-      "statsUrl": "",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-06T12:00:00.000Z"
     },
