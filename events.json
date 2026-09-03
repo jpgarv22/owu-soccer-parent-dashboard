@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-03T18:40:33.094778+00:00",
+  "updated": "2026-09-03T21:43:24.313948+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -458,6 +458,22 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/the-1842-karaoke-tuesday-3/2026-09-22/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Fall 2026 OWU Connection Conference",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/fall-2026-owu-connection-conference/2026-09-24/"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Fall 2026 OWU Connection Conference: Black Wall Street",
+      "startTime": "12 p.m.",
+      "endTime": "2 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/fall-2026-owu-connection-conference-black-wall-street/2026-09-24/"
     },
     {
       "date": "2026-09-24",
