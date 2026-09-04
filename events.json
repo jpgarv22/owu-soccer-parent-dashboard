@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-03T21:43:24.313948+00:00",
+  "updated": "2026-09-04T00:07:08.405596+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-03",
-      "title": "Student Involvement Fair",
-      "startTime": "5 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-student-involvement-fair-2/2026-09-03/"
-    },
-    {
-      "date": "2026-09-03",
-      "title": "The 1842: Craft Night – Football Keychain",
-      "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-football-keychain/2026-09-03/"
-    },
-    {
-      "date": "2026-09-03",
-      "title": "Film Screening: \"Contagion\"",
-      "startTime": "6:30 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/film-screening-contagion/2026-09-03/"
-    },
-    {
-      "date": "2026-09-03",
-      "title": "The 1842: Board Game Night",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/the-1842-board-game-night/2026-09-03/"
-    },
     {
       "date": "2026-09-05",
       "title": "The 1842: Craft Night – Coloring Pages",
@@ -578,6 +546,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-02/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "The 1842: Craft Night – Pennant Decorating",
+      "startTime": "12 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/the-1842-craft-night-pennant-decorating-2/2026-10-03/"
     }
   ]
 }
