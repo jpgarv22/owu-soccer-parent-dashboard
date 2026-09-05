@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T18:16:07.590Z",
+  "updatedAt": "2026-09-05T20:21:32.466Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2647,8 +2647,8 @@
       "time": "1 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/msoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-soccer/stats/2026/bethany/boxscore/10154",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
@@ -2659,8 +2659,8 @@
       "time": "11 a.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/marian/boxscore/10188",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
@@ -2703,8 +2703,8 @@
     {
       "sport": "Women's Field Hockey",
       "opponent": "Rochester",
-      "date": "Sep 6 (Sun) 4:30 p.m.",
-      "time": "4:30 p.m",
+      "date": "Sep 6 (Sun) 2 p.m.",
+      "time": "2 p.m",
       "location": "Erie, Pa.",
       "site": "Home",
       "watchUrl": "",
