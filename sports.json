@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T12:41:10.191Z",
+  "updatedAt": "2026-09-05T16:03:03.067Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2684,7 +2684,7 @@
       "location": "Springfield, Ohio",
       "site": "Home",
       "watchUrl": "",
-      "statsUrl": "",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
