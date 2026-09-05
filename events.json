@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-04T21:29:51.659182+00:00",
+  "updated": "2026-09-05T00:07:02.707549+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -554,6 +554,14 @@
       "endTime": "1 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-pennant-decorating-2/2026-10-03/"
+    },
+    {
+      "date": "2026-10-04",
+      "title": "Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-10-04/"
     }
   ]
 }
