@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-05T20:21:32.466Z",
+  "updatedAt": "2026-09-05T22:53:56.193Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2671,8 +2671,8 @@
       "time": "4 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/sewanee/boxscore/10240",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
@@ -2696,7 +2696,7 @@
       "location": "Springfield, Ohio",
       "site": "Away",
       "watchUrl": "",
-      "statsUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/wittenberg/boxscore/10210",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
