@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-05T22:57:26.596368+00:00",
+  "updated": "2026-09-06T00:58:39.843093+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-05",
-      "title": "Craft Night – Coloring Pages",
-      "startTime": "12 p.m.",
-      "endTime": "1 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-coloring-pages/2026-09-05/"
-    },
-    {
-      "date": "2026-09-05",
-      "title": "Guest Artist Recital: Alexander Goldberg, violin, and Mariko Kaneda, piano",
-      "startTime": "7 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/guest-artist-recital-alexander-goldberg-violin-and-mariko-kaneda-piano-2/2026-09-05/"
-    },
     {
       "date": "2026-09-06",
       "title": "Craft Night – Coloring Pages",
