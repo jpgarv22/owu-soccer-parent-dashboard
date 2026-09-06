@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-06T10:52:56.936Z",
+  "updatedAt": "2026-09-06T14:09:40.096Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2636,7 +2636,7 @@
       "location": "Granville, Ohio / Denison Golf Club",
       "site": "Away",
       "watchUrl": "",
-      "statsUrl": "",
+      "statsUrl": "https://scoreboard.clippd.com/tournaments/245062/scoring/team",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-golf/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
@@ -2714,25 +2714,25 @@
     },
     {
       "sport": "Women's Golf",
-      "opponent": "Joe Camoli / NFL Kickoff Classic",
+      "opponent": "ONU Kickoff Classic",
       "date": "Sep 6 (Sun)",
-      "time": "TBA",
-      "location": "TBA",
+      "time": "",
+      "location": "Harrod, Ohio / Colonial Golfers Club",
       "site": "Away",
       "watchUrl": "",
-      "statsUrl": "",
+      "statsUrl": "https://ohio-northern.leaderboardking.com/tournaments/trny_1VjklBYNKnrLCRwK3yeaPXE5?cohort=chrt_RoNl9Qy2WdQys2XLDkzvJm80",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-golf/schedule/2026",
       "isoDate": "2026-09-06T12:00:00.000Z"
     },
     {
       "sport": "Women's Golf",
-      "opponent": "Joe Camoli / NFL Kickoff Classic",
+      "opponent": "Joe Campoli Classic",
       "date": "Sep 7 (Mon)",
-      "time": "TBA",
-      "location": "TBA",
+      "time": "",
+      "location": "Harrod, Ohio / Colonial Golfers Club",
       "site": "Away",
       "watchUrl": "",
-      "statsUrl": "",
+      "statsUrl": "https://ohio-northern.leaderboardking.com/tournaments/trny_jdgbx4mQ05mVUJ60LzoJYXZn?cohort=chrt_5v6qoA0aW0XASenWxRdZz4mk",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-golf/schedule/2026",
       "isoDate": "2026-09-07T12:00:00.000Z"
     },
