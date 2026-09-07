@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-06T23:55:04.719582+00:00",
+  "updated": "2026-09-07T04:42:56.292209+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-06",
-      "title": "Craft Night – Coloring Pages",
-      "startTime": "12 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-coloring-pages-2/2026-09-06/"
-    },
-    {
-      "date": "2026-09-06",
-      "title": "Karaoke Sunday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-09-06/"
-    },
     {
       "date": "2026-09-08",
       "title": "Katherine Kearney Carpenter Lecture: Wil Haygood",
@@ -546,6 +530,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-10-04/"
+    },
+    {
+      "date": "2026-10-06",
+      "title": "Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-06/"
     }
   ]
 }
