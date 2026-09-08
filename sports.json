@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-08T11:13:45.575Z",
+  "updatedAt": "2026-09-08T15:06:31.573Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2720,7 +2720,7 @@
       "location": "Harrod, Ohio / Colonial Golfers Club",
       "site": "Away",
       "watchUrl": "",
-      "statsUrl": "https://ohio-northern.leaderboardking.com/tournaments/trny_1VjklBYNKnrLCRwK3yeaPXE5?cohort=chrt_RoNl9Qy2WdQys2XLDkzvJm80",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-golf/schedule/2026",
       "isoDate": "2026-09-06T12:00:00.000Z"
     },
@@ -2732,7 +2732,7 @@
       "location": "Harrod, Ohio / Colonial Golfers Club",
       "site": "Away",
       "watchUrl": "",
-      "statsUrl": "https://ohio-northern.leaderboardking.com/tournaments/trny_jdgbx4mQ05mVUJ60LzoJYXZn?cohort=chrt_5v6qoA0aW0XASenWxRdZz4mk",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-golf/schedule/2026",
       "isoDate": "2026-09-07T12:00:00.000Z"
     },
@@ -2743,8 +2743,8 @@
       "time": "4 p.m",
       "location": "Lexington, Ky.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://team1sports.com/transy/",
+      "statsUrl": "https://transysports.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-08T12:00:00.000Z"
     },
@@ -2755,8 +2755,8 @@
       "time": "7 p.m",
       "location": "Ada, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://go.flocollege.com/teams/ohio-northern-university?sp=conf-partner-k7p2&utm_medium=partner&utm_source=multiple&utm_content=school-landing-page&utm_term=ohio-northern-university",
+      "statsUrl": "https://www.onusports.com/sports/wsoc/2026-27/boxscores/20260908_y7hj.xml",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-08T12:00:00.000Z"
     },
@@ -2803,7 +2803,7 @@
       "time": "10:30 a.m",
       "location": "Geneva, N.Y.",
       "site": "Away",
-      "watchUrl": "",
+      "watchUrl": "https://hwsathletics.com/watch/",
       "statsUrl": "https://hwsathletics.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
@@ -2863,7 +2863,7 @@
       "time": "10:30 a.m",
       "location": "Geneva, N.Y.",
       "site": "Home",
-      "watchUrl": "",
+      "watchUrl": "https://hwsathletics.com/watch/",
       "statsUrl": "https://hwsathletics.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-13T12:00:00.000Z"
@@ -2872,8 +2872,8 @@
       "sport": "Women's Golf",
       "opponent": "Jimmy Hanlin Golf Classic",
       "date": "Sep 13 (Sun) Sep 14 (Mon)",
-      "time": "TBA",
-      "location": "TBA",
+      "time": "",
+      "location": "Painesville, Ohio / Little Mountain C.C. / Highland Heights, Ohio / Stonwater G.C.",
       "site": "Away",
       "watchUrl": "",
       "statsUrl": "",
@@ -2899,8 +2899,8 @@
       "time": "7 p.m",
       "location": "Steubenville, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://pacdigitalnetwork.com/franciscanu/",
+      "statsUrl": "https://franciscanathletics.com/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-16T12:00:00.000Z"
     },
@@ -2947,7 +2947,7 @@
       "time": "1:30 p.m",
       "location": "Danville, Ky.",
       "site": "Home",
-      "watchUrl": "",
+      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F273783&utm_campaign=847641rhodescollegevs&utm_medium=partner&utm_source=multiple&utm_content=signup&contract_id=0063m00000n3zm9aam&coverage_id=16134590&sp=conf-partner-k7p1",
       "statsUrl": "https://centrecolonels.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-19T12:00:00.000Z"
@@ -3007,7 +3007,7 @@
       "time": "1:30 p.m",
       "location": "Danville, Ky.",
       "site": "Away",
-      "watchUrl": "",
+      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F273788&utm_campaign=847643ohiowesleyanvsc&utm_medium=partner&utm_source=multiple&utm_content=signup&contract_id=0063m00000n3zm9aam&coverage_id=16134584&sp=conf-partner-k7p1",
       "statsUrl": "https://centrecolonels.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-20T12:00:00.000Z"
@@ -3031,8 +3031,8 @@
       "time": "4 p.m",
       "location": "Marietta, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F266571&utm_campaign=828871ohiowesleyanvsm&utm_medium=partner&utm_source=multiple&utm_content=signup&contract_id=0063m00000n3zlaaam&coverage_id=16112062&sp=conf-partner-k7p2",
+      "statsUrl": "https://pioneers.marietta.edu/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-20T12:00:00.000Z"
     },
@@ -3043,8 +3043,8 @@
       "time": "5 p.m",
       "location": "Hanover, Ind.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://team1sports.com/hanover/",
+      "statsUrl": "https://athletics.hanover.edu/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-22T12:00:00.000Z"
     },
@@ -3115,8 +3115,8 @@
       "time": "TBA",
       "location": "Bethany, W.Va.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.pacdigitalnetwork.com/bethanybison/?B=4087270",
+      "statsUrl": "https://bethanybison.com/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-26T12:00:00.000Z"
     },
@@ -3283,8 +3283,8 @@
       "time": "3:30 p.m",
       "location": "Gambier, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://athletics.kenyon.edu/sidearmstats/wsoc/summary",
+      "statsUrl": "https://athletics.kenyon.edu/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-06T12:00:00.000Z"
     },
@@ -3343,8 +3343,8 @@
       "time": "7 p.m",
       "location": "Sewanee, Tenn.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F273996&utm_campaign=847670ohiowesleyanvss&utm_medium=partner&utm_source=multiple&utm_content=signup&contract_id=0063m00000n3zm9aam&coverage_id=16134896&sp=conf-partner-k7p1",
+      "statsUrl": "https://sewaneetigers.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-10-10T12:00:00.000Z"
     },
@@ -3511,8 +3511,8 @@
       "time": "2:30 p.m",
       "location": "Greencastle, Ind.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://depauwtigers.com/sports/2022/8/5/depauw-video-player-2.aspx",
+      "statsUrl": "https://depauwtigers.com/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-17T12:00:00.000Z"
     },
@@ -3559,8 +3559,8 @@
       "time": "7 p.m",
       "location": "Oberlin, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://oberlinsportsnetwork.com/",
+      "statsUrl": "https://goyeo.com/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-20T12:00:00.000Z"
     },
@@ -3751,8 +3751,8 @@
       "time": "12 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.northcoastnetwork.com/denison/",
+      "statsUrl": "https://bigred.denison.edu/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
