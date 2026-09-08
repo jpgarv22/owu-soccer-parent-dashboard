@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-08T09:42:11.185917+00:00",
+  "updated": "2026-09-08T14:33:07.632995+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -66,6 +66,14 @@
       "endTime": "8:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-near-you-atlanta-sandy-springs-ga/2026-09-09/"
+    },
+    {
+      "date": "2026-09-10",
+      "title": "Alzheimer's Research Talk",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-alzheimer-s-research-talk/2026-09-10/"
     },
     {
       "date": "2026-09-10",
@@ -317,6 +325,14 @@
     },
     {
       "date": "2026-09-17",
+      "title": "Career & Grad School Fair",
+      "startTime": "11 a.m.",
+      "endTime": "2 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-career-grad-school-fair/2026-09-17/"
+    },
+    {
+      "date": "2026-09-17",
       "title": "OWU Near You - Cincinnati, OH",
       "startTime": "5:30 p.m.",
       "endTime": "7:30 p.m.",
@@ -426,6 +442,14 @@
       "endTime": "9:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/exposure-owu-student-faculty-jazz-group-concert/2026-09-24/"
+    },
+    {
+      "date": "2026-09-25",
+      "title": "Paint, Sip & Connect at The 1842",
+      "startTime": "4 p.m.",
+      "endTime": "6 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-paint-sip-connect-at-the-1842/2026-09-25/"
     },
     {
       "date": "2026-09-25",
