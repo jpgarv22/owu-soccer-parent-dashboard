@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-09T09:47:04.425158+00:00",
+  "updated": "2026-09-09T14:36:49.843644+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -90,6 +90,14 @@
       "endTime": "7:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-near-you-detroit-mi/2026-09-11/"
+    },
+    {
+      "date": "2026-09-11",
+      "title": "Corn Hole Tournament",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-corn-hole-tournament/2026-09-11/"
     },
     {
       "date": "2026-09-11",
@@ -314,6 +322,14 @@
       "endTime": "2 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-career-grad-school-fair/2026-09-17/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Insider's Guide to Applying to Graduate School",
+      "startTime": "4 p.m.",
+      "endTime": "4:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-insider-s-guide-to-applying-to-graduate-school/2026-09-17/"
     },
     {
       "date": "2026-09-17",
