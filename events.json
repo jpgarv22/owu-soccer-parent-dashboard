@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-08T21:51:54.290370+00:00",
+  "updated": "2026-09-09T00:15:34.705502+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-08",
-      "title": "Katherine Kearney Carpenter Lecture: Wil Haygood",
-      "startTime": "4:15 p.m.",
-      "endTime": "5:15 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/katherine-kearney-carpenter-lecture-wil-haygood/2026-09-08/"
-    },
-    {
-      "date": "2026-09-08",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-09-08/"
-    },
     {
       "date": "2026-09-09",
       "title": "OWU Near You - Philadelphia, PA",
