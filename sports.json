@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-09T00:11:38.342Z",
+  "updatedAt": "2026-09-09T04:37:28.881Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2743,8 +2743,8 @@
       "time": "4 p.m",
       "location": "Lexington, Ky.",
       "site": "Away",
-      "watchUrl": "https://team1sports.com/transy/",
-      "statsUrl": "https://transysports.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/transylvania/boxscore/10190",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-09-08T12:00:00.000Z"
     },
@@ -2755,8 +2755,8 @@
       "time": "7 p.m",
       "location": "Ada, Ohio",
       "site": "Away",
-      "watchUrl": "https://go.flocollege.com/teams/ohio-northern-university?sp=conf-partner-k7p2&utm_medium=partner&utm_source=multiple&utm_content=school-landing-page&utm_term=ohio-northern-university",
-      "statsUrl": "https://www.onusports.com/sports/wsoc/2026-27/boxscores/20260908_y7hj.xml",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/ohio-northern/boxscore/10273",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-08T12:00:00.000Z"
     },
