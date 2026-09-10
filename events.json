@@ -1,56 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-09T21:42:40.695080+00:00",
+  "updated": "2026-09-10T00:15:47.223485+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-09",
-      "title": "OWU Near You - Philadelphia, PA",
-      "startTime": "5:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-philadelphia-pa/2026-09-09/"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "OWU Near You - Toledo, OH",
-      "startTime": "5:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-toledo-oh-2/2026-09-09/"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "OWU Near You - Cleveland/Willowick, OH",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-cleveland-willowick-oh/2026-09-09/"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "OWU Near You - Somerville/Boston, MA",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-somerville-boston-ma/2026-09-09/"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "OWU Near You - St. Louis, MO",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-st-louis-mo/2026-09-09/"
-    },
-    {
-      "date": "2026-09-09",
-      "title": "OWU Near You - Atlanta/Sandy Springs, GA",
-      "startTime": "6:30 p.m.",
-      "endTime": "8:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-atlanta-sandy-springs-ga/2026-09-09/"
-    },
     {
       "date": "2026-09-10",
       "title": "Alzheimer's Research Talk",
@@ -570,6 +522,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-06/"
+    },
+    {
+      "date": "2026-10-09",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-09/"
     }
   ]
 }
