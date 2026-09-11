@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T14:24:36.923Z",
+  "updatedAt": "2026-09-11T18:30:19.065Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2798,13 +2798,13 @@
     },
     {
       "sport": "Women's Volleyball",
-      "opponent": "Calvin",
+      "opponent": "#15 Calvin",
       "date": "Sep 11 (Fri) 5 p.m.",
       "time": "5 p.m",
       "location": "Holland, Mich.",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/hopeathletics",
+      "statsUrl": "https://athletics.hope.edu/sidearmstats/wvball2/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-11T12:00:00.000Z"
     },
@@ -2851,8 +2851,8 @@
       "time": "10:30 a.m",
       "location": "Holland, Mich.",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/hopeathletics",
+      "statsUrl": "https://athletics.hope.edu/sidearmstats/wvball2/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
@@ -2863,8 +2863,8 @@
       "time": "2:30 p.m",
       "location": "Holland, Mich.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/hopeathletics",
+      "statsUrl": "https://athletics.hope.edu/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
