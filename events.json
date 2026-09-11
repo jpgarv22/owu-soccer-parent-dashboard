@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-10T21:38:38.156632+00:00",
+  "updated": "2026-09-11T00:11:23.027066+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-10",
-      "title": "Alzheimer's Research Talk",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-alzheimer-s-research-talk/2026-09-10/"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "OWU Near You - Phoenix, AZ",
-      "startTime": "5 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-phoenix-az/2026-09-10/"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "OWU Near You - Denver, CO",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-denver-co-2/2026-09-10/"
-    },
-    {
-      "date": "2026-09-10",
-      "title": "Ross Art Museum Artist Discussion: Nicholas Hill",
-      "startTime": "6:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/ross-art-museum-artist-discussion-nicholas-hill/2026-09-10/"
-    },
     {
       "date": "2026-09-11",
       "title": "OWU Near You - Detroit, MI",
