@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T19:18:50.688Z",
+  "updatedAt": "2026-09-12T22:15:26.734Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2815,8 +2815,8 @@
       "time": "1 p.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/john-carroll/boxscore/10112",
       "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
@@ -2839,8 +2839,8 @@
       "time": "3 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/asbury/boxscore/10241",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
@@ -2851,8 +2851,8 @@
       "time": "10:30 a.m",
       "location": "Holland, Mich.",
       "site": "Home",
-      "watchUrl": "https://www.youtube.com/hopeathletics",
-      "statsUrl": "https://athletics.hope.edu/sidearmstats/wvball2/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/albion/boxscore/10212",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
@@ -2863,8 +2863,8 @@
       "time": "2:30 p.m",
       "location": "Holland, Mich.",
       "site": "Away",
-      "watchUrl": "https://www.youtube.com/hopeathletics",
-      "statsUrl": "https://athletics.hope.edu/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/hope/boxscore/10213",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
