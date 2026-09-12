@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-11T21:43:38.160289+00:00",
+  "updated": "2026-09-12T00:18:58.858453+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-11",
-      "title": "OWU Near You - Detroit, MI",
-      "startTime": "5:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-detroit-mi/2026-09-11/"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "Corn Hole Tournament",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-corn-hole-tournament/2026-09-11/"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "OWU Near You - Chicago, IL",
-      "startTime": "6:30 p.m.",
-      "endTime": "8:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-chicago-il-2/2026-09-11/"
-    },
-    {
-      "date": "2026-09-11",
-      "title": "Perkins Observatory: Friday Evening Program",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-09-11/"
-    },
     {
       "date": "2026-09-12",
       "title": "OWU Near You - Durham, NC",
@@ -498,6 +466,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-09/"
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Central Ohio Symphony Concert: \"Superheroes & Supervillains\"",
+      "startTime": "3 p.m.",
+      "endTime": "5 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/central-ohio-symphony-concert-superheroes-supervillains/2026-10-11/"
     }
   ]
 }
