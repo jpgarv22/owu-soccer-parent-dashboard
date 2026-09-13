@@ -1,80 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-12T22:19:01.441544+00:00",
+  "updated": "2026-09-13T01:01:33.684070+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Durham, NC",
-      "startTime": "1 p.m.",
-      "endTime": "3 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-durham-nc-2/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Louisville/Crestwood, KY",
-      "startTime": "1 p.m.",
-      "endTime": "3 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-louisville-crestwood-ky/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "Bishop Backers Fall Community Day 2026",
-      "startTime": "12 p.m.",
-      "endTime": "4 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/bishop-backers-fall-community-day-2026/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Cherry Hill/Mount Laurel, NJ",
-      "startTime": "2 p.m.",
-      "endTime": "4 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-cherry-hill-mount-laurel-nj/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Tokyo, Japan",
-      "startTime": "2 p.m.",
-      "endTime": "4 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-tokyo-japan/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Charlotte, NC",
-      "startTime": "3 p.m.",
-      "endTime": "5 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-charlotte-nc/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Nairobi, Kenya",
-      "startTime": "4 p.m.",
-      "endTime": "6 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-nairobi-kenya/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "Maryland Zoo in Baltimore - Ohio Wesleyan Exclusive!",
-      "startTime": "5 p.m.",
-      "endTime": "7:15 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/maryland-zoo-in-baltimore-ohio-wesleyan-exclusive/2026-09-12/"
-    },
-    {
-      "date": "2026-09-12",
-      "title": "OWU Near You - Arlington, VA",
-      "startTime": "5 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-arlington-va/2026-09-12/"
-    },
     {
       "date": "2026-09-13",
       "title": "OWU Near You - Tokyo",
