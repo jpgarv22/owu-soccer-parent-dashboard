@@ -1,48 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-13T22:24:52.088893+00:00",
+  "updated": "2026-09-14T01:05:42.408335+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-13",
-      "title": "OWU Near You - Tokyo",
-      "startTime": "2 p.m.",
-      "endTime": "4 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-tokyo/2026-09-13/"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "OWU Near You - Portland/Newberg, OR",
-      "startTime": "3 p.m.",
-      "endTime": "6 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-portland-newberg-or/2026-09-13/"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "OWU Near You - Indianapolis/Carmel, IN",
-      "startTime": "4 p.m.",
-      "endTime": "6 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-indianapolis-carmel-in/2026-09-13/"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "OWU Near You - Los Angeles/El Segundo, CA",
-      "startTime": "4 p.m.",
-      "endTime": "6 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-los-angeles-el-segundo-ca/2026-09-13/"
-    },
-    {
-      "date": "2026-09-13",
-      "title": "Karaoke Sunday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-09-13/"
-    },
     {
       "date": "2026-09-14",
       "title": "OWU Near You - Columbus, OH",
@@ -402,6 +362,14 @@
       "endTime": "5 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/central-ohio-symphony-concert-superheroes-supervillains/2026-10-11/"
+    },
+    {
+      "date": "2026-10-13",
+      "title": "Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-13/"
     }
   ]
 }
