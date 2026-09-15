@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-14T23:08:25.044170+00:00",
+  "updated": "2026-09-15T01:28:36.528762+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-14",
-      "title": "OWU Near You - Columbus, OH",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-columbus-oh-3/2026-09-14/"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "OWU Near You - Tampa, FL",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-tampa-fl/2026-09-14/"
-    },
     {
       "date": "2026-09-15",
       "title": "OWU Near You - Houston, TX",
@@ -92,12 +76,28 @@
       "url": "https://www.owu.edu/calendars/details/owu-near-you-pittsburgh-pa/2026-09-16/"
     },
     {
+      "date": "2026-09-16",
+      "title": "Souled Out Welcome Bible Study",
+      "startTime": "6:30 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-souled-out-welcome-bible-study/2026-09-16/"
+    },
+    {
       "date": "2026-09-17",
       "title": "Career & Grad School Fair",
       "startTime": "11 a.m.",
       "endTime": "2 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-career-grad-school-fair/2026-09-17/"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "Constitution Day Celebration",
+      "startTime": "11:30 a.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-constitution-day-celebration/2026-09-17/"
     },
     {
       "date": "2026-09-17",
@@ -252,12 +252,28 @@
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-09-25/"
     },
     {
+      "date": "2026-09-26",
+      "title": "Make Friends at Whimsy Night",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-make-friends-at-whimsy-night/2026-09-26/"
+    },
+    {
       "date": "2026-09-27",
       "title": "Karaoke Sunday",
       "startTime": "8 p.m.",
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-09-27/"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "Autumn Mixer",
+      "startTime": "6 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-autumn-mixer/2026-09-28/"
     },
     {
       "date": "2026-09-29",
