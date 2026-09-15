@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-15T13:33:53.011777+00:00",
+  "updated": "2026-09-15T18:12:38.445225+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -301,6 +301,14 @@
     },
     {
       "date": "2026-10-01",
+      "title": "Film Screening: \"Good Night, and Good Luck\"",
+      "startTime": "6:30 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/film-screening-good-night-and-good-luck/2026-10-01/"
+    },
+    {
+      "date": "2026-10-01",
       "title": "Milligan Lecture: Wandia Chiuri '05",
       "startTime": "7:30 p.m.",
       "endTime": "9 p.m.",
@@ -357,11 +365,35 @@
     },
     {
       "date": "2026-10-03",
+      "title": "Battling Bishop Football Tailgate",
+      "startTime": "12 p.m.",
+      "endTime": "2 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/battling-bishop-football-tailgate/2026-10-03/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Bishop Walk",
+      "startTime": "12 p.m.",
+      "endTime": "12:15 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/bishop-walk/2026-10-03/"
+    },
+    {
+      "date": "2026-10-03",
       "title": "Craft Night – Pennant Decorating",
       "startTime": "12 p.m.",
       "endTime": "1 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-pennant-decorating-2/2026-10-03/"
+    },
+    {
+      "date": "2026-10-03",
+      "title": "Battling Bishop Soccer Tailgate",
+      "startTime": "3 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/battling-bishop-soccer-tailgate/2026-10-03/"
     },
     {
       "date": "2026-10-03",
@@ -394,6 +426,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-09/"
+    },
+    {
+      "date": "2026-10-11",
+      "title": "Ross Art Museum: Make-and-Take Superhero Masks",
+      "startTime": "1:30 p.m.",
+      "endTime": "2:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-make-and-take-superhero-masks/2026-10-11/"
     },
     {
       "date": "2026-10-11",
