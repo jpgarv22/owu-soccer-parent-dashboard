@@ -1,32 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-15T21:22:29.292759+00:00",
+  "updated": "2026-09-16T00:21:12.896700+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-15",
-      "title": "OWU Near You - Houston, TX",
-      "startTime": "5:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-houston-tx-2/2026-09-15/"
-    },
-    {
-      "date": "2026-09-15",
-      "title": "OWU Near You - New York City",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-new-york-city/2026-09-15/"
-    },
-    {
-      "date": "2026-09-15",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-09-15/"
-    },
     {
       "date": "2026-09-16",
       "title": "OWU Near You - Nashville, TN",
@@ -450,6 +426,22 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-13/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Opening Reception - Ross Art Museum",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/opening-reception-ross-art-museum-2/2026-10-15/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Ross Art Museum Performance: Dylan Craft '29",
+      "startTime": "8 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-performance-dylan-craft-29/2026-10-15/"
     }
   ]
 }
