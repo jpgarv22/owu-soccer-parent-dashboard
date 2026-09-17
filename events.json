@@ -1,64 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-16T22:56:50.587368+00:00",
+  "updated": "2026-09-17T01:25:59.100266+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-16",
-      "title": "OWU Near You - Nashville, TN",
-      "startTime": "5 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-nashville-tn/2026-09-16/"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OWU Near You - Ann Arbor, MI",
-      "startTime": "5:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-ann-arbor-mi-3/2026-09-16/"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OWU Near You - Huntsville, AL",
-      "startTime": "5:30 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-huntsville-al/2026-09-16/"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OWU Near You - Boise, ID",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-boise-id-2/2026-09-16/"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OWU Near You - White Plains, NY",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-white-plains-ny/2026-09-16/"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "OWU Near You - Pittsburgh, PA",
-      "startTime": "6:30 p.m.",
-      "endTime": "8:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-near-you-pittsburgh-pa/2026-09-16/"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "Souled Out Welcome Bible Study",
-      "startTime": "6:30 p.m.",
-      "endTime": "8:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-souled-out-welcome-bible-study/2026-09-16/"
-    },
     {
       "date": "2026-09-17",
       "title": "Career & Grad School Fair",
@@ -442,6 +386,30 @@
       "endTime": "9 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/ross-art-museum-performance-dylan-craft-29/2026-10-15/"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Craft Night – Sweetest Day Cards",
+      "startTime": "12 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-sweetest-day-cards/2026-10-16/"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Musical Theatre Scenes",
+      "startTime": "8 p.m.",
+      "endTime": "9:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/musical-theatre-scenes-3/2026-10-16/"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-16/"
     }
   ]
 }
