@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T00:28:38.076Z",
+  "updatedAt": "2026-09-17T06:07:56.973Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2911,8 +2911,8 @@
       "time": "7 p.m",
       "location": "Ada, Ohio",
       "site": "Away",
-      "watchUrl": "https://go.flocollege.com/teams/ohio-northern-university?sp=conf-partner-k7p2&utm_medium=partner&utm_source=multiple&utm_content=school-landing-page&utm_term=ohio-northern-university",
-      "statsUrl": "https://www.onusports.com/sports/msoc/2026-27/boxscores/20260916_tor0.xml",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-soccer/stats/2026/ohio-northern/boxscore/10156",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-09-16T12:00:00.000Z"
     },
@@ -2923,8 +2923,8 @@
       "time": "7 p.m",
       "location": "Steubenville, Ohio",
       "site": "Away",
-      "watchUrl": "https://pacdigitalnetwork.com/franciscanu/",
-      "statsUrl": "https://franciscanathletics.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/franciscan/boxscore/10242",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-16T12:00:00.000Z"
     },
