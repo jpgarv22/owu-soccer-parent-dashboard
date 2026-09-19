@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T20:36:43.807Z",
+  "updatedAt": "2026-09-19T23:01:17.788Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -2947,8 +2947,8 @@
       "time": "1 p.m",
       "location": "Greencastle, Ind.",
       "site": "Away",
-      "watchUrl": "https://depauwtigers.com/sports/2022/8/5/depauw-video-player-2.aspx",
-      "statsUrl": "https://depauwtigers.com/sidearmstats/football/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/depauw/boxscore/10113",
       "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
       "isoDate": "2026-09-19T12:00:00.000Z"
     },
@@ -3007,8 +3007,8 @@
       "time": "3 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/30/watchowu-volleyball.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/anderson/boxscore/10216",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-19T12:00:00.000Z"
     },
