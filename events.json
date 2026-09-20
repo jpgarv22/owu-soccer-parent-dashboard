@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-19T23:06:31.874474+00:00",
+  "updated": "2026-09-20T01:10:30.472417+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-19",
-      "title": "Earthdance Revival",
-      "startTime": "4 p.m.",
-      "endTime": "6 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/earthdance-revival/2026-09-19/"
-    },
-    {
-      "date": "2026-09-19",
-      "title": "Soccer Trivia Spin the Wheel",
-      "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-soccer-trivia-spin-the-wheel/2026-09-19/"
-    },
     {
       "date": "2026-09-20",
       "title": "Faculty Recital: Adrienne Lape",
