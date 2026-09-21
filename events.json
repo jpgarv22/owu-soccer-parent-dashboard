@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-20T22:26:56.265972+00:00",
+  "updated": "2026-09-21T01:06:26.900859+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-20",
-      "title": "Faculty Recital: Adrienne Lape",
-      "startTime": "3 p.m.",
-      "endTime": "4 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/faculty-recital-adrienne-lape/2026-09-20/"
-    },
-    {
-      "date": "2026-09-20",
-      "title": "Karaoke Sunday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-09-20/"
-    },
     {
       "date": "2026-09-22",
       "title": "Funtrium - Paint a Jar",
@@ -378,6 +362,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-2/2026-10-18/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-20/"
     }
   ]
 }
