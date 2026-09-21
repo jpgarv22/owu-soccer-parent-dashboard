@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-20T21:31:09.065Z",
+  "updatedAt": "2026-09-21T00:14:42.940Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3055,8 +3055,8 @@
       "time": "4 p.m",
       "location": "Marietta, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F266571&utm_campaign=828871ohiowesleyanvsm&utm_medium=partner&utm_source=multiple&utm_content=signup&contract_id=0063m00000n3zlaaam&coverage_id=16112062&sp=conf-partner-k7p2",
-      "statsUrl": "https://pioneers.marietta.edu/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/marietta/boxscore/10244",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-20T12:00:00.000Z"
     },
@@ -3135,8 +3135,8 @@
     {
       "sport": "Women's Soccer",
       "opponent": "Bethany",
-      "date": "Sep 26 (Sat) TBA",
-      "time": "TBA",
+      "date": "Sep 26 (Sat) 6 p.m.",
+      "time": "6 p.m",
       "location": "Bethany, W.Va.",
       "site": "Away",
       "watchUrl": "https://www.pacdigitalnetwork.com/bethanybison/?B=4087270",
