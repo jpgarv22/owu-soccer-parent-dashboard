@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T14:50:58.031Z",
+  "updatedAt": "2026-09-22T18:52:40.236Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -38,15 +38,15 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "Oberlin",
-      "date": "Jan 3 (Sat) 1 p.m.",
+      "opponent": "Kenyon",
+      "date": "Jan 2 (Sat) 1 p.m.",
       "time": "1 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/oberlin/boxscore/9756",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-01-03T12:00:00.000Z"
+      "isoDate": "2026-01-02T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -73,6 +73,18 @@
       "isoDate": "2026-01-09T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "Oberlin",
+      "date": "Jan 9 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-01-09T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Track & Field",
       "opponent": "OWU Alumni Meet",
       "date": "Jan 10 (Sat)",
@@ -82,18 +94,6 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
-      "isoDate": "2026-01-10T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Wittenberg",
-      "date": "Jan 10 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Springfield, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/wittenberg/boxscore/9757",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-10T12:00:00.000Z"
     },
     {
@@ -122,15 +122,15 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "Kenyon",
-      "date": "Jan 14 (Wed) 7 p.m.",
-      "time": "7 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
+      "opponent": "John Carroll",
+      "date": "Jan 13 (Wed) 8 p.m.",
+      "time": "8 p.m",
+      "location": "University Heights, Ohio",
+      "site": "Away",
       "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/kenyon/boxscore/9758",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-01-14T12:00:00.000Z"
+      "isoDate": "2026-01-13T12:00:00.000Z"
     },
     {
       "sport": "Men's Swimming & Diving",
@@ -166,6 +166,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "Denison",
+      "date": "Jan 16 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-16T12:00:00.000Z"
     },
     {
@@ -190,18 +202,6 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
-      "isoDate": "2026-01-17T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Wooster",
-      "date": "Jan 17 (Sat) 5 p.m.",
-      "time": "5 p.m",
-      "location": "Wooster, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/wooster/boxscore/9759",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-17T12:00:00.000Z"
     },
     {
@@ -231,14 +231,14 @@
     {
       "sport": "Women's Basketball",
       "opponent": "DePauw",
-      "date": "Jan 21 (Wed) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
+      "date": "Jan 20 (Wed) 8 p.m.",
+      "time": "8 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
       "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/depauw/boxscore/9760",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-01-21T12:00:00.000Z"
+      "isoDate": "2026-01-20T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -262,6 +262,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-23T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "Wittenberg",
+      "date": "Jan 23 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-23T12:00:00.000Z"
     },
     {
@@ -289,18 +301,6 @@
       "isoDate": "2026-01-24T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "#14/#8 Denison",
-      "date": "Jan 24 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/denison/boxscore/9761",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-01-24T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Track & Field",
       "opponent": "OWU Team Challenge",
       "date": "Jan 24 (Sat)",
@@ -325,6 +325,18 @@
       "isoDate": "2026-01-27T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "Wooster",
+      "date": "Jan 27 (Wed) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Wooster, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-01-27T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Basketball",
       "opponent": "Wittenberg",
       "date": "Jan 30 (Sat) 1 p.m.",
@@ -337,6 +349,18 @@
       "isoDate": "2026-01-30T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "Kenyon",
+      "date": "Jan 30 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-01-30T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Track & Field",
       "opponent": "Steemer Showcase",
       "date": "Jan 31 (Sat)",
@@ -346,18 +370,6 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
-      "isoDate": "2026-01-31T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Oberlin",
-      "date": "Jan 31 (Sat) 2 p.m.",
-      "time": "2 p.m",
-      "location": "Oberlin, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/oberlin/boxscore/9762",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-31T12:00:00.000Z"
     },
     {
@@ -385,18 +397,6 @@
       "isoDate": "2026-02-03T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "#10/#11 John Carroll",
-      "date": "Feb 4 (Wed) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/john-carroll/boxscore/9763",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-04T12:00:00.000Z"
-    },
-    {
       "sport": "Men's Basketball",
       "opponent": "Wooster",
       "date": "Feb 6 (Sat) 3:15 p.m.",
@@ -421,6 +421,18 @@
       "isoDate": "2026-02-06T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "Oberlin",
+      "date": "Feb 6 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-02-06T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Jud Logan Open",
       "date": "Feb 6 (Fri) Feb 7 (Sat)",
@@ -442,18 +454,6 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
-      "isoDate": "2026-02-07T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Wittenberg",
-      "date": "Feb 7 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/wittenberg/boxscore/9764",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-02-07T12:00:00.000Z"
     },
     {
@@ -493,6 +493,18 @@
       "isoDate": "2026-02-10T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "John Carroll",
+      "date": "Feb 10 (Wed) 8 p.m.",
+      "time": "8 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-02-10T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Swimming & Diving",
       "opponent": "NCAC Championship",
       "date": "Feb 10 (Wed) Feb 13 (Sat) Wed: 6:30 p.m. / Thu-Sat: 9:30 a.m. & 6:30 p.m.",
@@ -503,18 +515,6 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-02-10T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Kenyon",
-      "date": "Feb 11 (Wed) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Gambier, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/kenyon/boxscore/9765",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-11T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -538,6 +538,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "Denison",
+      "date": "Feb 13 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-02-13T12:00:00.000Z"
     },
     {
@@ -577,18 +589,6 @@
       "isoDate": "2026-02-14T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "Wooster",
-      "date": "Feb 14 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/wooster/boxscore/9766",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-14T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Track & Field",
       "opponent": "All-Ohio Championship",
       "date": "Feb 14 (Sat)",
@@ -615,14 +615,14 @@
     {
       "sport": "Women's Basketball",
       "opponent": "DePauw",
-      "date": "Feb 18 (Wed) 6 p.m.",
+      "date": "Feb 17 (Wed) 6 p.m.",
       "time": "6 p.m",
-      "location": "Greencastle, Ind.",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/depauw/boxscore/9767",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-18T12:00:00.000Z"
+      "isoDate": "2026-02-17T12:00:00.000Z"
     },
     {
       "sport": "Women's Lacrosse",
@@ -658,6 +658,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "Wittenberg",
+      "date": "Feb 20 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Springfield, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-02-20T12:00:00.000Z"
     },
     {
@@ -721,18 +733,6 @@
       "isoDate": "2026-02-21T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "#10/#7 Denison",
-      "date": "Feb 21 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Granville, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/denison/boxscore/9768",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-21T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Track & Field",
       "opponent": "NCAC Combined-Event Championship",
       "date": "Feb 21 (Sat) Feb 22 (Sun)",
@@ -754,6 +754,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-23T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "NCAC Tournament Quarterfinal",
+      "date": "Feb 23 (Tue) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-02-23T12:00:00.000Z"
     },
     {
@@ -782,13 +794,13 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "#11/#10 John Carroll",
-      "date": "Feb 26 (Thu) 7:30 p.m.",
-      "time": "7:30 p.m",
-      "location": "Granville, Ohio",
-      "site": "Home",
+      "opponent": "NCAC Tournament Semifinal",
+      "date": "Feb 26 (Fri) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
       "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/john-carroll/boxscore/9770",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-02-26T12:00:00.000Z"
     },
@@ -853,6 +865,18 @@
       "isoDate": "2026-02-27T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "NCAC Tournament Championship",
+      "date": "Feb 27 (Sat) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-02-27T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "NCAC Championship",
       "date": "Feb 27 (Fri) Feb 28 (Sat)",
@@ -913,30 +937,6 @@
       "isoDate": "2026-03-04T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "WashU vs. SUNY Geneseo",
-      "date": "Mar 6 (Fri) 4:45 p.m.",
-      "time": "4:45 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-03-06T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "DeSales",
-      "date": "Mar 6 (Fri) 7:15 p.m.",
-      "time": "7:15 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "https://www.youtube.com/watch?v=Y-xJL1cDfis",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/desales/boxscore/10132",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-03-06T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Track & Field",
       "opponent": "Wartburg Qualifier",
       "date": "Mar 6 (Fri)",
@@ -994,18 +994,6 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
-      "isoDate": "2026-03-07T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Washington (Mo.)",
-      "date": "Mar 7 (Sat) 7:15 p.m.",
-      "time": "7:15 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "https://www.youtube.com/watch?v=2UiQQkr8dow",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/washington-mo-/boxscore/10133",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-03-07T12:00:00.000Z"
     },
     {
@@ -3913,6 +3901,18 @@
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "Illinois Wesleyan",
+      "date": "Nov 6 (Fri) 3:30 p.m.",
+      "time": "3:30 p.m",
+      "location": "Holland, Mich",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Swimming & Diving",
       "opponent": "Kenyon",
       "date": "Nov 6 (Fri) 5 p.m.",
@@ -3985,6 +3985,18 @@
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "TBD",
+      "date": "Nov 7 (Sat) TBA",
+      "time": "TBA",
+      "location": "Holland, Mich",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-11-07T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Field Hockey",
       "opponent": "NCAC Tournament Championship",
       "date": "Nov 7 (Sat) TBA",
@@ -4019,18 +4031,6 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-07T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Otterbein",
-      "date": "Nov 10 (Mon) 7 p.m.",
-      "time": "7 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/otterbein/boxscore/9745",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-10T12:00:00.000Z"
     },
     {
       "sport": "Women's Volleyball",
@@ -4153,18 +4153,6 @@
       "isoDate": "2026-11-14T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "#21/#18 Calvin",
-      "date": "Nov 14 (Fri) 7:30 p.m.",
-      "time": "7:30 p.m",
-      "location": "Grand Rapids, Mich.",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/calvin/boxscore/9746",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-14T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Swimming & Diving",
       "opponent": "Findlay",
       "date": "Nov 14 (Sat) 1 p.m.",
@@ -4189,18 +4177,6 @@
       "isoDate": "2026-11-14T12:00:00.000Z"
     },
     {
-      "sport": "Women's Basketball",
-      "opponent": "RV/#23 Hope",
-      "date": "Nov 15 (Sat) 2 p.m.",
-      "time": "2 p.m",
-      "location": "Grand Rapids, Mich.",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/hope/boxscore/9747",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-15T12:00:00.000Z"
-    },
-    {
       "sport": "Men's Basketball",
       "opponent": "Berry",
       "date": "Nov 20 (Fri) 7:30 p.m.",
@@ -4210,6 +4186,18 @@
       "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
       "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "TBA",
+      "date": "Nov 20 (Fri) TBA",
+      "time": "TBA",
+      "location": "Cincinnati, Ohio",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-20T12:00:00.000Z"
     },
     {
@@ -4237,6 +4225,18 @@
       "isoDate": "2026-11-21T12:00:00.000Z"
     },
     {
+      "sport": "Women's Basketball",
+      "opponent": "TBA",
+      "date": "Nov 21 (Sat) TBA",
+      "time": "TBA",
+      "location": "Cincinnati, Ohio",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-11-21T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Swimming & Diving",
       "opponent": "Corbiere-Merion Invitational",
       "date": "Nov 21 (Sat) Nov 22 (Sun) Fri: 10 a.m. & 5:30 p.m. / Sat: 10 a.m.",
@@ -4247,18 +4247,6 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-21T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Heidelberg",
-      "date": "Nov 22 (Sat) 2 p.m.",
-      "time": "2 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/heidelberg/boxscore/9748",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-22T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -4275,14 +4263,14 @@
     {
       "sport": "Women's Basketball",
       "opponent": "Ohio Northern",
-      "date": "Nov 25 (Tue) 2 p.m.",
-      "time": "2 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
+      "date": "Nov 24 (Tue) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
       "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/ohio-northern/boxscore/9749",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-25T12:00:00.000Z"
+      "isoDate": "2026-11-24T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -4310,15 +4298,15 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "#10/#7 John Carroll",
-      "date": "Dec 3 (Wed) 7 p.m.",
+      "opponent": "Wooster",
+      "date": "Dec 2 (Wed) 7 p.m.",
       "time": "7 p.m",
-      "location": "University Heights, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/john-carroll/boxscore/9750",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-12-03T12:00:00.000Z"
+      "isoDate": "2026-12-02T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -4366,6 +4354,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "La Roche",
+      "date": "Dec 5 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
@@ -4430,15 +4430,15 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "Capital",
-      "date": "Dec 16 (Tue) 5 p.m.",
-      "time": "5 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
+      "opponent": "Trine",
+      "date": "Dec 18 (Fri) 7:45 p.m.",
+      "time": "7:45 p.m",
+      "location": "Angola, Ind.",
+      "site": "Away",
       "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/capital/boxscore/9751",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-12-16T12:00:00.000Z"
+      "isoDate": "2026-12-18T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -4454,27 +4454,15 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "Berry",
-      "date": "Dec 19 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Nashville, Tenn.",
+      "opponent": "Hanover",
+      "date": "Dec 19 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Angola, Ind.",
       "site": "Home",
       "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/berry/boxscore/9752",
+      "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-19T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Simpson",
-      "date": "Dec 20 (Sat) 8 p.m.",
-      "time": "8 p.m",
-      "location": "Nashville, Tenn.",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/simpson/boxscore/9753",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-12-20T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -4486,6 +4474,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-29T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Basketball",
+      "opponent": "Ohio",
+      "date": "Dec 29 (Tue) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Athens, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-29T12:00:00.000Z"
     },
     {
@@ -4502,25 +4502,13 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "Washington & Jefferson",
-      "date": "Dec 30 (Tue) 2 p.m.",
-      "time": "2 p.m",
+      "opponent": "Bluffton",
+      "date": "Dec 31 (Thu) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/washington-jefferson/boxscore/9754",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-12-30T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Basketball",
-      "opponent": "Allegheny",
-      "date": "Dec 31 (Wed) 12 p.m.",
-      "time": "12 p.m",
-      "location": "Delaware, Ohio Branch Rickey Arena",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/allegheny/boxscore/9755",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-31T12:00:00.000Z"
     }
