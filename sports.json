@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-22T09:55:30.633Z",
+  "updatedAt": "2026-09-22T14:50:58.031Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -135,8 +135,32 @@
     {
       "sport": "Men's Swimming & Diving",
       "opponent": "Oberlin",
-      "date": "Jan 16 (Fri) 5 p.m.",
-      "time": "5 p.m",
+      "date": "Jan 15 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Oberlin",
+      "date": "Jan 15 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Wooster",
+      "date": "Jan 16 (Sat) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
@@ -146,27 +170,15 @@
     },
     {
       "sport": "Women's Swimming & Diving",
-      "opponent": "Oberlin",
-      "date": "Jan 16 (Fri) 5 p.m.",
-      "time": "5 p.m",
+      "opponent": "Wooster",
+      "date": "Jan 16 (Sat) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-01-16T12:00:00.000Z"
-    },
-    {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Wooster",
-      "date": "Jan 17 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Wooster, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-01-17T12:00:00.000Z"
     },
     {
       "sport": "Men's Track & Field",
@@ -190,18 +202,6 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/wooster/boxscore/9759",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-01-17T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Wooster",
-      "date": "Jan 17 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Wooster, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-01-17T12:00:00.000Z"
     },
     {
@@ -255,14 +255,26 @@
     {
       "sport": "Men's Swimming & Diving",
       "opponent": "Denison",
-      "date": "Jan 24 (Sat) 10 a.m.",
+      "date": "Jan 23 (Sat) 10 a.m.",
       "time": "10 a.m",
       "location": "Granville, Ohio",
       "site": "Away",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-01-24T12:00:00.000Z"
+      "isoDate": "2026-01-23T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Denison",
+      "date": "Jan 23 (Sat) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-23T12:00:00.000Z"
     },
     {
       "sport": "Men's Track & Field",
@@ -286,18 +298,6 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/denison/boxscore/9761",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-01-24T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Denison",
-      "date": "Jan 24 (Sat) 10 a.m.",
-      "time": "10 a.m",
-      "location": "Granville, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-01-24T12:00:00.000Z"
     },
     {
@@ -482,15 +482,27 @@
     },
     {
       "sport": "Men's Swimming & Diving",
-      "opponent": "NCAC Championships",
-      "date": "Feb 11 (Wed) Feb 14 (Sat)",
-      "time": "",
+      "opponent": "NCAC Championship",
+      "date": "Feb 10 (Wed) Feb 13 (Sat) Wed: 6:30 p.m. / Thu-Sat: 9:30 a.m. & 6:30 p.m.",
+      "time": "6:30 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-02-11T12:00:00.000Z"
+      "isoDate": "2026-02-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "NCAC Championship",
+      "date": "Feb 10 (Wed) Feb 13 (Sat) Wed: 6:30 p.m. / Thu-Sat: 9:30 a.m. & 6:30 p.m.",
+      "time": "6:30 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-02-10T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -502,18 +514,6 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/kenyon/boxscore/9765",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-11T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "NCAC Championships",
-      "date": "Feb 11 (Wed) Feb 14 (Sat)",
-      "time": "",
-      "location": "Granville, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-02-11T12:00:00.000Z"
     },
     {
@@ -637,6 +637,18 @@
       "isoDate": "2026-02-18T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Kenyon Fast Chance Meet",
+      "date": "Feb 20 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-02-20T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Track & Field",
       "opponent": "OWU Tune-Up",
       "date": "Feb 20 (Fri)",
@@ -646,6 +658,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Kenyon Fast Chance Meet",
+      "date": "Feb 20 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-02-20T12:00:00.000Z"
     },
     {
@@ -685,18 +709,6 @@
       "isoDate": "2026-02-21T12:00:00.000Z"
     },
     {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Kenyon Fast Chance Invitational",
-      "date": "Feb 21 (Sat) 12 p.m.",
-      "time": "12 p.m",
-      "location": "Gambier, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-02-21T12:00:00.000Z"
-    },
-    {
       "sport": "Men's Track & Field",
       "opponent": "NCAC Combined-Event Championship",
       "date": "Feb 21 (Sat) Feb 22 (Sun)",
@@ -718,18 +730,6 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/denison/boxscore/9768",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-02-21T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Kenyon Fast Chance Invitational",
-      "date": "Feb 21 (Sat) 12 p.m.",
-      "time": "12 p.m",
-      "location": "Gambier, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-02-21T12:00:00.000Z"
     },
     {
@@ -3361,6 +3361,18 @@
       "isoDate": "2026-10-10T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Red vs. Black",
+      "date": "Oct 10 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-10T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Field Hockey",
       "opponent": "Sewanee",
       "date": "Oct 10 (Sat) 7 p.m.",
@@ -3394,6 +3406,18 @@
       "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
       "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-10-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Red vs. Black",
+      "date": "Oct 10 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-10-10T12:00:00.000Z"
     },
     {
@@ -3433,6 +3457,18 @@
       "isoDate": "2026-10-14T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Heidelberg",
+      "date": "Oct 16 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Tiffin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-16T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Tennis",
       "opponent": "Indiana Wesleyan",
       "date": "Oct 16 (Fri) 3 p.m.",
@@ -3442,6 +3478,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-tennis/schedule/2026",
+      "isoDate": "2026-10-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Heidelberg",
+      "date": "Oct 16 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Tiffin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-10-16T12:00:00.000Z"
     },
     {
@@ -3494,9 +3542,9 @@
     },
     {
       "sport": "Men's Swimming & Diving",
-      "opponent": "Heidelberg",
-      "date": "Oct 17 (Fri) 5 p.m.",
-      "time": "5 p.m",
+      "opponent": "Baldwin Wallace",
+      "date": "Oct 17 (Sat) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
@@ -3542,9 +3590,9 @@
     },
     {
       "sport": "Women's Swimming & Diving",
-      "opponent": "Heidelberg",
-      "date": "Oct 17 (Fri) 5 p.m.",
-      "time": "5 p.m",
+      "opponent": "Baldwin Wallace",
+      "date": "Oct 17 (Sat) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
@@ -3637,6 +3685,18 @@
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Case Western Reserve",
+      "date": "Oct 24 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Cleveland, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-24T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Field Hockey",
       "opponent": "DePauw",
       "date": "Oct 24 (Sat) 1 p.m.",
@@ -3661,6 +3721,18 @@
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Case Western Reserve",
+      "date": "Oct 24 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Cleveland, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-24T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Wittenberg",
       "date": "Oct 24 (Sat) 1 p.m.",
@@ -3671,30 +3743,6 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
-    },
-    {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Case Western Reserve",
-      "date": "Oct 25 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-10-25T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Case Western Reserve",
-      "date": "Oct 25 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-10-25T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
@@ -3793,30 +3841,6 @@
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
     {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Baldwin Wallace",
-      "date": "Nov 1 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-01T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Baldwin Wallace",
-      "date": "Nov 1 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-01T12:00:00.000Z"
-    },
-    {
       "sport": "Men's Soccer",
       "opponent": "NCAC Tournament Semifinal",
       "date": "Nov 4 (Wed) TBA",
@@ -3865,6 +3889,54 @@
       "isoDate": "2026-11-04T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Kenyon",
+      "date": "Nov 6 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Oberlin",
+      "date": "Nov 6 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Kenyon",
+      "date": "Nov 6 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Oberlin",
+      "date": "Nov 6 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Otterbein",
       "date": "Nov 6 (Fri) 7 p.m.",
@@ -3902,9 +3974,9 @@
     },
     {
       "sport": "Men's Swimming & Diving",
-      "opponent": "Kenyon",
-      "date": "Nov 7 (Fri) 5 p.m.",
-      "time": "5 p.m",
+      "opponent": "Transylvania",
+      "date": "Nov 7 (Sat) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
@@ -3938,9 +4010,9 @@
     },
     {
       "sport": "Women's Swimming & Diving",
-      "opponent": "Kenyon",
-      "date": "Nov 7 (Fri) 5 p.m.",
-      "time": "5 p.m",
+      "opponent": "Transylvania",
+      "date": "Nov 7 (Sat) 1 p.m.",
+      "time": "1 p.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
@@ -3985,6 +4057,54 @@
       "isoDate": "2026-11-11T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Ohio Northern",
+      "date": "Nov 13 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Bluffton",
+      "date": "Nov 13 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Ada, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Ohio Northern",
+      "date": "Nov 13 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Bluffton",
+      "date": "Nov 13 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Ada, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-13T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "NCAC Tournament Semifinal",
       "date": "Nov 13 (Fri) TBA",
@@ -4022,23 +4142,11 @@
     },
     {
       "sport": "Men's Swimming & Diving",
-      "opponent": "Ohio Northern",
-      "date": "Nov 14 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-14T12:00:00.000Z"
-    },
-    {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Bluffton",
-      "date": "Nov 14 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
+      "opponent": "Findlay",
+      "date": "Nov 14 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Findlay, Ohio",
+      "site": "Away",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
@@ -4058,23 +4166,11 @@
     },
     {
       "sport": "Women's Swimming & Diving",
-      "opponent": "Ohio Northern",
-      "date": "Nov 14 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-14T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Bluffton",
-      "date": "Nov 14 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
+      "opponent": "Findlay",
+      "date": "Nov 14 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Findlay, Ohio",
+      "site": "Away",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
@@ -4093,18 +4189,6 @@
       "isoDate": "2026-11-14T12:00:00.000Z"
     },
     {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Wittenberg",
-      "date": "Nov 15 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Springfield, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-15T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Basketball",
       "opponent": "RV/#23 Hope",
       "date": "Nov 15 (Sat) 2 p.m.",
@@ -4114,18 +4198,6 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/hope/boxscore/9747",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-15T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Wittenberg",
-      "date": "Nov 15 (Sat) 1 p.m.",
-      "time": "1 p.m",
-      "location": "Springfield, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-15T12:00:00.000Z"
     },
     {
@@ -4155,14 +4227,26 @@
     {
       "sport": "Men's Swimming & Diving",
       "opponent": "Corbiere-Merion Invitational",
-      "date": "Nov 22 (Sat) Nov 23 (Sun)",
-      "time": "",
+      "date": "Nov 21 (Sat) Nov 22 (Sun) Fri: 10 a.m. & 5:30 p.m. / Sat: 10 a.m.",
+      "time": "10 a.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-22T12:00:00.000Z"
+      "isoDate": "2026-11-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Corbiere-Merion Invitational",
+      "date": "Nov 21 (Sat) Nov 22 (Sun) Fri: 10 a.m. & 5:30 p.m. / Sat: 10 a.m.",
+      "time": "10 a.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-21T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -4174,18 +4258,6 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2025-26/heidelberg/boxscore/9748",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
-      "isoDate": "2026-11-22T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Corbiere-Merion Invitational",
-      "date": "Nov 22 (Sat) Nov 23 (Sun)",
-      "time": "",
-      "location": "Delaware, Ohio Meek Aquatics Center",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-22T12:00:00.000Z"
     },
     {
@@ -4261,6 +4333,30 @@
       "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Kenyon",
+      "date": "Dec 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Swimming & Diving",
+      "opponent": "Youngstown State",
+      "date": "Dec 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Track & Field",
       "opponent": "Oiler Open",
       "date": "Dec 5 (Fri)",
@@ -4270,6 +4366,30 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Kenyon",
+      "date": "Dec 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Youngstown State",
+      "date": "Dec 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
@@ -4295,30 +4415,6 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-12-05T12:00:00.000Z"
-    },
-    {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Kenyon",
-      "date": "Dec 6 (Sat) 11 a.m.",
-      "time": "11 a.m",
-      "location": "Gambier, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-12-06T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Kenyon",
-      "date": "Dec 6 (Sat) 11 a.m.",
-      "time": "11 a.m",
-      "location": "Gambier, Ohio",
-      "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-12-06T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
