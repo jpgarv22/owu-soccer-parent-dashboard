@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-22T22:09:36.322627+00:00",
+  "updated": "2026-09-23T00:34:07.089395+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-22",
-      "title": "Funtrium - Paint a Jar",
-      "startTime": "11:30 a.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-funtrium-paint-a-jar/2026-09-22/"
-    },
-    {
-      "date": "2026-09-22",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-09-22/"
-    },
     {
       "date": "2026-09-23",
       "title": "DIY Fall Globe",
@@ -370,6 +354,30 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-20/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Darts Tournament",
+      "startTime": "6:30 p.m.",
+      "endTime": "11 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-darts-tournament/2026-10-22/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Ross Art Museum Artist Discussion: Ardine Nelson",
+      "startTime": "6:30 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-artist-discussion-ardine-nelson/2026-10-22/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Symphonic Wind Ensemble Concert",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/symphonic-wind-ensemble-concert-14/2026-10-22/"
     }
   ]
 }
