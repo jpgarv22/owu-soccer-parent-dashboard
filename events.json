@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-23T23:42:40.175646+00:00",
+  "updated": "2026-09-24T04:52:12.898567+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-23",
-      "title": "DIY Fall Globe",
-      "startTime": "5:30 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-diy-fall-globe/2026-09-23/"
-    },
     {
       "date": "2026-09-24",
       "title": "Fall 2026 OWU Connection Conference",
@@ -378,6 +370,38 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/symphonic-wind-ensemble-concert-14/2026-10-22/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Historic Campus Announcement",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/historic-campus-announcement/2026-10-23/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Craft Night – Felt Pumpkins",
+      "startTime": "6 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-felt-pumpkins/2026-10-23/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Darts Tournament",
+      "startTime": "6:30 p.m.",
+      "endTime": "11 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-darts-tournament/2026-10-23/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-23/"
     }
   ]
 }
