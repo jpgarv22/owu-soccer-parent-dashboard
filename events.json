@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-25T13:48:25.168572+00:00",
+  "updated": "2026-09-25T18:37:27.363024+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -66,6 +66,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-international-recovery-day/2026-09-30/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Sociology and Anthropology Event",
+      "startTime": "12 p.m.",
+      "endTime": "2 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-sociology-and-anthropology-event/2026-10-01/"
     },
     {
       "date": "2026-10-01",
