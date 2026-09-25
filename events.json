@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-24T22:25:02.907824+00:00",
+  "updated": "2026-09-25T01:31:30.203294+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-24",
-      "title": "Fall 2026 OWU Connection Conference",
-      "startTime": null,
-      "endTime": null,
-      "allDay": true,
-      "url": "https://www.owu.edu/calendars/details/fall-2026-owu-connection-conference/2026-09-24/"
-    },
-    {
-      "date": "2026-09-24",
-      "title": "Fall 2026 OWU Connection Conference: Black Wall Street",
-      "startTime": "12 p.m.",
-      "endTime": "2 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/fall-2026-owu-connection-conference-black-wall-street/2026-09-24/"
-    },
-    {
-      "date": "2026-09-24",
-      "title": "Craft Night – Iron Bead Coasters",
-      "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-iron-bead-coasters/2026-09-24/"
-    },
-    {
-      "date": "2026-09-24",
-      "title": "'Exposure' (OWU student/faculty jazz group) Concert",
-      "startTime": "8 p.m.",
-      "endTime": "9:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/exposure-owu-student-faculty-jazz-group-concert/2026-09-24/"
-    },
     {
       "date": "2026-09-25",
       "title": "Paint, Sip & Connect at The 1842",
@@ -402,6 +370,22 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-23/"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "Craft Night – Felt Pumpkins",
+      "startTime": "12 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-felt-pumpkins-2/2026-10-24/"
+    },
+    {
+      "date": "2026-10-24",
+      "title": "Darts Tournament",
+      "startTime": "6 p.m.",
+      "endTime": "11 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-darts-tournament-2/2026-10-24/"
     }
   ]
 }
