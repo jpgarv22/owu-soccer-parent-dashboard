@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-26T11:25:54.260Z",
+  "updatedAt": "2026-09-26T16:20:22.031Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -25,6 +25,18 @@
   ],
   "events": [
     {
+      "sport": "Men's Basketball",
+      "opponent": "Wittenberg",
+      "date": "Jan 2 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-02T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Kenyon",
       "date": "Jan 2 (Sat) 1 p.m.",
@@ -35,6 +47,30 @@
       "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Kenyon",
+      "date": "Jan 6 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Oberlin",
+      "date": "Jan 9 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-09T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -49,6 +85,18 @@
       "isoDate": "2026-01-09T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "OWU Alumni Meet",
+      "date": "Jan 10 (Sat)",
+      "time": "",
+      "location": "Delaware, Ohio Gordon Field House",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-01-10T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "OWU Alumni Meet",
       "date": "Jan 10 (Sat)",
@@ -59,6 +107,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-01-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "John Carroll",
+      "date": "Jan 13 (Wed) 6 p.m.",
+      "time": "6 p.m",
+      "location": "University Heights, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-13T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -82,6 +142,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-15T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Oberlin",
+      "date": "Jan 15 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-01-15T12:00:00.000Z"
     },
     {
@@ -109,6 +181,30 @@
       "isoDate": "2026-01-16T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Wooster",
+      "date": "Jan 16 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Muskie Meet #1",
+      "date": "Jan 17 (Sat)",
+      "time": "",
+      "location": "New Concord, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-01-17T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Muskie Meet #1",
       "date": "Jan 17 (Sat)",
@@ -121,6 +217,18 @@
       "isoDate": "2026-01-17T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Wabash",
+      "date": "Jan 20 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-20T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "DePauw",
       "date": "Jan 20 (Wed) 8 p.m.",
@@ -131,6 +239,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-01-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Denison",
+      "date": "Jan 23 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-23T12:00:00.000Z"
     },
     {
       "sport": "Men's Swimming & Diving",
@@ -157,6 +277,30 @@
       "isoDate": "2026-01-23T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Denison",
+      "date": "Jan 23 (Sat) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-01-23T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "OWU Team Challenge",
+      "date": "Jan 24 (Sat)",
+      "time": "",
+      "location": "Delaware, Ohio Gordon Field House",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-01-24T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "OWU Team Challenge",
       "date": "Jan 24 (Sat)",
@@ -167,6 +311,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-01-24T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Kenyon",
+      "date": "Jan 27 (Wed) 8 p.m.",
+      "time": "8 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-27T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -181,6 +337,18 @@
       "isoDate": "2026-01-27T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Wittenberg",
+      "date": "Jan 30 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Springfield, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-01-30T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Kenyon",
       "date": "Jan 30 (Sat) 1 p.m.",
@@ -193,6 +361,18 @@
       "isoDate": "2026-01-30T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "Steemer Showcase",
+      "date": "Jan 31 (Sat)",
+      "time": "",
+      "location": "Springfield, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-01-31T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Steemer Showcase",
       "date": "Jan 31 (Sat)",
@@ -203,6 +383,42 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-01-31T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "DePauw",
+      "date": "Feb 3 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-03T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Wooster",
+      "date": "Feb 6 (Sat) 3:15 p.m.",
+      "time": "3:15 p.m",
+      "location": "Wooster, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Jud Logan Open",
+      "date": "Feb 6 (Fri) Feb 7 (Sat)",
+      "time": "",
+      "location": "Ashland, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-06T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -229,6 +445,18 @@
       "isoDate": "2026-02-06T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "Bob Shannon Invitational",
+      "date": "Feb 7 (Sat)",
+      "time": "",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-07T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Bob Shannon Invitational",
       "date": "Feb 7 (Sat)",
@@ -239,6 +467,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-02-07T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "John Carroll",
+      "date": "Feb 10 (Wed) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-10T12:00:00.000Z"
     },
     {
       "sport": "Men's Swimming & Diving",
@@ -263,6 +503,42 @@
       "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-02-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "NCAC Championship",
+      "date": "Feb 10 (Wed) Feb 13 (Sat) Wed: 6:30 p.m. / Thu-Sat: 9:30 a.m. & 6:30 p.m.",
+      "time": "6:30 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-02-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Oberlin",
+      "date": "Feb 13 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "OWU Open",
+      "date": "Feb 13 (Fri)",
+      "time": "",
+      "location": "Delaware, Ohio Gordon Field House",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-13T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -301,6 +577,18 @@
       "isoDate": "2026-02-14T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "All-Ohio Championship",
+      "date": "Feb 14 (Sat)",
+      "time": "",
+      "location": "Westerville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-14T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "All-Ohio Championship",
       "date": "Feb 14 (Sat)",
@@ -311,6 +599,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-02-14T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Wabash",
+      "date": "Feb 17 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Crawfordsville, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-17T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -349,6 +649,18 @@
       "isoDate": "2026-02-20T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "OWU Tune-Up",
+      "date": "Feb 20 (Fri)",
+      "time": "",
+      "location": "Delaware, Ohio Gordon Field House",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-20T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Wittenberg",
       "date": "Feb 20 (Sat) 2 p.m.",
@@ -358,6 +670,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-02-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Kenyon Fast Chance Meet",
+      "date": "Feb 20 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-02-20T12:00:00.000Z"
     },
     {
@@ -373,6 +697,42 @@
       "isoDate": "2026-02-20T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Geneva (DH)",
+      "date": "Feb 21 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Lewis Center, Ohio / Jennings Park",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/geneva/boxscore/10059",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Geneva (DH)",
+      "date": "Feb 21 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Lewis Center, Ohio / Jennings Park",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/geneva/boxscore/10099",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "NCAC Combined-Event Championship",
+      "date": "Feb 21 (Sat) Feb 22 (Sun)",
+      "time": "",
+      "location": "Wooster, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-02-21T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "NCAC Combined-Event Championship",
       "date": "Feb 21 (Sat) Feb 22 (Sun)",
@@ -383,6 +743,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-02-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "NCAC Tournament Quarterfinal",
+      "date": "Feb 23 (Tue) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-23T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -409,6 +781,18 @@
       "isoDate": "2026-02-24T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "NCAC Tournament Semifinal",
+      "date": "Feb 26 (Fri) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-26T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "NCAC Tournament Semifinal",
       "date": "Feb 26 (Fri) TBA",
@@ -433,6 +817,30 @@
       "isoDate": "2026-02-26T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Earlham",
+      "date": "Feb 27 (Fri) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Richmond, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/earlham/boxscore/10062",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-27T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "NCAC Tournament Championship",
+      "date": "Feb 27 (Sat) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-02-27T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "RV Franklin & Marshall",
       "date": "Feb 27 (Fri) 4 p.m.",
@@ -442,6 +850,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/franklin-marshall/boxscore/9988",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
+      "isoDate": "2026-02-27T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "NCAC Championship",
+      "date": "Feb 27 (Fri) Feb 28 (Sat)",
+      "time": "",
+      "location": "Springfield, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
       "isoDate": "2026-02-27T12:00:00.000Z"
     },
     {
@@ -469,6 +889,42 @@
       "isoDate": "2026-02-27T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Earlham (DH)",
+      "date": "Feb 28 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Richmond, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/earlham/boxscore/10060",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Earlham (DH)",
+      "date": "Feb 28 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Richmond, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/earlham/boxscore/10061",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-02-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Heidelberg",
+      "date": "Mar 3 (Tue) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-03T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Lacrosse",
       "opponent": "Ohio Northern",
       "date": "Mar 4 (Wed) 7 p.m.",
@@ -493,6 +949,30 @@
       "isoDate": "2026-03-06T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 7 (Sat) 11 a.m.",
+      "time": "11 a.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10064",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 7 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10065",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Roanoke",
       "date": "Mar 7 (Sat) 1 p.m.",
@@ -502,6 +982,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/roanoke/boxscore/9990",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
+      "isoDate": "2026-03-07T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Polar Bear Final Qualifier",
+      "date": "Mar 7 (Sat)",
+      "time": "",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
       "isoDate": "2026-03-07T12:00:00.000Z"
     },
     {
@@ -529,6 +1021,54 @@
       "isoDate": "2026-03-07T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 9 (Mon) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10066",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-09T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Covenant (DH)",
+      "date": "Mar 9 (Mon) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Lookout Mountain, Ga.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/covenant/boxscore/10067",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-09T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Beloit",
+      "date": "Mar 9 (Mon) 9 a.m.",
+      "time": "9 a.m",
+      "location": "Bartow, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/beloit/boxscore/10121",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-09T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "DeSales",
+      "date": "Mar 9 (Mon) 11:15 a.m.",
+      "time": "11:15 a.m",
+      "location": "Bartow, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/desales/boxscore/10122",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-09T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "RV Elmhurst",
       "date": "Mar 10 (Tue) 2 p.m.",
@@ -553,6 +1093,30 @@
       "isoDate": "2026-03-10T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "Penn State Behrend",
+      "date": "Mar 10 (Tue) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Winter Haven, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/penn-state-behrend/boxscore/10123",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Bowdoin",
+      "date": "Mar 10 (Tue) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Winter Haven, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/bowdoin/boxscore/10124",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-10T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Lacrosse",
       "opponent": "Saint Joseph's (Maine)",
       "date": "Mar 11 (Wed) 10 a.m.",
@@ -563,6 +1127,90 @@
       "statsUrl": "https://battlingbishops.com/sports/womens-lacrosse/stats/2026/saint-josephs-maine-/boxscore/9974",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-lacrosse/schedule/2026",
       "isoDate": "2026-03-11T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Albertus Magnus",
+      "date": "Mar 12 (Thu) 1:45 p.m.",
+      "time": "1:45 p.m",
+      "location": "Winter Haven, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/albertus-magnus/boxscore/10125",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-12T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Dominican",
+      "date": "Mar 12 (Thu) 4:15 p.m.",
+      "time": "4:15 p.m",
+      "location": "Winter Haven, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/dominican/boxscore/10126",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-12T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Christian",
+      "date": "Mar 13 (Fri) 11 a.m.",
+      "time": "11 a.m",
+      "location": "Lancaster, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-christian/boxscore/10068",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Roosevelt",
+      "date": "Mar 13 (Fri) 1:30 p.m.",
+      "time": "1:30 p.m",
+      "location": "Lancaster, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/roosevelt/boxscore/10069",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "NCAA Indoor National Championship",
+      "date": "Mar 13 (Fri) Mar 14 (Sat)",
+      "time": "",
+      "location": "Birmingham, Ala.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Washington (Md.)",
+      "date": "Mar 13 (Fri) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Clermont, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/washington-md-/boxscore/10127",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Saint Joseph's (Maine)",
+      "date": "Mar 13 (Fri) 2:30 p.m.",
+      "time": "2:30 p.m",
+      "location": "Clermont, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/saint-josephs-maine-/boxscore/10128",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-13T12:00:00.000Z"
     },
     {
       "sport": "Women's Track & Field",
@@ -577,6 +1225,18 @@
       "isoDate": "2026-03-13T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Roosevelt",
+      "date": "Mar 14 (Sat) 1:30 p.m.",
+      "time": "1:30 p.m",
+      "location": "Chillicothe, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/roosevelt/boxscore/10070",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "#6 York (Pa.)",
       "date": "Mar 14 (Sat) 3 p.m.",
@@ -589,6 +1249,66 @@
       "isoDate": "2026-03-14T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "Carroll",
+      "date": "Mar 14 (Sat) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Winter Haven, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/carroll/boxscore/10129",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "#20 Rowan",
+      "date": "Mar 14 (Sat) 12:30 p.m.",
+      "time": "12:30 p.m",
+      "location": "Winter Haven, Fla.",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/rowan/boxscore/10130",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-14T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Capital",
+      "date": "Mar 18 (Wed) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Capital",
+      "date": "Mar 19 (Thu) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/capital/boxscore/10072",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-19T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Washington & Lee Carnival",
+      "date": "Mar 20 (Fri) Mar 21 (Sat)",
+      "time": "",
+      "location": "Lexington, Va.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-03-20T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Washington & Lee Carnival",
       "date": "Mar 20 (Fri) Mar 21 (Sat)",
@@ -599,6 +1319,30 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-03-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Olivet (DH)",
+      "date": "Mar 21 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/olivet/boxscore/10073",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Olivet (DH)",
+      "date": "Mar 21 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/olivet/boxscore/10074",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-21T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -625,6 +1369,78 @@
       "isoDate": "2026-03-21T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "Hope",
+      "date": "Mar 21 (Sat) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Ada, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/hope/boxscore/10030",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Mount St. Joseph",
+      "date": "Mar 21 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Ada, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/mount-st-joseph/boxscore/10031",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Olivet",
+      "date": "Mar 22 (Sun) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/olivet/boxscore/10075",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-22T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Ohio Northern",
+      "date": "Mar 22 (Sun) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/ohio-northern/boxscore/10032",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-22T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Alma",
+      "date": "Mar 22 (Sun) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Ada, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/alma/boxscore/10033",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-22T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "#25 Baldwin Wallace",
+      "date": "Mar 25 (Wed) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Berea, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/baldwin-wallace/boxscore/10076",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-25T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "WashU Distance Carnival",
       "date": "Mar 27 (Fri)",
@@ -637,6 +1453,30 @@
       "isoDate": "2026-03-27T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Wooster (DH)",
+      "date": "Mar 28 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wooster/boxscore/10077",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Wooster (DH)",
+      "date": "Mar 28 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wooster/boxscore/10078",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Oberlin",
       "date": "Mar 28 (Sat) 1 p.m.",
@@ -646,6 +1486,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/oberlin/boxscore/9994",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Denison Lid-Lifter",
+      "date": "Mar 28 (Sat)",
+      "time": "",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
       "isoDate": "2026-03-28T12:00:00.000Z"
     },
     {
@@ -661,6 +1513,30 @@
       "isoDate": "2026-03-28T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "#23 DePauw (DH)",
+      "date": "Mar 28 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/depauw/boxscore/10034",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "#23 DePauw (DH)",
+      "date": "Mar 28 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/depauw/boxscore/10035",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Denison Lid-Lifter",
       "date": "Mar 28 (Sat)",
@@ -671,6 +1547,66 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-03-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Wilmington",
+      "date": "Mar 31 (Tue) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wilmington/boxscore/10079",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-03-31T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "John Carroll",
+      "date": "Apr 2 (Thu) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/john-carroll/boxscore/10082",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Capital (DH)",
+      "date": "Apr 2 (Thu) 3:30 p.m.",
+      "time": "3:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/capital/boxscore/10036",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Capital (DH)",
+      "date": "Apr 2 (Thu) 5:30 p.m.",
+      "time": "5:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/capital/boxscore/10037",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "John Carroll",
+      "date": "Apr 3 (Fri) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/john-carroll/boxscore/10081",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-03T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -685,6 +1621,18 @@
       "isoDate": "2026-04-04T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "Marv Frye Invitational",
+      "date": "Apr 4 (Sat)",
+      "time": "",
+      "location": "Delaware, Ohio George Gauthier Track",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-04-04T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Lacrosse",
       "opponent": "Kenyon",
       "date": "Apr 4 (Sat) 1 p.m.",
@@ -694,6 +1642,30 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-lacrosse/stats/2026/kenyon/boxscore/9977",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-lacrosse/schedule/2026",
+      "isoDate": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Wittenberg (DH)",
+      "date": "Apr 4 (Sat) 10 a.m.",
+      "time": "10 a.m",
+      "location": "Springfield, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wittenberg/boxscore/10038",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-04T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Wittenberg (DH)",
+      "date": "Apr 4 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Springfield, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wittenberg/boxscore/10039",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
       "isoDate": "2026-04-04T12:00:00.000Z"
     },
     {
@@ -721,6 +1693,30 @@
       "isoDate": "2026-04-07T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "DePauw (DH)",
+      "date": "Apr 8 (Wed) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/depauw/boxscore/10083",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-08T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "DePauw (DH)",
+      "date": "Apr 8 (Wed) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/depauw/boxscore/10084",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-08T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Wooster",
       "date": "Apr 8 (Wed) 7 p.m.",
@@ -731,6 +1727,42 @@
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/wooster/boxscore/9996",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
       "isoDate": "2026-04-08T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Marietta (DH)",
+      "date": "Apr 9 (Thu) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Marietta, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/marietta/boxscore/10040",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-09T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Marietta (DH)",
+      "date": "Apr 9 (Thu) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Marietta, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/marietta/boxscore/10041",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-09T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "All-Ohio Championship",
+      "date": "Apr 10 (Fri) Apr 11 (Sat)",
+      "time": "",
+      "location": "Delaware, Ohio George Gauthier Track",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-04-10T12:00:00.000Z"
     },
     {
       "sport": "Women's Lacrosse",
@@ -757,6 +1789,30 @@
       "isoDate": "2026-04-10T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Wabash (DH)",
+      "date": "Apr 11 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Crawfordsville, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wabash/boxscore/10085",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Wabash (DH)",
+      "date": "Apr 11 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Crawfordsville, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wabash/boxscore/10086",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Wittenberg",
       "date": "Apr 11 (Sat) 1 p.m.",
@@ -767,6 +1823,66 @@
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/wittenberg/boxscore/9997",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
       "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Wooster (DH)",
+      "date": "Apr 11 (Sat) 11 a.m.",
+      "time": "11 a.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wooster/boxscore/10042",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Wooster (DH)",
+      "date": "Apr 11 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wooster/boxscore/10043",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-11T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Oberlin (DH)",
+      "date": "Apr 12 (Sun) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/oberlin/boxscore/10044",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-12T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Oberlin (DH)",
+      "date": "Apr 12 (Sun) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/oberlin/boxscore/10045",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-12T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Otterbein",
+      "date": "Apr 14 (Tue) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/otterbein/boxscore/10087",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-14T12:00:00.000Z"
     },
     {
       "sport": "Men's Lacrosse",
@@ -793,6 +1909,66 @@
       "isoDate": "2026-04-15T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "Wilmington (DH)",
+      "date": "Apr 15 (Wed) 3:30 p.m.",
+      "time": "3:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wilmington/boxscore/10046",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-15T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Wilmington (DH)",
+      "date": "Apr 15 (Wed) 5:30 p.m.",
+      "time": "5:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/wilmington/boxscore/10047",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-15T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Otterbein",
+      "date": "Apr 16 (Thu) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Westerville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/otterbein/boxscore/10088",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Christian",
+      "date": "Apr 18 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-christian/boxscore/10146",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Christian",
+      "date": "Apr 18 (Sat) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-christian/boxscore/10148",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "John Carroll",
       "date": "Apr 18 (Sat) 1 p.m.",
@@ -802,6 +1978,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/john-carroll/boxscore/9999",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Duane Gomez Invitational",
+      "date": "Apr 18 (Sat)",
+      "time": "",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
       "isoDate": "2026-04-18T12:00:00.000Z"
     },
     {
@@ -817,6 +2005,30 @@
       "isoDate": "2026-04-18T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "Denison (DH)",
+      "date": "Apr 18 (Sat) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/denison/boxscore/10048",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Denison (DH)",
+      "date": "Apr 18 (Sat) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/denison/boxscore/10049",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Duane Gomez Invitational",
       "date": "Apr 18 (Sat)",
@@ -827,6 +2039,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-04-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Ohio Northern",
+      "date": "Apr 20 (Mon) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/ohio-northern/boxscore/10080",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-20T12:00:00.000Z"
     },
     {
       "sport": "Women's Lacrosse",
@@ -841,6 +2065,54 @@
       "isoDate": "2026-04-21T12:00:00.000Z"
     },
     {
+      "sport": "Women's Softball",
+      "opponent": "Otterbein (DH)",
+      "date": "Apr 21 (Tue) 3:30 p.m.",
+      "time": "3:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/otterbein/boxscore/10050",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Otterbein (DH)",
+      "date": "Apr 21 (Tue) 5:30 p.m.",
+      "time": "5:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/otterbein/boxscore/10051",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Kenyon (DH)",
+      "date": "Apr 22 (Wed) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/kenyon/boxscore/10089",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-22T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Kenyon (DH)",
+      "date": "Apr 22 (Wed) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/kenyon/boxscore/10090",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-22T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Wabash",
       "date": "Apr 22 (Wed) 5 p.m.",
@@ -851,6 +2123,18 @@
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/wabash/boxscore/10000",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
       "isoDate": "2026-04-22T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "Big Red Invitational",
+      "date": "Apr 24 (Fri)",
+      "time": "",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-04-24T12:00:00.000Z"
     },
     {
       "sport": "Women's Track & Field",
@@ -865,6 +2149,30 @@
       "isoDate": "2026-04-24T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "Oberlin (DH)",
+      "date": "Apr 25 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/oberlin/boxscore/10091",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "Oberlin (DH)",
+      "date": "Apr 25 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/oberlin/boxscore/10092",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Stevenson",
       "date": "Apr 25 (Sat) 1 p.m.",
@@ -877,6 +2185,18 @@
       "isoDate": "2026-04-25T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "NCAC Combined-Events Championship",
+      "date": "Apr 25 (Sat) Apr 26 (Sun)",
+      "time": "",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Lacrosse",
       "opponent": "Oberlin",
       "date": "Apr 25 (Sat) 4 p.m.",
@@ -886,6 +2206,30 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/womens-lacrosse/stats/2026/oberlin/boxscore/9983",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-lacrosse/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Kenyon (DH)",
+      "date": "Apr 25 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/kenyon/boxscore/10052",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-25T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Kenyon (DH)",
+      "date": "Apr 25 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/kenyon/boxscore/10053",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
       "isoDate": "2026-04-25T12:00:00.000Z"
     },
     {
@@ -913,6 +2257,30 @@
       "isoDate": "2026-04-25T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "#1 Denison (DH)",
+      "date": "Apr 28 (Tue) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/denison/boxscore/10094",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-28T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Baseball",
+      "opponent": "#1 Denison (DH)",
+      "date": "Apr 28 (Tue) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/denison/boxscore/10093",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-04-28T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Denison",
       "date": "Apr 29 (Wed) 7 p.m.",
@@ -923,6 +2291,42 @@
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/denison/boxscore/10002",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
       "isoDate": "2026-04-29T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Muskingum (DH)",
+      "date": "Apr 29 (Wed) 3:30 p.m.",
+      "time": "3:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-29T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "Muskingum (DH)",
+      "date": "Apr 29 (Wed) 5:30 p.m.",
+      "time": "5:30 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-04-29T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "NCAC Outdoor Championship",
+      "date": "May 1 (Fri) May 2 (Sat)",
+      "time": "",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-05-01T12:00:00.000Z"
     },
     {
       "sport": "Women's Track & Field",
@@ -937,6 +2341,18 @@
       "isoDate": "2026-05-01T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "#16 Wittenberg (DH)",
+      "date": "May 2 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wittenberg/boxscore/10096",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-05-02T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Oberlin",
       "date": "May 2 (Sat) 7 p.m.",
@@ -949,6 +2365,42 @@
       "isoDate": "2026-05-02T12:00:00.000Z"
     },
     {
+      "sport": "Men's Baseball",
+      "opponent": "#16 Wittenberg (DH)",
+      "date": "May 3 (Sun) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Delaware, Ohio Littick Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/baseball/stats/2026/wittenberg/boxscore/10095",
+      "scheduleUrl": "https://battlingbishops.com/sports/baseball/schedule/2026",
+      "isoDate": "2026-05-03T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "John Carroll (DH)",
+      "date": "May 3 (Sun) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/john-carroll/boxscore/10056",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-05-03T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Softball",
+      "opponent": "John Carroll (DH)",
+      "date": "May 3 (Sun) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Margaret Sagan Field",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/softball/stats/2026/john-carroll/boxscore/10057",
+      "scheduleUrl": "https://battlingbishops.com/sports/softball/schedule/2026",
+      "isoDate": "2026-05-03T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Lacrosse",
       "opponent": "Grove City",
       "date": "May 6 (Wed) 4 p.m.",
@@ -959,6 +2411,18 @@
       "statsUrl": "https://battlingbishops.com/sports/mens-lacrosse/stats/2026/grove-city/boxscore/10152",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-lacrosse/schedule/2026",
       "isoDate": "2026-05-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "BW Harrison Dillard Twilight",
+      "date": "May 7 (Thu) May 8 (Fri)",
+      "time": "",
+      "location": "Bera, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-05-07T12:00:00.000Z"
     },
     {
       "sport": "Women's Track & Field",
@@ -985,6 +2449,18 @@
       "isoDate": "2026-05-08T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "Mount Union Final Qualifying Meet",
+      "date": "May 13 (Wed) May 14 (Thu)",
+      "time": "",
+      "location": "Alliance, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-05-13T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Mount Union Final Qualifying Meet",
       "date": "May 13 (Wed) May 14 (Thu)",
@@ -997,6 +2473,18 @@
       "isoDate": "2026-05-13T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "Augustana Final Qualifying Meet",
+      "date": "May 14 (Thu)",
+      "time": "",
+      "location": "Rock Island, Ill.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-05-14T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Track & Field",
       "opponent": "Augustana Final Qualifying Meet",
       "date": "May 14 (Thu)",
@@ -1007,6 +2495,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-track-and-field/schedule/2026",
       "isoDate": "2026-05-14T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Track & Field",
+      "opponent": "NCAA Outdoor National Championship",
+      "date": "May 21 (Thu) May 23 (Sat)",
+      "time": "",
+      "location": "La Crosse, Wis.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-05-21T12:00:00.000Z"
     },
     {
       "sport": "Women's Track & Field",
@@ -1081,6 +2581,18 @@
       "isoDate": "2026-09-01T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "Transylvania",
+      "date": "Sep 1 (Tue) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/transylvania/boxscore/10238",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-01T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Heidelberg",
       "date": "Sep 1 (Tue) 7 p.m.",
@@ -1091,6 +2603,30 @@
       "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/heidelberg/boxscore/10207",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "Bluffton",
+      "date": "Sep 3 (Thu) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/bluffton/boxscore/10111",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-09-03T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Saint Francis",
+      "date": "Sep 4 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/saint-francis/boxscore/10239",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-04T12:00:00.000Z"
     },
     {
       "sport": "Women's Volleyball",
@@ -1138,6 +2674,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/marian/boxscore/10188",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-09-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Sewanee",
+      "date": "Sep 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/sewanee/boxscore/10240",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-05T12:00:00.000Z"
     },
     {
@@ -1213,6 +2761,18 @@
       "isoDate": "2026-09-08T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "Ohio Northern",
+      "date": "Sep 8 (Tue) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/ohio-northern/boxscore/10273",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-08T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Soccer",
       "opponent": "Otterbein",
       "date": "Sep 9 (Wed) 7 p.m.",
@@ -1237,6 +2797,18 @@
       "isoDate": "2026-09-11T12:00:00.000Z"
     },
     {
+      "sport": "Men's Football",
+      "opponent": "#9 John Carroll",
+      "date": "Sep 12 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/john-carroll/boxscore/10112",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-09-12T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Field Hockey",
       "opponent": "William Smith",
       "date": "Sep 12 (Sat) 10:30 a.m.",
@@ -1246,6 +2818,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/william-smith/boxscore/10191",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-09-12T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Asbury",
+      "date": "Sep 12 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/asbury/boxscore/10241",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-12T12:00:00.000Z"
     },
     {
@@ -1321,6 +2905,18 @@
       "isoDate": "2026-09-16T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "Franciscan",
+      "date": "Sep 16 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Steubenville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/franciscan/boxscore/10242",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-16T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Rose-Hulman",
       "date": "Sep 18 (Fri) 5 p.m.",
@@ -1331,6 +2927,18 @@
       "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/rose-hulman/boxscore/10214",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "#25 DePauw",
+      "date": "Sep 19 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/depauw/boxscore/10113",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-09-19T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
@@ -1354,6 +2962,18 @@
       "watchUrl": "",
       "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/rhodes/boxscore/10193",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-09-19T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Heidelberg",
+      "date": "Sep 19 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/heidelberg/boxscore/10243",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-19T12:00:00.000Z"
     },
     {
@@ -1417,6 +3037,30 @@
       "isoDate": "2026-09-20T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "Marietta",
+      "date": "Sep 20 (Sun) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Marietta, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/marietta/boxscore/10244",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Hanover",
+      "date": "Sep 22 (Tue) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Hanover, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/hanover/boxscore/10245",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-22T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Soccer",
       "opponent": "Capital",
       "date": "Sep 23 (Wed) 7 p.m.",
@@ -1439,6 +3083,18 @@
       "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/earlham/boxscore/10217",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-23T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "Denison",
+      "date": "Sep 26 (Sat) 2:30 p.m.",
+      "time": "2:30 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/denison/",
+      "statsUrl": "https://bigred.denison.edu/sidearmstats/football/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-09-26T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
@@ -1465,6 +3121,18 @@
       "isoDate": "2026-09-26T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "Bethany",
+      "date": "Sep 26 (Sat) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Bethany, W.Va.",
+      "site": "Away",
+      "watchUrl": "https://www.pacdigitalnetwork.com/bethanybison/?B=4087270",
+      "statsUrl": "https://bethanybison.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-26T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "John Carroll",
       "date": "Sep 26 (Sat) 1 p.m.",
@@ -1475,6 +3143,18 @@
       "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-26T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Capital",
+      "date": "Sep 29 (Tue) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-09-29T12:00:00.000Z"
     },
     {
       "sport": "Women's Volleyball",
@@ -1513,6 +3193,18 @@
       "isoDate": "2026-09-30T12:00:00.000Z"
     },
     {
+      "sport": "Men's Football",
+      "opponent": "Wooster",
+      "date": "Oct 3 (Sat) 2 p.m.",
+      "time": "2 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-10-03T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Soccer",
       "opponent": "Adrian",
       "date": "Oct 3 (Sat) 7 p.m.",
@@ -1546,6 +3238,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-golf/schedule/2026",
+      "isoDate": "2026-10-03T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Wooster",
+      "date": "Oct 3 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-03T12:00:00.000Z"
     },
     {
@@ -1583,6 +3287,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-golf/schedule/2026",
       "isoDate": "2026-10-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Kenyon",
+      "date": "Oct 6 (Tue) 3:30 p.m.",
+      "time": "3:30 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "https://athletics.kenyon.edu/sidearmstats/wsoc/summary",
+      "statsUrl": "https://athletics.kenyon.edu/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-10-06T12:00:00.000Z"
     },
     {
       "sport": "Women's Volleyball",
@@ -1669,6 +3385,30 @@
       "isoDate": "2026-10-10T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "John Carroll",
+      "date": "Oct 10 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-10-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Red vs. Black",
+      "date": "Oct 10 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-10T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Kenyon",
       "date": "Oct 13 (Tue) 7 p.m.",
@@ -1729,6 +3469,30 @@
       "isoDate": "2026-10-16T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Heidelberg",
+      "date": "Oct 16 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Tiffin, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Tennis",
+      "opponent": "Indiana East",
+      "date": "Oct 16 (Fri) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Luttinger Family Tennis Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-tennis/schedule/2026",
+      "isoDate": "2026-10-16T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Capital",
       "date": "Oct 16 (Fri) 7 p.m.",
@@ -1739,6 +3503,18 @@
       "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-16T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "Wittenberg",
+      "date": "Oct 17 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-10-17T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
@@ -1789,6 +3565,30 @@
       "isoDate": "2026-10-17T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "DePauw",
+      "date": "Oct 17 (Sat) 2:30 p.m.",
+      "time": "2:30 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "https://depauwtigers.com/sports/2022/8/5/depauw-video-player-2.aspx",
+      "statsUrl": "https://depauwtigers.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-10-17T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Baldwin Wallace",
+      "date": "Oct 17 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-10-17T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Otterbein",
       "date": "Oct 17 (Sat) 11 a.m.",
@@ -1813,6 +3613,18 @@
       "isoDate": "2026-10-19T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "Oberlin",
+      "date": "Oct 20 (Tue) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "https://oberlinsportsnetwork.com/",
+      "statsUrl": "https://goyeo.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-10-20T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Soccer",
       "opponent": "Wittenberg",
       "date": "Oct 21 (Wed) 7 p.m.",
@@ -1835,6 +3647,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "Oberlin",
+      "date": "Oct 24 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Oberlin, Ohio",
+      "site": "Away",
+      "watchUrl": "https://oberlinsportsnetwork.com/",
+      "statsUrl": "https://goyeo.com/sidearmstats/football/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-10-24T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
@@ -1870,6 +3694,30 @@
       "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
       "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-10-24T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Wittenberg",
+      "date": "Oct 24 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Jay Martin Soccer Complex",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-10-24T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Case Western Reserve",
+      "date": "Oct 24 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Cleveland, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
     {
@@ -1921,6 +3769,18 @@
       "isoDate": "2026-10-28T12:00:00.000Z"
     },
     {
+      "sport": "Men's Football",
+      "opponent": "Wabash",
+      "date": "Oct 31 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-10-31T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Soccer",
       "opponent": "DePauw",
       "date": "Oct 31 (Sat) 5 p.m.",
@@ -1942,6 +3802,18 @@
       "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
       "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-10-31T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "Denison",
+      "date": "Oct 31 (Sat) 12 p.m.",
+      "time": "12 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/denison/",
+      "statsUrl": "https://bigred.denison.edu/sidearmstats/wsoc/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
     {
@@ -1978,6 +3850,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
+      "isoDate": "2026-11-04T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Soccer",
+      "opponent": "NCAC Tournament Semifinal",
+      "date": "Nov 4 (Wed) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-11-04T12:00:00.000Z"
     },
     {
@@ -2029,6 +3913,30 @@
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Kenyon",
+      "date": "Nov 6 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Oberlin",
+      "date": "Nov 6 (Fri) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "Otterbein",
       "date": "Nov 6 (Fri) 7 p.m.",
@@ -2039,6 +3947,18 @@
       "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "Washington (Mo.)",
+      "date": "Nov 7 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-11-07T12:00:00.000Z"
     },
     {
       "sport": "Men's Soccer",
@@ -2089,6 +4009,30 @@
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
     {
+      "sport": "Women's Soccer",
+      "opponent": "NCAC Tournament Championship",
+      "date": "Nov 7 (Sat) TBA",
+      "time": "TBA",
+      "location": "TBA",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
+      "isoDate": "2026-11-07T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Transylvania",
+      "date": "Nov 7 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-07T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "NCAC Tournament Quarterfinal",
       "date": "Nov 10 (Tue) TBA",
@@ -2099,6 +4043,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-11-10T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Ohio Northern",
+      "date": "Nov 11 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-11T12:00:00.000Z"
     },
     {
       "sport": "Men's Swimming & Diving",
@@ -2125,6 +4081,30 @@
       "isoDate": "2026-11-13T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Ohio Northern",
+      "date": "Nov 13 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Ada, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-13T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Bluffton",
+      "date": "Nov 13 (Fri) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Ada, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-13T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Volleyball",
       "opponent": "NCAC Tournament Semifinal",
       "date": "Nov 13 (Fri) TBA",
@@ -2137,6 +4117,30 @@
       "isoDate": "2026-11-13T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Baldwin Wallace",
+      "date": "Nov 14 (Sat) 5 p.m.",
+      "time": "5 p.m",
+      "location": "Berea, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-14T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Football",
+      "opponent": "Kenyon",
+      "date": "Nov 14 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "https://www.northcoastnetwork.com/kenyon/?B=4183221",
+      "statsUrl": "https://athletics.kenyon.edu/sidearmstats/football/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
+      "isoDate": "2026-11-14T12:00:00.000Z"
+    },
+    {
       "sport": "Men's Swimming & Diving",
       "opponent": "Findlay",
       "date": "Nov 14 (Sat) 1 p.m.",
@@ -2146,6 +4150,18 @@
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-14T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Findlay",
+      "date": "Nov 14 (Sat) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Findlay, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-14T12:00:00.000Z"
     },
     {
@@ -2161,6 +4177,18 @@
       "isoDate": "2026-11-14T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Berry",
+      "date": "Nov 20 (Fri) 7:30 p.m.",
+      "time": "7:30 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-20T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "TBA",
       "date": "Nov 20 (Fri) TBA",
@@ -2171,6 +4199,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-20T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Johns Hopkins",
+      "date": "Nov 21 (Sat) 7:30 p.m.",
+      "time": "7:30 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-21T12:00:00.000Z"
     },
     {
       "sport": "Men's Swimming & Diving",
@@ -2197,6 +4237,30 @@
       "isoDate": "2026-11-21T12:00:00.000Z"
     },
     {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Corbiere-Merion Invitational",
+      "date": "Nov 21 (Sat) Nov 22 (Sun) Fri: 10 a.m. & 5:30 p.m. / Sat: 10 a.m.",
+      "time": "10 a.m",
+      "location": "Delaware, Ohio Meek Aquatics Center",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-11-21T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Capital",
+      "date": "Nov 24 (Tue) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Columbus, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-24T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Ohio Northern",
       "date": "Nov 24 (Tue) 1 p.m.",
@@ -2209,6 +4273,30 @@
       "isoDate": "2026-11-24T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Otterbein",
+      "date": "Nov 29 (Sun) 1 p.m.",
+      "time": "1 p.m",
+      "location": "Delaware, Ohio",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-11-29T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "DePauw",
+      "date": "Dec 2 (Wed) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Greencastle, Ind.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-02T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Wooster",
       "date": "Dec 2 (Wed) 7 p.m.",
@@ -2219,6 +4307,18 @@
       "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-02T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Wooster",
+      "date": "Dec 5 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Delaware, Ohio Branch Rickey Arena",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
       "sport": "Men's Swimming & Diving",
@@ -2245,6 +4345,18 @@
       "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
+      "sport": "Men's Track & Field",
+      "opponent": "Oiler Open",
+      "date": "Dec 5 (Fri)",
+      "time": "",
+      "location": "Findlay, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-track-and-field/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "La Roche",
       "date": "Dec 5 (Sat) 1 p.m.",
@@ -2254,6 +4366,30 @@
       "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
       "statsUrl": "https://battlingbishops.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Kenyon",
+      "date": "Dec 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
+      "isoDate": "2026-12-05T12:00:00.000Z"
+    },
+    {
+      "sport": "Women's Swimming & Diving",
+      "opponent": "Youngstown State",
+      "date": "Dec 5 (Sat) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Gambier, Ohio",
+      "site": "Home",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
@@ -2281,6 +4417,18 @@
       "isoDate": "2026-12-05T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Denison",
+      "date": "Dec 9 (Wed) 7 p.m.",
+      "time": "7 p.m",
+      "location": "Granville, Ohio",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-09T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Trine",
       "date": "Dec 18 (Fri) 7:45 p.m.",
@@ -2291,6 +4439,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-18T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Calvin",
+      "date": "Dec 19 (Sat) 3 p.m.",
+      "time": "3 p.m",
+      "location": "Grand Rapids, Mich.",
+      "site": "Away",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-19T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
@@ -2305,6 +4465,18 @@
       "isoDate": "2026-12-19T12:00:00.000Z"
     },
     {
+      "sport": "Men's Basketball",
+      "opponent": "Manchester",
+      "date": "Dec 29 (Tue) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Westerville, Ohio",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-29T12:00:00.000Z"
+    },
+    {
       "sport": "Women's Basketball",
       "opponent": "Ohio",
       "date": "Dec 29 (Tue) 12 p.m.",
@@ -2315,6 +4487,18 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-12-29T12:00:00.000Z"
+    },
+    {
+      "sport": "Men's Basketball",
+      "opponent": "Geneva",
+      "date": "Dec 30 (Wed) 6 p.m.",
+      "time": "6 p.m",
+      "location": "Westerville, Ohio",
+      "site": "",
+      "watchUrl": "",
+      "statsUrl": "",
+      "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
+      "isoDate": "2026-12-30T12:00:00.000Z"
     },
     {
       "sport": "Women's Basketball",
