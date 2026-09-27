@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-26T22:52:26.013109+00:00",
+  "updated": "2026-09-27T01:28:29.840586+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-26",
-      "title": "Make Friends at Whimsy Night",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-make-friends-at-whimsy-night/2026-09-26/"
-    },
     {
       "date": "2026-09-27",
       "title": "Karaoke Sunday",
@@ -402,6 +394,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-2/2026-10-25/"
+    },
+    {
+      "date": "2026-10-26",
+      "title": "Cory Band Ticketed Performance",
+      "startTime": "7:30 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/cory-band-ticketed-performance/2026-10-26/"
     }
   ]
 }
