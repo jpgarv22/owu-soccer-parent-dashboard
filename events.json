@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-27T22:11:57.663215+00:00",
+  "updated": "2026-09-28T00:47:27.809453+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-27",
-      "title": "Karaoke Sunday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-09-27/"
-    },
     {
       "date": "2026-09-28",
       "title": "Autumn Mixer",
@@ -402,6 +394,22 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/cory-band-ticketed-performance/2026-10-26/"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Corinne Lyman Lecture: Muetter Tohti",
+      "startTime": "6:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/corinne-lyman-lecture-muetter-tohti/2026-10-27/"
+    },
+    {
+      "date": "2026-10-27",
+      "title": "Karaoke Tuesday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-27/"
     }
   ]
 }
