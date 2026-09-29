@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-29T15:52:29.737948+00:00",
+  "updated": "2026-09-29T20:48:19.650573+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -26,6 +26,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-international-recovery-day/2026-09-30/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "TLC Travel-Learning Courses: Deadline",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/tlc-travel-learning-courses-deadline/2026-10-01/"
     },
     {
       "date": "2026-10-01",
@@ -74,6 +82,14 @@
       "endTime": "6:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/team-owu-golf-outing-3/2026-10-02/"
+    },
+    {
+      "date": "2026-10-02",
+      "title": "Spanish Conversational Group!",
+      "startTime": "12:10 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/spanish-conversational-group/2026-10-02/"
     },
     {
       "date": "2026-10-02",
@@ -148,6 +164,14 @@
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday/2026-10-04/"
     },
     {
+      "date": "2026-10-05",
+      "title": "Get OWUt The Vote: Ohio Voter Registration Ends",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/get-owut-the-vote-ohio-voter-registration-ends/2026-10-05/"
+    },
+    {
       "date": "2026-10-06",
       "title": "Karaoke Tuesday",
       "startTime": "8 p.m.",
@@ -178,6 +202,14 @@
       "endTime": "5 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/central-ohio-symphony-concert-superheroes-supervillains/2026-10-11/"
+    },
+    {
+      "date": "2026-10-12",
+      "title": "Coping with Cards",
+      "startTime": "11:30 a.m.",
+      "endTime": "11:59 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/coping-with-cards/2026-10-12/"
     },
     {
       "date": "2026-10-13",
