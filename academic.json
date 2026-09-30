@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/academics/academic-resources/academic-calendar/2026-2027-academic-year-and-2027-summer-session/",
-  "updated": "2026-09-29T16:33:01.121140+00:00",
+  "updated": "2026-09-30T16:26:28.776243+00:00",
   "events": [
     {
       "startDate": "2026-08-20",
@@ -26,14 +26,14 @@
     {
       "startDate": "2026-09-04",
       "endDate": "2026-09-04",
-      "title": "Temporary Incomplete Coursework Due (Spring/Summer 2026 Incompletes)",
+      "title": "Temporary Incomplete Coursework Due (Spring/Summer Incompletes)",
       "section": "Fall Semester",
       "url": null
     },
     {
       "startDate": "2026-09-18",
       "endDate": "2026-09-18",
-      "title": "Temporary Incomplete Final Grades Due (Spring/Summer 2026 Incompletes)",
+      "title": "Temporary Incomplete Final Grades Due (Spring/Summer Incompletes)",
       "section": "Fall Semester",
       "url": null
     },
@@ -229,7 +229,7 @@
     {
       "startDate": "2027-01-29",
       "endDate": "2027-01-29",
-      "title": "Temporary Incomplete Coursework Due (Fall 2026 Incompletes)",
+      "title": "Temporary Incomplete Coursework Due (Fall Incompletes)",
       "section": "Spring Semester",
       "url": null
     },
@@ -243,7 +243,7 @@
     {
       "startDate": "2027-02-12",
       "endDate": "2027-02-12",
-      "title": "Temporary Incomplete Final Grades Due (Fall 2026 Incompletes)",
+      "title": "Temporary Incomplete Final Grades Due (Fall Incompletes)",
       "section": "Spring Semester",
       "url": null
     },
@@ -458,13 +458,6 @@
       "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
     },
     {
-      "startDate": "2027-05-31",
-      "endDate": "2027-05-31",
-      "title": "Memorial Day (no classes)",
-      "section": "Summer Session",
-      "url": null
-    },
-    {
       "startDate": "2027-06-16",
       "endDate": "2027-06-16",
       "title": "Last Day of First Module Classes",
@@ -473,6 +466,13 @@
     },
     {
       "startDate": "2027-06-17",
+      "endDate": "2027-06-17",
+      "title": "Final Examinations in First Module Courses",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-06-18",
       "endDate": "2027-06-18",
       "title": "Final Examinations in First Module Courses",
       "section": "Summer Session",
@@ -500,20 +500,6 @@
       "url": "https://www.owu.edu/academics/office-of-the-registrar/forms/#course-withdrawal"
     },
     {
-      "startDate": "2027-06-30",
-      "endDate": "2027-06-30",
-      "title": "June Degree Conferral Date (no ceremony)",
-      "section": "Summer Session",
-      "url": null
-    },
-    {
-      "startDate": "2027-07-05",
-      "endDate": "2027-07-05",
-      "title": "Independence Day Observed (no classes)",
-      "section": "Summer Session",
-      "url": null
-    },
-    {
       "startDate": "2027-07-21",
       "endDate": "2027-07-21",
       "title": "Last Day of Full Session Classes",
@@ -522,6 +508,13 @@
     },
     {
       "startDate": "2027-07-22",
+      "endDate": "2027-07-22",
+      "title": "Final Examinations in Full Session Courses",
+      "section": "Summer Session",
+      "url": null
+    },
+    {
+      "startDate": "2027-07-23",
       "endDate": "2027-07-23",
       "title": "Final Examinations in Full Session Courses",
       "section": "Summer Session",
@@ -538,13 +531,6 @@
       "startDate": "2027-07-27",
       "endDate": "2027-07-27",
       "title": "Full Session Grades Due by 4:30 p.m. EDT",
-      "section": "Summer Session",
-      "url": null
-    },
-    {
-      "startDate": "2027-07-30",
-      "endDate": "2027-07-30",
-      "title": "July Degree Conferral Date (no ceremony)",
       "section": "Summer Session",
       "url": null
     }
