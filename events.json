@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-09-29T20:48:19.650573+00:00",
+  "updated": "2026-09-30T00:28:00.039299+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-09-29",
-      "title": "Baseball Trivia Spin the Wheel",
-      "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-baseball-trivia-spin-the-wheel/2026-09-29/"
-    },
-    {
-      "date": "2026-09-29",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-09-29/"
-    },
     {
       "date": "2026-09-30",
       "title": "International Recovery Day",
@@ -218,6 +202,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-13/"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Impact in Action",
+      "startTime": "6 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/impact-in-action/2026-10-14/"
     },
     {
       "date": "2026-10-15",
@@ -442,6 +434,22 @@
       "endTime": "5 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-red-cross-blood-drive/2026-10-28/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Ross Art Museum: Spooky Cute Adult Coloring",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-spooky-cute-adult-coloring/2026-10-29/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Fall Theatre Production: \"Oh, to Be Pure Again\"",
+      "startTime": "7:30 p.m.",
+      "endTime": "9:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/fall-theatre-production-oh-to-be-pure-again/2026-10-29/"
     }
   ]
 }
