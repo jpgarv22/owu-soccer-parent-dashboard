@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T00:24:50.396Z",
+  "updatedAt": "2026-09-30T06:40:40.055Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3151,8 +3151,8 @@
       "time": "7 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/capital/boxscore/10247",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-09-29T12:00:00.000Z"
     },
@@ -3163,8 +3163,8 @@
       "time": "7 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/30/watchowu-volleyball.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/baldwin-wallace/boxscore/10219",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-09-29T12:00:00.000Z"
     },
