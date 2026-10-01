@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-01T13:16:27.264926+00:00",
+  "updated": "2026-10-01T18:55:50.856182+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -26,6 +26,14 @@
       "endTime": "2 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-sociology-and-anthropology-event/2026-10-01/"
+    },
+    {
+      "date": "2026-10-01",
+      "title": "Sip 'n' Strat: Tea, Rights & Resources",
+      "startTime": "6 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/sip-n-strat-tea-rights-resources/2026-10-01/"
     },
     {
       "date": "2026-10-01",
@@ -196,6 +204,14 @@
       "url": "https://www.owu.edu/calendars/details/coping-with-cards/2026-10-12/"
     },
     {
+      "date": "2026-10-12",
+      "title": "Chi Phi RAINN Fundraising",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/chi-phi-rainn-fundraising/2026-10-12/"
+    },
+    {
       "date": "2026-10-13",
       "title": "Karaoke Tuesday",
       "startTime": "8 p.m.",
@@ -205,11 +221,27 @@
     },
     {
       "date": "2026-10-14",
+      "title": "Decorate Your Personal Items with Patches",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/decorate-your-personal-items-with-patches/2026-10-14/"
+    },
+    {
+      "date": "2026-10-14",
       "title": "Impact in Action",
       "startTime": "6 p.m.",
       "endTime": "7:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/impact-in-action/2026-10-14/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "PG Lunch & Learn",
+      "startTime": "12:10 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-pg-lunch-learn-5/2026-10-15/"
     },
     {
       "date": "2026-10-15",
@@ -450,6 +482,14 @@
       "endTime": "9:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/fall-theatre-production-oh-to-be-pure-again/2026-10-29/"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Costumes & Consent",
+      "startTime": "11:30 a.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/costumes-consent/2026-10-30/"
     },
     {
       "date": "2026-10-30",
