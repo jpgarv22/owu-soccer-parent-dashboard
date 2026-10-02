@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-02T15:49:59.288994+00:00",
+  "updated": "2026-10-02T20:45:43.111613+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -86,8 +86,8 @@
     {
       "date": "2026-10-03",
       "title": "Walk to End Alzheimer's",
-      "startTime": "9 p.m.",
-      "endTime": "11:59 p.m.",
+      "startTime": "9 a.m.",
+      "endTime": "11 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-walk-to-end-alzheimer-s/2026-10-03/"
     },
@@ -165,6 +165,14 @@
     },
     {
       "date": "2026-10-14",
+      "title": "Growing Through Grief and Loss - Support Group",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/growing-through-grief-and-loss-support-group/2026-10-14/"
+    },
+    {
+      "date": "2026-10-14",
       "title": "Decorate Your Personal Items with Patches",
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
@@ -178,6 +186,14 @@
       "endTime": "7:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/impact-in-action/2026-10-14/"
+    },
+    {
+      "date": "2026-10-15",
+      "title": "Goal Setting for Savings",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/goal-setting-for-savings/2026-10-15/"
     },
     {
       "date": "2026-10-15",
