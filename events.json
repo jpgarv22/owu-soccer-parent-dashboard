@@ -1,64 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-01T23:13:06.187219+00:00",
+  "updated": "2026-10-02T02:17:03.858715+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-01",
-      "title": "TLC Travel-Learning Courses: Deadline",
-      "startTime": null,
-      "endTime": null,
-      "allDay": true,
-      "url": "https://www.owu.edu/calendars/details/tlc-travel-learning-courses-deadline/2026-10-01/"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "OWU Environment & Sustainability Labs Open House",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-environment-amp-sustainability-labs-open-house/2026-10-01/"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "Sociology and Anthropology Event",
-      "startTime": "12 p.m.",
-      "endTime": "2 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-sociology-and-anthropology-event/2026-10-01/"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "Sip 'n' Strat: Tea, Rights & Resources",
-      "startTime": "6 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/sip-n-strat-tea-rights-resources/2026-10-01/"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "Film Screening: \"Good Night, and Good Luck\"",
-      "startTime": "6:30 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/film-screening-good-night-and-good-luck/2026-10-01/"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "Milligan Lecture: Wandia Chiuri '05",
-      "startTime": "7:30 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/milligan-lecture-wandia-chiuri-05/2026-10-01/"
-    },
-    {
-      "date": "2026-10-01",
-      "title": "Board Game Night",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-board-game-night-3/2026-10-01/"
-    },
     {
       "date": "2026-10-02",
       "title": "Homecoming & Family Weekend 2026",
@@ -506,6 +450,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-30/"
+    },
+    {
+      "date": "2026-10-31",
+      "title": "Fall Theatre Production: \"Oh, to Be Pure Again\"",
+      "startTime": "7:30 p.m.",
+      "endTime": "9:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/fall-theatre-production-oh-to-be-pure-again/2026-10-31/"
     }
   ]
 }
