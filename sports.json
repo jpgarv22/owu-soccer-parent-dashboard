@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T17:15:22.846Z",
+  "updatedAt": "2026-10-03T19:50:46.338Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3223,8 +3223,8 @@
       "time": "12 p.m",
       "location": "Oberlin, Ohio",
       "site": "Away",
-      "watchUrl": "https://oberlinsportsnetwork.com/",
-      "statsUrl": "https://goyeo.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/oberlin/boxscore/10197",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-10-03T12:00:00.000Z"
     },
@@ -3259,8 +3259,8 @@
       "time": "12 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.northcoastnetwork.com/denison/",
-      "statsUrl": "https://bigred.denison.edu/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/denison/boxscore/10220",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-03T12:00:00.000Z"
     },
