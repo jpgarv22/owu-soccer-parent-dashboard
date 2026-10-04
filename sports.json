@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T02:35:36.399Z",
+  "updatedAt": "2026-10-04T09:43:30.271Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3211,8 +3211,8 @@
       "time": "7 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/msoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-soccer/stats/2026/adrian/boxscore/10161",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-10-03T12:00:00.000Z"
     },
@@ -3271,8 +3271,8 @@
       "time": "2 p.m",
       "location": "Granville, Ohio",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/denison/",
-      "statsUrl": "https://bigred.denison.edu/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/case-western-reserve/boxscore/10221",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-03T12:00:00.000Z"
     },
