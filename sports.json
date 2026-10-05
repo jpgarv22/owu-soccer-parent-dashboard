@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T08:59:05.894Z",
+  "updatedAt": "2026-10-05T18:24:01.795Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3305,10 +3305,10 @@
       "opponent": "Hanover",
       "date": "Oct 6 (Tue) 7 p.m.",
       "time": "7 p.m",
-      "location": "Richmond, Ind.",
+      "location": "Hanover, Ind.",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://team1sports.com/hanover/",
+      "statsUrl": "https://athletics.hanover.edu/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-06T12:00:00.000Z"
     },
