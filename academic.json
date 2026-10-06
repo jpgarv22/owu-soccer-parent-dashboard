@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/academics/academic-resources/academic-calendar/2026-2027-academic-year-and-2027-summer-session/",
-  "updated": "2026-10-04T15:25:24.661082+00:00",
+  "updated": "2026-10-06T16:51:10.960591+00:00",
   "events": [
     {
       "startDate": "2026-08-20",
@@ -75,7 +75,7 @@
     {
       "startDate": "2026-10-19",
       "endDate": "2026-10-19",
-      "title": "Midsemester Grades Due / First Module Grades Due by 4:30 p.m. EDT",
+      "title": "Midsemester Grades Due / First Module Grades Due (4:30 p.m. EDT)",
       "section": "Fall Semester",
       "url": null
     },
@@ -285,7 +285,7 @@
     {
       "startDate": "2027-03-08",
       "endDate": "2027-03-08",
-      "title": "Midsemester Grades Due / First Module Grades Due by 4:30 p.m. EST",
+      "title": "Midsemester Grades Due / First Module Grades Due (4:30 p.m. EST)",
       "section": "Spring Semester",
       "url": null
     },
@@ -299,14 +299,14 @@
     {
       "startDate": "2027-03-22",
       "endDate": "2027-03-22",
-      "title": "Registration opens for Fall / Summer (Continuing Seniors) at 7 a.m. EDT",
+      "title": "Continuing Senior Registration opens for Fall / Summer (7 a.m. EDT)",
       "section": "Spring Semester",
       "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
     },
     {
       "startDate": "2027-03-29",
       "endDate": "2027-03-29",
-      "title": "Registration opens for Fall / Summer (Juniors) at 7 a.m. EDT",
+      "title": "Junior Registration opens for Fall / Summer (7 a.m. EDT)",
       "section": "Spring Semester",
       "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
     },
@@ -320,7 +320,7 @@
     {
       "startDate": "2027-04-05",
       "endDate": "2027-04-05",
-      "title": "Registration opens for Fall / Summer (Sophomores) at 7 a.m. EDT",
+      "title": "Sophomore Registration opens for Fall / Summer (7 a.m. EDT)",
       "section": "Spring Semester",
       "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
     },
@@ -334,14 +334,21 @@
     {
       "startDate": "2027-04-12",
       "endDate": "2027-04-12",
-      "title": "Registration opens for Fall / Summer (Returning Freshmen) at 7 a.m. EDT",
+      "title": "Continuing Freshmen Registration opens for Fall / Summer (7 a.m. EDT)",
       "section": "Spring Semester",
       "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
     },
     {
       "startDate": "2027-04-15",
       "endDate": "2027-04-15",
-      "title": "Additional Course / Late Registration opens for Fall / Summer (All Returning Students) at 7 a.m. EDT",
+      "title": "Additional Course / Late Registration opens for Fall / Summer (7 a.m. EDT)",
+      "section": "Spring Semester",
+      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
+    },
+    {
+      "startDate": "2027-04-27",
+      "endDate": "2027-04-27",
+      "title": "Fall/Summer Registration closes (11:59 p.m. EDT)",
       "section": "Spring Semester",
       "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
     },
@@ -351,13 +358,6 @@
       "title": "Last Day of Full Semester / Second Module Classes",
       "section": "Spring Semester",
       "url": null
-    },
-    {
-      "startDate": "2027-04-27",
-      "endDate": "2027-04-27",
-      "title": "Registration closes for Fall / Summer at 11:59 p.m. EDT",
-      "section": "Spring Semester",
-      "url": "https://www.owu.edu/academics/office-of-the-registrar/schedules/registration-guide/"
     },
     {
       "startDate": "2027-04-28",
@@ -411,14 +411,14 @@
     {
       "startDate": "2027-05-04",
       "endDate": "2027-05-04",
-      "title": "Full Semester and Second Module Ends at 5 p.m. EDT",
+      "title": "Full Semester and Second Module Ends (5 p.m. EDT)",
       "section": "Spring Semester",
       "url": null
     },
     {
       "startDate": "2027-05-05",
       "endDate": "2027-05-05",
-      "title": "Graduating Senior Grades Due by 5 p.m. EDT",
+      "title": "Graduating Senior Grades Due (5 p.m. EDT)",
       "section": "Spring Semester",
       "url": null
     },
@@ -432,7 +432,7 @@
     {
       "startDate": "2027-05-10",
       "endDate": "2027-05-10",
-      "title": "Remaining Grades Due by 4:30 p.m. EDT",
+      "title": "Remaining Grades Due (4:30 p.m. EDT)",
       "section": "Spring Semester",
       "url": null
     },
@@ -481,14 +481,14 @@
     {
       "startDate": "2027-06-18",
       "endDate": "2027-06-18",
-      "title": "First Module Courses End at 4:30 p.m. EDT",
+      "title": "First Module Courses End (4:30 p.m. EDT)",
       "section": "Summer Session",
       "url": null
     },
     {
       "startDate": "2027-06-22",
       "endDate": "2027-06-22",
-      "title": "First Module Grades Due by 4:30 p.m. EDT",
+      "title": "First Module Grades Due (4:30 p.m. EDT)",
       "section": "Summer Session",
       "url": null
     },
@@ -523,14 +523,14 @@
     {
       "startDate": "2027-07-23",
       "endDate": "2027-07-23",
-      "title": "Full Session Courses End at 4:30 p.m. EDT",
+      "title": "Full Session Courses End (4:30 p.m. EDT)",
       "section": "Summer Session",
       "url": null
     },
     {
       "startDate": "2027-07-27",
       "endDate": "2027-07-27",
-      "title": "Full Session Grades Due by 4:30 p.m. EDT",
+      "title": "Full Session Grades Due (4:30 p.m. EDT)",
       "section": "Summer Session",
       "url": null
     }
