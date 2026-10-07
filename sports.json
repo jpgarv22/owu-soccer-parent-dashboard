@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T23:49:44.733Z",
+  "updatedAt": "2026-10-07T05:54:02.664Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3295,8 +3295,8 @@
       "time": "3:30 p.m",
       "location": "Gambier, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.northcoastnetwork.com/?B=4183509",
-      "statsUrl": "https://athletics.kenyon.edu/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/kenyon/boxscore/10249",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-06T12:00:00.000Z"
     },
@@ -3307,8 +3307,8 @@
       "time": "7 p.m",
       "location": "Hanover, Ind.",
       "site": "Away",
-      "watchUrl": "https://team1sports.com/hanover/",
-      "statsUrl": "https://athletics.hanover.edu/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/hanover/boxscore/10222",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-06T12:00:00.000Z"
     },
