@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-07T21:59:18.061150+00:00",
+  "updated": "2026-10-08T01:56:12.499565+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -434,6 +434,22 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-board-game-night-3/2026-11-05/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Pool Tournament",
+      "startTime": "6:30 p.m.",
+      "endTime": "11 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-pool-tournament/2026-11-06/"
+    },
+    {
+      "date": "2026-11-06",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-06/"
     }
   ]
 }
