@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T17:51:12.103Z",
+  "updatedAt": "2026-10-10T21:39:22.707Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3367,8 +3367,8 @@
       "time": "11 a.m",
       "location": "Sewanee, Tenn.",
       "site": "Away",
-      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F273996&utm_campaign=847670ohiowesleyanvss&utm_medium=partner&utm_source=multiple&utm_content=signup&contract_id=0063m00000n3zm9aam&coverage_id=16134896&sp=conf-partner-k7p1",
-      "statsUrl": "https://sewaneetigers.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/sewanee/boxscore/10199",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-10-10T12:00:00.000Z"
     },
@@ -3391,8 +3391,8 @@
       "time": "1 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/john-carroll/boxscore/10250",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-10T12:00:00.000Z"
     },
