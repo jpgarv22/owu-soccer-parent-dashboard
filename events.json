@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-10T22:32:49.990601+00:00",
+  "updated": "2026-10-11T01:54:26.583953+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-10",
-      "title": "Ohio Wesleyan University Women's Golf Beaver Fall Classic",
-      "startTime": null,
-      "endTime": null,
-      "allDay": true,
-      "url": "https://www.owu.edu/calendars/details/ohio-wesleyan-university-womens-golf-beaver-fall-classic-10267/2026-10-10/"
-    },
     {
       "date": "2026-10-11",
       "title": "Ross Art Museum: Make-and-Take Superhero Masks",
@@ -349,7 +341,7 @@
     },
     {
       "date": "2026-10-29",
-      "title": "Fall Theatre Production: \"Oh, to Be Pure Again\"",
+      "title": "Fall Theatre Production: \"oh to be pure again\"",
       "startTime": "7:30 p.m.",
       "endTime": "9:30 p.m.",
       "allDay": false,
@@ -365,7 +357,7 @@
     },
     {
       "date": "2026-10-30",
-      "title": "Fall Theatre Production: \"Oh, to Be Pure Again\"",
+      "title": "Fall Theatre Production: \"oh to be pure again\"",
       "startTime": "7:30 p.m.",
       "endTime": "9:30 p.m.",
       "allDay": false,
@@ -381,7 +373,7 @@
     },
     {
       "date": "2026-10-31",
-      "title": "Fall Theatre Production: \"Oh, to Be Pure Again\"",
+      "title": "Fall Theatre Production: \"oh to be pure again\"",
       "startTime": "7:30 p.m.",
       "endTime": "9:30 p.m.",
       "allDay": false,
@@ -389,7 +381,7 @@
     },
     {
       "date": "2026-11-01",
-      "title": "Fall Theatre Production: \"Oh, to Be Pure Again\"",
+      "title": "Fall Theatre Production: \"oh to be pure again\"",
       "startTime": "2 p.m.",
       "endTime": "4 p.m.",
       "allDay": false,
@@ -474,6 +466,22 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-2/2026-11-08/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Honor Choir Festival Concert",
+      "startTime": "6:30 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/honor-choir-festival-concert/2026-11-09/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Richard W. Smith Lecture in Civil War History: Michael Vorenberg",
+      "startTime": "7 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/richard-w-smith-lecture-in-civil-war-history-michael-vorenberg/2026-11-09/"
     }
   ]
 }
