@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-13T15:59:45.215395+00:00",
+  "updated": "2026-10-13T21:15:00.329469+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -213,6 +213,14 @@
     },
     {
       "date": "2026-10-20",
+      "title": "Frame Your Affirmations Event",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/frame-your-affirmations-event/2026-10-20/"
+    },
+    {
+      "date": "2026-10-20",
       "title": "Karaoke Tuesday",
       "startTime": "8 p.m.",
       "endTime": "12 a.m.",
@@ -285,6 +293,14 @@
     },
     {
       "date": "2026-10-23",
+      "title": "Student Drag Night!",
+      "startTime": "7 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/student-drag-night/2026-10-23/"
+    },
+    {
+      "date": "2026-10-23",
       "title": "Perkins Observatory: Friday Evening Program",
       "startTime": "8 p.m.",
       "endTime": "10 p.m.",
@@ -341,6 +357,14 @@
     },
     {
       "date": "2026-10-26",
+      "title": "Take Back the Night Posters!",
+      "startTime": "11:30 a.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/take-back-the-night-posters/2026-10-26/"
+    },
+    {
+      "date": "2026-10-26",
       "title": "Cory Band Ticketed Performance",
       "startTime": "7:30 p.m.",
       "endTime": "10 p.m.",
@@ -370,6 +394,14 @@
       "endTime": "5 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-red-cross-blood-drive/2026-10-28/"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Take Back the Night March",
+      "startTime": "6:30 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/take-back-the-night-march-2/2026-10-28/"
     },
     {
       "date": "2026-10-29",
@@ -442,6 +474,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-2/2026-11-01/"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Protect Your Peace - and Your Partners",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/protect-your-peace-and-your-partners/2026-11-02/"
     },
     {
       "date": "2026-11-03",
