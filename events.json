@@ -1,8 +1,16 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-13T07:43:05.866655+00:00",
+  "updated": "2026-10-13T15:59:45.215395+00:00",
   "daysCollected": 30,
   "events": [
+    {
+      "date": "2026-10-13",
+      "title": "S'mores at Stuy",
+      "startTime": "7:30 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/s-mores-at-stuy/2026-10-13/"
+    },
     {
       "date": "2026-10-13",
       "title": "Karaoke Tuesday",
@@ -26,6 +34,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/decorate-your-personal-items-with-patches/2026-10-14/"
+    },
+    {
+      "date": "2026-10-14",
+      "title": "Pie a Volleyball Player for Breast Cancer Awareness!",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/pie-a-volleyball-player-for-breast-cancer-awareness/2026-10-14/"
     },
     {
       "date": "2026-10-14",
@@ -53,6 +69,14 @@
     },
     {
       "date": "2026-10-15",
+      "title": "Air Dry Clay & Create: Shape Your Story",
+      "startTime": "5 p.m.",
+      "endTime": "6:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/air-dry-clay-create-shape-your-story/2026-10-15/"
+    },
+    {
+      "date": "2026-10-15",
       "title": "Opening Reception - Ross Art Museum",
       "startTime": "5 p.m.",
       "endTime": "7 p.m.",
@@ -74,6 +98,14 @@
       "endTime": "1:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/denver-red-black-luncheon/2026-10-16/"
+    },
+    {
+      "date": "2026-10-16",
+      "title": "Coffee and Donuts with the ENVS Department",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/coffee-and-donuts-with-the-envs-department/2026-10-16/"
     },
     {
       "date": "2026-10-16",
@@ -157,6 +189,14 @@
     },
     {
       "date": "2026-10-19",
+      "title": "Your Vote, Your Voice: Voting Education",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/your-vote-your-voice-voting-education/2026-10-19/"
+    },
+    {
+      "date": "2026-10-19",
       "title": "My Life As A with Dr. Maria Taesil McCauley '95",
       "startTime": "6:30 p.m.",
       "endTime": "8:30 p.m.",
@@ -165,11 +205,35 @@
     },
     {
       "date": "2026-10-20",
+      "title": "Ghost in a Jar",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/ghost-in-a-jar/2026-10-20/"
+    },
+    {
+      "date": "2026-10-20",
       "title": "Karaoke Tuesday",
       "startTime": "8 p.m.",
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-20/"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Say it Better, Solve It Faster",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/say-it-better-solve-it-faster/2026-10-21/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Rest, Reset, and Reframe!",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/rest-reset-and-reframe-2/2026-10-22/"
     },
     {
       "date": "2026-10-22",
@@ -306,6 +370,14 @@
       "endTime": "5 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-red-cross-blood-drive/2026-10-28/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Investment Club Halloween Investing",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/investment-club-halloween-investing/2026-10-29/"
     },
     {
       "date": "2026-10-29",
