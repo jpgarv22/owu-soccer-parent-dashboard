@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-14T17:11:21.649462+00:00",
+  "updated": "2026-10-14T20:41:56.951234+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -50,14 +50,6 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-pg-lunch-learn-5/2026-10-15/"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Air Dry Clay & Create: Shape Your Story",
-      "startTime": "5 p.m.",
-      "endTime": "6:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/air-dry-clay-create-shape-your-story/2026-10-15/"
     },
     {
       "date": "2026-10-15",
@@ -218,6 +210,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/say-it-better-solve-it-faster/2026-10-21/"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "Air Dry Clay & Create: Shape Your Story",
+      "startTime": "5 p.m.",
+      "endTime": "6:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/air-dry-clay-create-shape-your-story/2026-10-21/"
     },
     {
       "date": "2026-10-22",
@@ -477,6 +477,14 @@
     },
     {
       "date": "2026-11-05",
+      "title": "Film Screening: \"The Truman Show\"",
+      "startTime": "6:30 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/film-screening-the-truman-show/2026-11-05/"
+    },
+    {
+      "date": "2026-11-05",
       "title": "Pool Tournament",
       "startTime": "6:30 p.m.",
       "endTime": "11 p.m.",
@@ -490,6 +498,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-board-game-night-3/2026-11-05/"
+    },
+    {
+      "date": "2026-11-05",
+      "title": "Ross Art Museum: Performance: Exposure Ensemble",
+      "startTime": "8 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-performance-exposure-ensemble/2026-11-05/"
     },
     {
       "date": "2026-11-06",
@@ -562,6 +578,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-11-10/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Ross Art Museum: Museum Talk: Jo Ingles – Election Results",
+      "startTime": "6:30 p.m.",
+      "endTime": "7:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-museum-talk-jo-ingles-election-results/2026-11-12/"
     },
     {
       "date": "2026-11-12",
