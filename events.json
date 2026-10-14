@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-13T21:15:00.329469+00:00",
+  "updated": "2026-10-14T00:20:02.406359+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-13",
-      "title": "S'mores at Stuy",
-      "startTime": "7:30 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/s-mores-at-stuy/2026-10-13/"
-    },
-    {
-      "date": "2026-10-13",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-10-13/"
-    },
     {
       "date": "2026-10-14",
       "title": "Growing Through Grief and Loss - Support Group",
@@ -578,6 +562,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-11-10/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Park Avenue Jazz Ensemble Concert",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/park-avenue-jazz-ensemble-concert-12/2026-11-12/"
     }
   ]
 }
