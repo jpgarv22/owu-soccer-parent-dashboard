@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-15T15:01:43.033144+00:00",
+  "updated": "2026-10-15T19:08:36.857243+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -153,7 +153,7 @@
       "startTime": null,
       "endTime": null,
       "allDay": true,
-      "url": "https://www.owu.edu/calendars/details/ghost-in-a-jar/2026-10-20/"
+      "url": "https://www.owu.edu/calendars/details/owu-students-ghost-in-a-jar/2026-10-20/"
     },
     {
       "date": "2026-10-20",
@@ -193,7 +193,7 @@
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/rest-reset-and-reframe-2/2026-10-22/"
+      "url": "https://www.owu.edu/calendars/details/owu-students-rest-reset-and-reframe/2026-10-22/"
     },
     {
       "date": "2026-10-22",
@@ -221,11 +221,11 @@
     },
     {
       "date": "2026-10-23",
-      "title": "Historic Campus Announcement",
+      "title": "Vision Launch",
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/historic-campus-announcement/2026-10-23/"
+      "url": "https://www.owu.edu/calendars/details/vision-launch/2026-10-23/"
     },
     {
       "date": "2026-10-23",
@@ -249,7 +249,7 @@
       "startTime": "7 p.m.",
       "endTime": "9 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/student-drag-night/2026-10-23/"
+      "url": "https://www.owu.edu/calendars/details/owu-students-student-drag-night/2026-10-23/"
     },
     {
       "date": "2026-10-23",
@@ -353,7 +353,7 @@
       "startTime": "6:30 p.m.",
       "endTime": "8 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/take-back-the-night-march-2/2026-10-28/"
+      "url": "https://www.owu.edu/calendars/details/owu-students-take-back-the-night-march/2026-10-28/"
     },
     {
       "date": "2026-10-29",
