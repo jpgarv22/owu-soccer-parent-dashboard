@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-14T23:55:08.195767+00:00",
+  "updated": "2026-10-15T04:40:17.928575+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-14",
-      "title": "Growing Through Grief and Loss - Support Group",
-      "startTime": null,
-      "endTime": null,
-      "allDay": true,
-      "url": "https://www.owu.edu/calendars/details/growing-through-grief-and-loss-support-group/2026-10-14/"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Decorate Your Personal Items with Patches",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/decorate-your-personal-items-with-patches/2026-10-14/"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Pie a Volleyball Player for Breast Cancer Awareness!",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/pie-a-volleyball-player-for-breast-cancer-awareness/2026-10-14/"
-    },
-    {
-      "date": "2026-10-14",
-      "title": "Impact in Action",
-      "startTime": "6 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/impact-in-action/2026-10-14/"
-    },
     {
       "date": "2026-10-15",
       "title": "Goal Setting for Savings",
@@ -594,6 +562,22 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/park-avenue-jazz-ensemble-concert-12/2026-11-12/"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "Fall Dance Concert: Orchesis Dance Company Concert 2026",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/fall-dance-concert-orchesis-dance-company-concert-2026/2026-11-13/"
+    },
+    {
+      "date": "2026-11-13",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-13/"
     }
   ]
 }
