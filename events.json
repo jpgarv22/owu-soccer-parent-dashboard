@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-16T12:26:07.004373+00:00",
+  "updated": "2026-10-16T17:24:39.517714+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -189,11 +189,11 @@
     },
     {
       "date": "2026-10-23",
-      "title": "Vision Launch",
+      "title": "OWU Vision Launch",
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
       "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/vision-launch/2026-10-23/"
+      "url": "https://www.owu.edu/calendars/details/owu-vision-launch/2026-10-23/"
     },
     {
       "date": "2026-10-23",
