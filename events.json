@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-16T17:24:39.517714+00:00",
+  "updated": "2026-10-16T21:09:37.213757+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -69,6 +69,14 @@
     },
     {
       "date": "2026-10-18",
+      "title": "Global Engagement Week",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/global-engagement-week/2026-10-18/"
+    },
+    {
+      "date": "2026-10-18",
       "title": "Monnett Club - Introduction and Updates with Dr. Trevor Bates, DHSc, AT",
       "startTime": "1 p.m.",
       "endTime": "3 p.m.",
@@ -101,6 +109,14 @@
     },
     {
       "date": "2026-10-19",
+      "title": "Explore Study Abroad with SFS in Merrick Lobby",
+      "startTime": "11 a.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-explore-study-abroad-with-sfs-in-merrick-lobby/2026-10-19/"
+    },
+    {
+      "date": "2026-10-19",
       "title": "Your Vote, Your Voice: Voting Education",
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
@@ -122,6 +138,22 @@
       "endTime": null,
       "allDay": true,
       "url": "https://www.owu.edu/calendars/details/owu-students-ghost-in-a-jar/2026-10-20/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Mentors in Italy Hamwill Atrium",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-mentors-in-italy-hamwill-atrium/2026-10-20/"
+    },
+    {
+      "date": "2026-10-20",
+      "title": "Get set to enjoy an Irish Tea on Tuesday",
+      "startTime": "4 p.m.",
+      "endTime": "5:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-get-set-to-enjoy-an-irish-tea-on-tuesday/2026-10-20/"
     },
     {
       "date": "2026-10-20",
@@ -149,6 +181,22 @@
     },
     {
       "date": "2026-10-21",
+      "title": "Wed study abroad stories from France & Japan",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-wed-study-abroad-stories-from-france-japan/2026-10-21/"
+    },
+    {
+      "date": "2026-10-21",
+      "title": "learn about TPG's Theory to Practice Grants",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-learn-about-tpg-s-theory-to-practice-grants/2026-10-21/"
+    },
+    {
+      "date": "2026-10-21",
       "title": "Air Dry Clay & Create: Shape Your Story",
       "startTime": "5 p.m.",
       "endTime": "6:30 p.m.",
@@ -157,11 +205,35 @@
     },
     {
       "date": "2026-10-22",
+      "title": "Global Journeys in Cambodia, Peru and Spain",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-global-journeys-in-cambodia-peru-and-spain/2026-10-22/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Global Pathways 4+1 Grad School Session",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-global-pathways-4-1-grad-school-session/2026-10-22/"
+    },
+    {
+      "date": "2026-10-22",
       "title": "Rest, Reset, and Reframe!",
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-rest-reset-and-reframe/2026-10-22/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Matcha Tea Ceremony and Kendama Fun Today!!",
+      "startTime": "4 p.m.",
+      "endTime": "5:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-matcha-tea-ceremony-and-kendama-fun-today/2026-10-22/"
     },
     {
       "date": "2026-10-22",
@@ -186,6 +258,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/symphonic-wind-ensemble-concert-14/2026-10-22/"
+    },
+    {
+      "date": "2026-10-23",
+      "title": "Dr. Kofi Quaye Speaker Event",
+      "startTime": "1 p.m.",
+      "endTime": "2 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-dr-kofi-quaye-speaker-event/2026-10-23/"
     },
     {
       "date": "2026-10-23",
@@ -314,6 +394,14 @@
       "endTime": "5 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-red-cross-blood-drive/2026-10-28/"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "Christianity in Supernatural",
+      "startTime": "5:30 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-christianity-in-supernatural/2026-10-28/"
     },
     {
       "date": "2026-10-28",
