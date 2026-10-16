@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-15T22:19:29.383892+00:00",
+  "updated": "2026-10-16T01:21:18.617223+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-15",
-      "title": "Goal Setting for Savings",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/goal-setting-for-savings/2026-10-15/"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "PG Lunch & Learn",
-      "startTime": "12:10 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-pg-lunch-learn-5/2026-10-15/"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Opening Reception - Ross Art Museum",
-      "startTime": "5 p.m.",
-      "endTime": "7 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/opening-reception-ross-art-museum-2/2026-10-15/"
-    },
-    {
-      "date": "2026-10-15",
-      "title": "Ross Art Museum Performance: Dylan Craft '29",
-      "startTime": "8 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/ross-art-museum-performance-dylan-craft-29/2026-10-15/"
-    },
     {
       "date": "2026-10-16",
       "title": "Denver - Red & Black Luncheon",
@@ -578,6 +546,30 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-13/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Craft Night – Ornament Decorating",
+      "startTime": "12 p.m.",
+      "endTime": "1 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-ornament-decorating/2026-11-14/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Fall Dance Concert: Orchesis Dance Company Concert 2026",
+      "startTime": "2 p.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/fall-dance-concert-orchesis-dance-company-concert-2026-2/2026-11-14/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Fall Dance Concert: Orchesis Dance Company Concert 2026",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/fall-dance-concert-orchesis-dance-company-concert-2026/2026-11-14/"
     }
   ]
 }
