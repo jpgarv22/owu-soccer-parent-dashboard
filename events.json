@@ -1,48 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-16T23:36:22.313078+00:00",
+  "updated": "2026-10-17T04:27:14.426113+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-16",
-      "title": "Denver - Red & Black Luncheon",
-      "startTime": "11:30 a.m.",
-      "endTime": "1:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/denver-red-black-luncheon/2026-10-16/"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Coffee and Donuts with the ENVS Department",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/coffee-and-donuts-with-the-envs-department/2026-10-16/"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Craft Night – Sweetest Day Cards",
-      "startTime": "12 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-sweetest-day-cards/2026-10-16/"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Musical Theatre Scenes",
-      "startTime": "8 p.m.",
-      "endTime": "9:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/musical-theatre-scenes-3/2026-10-16/"
-    },
-    {
-      "date": "2026-10-16",
-      "title": "Perkins Observatory: Friday Evening Program",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-16/"
-    },
     {
       "date": "2026-10-17",
       "title": "Baseball – How Good is Your Arm? Game",
@@ -658,6 +618,38 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/fall-dance-concert-orchesis-dance-company-concert-2026/2026-11-14/"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Craft Night – Ornament Decorating",
+      "startTime": "12 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-ornament-decorating-2/2026-11-15/"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "OWU Small Ensembles Concert",
+      "startTime": "3 p.m.",
+      "endTime": "4:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-small-ensembles-concert/2026-11-15/"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Composition Recital",
+      "startTime": "7 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/composition-recital-2/2026-11-15/"
+    },
+    {
+      "date": "2026-11-15",
+      "title": "Karaoke Sunday",
+      "startTime": "8 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-2/2026-11-15/"
     }
   ]
 }
