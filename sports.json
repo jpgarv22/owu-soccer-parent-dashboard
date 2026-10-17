@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-17T17:07:53.278Z",
+  "updatedAt": "2026-10-17T19:21:56.540Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3559,8 +3559,8 @@
       "time": "11 a.m",
       "location": "Meadville, Pa.",
       "site": "Away",
-      "watchUrl": "https://pacdigitalnetwork.com/allegheny/",
-      "statsUrl": "https://alleghenygators.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/allegheny/boxscore/10201",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-10-17T12:00:00.000Z"
     },
@@ -3590,13 +3590,13 @@
     },
     {
       "sport": "Women's Volleyball",
-      "opponent": "Otterbein",
+      "opponent": "#19 Otterbein",
       "date": "Oct 17 (Sat) 11 a.m.",
       "time": "11 a.m",
       "location": "Westerville, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.flocollege.com/signup?redirect=%2Flive%2F266575",
-      "statsUrl": "https://otterbeincardinals.com/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/otterbein/boxscore/10225",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-17T12:00:00.000Z"
     },
