@@ -1,32 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-17T22:19:25.593806+00:00",
+  "updated": "2026-10-18T01:03:09.154151+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-17",
-      "title": "Baseball – How Good is Your Arm? Game",
-      "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-baseball-how-good-is-your-arm-game/2026-10-17/"
-    },
-    {
-      "date": "2026-10-17",
-      "title": "Craft Night – Sweetest Day Cards",
-      "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-sweetest-day-cards-2/2026-10-17/"
-    },
-    {
-      "date": "2026-10-17",
-      "title": "Musical Theatre Scenes",
-      "startTime": "8 p.m.",
-      "endTime": "9:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/musical-theatre-scenes-3/2026-10-17/"
-    },
     {
       "date": "2026-10-18",
       "title": "Global Engagement Week",
@@ -650,6 +626,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-2/2026-11-15/"
+    },
+    {
+      "date": "2026-11-16",
+      "title": "Craft Night – Ornament Decorating",
+      "startTime": "6 p.m.",
+      "endTime": "12 a.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-ornament-decorating-3/2026-11-16/"
     }
   ]
 }
