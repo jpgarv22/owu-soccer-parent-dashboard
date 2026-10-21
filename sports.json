@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T17:08:20.071Z",
+  "updatedAt": "2026-10-21T20:37:03.031Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3643,8 +3643,8 @@
       "time": "7 p.m",
       "location": "Wooster, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://northcoastnetwork.com/wooster/",
+      "statsUrl": "https://woosterathletics.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-21T12:00:00.000Z"
     },
