@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-22T10:11:42.152478+00:00",
+  "updated": "2026-10-22T15:17:37.931322+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "date": "2026-10-22",
-      "title": "Matcha Tea Ceremony and Kendama Fun Today!!",
+      "title": "Matcha Tea Ceremony and Kendama Fun Today!",
       "startTime": "4 p.m.",
       "endTime": "5:30 p.m.",
       "allDay": false,
@@ -50,6 +50,14 @@
       "endTime": "9 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/ross-art-museum-artist-discussion-ardine-nelson/2026-10-22/"
+    },
+    {
+      "date": "2026-10-22",
+      "title": "Sturges-After-Dark Haunted Library",
+      "startTime": "7 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-sturges-after-dark-haunted-library/2026-10-22/"
     },
     {
       "date": "2026-10-22",
@@ -79,7 +87,7 @@
       "date": "2026-10-23",
       "title": "Craft Night – Felt Pumpkins",
       "startTime": "6 p.m.",
-      "endTime": "1 a.m.",
+      "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-felt-pumpkins/2026-10-23/"
     },
@@ -119,7 +127,7 @@
       "date": "2026-10-24",
       "title": "Craft Night – Felt Pumpkins",
       "startTime": "12 p.m.",
-      "endTime": "1 a.m.",
+      "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-felt-pumpkins-2/2026-10-24/"
     },
@@ -135,7 +143,7 @@
       "date": "2026-10-25",
       "title": "Craft Night – Felt Pumpkins",
       "startTime": "12 p.m.",
-      "endTime": "12 a.m.",
+      "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-felt-pumpkins-3/2026-10-25/"
     },
@@ -439,7 +447,7 @@
       "date": "2026-11-14",
       "title": "Craft Night – Ornament Decorating",
       "startTime": "12 p.m.",
-      "endTime": "1 a.m.",
+      "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-ornament-decorating/2026-11-14/"
     },
@@ -463,7 +471,7 @@
       "date": "2026-11-15",
       "title": "Craft Night – Ornament Decorating",
       "startTime": "12 p.m.",
-      "endTime": "12 a.m.",
+      "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-ornament-decorating-2/2026-11-15/"
     },
@@ -495,7 +503,7 @@
       "date": "2026-11-16",
       "title": "Craft Night – Ornament Decorating",
       "startTime": "6 p.m.",
-      "endTime": "12 a.m.",
+      "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-ornament-decorating-3/2026-11-16/"
     },
