@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T23:59:55.214Z",
+  "updatedAt": "2026-10-22T04:38:05.635Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3631,8 +3631,8 @@
       "time": "7 p.m",
       "location": "Springfield, Ohio",
       "site": "Away",
-      "watchUrl": "https://tigersportsnetwork.com/",
-      "statsUrl": "https://www.wittenbergtigers.com/sports/msoc/2026-27/boxscores/20261021_pl5h.xml",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-soccer/stats/2026/wittenberg/boxscore/10166",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-10-21T12:00:00.000Z"
     },
@@ -3643,8 +3643,8 @@
       "time": "7 p.m",
       "location": "Wooster, Ohio",
       "site": "Away",
-      "watchUrl": "https://northcoastnetwork.com/wooster/",
-      "statsUrl": "https://woosterathletics.com/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/wooster/boxscore/10226",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-21T12:00:00.000Z"
     },
