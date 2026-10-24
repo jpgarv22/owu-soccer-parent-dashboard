@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T18:06:24.340Z",
+  "updatedAt": "2026-10-24T20:44:15.134Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3655,8 +3655,8 @@
       "time": "12 p.m",
       "location": "Oberlin, Ohio",
       "site": "Away",
-      "watchUrl": "https://oberlinsportsnetwork.com/",
-      "statsUrl": "https://goyeo.com/sidearmstats/football/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/oberlin/boxscore/10117",
       "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
@@ -3667,8 +3667,8 @@
       "time": "1 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.northcoastnetwork.com/denison/",
-      "statsUrl": "https://bigred.denison.edu/sidearmstats/msoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-soccer/stats/2026/denison/boxscore/10167",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-soccer/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
@@ -3727,8 +3727,8 @@
       "time": "1 p.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/depauw/boxscore/10202",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
@@ -3739,8 +3739,8 @@
       "time": "1 p.m",
       "location": "Delaware, Ohio Jay Martin Soccer Complex",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/8/31/watchowu-womens-soccer.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/wittenberg/boxscore/10253",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
@@ -3787,8 +3787,8 @@
       "time": "1 p.m",
       "location": "Springfield, Ohio",
       "site": "Away",
-      "watchUrl": "https://tigersportsnetwork.com/",
-      "statsUrl": "https://www.wittenbergtigers.com/sports/wvball/2026-27/boxscores/20261024_hcw4.xml",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/wittenberg/boxscore/10227",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-24T12:00:00.000Z"
     },
