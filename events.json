@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-27T10:35:07.254561+00:00",
+  "updated": "2026-10-27T16:39:58.733609+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -29,6 +29,22 @@
     },
     {
       "date": "2026-10-28",
+      "title": "Psych/Neuro Department Social",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-psych-neuro-department-social/2026-10-28/"
+    },
+    {
+      "date": "2026-10-28",
+      "title": "An Evening of Unplugging",
+      "startTime": "4 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-an-evening-of-unplugging/2026-10-28/"
+    },
+    {
+      "date": "2026-10-28",
       "title": "Christianity in Supernatural",
       "startTime": "5:30 p.m.",
       "endTime": "7 p.m.",
@@ -42,6 +58,14 @@
       "endTime": "8 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-take-back-the-night-march/2026-10-28/"
+    },
+    {
+      "date": "2026-10-29",
+      "title": "Crochet Microbes with Genetics Club!",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-crochet-microbes-with-genetics-club/2026-10-29/"
     },
     {
       "date": "2026-10-29",
@@ -74,6 +98,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/costumes-consent/2026-10-30/"
+    },
+    {
+      "date": "2026-10-30",
+      "title": "Halloween Party With the BioxChemx Physics Departments",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-halloween-party-with-the-bioxchemx-physics-departments/2026-10-30/"
     },
     {
       "date": "2026-10-30",
@@ -138,6 +170,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/protect-your-peace-and-your-partners/2026-11-02/"
+    },
+    {
+      "date": "2026-11-02",
+      "title": "Open Mic Night",
+      "startTime": "5 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-open-mic-night/2026-11-02/"
     },
     {
       "date": "2026-11-03",
@@ -378,14 +418,6 @@
       "endTime": "8 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/ross-art-museum-reverse-coloring-pages/2026-11-19/"
-    },
-    {
-      "date": "2026-11-19",
-      "title": "Faculty Recital: Chris Lizak",
-      "startTime": "8 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/faculty-recital-chris-lizak-2/2026-11-19/"
     },
     {
       "date": "2026-11-19",
