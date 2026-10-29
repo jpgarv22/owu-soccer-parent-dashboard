@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-29T14:20:36.443855+00:00",
+  "updated": "2026-10-29T20:18:51.934349+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -125,6 +125,14 @@
     },
     {
       "date": "2026-11-01",
+      "title": "Incredible Film Club Halloween Party",
+      "startTime": "6 p.m.",
+      "endTime": "9:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-incredible-film-club-halloween-party/2026-11-01/"
+    },
+    {
+      "date": "2026-11-01",
       "title": "Karaoke Sunday",
       "startTime": "8 p.m.",
       "endTime": "12 a.m.",
@@ -141,6 +149,14 @@
     },
     {
       "date": "2026-11-02",
+      "title": "Your Panhellenic Journey Starts Here!",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-your-panhellenic-journey-starts-here/2026-11-02/"
+    },
+    {
+      "date": "2026-11-02",
       "title": "Open Mic Night",
       "startTime": "5 p.m.",
       "endTime": "7 p.m.",
@@ -154,6 +170,14 @@
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-ou-hcom-info-session-q-a/2026-11-03/"
+    },
+    {
+      "date": "2026-11-03",
+      "title": "Election Day Shuttle",
+      "startTime": "8 a.m.",
+      "endTime": "4 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-election-day-shuttle/2026-11-03/"
     },
     {
       "date": "2026-11-03",
@@ -258,6 +282,14 @@
       "endTime": "8:30 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/honor-choir-festival-concert/2026-11-09/"
+    },
+    {
+      "date": "2026-11-09",
+      "title": "Honor Choir Festival Performance",
+      "startTime": "6:30 p.m.",
+      "endTime": "11:59 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-honor-choir-festival-performance/2026-11-09/"
     },
     {
       "date": "2026-11-09",
