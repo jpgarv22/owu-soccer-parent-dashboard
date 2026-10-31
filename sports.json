@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T13:37:39.325Z",
+  "updatedAt": "2026-10-31T18:30:56.609Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3859,8 +3859,8 @@
       "time": "11 a.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/wittenberg/boxscore/10204",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
@@ -3883,8 +3883,8 @@
       "time": "1 p.m",
       "location": "Oberlin, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://oberlinsportsnetwork.com/",
+      "statsUrl": "https://goyeo.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
