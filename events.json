@@ -1,64 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-10-30T23:48:05.656437+00:00",
+  "updated": "2026-10-31T05:42:22.102242+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-10-30",
-      "title": "Costumes & Consent",
-      "startTime": "11:30 a.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/costumes-consent/2026-10-30/"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "OWU Student Autumn Fest",
-      "startTime": "11:30 a.m.",
-      "endTime": "1:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-student-autumn-fest/2026-10-30/"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "Halloween Party With the BioxChemx Physics Departments",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-halloween-party-with-the-bioxchemx-physics-departments/2026-10-30/"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "Spooky Singo",
-      "startTime": "6 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-spooky-singo-2/2026-10-30/"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "Fall Theatre Production: \"oh to be pure again\"",
-      "startTime": "7:30 p.m.",
-      "endTime": "9:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/fall-theatre-production-oh-to-be-pure-again/2026-10-30/"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "Perkins Observatory: Friday Evening Program",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-10-30/"
-    },
-    {
-      "date": "2026-10-30",
-      "title": "NAfME's Annual Almost Famous Quesadilla Fundraiser",
-      "startTime": "9 p.m.",
-      "endTime": "11:59 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-nafme-s-annual-almost-famous-quesadilla-fundraiser/2026-10-30/"
-    },
     {
       "date": "2026-10-31",
       "title": "Creative Arts Halloween Social",
@@ -418,6 +362,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-20/"
+    },
+    {
+      "date": "2026-11-29",
+      "title": "Bob Ross at the Ross!",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-bob-ross-at-the-ross/2026-11-29/"
     }
   ]
 }
