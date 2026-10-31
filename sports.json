@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-31T18:30:56.609Z",
+  "updatedAt": "2026-10-31T22:27:29.464Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3835,8 +3835,8 @@
       "time": "2 p.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/wabash/boxscore/10118",
       "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
@@ -3871,8 +3871,8 @@
       "time": "12 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.northcoastnetwork.com/denison/",
-      "statsUrl": "https://bigred.denison.edu/sidearmstats/wsoc/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-soccer/stats/2026/denison/boxscore/10254",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
@@ -3883,8 +3883,8 @@
       "time": "1 p.m",
       "location": "Oberlin, Ohio",
       "site": "Away",
-      "watchUrl": "https://oberlinsportsnetwork.com/",
-      "statsUrl": "https://goyeo.com/sidearmstats/wvball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-volleyball/stats/2026/oberlin/boxscore/10229",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-10-31T12:00:00.000Z"
     },
@@ -3902,26 +3902,14 @@
     },
     {
       "sport": "Women's Field Hockey",
-      "opponent": "NCAC Tournament Semifinal",
-      "date": "Nov 4 (Wed) TBA",
-      "time": "TBA",
-      "location": "TBA",
-      "site": "",
-      "watchUrl": "",
-      "statsUrl": "",
+      "opponent": "Kenyon",
+      "date": "Nov 4 (Wed) 4 p.m.",
+      "time": "4 p.m",
+      "location": "Delaware, Ohio Selby Stadium",
+      "site": "Home",
+      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
-      "isoDate": "2026-11-04T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Soccer",
-      "opponent": "NCAC Tournament Semifinal",
-      "date": "Nov 4 (Wed) TBA",
-      "time": "TBA",
-      "location": "TBA",
-      "site": "",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
       "isoDate": "2026-11-04T12:00:00.000Z"
     },
     {
@@ -4069,18 +4057,6 @@
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
     {
-      "sport": "Women's Soccer",
-      "opponent": "NCAC Tournament Championship",
-      "date": "Nov 7 (Sat) TBA",
-      "time": "TBA",
-      "location": "TBA",
-      "site": "",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-soccer/schedule/2026",
-      "isoDate": "2026-11-07T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Swimming & Diving",
       "opponent": "Transylvania",
       "date": "Nov 7 (Sat) 1 p.m.",
@@ -4091,18 +4067,6 @@
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-07T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Volleyball",
-      "opponent": "NCAC Tournament Quarterfinal",
-      "date": "Nov 10 (Tue) TBA",
-      "time": "TBA",
-      "location": "TBA",
-      "site": "",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
-      "isoDate": "2026-11-10T12:00:00.000Z"
     },
     {
       "sport": "Men's Basketball",
@@ -4166,11 +4130,11 @@
     },
     {
       "sport": "Women's Volleyball",
-      "opponent": "NCAC Tournament Semifinal",
+      "opponent": "DePauw / Oberlin",
       "date": "Nov 13 (Fri) TBA",
       "time": "TBA",
-      "location": "TBA",
-      "site": "",
+      "location": "Springfield, Ohio",
+      "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
@@ -4229,8 +4193,8 @@
       "opponent": "NCAC Tournament Championship",
       "date": "Nov 14 (Sat) TBA",
       "time": "TBA",
-      "location": "TBA",
-      "site": "",
+      "location": "Springfield, Ohio",
+      "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
