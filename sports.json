@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T17:58:37.978Z",
+  "updatedAt": "2026-11-04T23:38:32.993Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3895,8 +3895,8 @@
       "time": "4 p.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://www.northcoastnetwork.com/ohiowesleyan/",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/kenyon/boxscore/10205",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-11-04T12:00:00.000Z"
     },
@@ -4022,10 +4022,10 @@
     },
     {
       "sport": "Women's Field Hockey",
-      "opponent": "NCAC Tournament Championship",
+      "opponent": "Denison / DePauw",
       "date": "Nov 7 (Sat) TBA",
       "time": "TBA",
-      "location": "TBA",
+      "location": "TBD",
       "site": "",
       "watchUrl": "",
       "statsUrl": "",
