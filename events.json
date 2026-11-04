@@ -1,32 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-03T21:00:13.930731+00:00",
+  "updated": "2026-11-04T01:21:46.305208+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-03",
-      "title": "OU-HCOM Info Session + Q&A",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-ou-hcom-info-session-q-a/2026-11-03/"
-    },
-    {
-      "date": "2026-11-03",
-      "title": "Election Day Shuttle",
-      "startTime": "8 a.m.",
-      "endTime": "4 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-election-day-shuttle/2026-11-03/"
-    },
-    {
-      "date": "2026-11-03",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-11-03/"
-    },
     {
       "date": "2026-11-05",
       "title": "Film Screening: \"The Truman Show\"",
@@ -330,6 +306,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday-2/2026-12-01/"
+    },
+    {
+      "date": "2026-12-03",
+      "title": "Board Game Night",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-board-game-night-3/2026-12-03/"
     }
   ]
 }
