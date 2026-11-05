@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-04T22:39:59.117292+00:00",
+  "updated": "2026-11-05T03:30:09.157770+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -314,6 +314,30 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-board-game-night-3/2026-12-03/"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "The Burton Morgan Entrepreneurship Student Paper Competition",
+      "startTime": null,
+      "endTime": null,
+      "allDay": true,
+      "url": "https://www.owu.edu/calendars/details/the-burton-morgan-entrepreneurship-student-paper-competition/2026-12-04/"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "One-Acts Play Festival",
+      "startTime": "7:30 p.m.",
+      "endTime": "9:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/one-acts-play-festival/2026-12-04/"
+    },
+    {
+      "date": "2026-12-04",
+      "title": "Perkins Observatory: Friday Evening Program",
+      "startTime": "8 p.m.",
+      "endTime": "10 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-40/2026-12-04/"
     }
   ]
 }
