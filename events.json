@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-05T12:22:19.021327+00:00",
+  "updated": "2026-11-05T20:40:33.950865+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -18,14 +18,6 @@
       "endTime": "11 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-pool-tournament/2026-11-05/"
-    },
-    {
-      "date": "2026-11-05",
-      "title": "Board Game Night",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-board-game-night-4/2026-11-05/"
     },
     {
       "date": "2026-11-05",
