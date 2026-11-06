@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T10:47:13.632Z",
+  "updatedAt": "2026-11-06T17:56:46.364Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3919,8 +3919,8 @@
       "time": "5 p.m",
       "location": "Gambier, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/watch?v=0k4TM-xmhvo",
+      "statsUrl": "https://sidearmstats.com/kenyon/swim/",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
@@ -3931,8 +3931,8 @@
       "time": "5 p.m",
       "location": "Gambier, Ohio",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/watch?v=0k4TM-xmhvo",
+      "statsUrl": "https://sidearmstats.com/kenyon/swim/",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
@@ -3943,8 +3943,8 @@
       "time": "3:30 p.m",
       "location": "Holland, Mich",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/watch?v=Wd1SZrgtTdc",
+      "statsUrl": "https://athletics.hope.edu/sidearmstats/wbball2/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
@@ -3955,8 +3955,8 @@
       "time": "5 p.m",
       "location": "Gambier, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/watch?v=0k4TM-xmhvo",
+      "statsUrl": "https://sidearmstats.com/kenyon/swim/",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
@@ -3967,8 +3967,8 @@
       "time": "5 p.m",
       "location": "Gambier, Ohio",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/watch?v=0k4TM-xmhvo",
+      "statsUrl": "https://sidearmstats.com/kenyon/swim/",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
