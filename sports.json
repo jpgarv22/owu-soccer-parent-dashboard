@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T17:56:46.364Z",
+  "updatedAt": "2026-11-06T23:05:17.542Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3938,13 +3938,13 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "Illinois Wesleyan",
+      "opponent": "RV Illinois Wesleyan",
       "date": "Nov 6 (Fri) 3:30 p.m.",
       "time": "3:30 p.m",
       "location": "Holland, Mich",
       "site": "Home",
-      "watchUrl": "https://www.youtube.com/watch?v=Wd1SZrgtTdc",
-      "statsUrl": "https://athletics.hope.edu/sidearmstats/wbball2/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2026-27/illinois-wesleyan/boxscore/10339",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-06T12:00:00.000Z"
     },
@@ -3974,7 +3974,7 @@
     },
     {
       "sport": "Women's Volleyball",
-      "opponent": "Otterbein",
+      "opponent": "#14 Otterbein",
       "date": "Nov 6 (Fri) 7 p.m.",
       "time": "7 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
@@ -4010,7 +4010,7 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "TBD",
+      "opponent": "Hope / Wisconsin-Platteville",
       "date": "Nov 7 (Sat) TBA",
       "time": "TBA",
       "location": "Holland, Mich",
@@ -4190,11 +4190,11 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "TBA",
-      "date": "Nov 20 (Fri) TBA",
-      "time": "TBA",
+      "opponent": "Albion",
+      "date": "Nov 20 (Fri) 7 p.m.",
+      "time": "7 p.m",
       "location": "Cincinnati, Ohio",
-      "site": "",
+      "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
@@ -4226,11 +4226,11 @@
     },
     {
       "sport": "Women's Basketball",
-      "opponent": "TBA",
-      "date": "Nov 21 (Sat) TBA",
-      "time": "TBA",
+      "opponent": "Maryville (Tenn.)",
+      "date": "Nov 21 (Sat) 3 p.m.",
+      "time": "3 p.m",
       "location": "Cincinnati, Ohio",
-      "site": "",
+      "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
