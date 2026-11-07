@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T16:24:14.476Z",
+  "updatedAt": "2026-11-07T20:52:27.040Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3962,13 +3962,13 @@
     },
     {
       "sport": "Men's Football",
-      "opponent": "Washington (Mo.)",
+      "opponent": "#7/#8 WashU",
       "date": "Nov 7 (Sat) 1 p.m.",
       "time": "1 p.m",
       "location": "Delaware, Ohio Selby Stadium",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2026/9/3/watchowu-football.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/football/",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/football/stats/2026/washu/boxscore/10119",
       "scheduleUrl": "https://battlingbishops.com/sports/football/schedule/2026",
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
@@ -4003,8 +4003,8 @@
       "time": "2 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.northcoastnetwork.com/denison/",
+      "statsUrl": "https://bigred.denison.edu/sidearmstats/fhockey/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
