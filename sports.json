@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T20:52:27.040Z",
+  "updatedAt": "2026-11-08T00:33:05.170Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -3991,8 +3991,8 @@
       "time": "1 p.m",
       "location": "Holland, Mich",
       "site": "Home",
-      "watchUrl": "https://www.youtube.com/watch?v=sB_65CMWK2c",
-      "statsUrl": "https://athletics.hope.edu/sidearmstats/wbball2/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2026-27/wisconsin-platteville/boxscore/10340",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
@@ -4003,8 +4003,8 @@
       "time": "2 p.m",
       "location": "Granville, Ohio",
       "site": "Away",
-      "watchUrl": "https://www.northcoastnetwork.com/denison/",
-      "statsUrl": "https://bigred.denison.edu/sidearmstats/fhockey/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/field-hockey/stats/2026/denison/boxscore/10206",
       "scheduleUrl": "https://battlingbishops.com/sports/field-hockey/schedule/2026",
       "isoDate": "2026-11-07T12:00:00.000Z"
     },
