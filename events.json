@@ -1,40 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-07T20:53:17.319648+00:00",
+  "updated": "2026-11-08T00:36:38.665894+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-07",
-      "title": "CALABASH",
-      "startTime": null,
-      "endTime": null,
-      "allDay": true,
-      "url": "https://www.owu.edu/calendars/details/owu-students-calabash/2026-11-07/"
-    },
-    {
-      "date": "2026-11-07",
-      "title": "Repair Café",
-      "startTime": "10 a.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/repair-cafe-3/2026-11-07/"
-    },
-    {
-      "date": "2026-11-07",
-      "title": "A Sweet Evening with Leah Koenig",
-      "startTime": "6 p.m.",
-      "endTime": "9 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/a-sweet-evening-with-leah-koenig/2026-11-07/"
-    },
-    {
-      "date": "2026-11-07",
-      "title": "Pool Tournament",
-      "startTime": "6 p.m.",
-      "endTime": "11 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-pool-tournament-2/2026-11-07/"
-    },
     {
       "date": "2026-11-08",
       "title": "Choral Art Society & Chamber Choir Concert",
@@ -330,6 +298,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-sunday-3/2026-12-06/"
+    },
+    {
+      "date": "2026-12-07",
+      "title": "Craft Night – Holiday Card Making",
+      "startTime": "6 p.m.",
+      "endTime": "11:59 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-holiday-card-making/2026-12-07/"
     }
   ]
 }
