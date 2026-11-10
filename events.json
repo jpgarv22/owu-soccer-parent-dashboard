@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-09T17:29:59.859552+00:00",
+  "updated": "2026-11-10T01:31:54.414340+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-09",
-      "title": "Honor Choir Festival Concert",
-      "startTime": "6:30 p.m.",
-      "endTime": "8:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/honor-choir-festival-concert/2026-11-09/"
-    },
-    {
-      "date": "2026-11-09",
-      "title": "Richard W. Smith Lecture in Civil War History: Michael Vorenberg",
-      "startTime": "7 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/richard-w-smith-lecture-in-civil-war-history-michael-vorenberg/2026-11-09/"
-    },
     {
       "date": "2026-11-10",
       "title": "Karaoke Tuesday",
@@ -306,6 +290,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday-2/2026-12-08/"
+    },
+    {
+      "date": "2026-12-09",
+      "title": "Craft Night – Holiday Card Making",
+      "startTime": "6 p.m.",
+      "endTime": "11:59 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-holiday-card-making/2026-12-09/"
     }
   ]
 }
