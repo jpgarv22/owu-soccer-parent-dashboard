@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-10T09:51:22.405294+00:00",
+  "updated": "2026-11-10T17:51:06.143023+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -21,11 +21,43 @@
     },
     {
       "date": "2026-11-11",
+      "title": "ENVS Trivia",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-envs-trivia/2026-11-11/"
+    },
+    {
+      "date": "2026-11-11",
       "title": "Snooze and Shine",
       "startTime": "12 p.m.",
       "endTime": "1 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-snooze-and-shine/2026-11-11/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Pre-Law Society Meeting",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-pre-law-society-meeting/2026-11-12/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Interstellar Arts and Crafts",
+      "startTime": "4:30 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-interstellar-arts-and-crafts/2026-11-12/"
+    },
+    {
+      "date": "2026-11-12",
+      "title": "Nightfall Neon",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-nightfall-neon/2026-11-12/"
     },
     {
       "date": "2026-11-12",
@@ -58,6 +90,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-13/"
+    },
+    {
+      "date": "2026-11-14",
+      "title": "Pies-Giving!!! Kitchen House Project",
+      "startTime": "1 p.m.",
+      "endTime": "3 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-pies-giving-kitchen-house-project/2026-11-14/"
     },
     {
       "date": "2026-11-14",
@@ -117,6 +157,14 @@
     },
     {
       "date": "2026-11-16",
+      "title": "WCSA Town Hall",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-wcsa-town-hall/2026-11-16/"
+    },
+    {
+      "date": "2026-11-16",
       "title": "Craft Night – Ornament Decorating",
       "startTime": "6 p.m.",
       "endTime": "11:59 p.m.",
@@ -154,6 +202,22 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-11-17/"
+    },
+    {
+      "date": "2026-11-18",
+      "title": "Jeopardy Night",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-jeopardy-night/2026-11-18/"
+    },
+    {
+      "date": "2026-11-19",
+      "title": "Night at the Museum: Reverse Coloring",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-night-at-the-museum-reverse-coloring/2026-11-19/"
     },
     {
       "date": "2026-11-19",
