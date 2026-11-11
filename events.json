@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-10T23:22:59.212732+00:00",
+  "updated": "2026-11-11T06:22:15.978642+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-10",
-      "title": "Karaoke Tuesday",
-      "startTime": "8 p.m.",
-      "endTime": "12 a.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday/2026-11-10/"
-    },
     {
       "date": "2026-11-11",
       "title": "A Celebration of Native American Cultures",
@@ -378,6 +370,14 @@
       "endTime": "11:59 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-holiday-card-making/2026-12-09/"
+    },
+    {
+      "date": "2026-12-10",
+      "title": "Craft Night – Holiday Card Making",
+      "startTime": "6 p.m.",
+      "endTime": "11:59 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-holiday-card-making/2026-12-10/"
     }
   ]
 }
