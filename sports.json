@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T10:49:35.114Z",
+  "updatedAt": "2026-11-11T18:39:44.680Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -4082,13 +4082,13 @@
     },
     {
       "sport": "Women's Volleyball",
-      "opponent": "DePauw / Oberlin",
-      "date": "Nov 13 (Fri) TBA",
-      "time": "TBA",
+      "opponent": "DePauw",
+      "date": "Nov 13 (Fri) 5 p.m.",
+      "time": "5 p.m",
       "location": "Springfield, Ohio",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.tigersportsnetwork.com/",
+      "statsUrl": "https://battlingbishops.com/sidearmstats/wvball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
       "isoDate": "2026-11-13T12:00:00.000Z"
     },
@@ -4143,10 +4143,10 @@
     {
       "sport": "Women's Volleyball",
       "opponent": "NCAC Tournament Championship",
-      "date": "Nov 14 (Sat) TBA",
-      "time": "TBA",
+      "date": "Nov 14 (Sat) 2 p.m.",
+      "time": "2 p.m",
       "location": "Springfield, Ohio",
-      "site": "Home",
+      "site": "",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-volleyball/schedule/2026",
