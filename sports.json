@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-11T18:39:44.680Z",
+  "updatedAt": "2026-11-12T01:30:05.586Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -4045,36 +4045,12 @@
       "isoDate": "2026-11-13T12:00:00.000Z"
     },
     {
-      "sport": "Men's Swimming & Diving",
-      "opponent": "Bluffton",
-      "date": "Nov 13 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Ada, Ohio",
-      "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-13T12:00:00.000Z"
-    },
-    {
       "sport": "Women's Swimming & Diving",
       "opponent": "Ohio Northern",
       "date": "Nov 13 (Fri) 6 p.m.",
       "time": "6 p.m",
       "location": "Ada, Ohio",
       "site": "Away",
-      "watchUrl": "",
-      "statsUrl": "",
-      "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
-      "isoDate": "2026-11-13T12:00:00.000Z"
-    },
-    {
-      "sport": "Women's Swimming & Diving",
-      "opponent": "Bluffton",
-      "date": "Nov 13 (Fri) 6 p.m.",
-      "time": "6 p.m",
-      "location": "Ada, Ohio",
-      "site": "Home",
       "watchUrl": "",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
