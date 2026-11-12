@@ -1,6 +1,6 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-12T11:11:59.089806+00:00",
+  "updated": "2026-11-12T18:56:59.051026+00:00",
   "daysCollected": 30,
   "events": [
     {
@@ -261,6 +261,14 @@
     },
     {
       "date": "2026-12-03",
+      "title": "Ross Art Museum: Zentangle Workshop",
+      "startTime": "6 p.m.",
+      "endTime": "8 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-zentangle-workshop/2026-12-03/"
+    },
+    {
+      "date": "2026-12-03",
       "title": "\"An Evening of 20th Century Music\" Concert",
       "startTime": "8 p.m.",
       "endTime": "10 p.m.",
@@ -285,6 +293,14 @@
     },
     {
       "date": "2026-12-04",
+      "title": "OWU Fine Arts Winter Market",
+      "startTime": "6 p.m.",
+      "endTime": "9 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-fine-arts-winter-market/2026-12-04/"
+    },
+    {
+      "date": "2026-12-04",
       "title": "One-Acts Play Festival",
       "startTime": "7:30 p.m.",
       "endTime": "9:30 p.m.",
@@ -301,11 +317,27 @@
     },
     {
       "date": "2026-12-06",
+      "title": "Ross Art Museum: Ornament Making",
+      "startTime": "12:30 p.m.",
+      "endTime": "1:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/ross-art-museum-ornament-making/2026-12-06/"
+    },
+    {
+      "date": "2026-12-06",
       "title": "Central Ohio Symphony Concert: \"Sounds of the Season\"",
       "startTime": "2 p.m.",
       "endTime": "4 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/central-ohio-symphony-concert-sounds-of-the-season/2026-12-06/"
+    },
+    {
+      "date": "2026-12-06",
+      "title": "OWU Holiday Light Competition",
+      "startTime": "7 p.m.",
+      "endTime": "8:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-holiday-light-competition/2026-12-06/"
     },
     {
       "date": "2026-12-06",
