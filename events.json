@@ -1,56 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-12T18:56:59.051026+00:00",
+  "updated": "2026-11-13T00:25:31.397520+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-12",
-      "title": "Pre-Law Society Meeting",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-pre-law-society-meeting/2026-11-12/"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "Interstellar Arts and Crafts",
-      "startTime": "4:30 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-interstellar-arts-and-crafts/2026-11-12/"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "Nightfall Neon",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-nightfall-neon/2026-11-12/"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "Ross Art Museum: Museum Talk: Jo Ingles – Election Results",
-      "startTime": "6:30 p.m.",
-      "endTime": "7:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/ross-art-museum-museum-talk-jo-ingles-election-results/2026-11-12/"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "OWU Catholic Testimony & Worship Night",
-      "startTime": "7:30 p.m.",
-      "endTime": "9:30 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-owu-catholic-testimony-worship-night/2026-11-12/"
-    },
-    {
-      "date": "2026-11-12",
-      "title": "Park Avenue Jazz Ensemble Concert",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/park-avenue-jazz-ensemble-concert-12/2026-11-12/"
-    },
     {
       "date": "2026-11-13",
       "title": "Clues for the Culture",
@@ -418,6 +370,14 @@
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-40/2026-12-11/"
+    },
+    {
+      "date": "2026-12-12",
+      "title": "Craft Night – Holiday Card Making",
+      "startTime": "12 p.m.",
+      "endTime": "11:59 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-craft-night-holiday-card-making-3/2026-12-12/"
     }
   ]
 }
