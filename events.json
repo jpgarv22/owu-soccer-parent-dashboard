@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-18T21:57:20.438530+00:00",
+  "updated": "2026-11-19T03:28:58.787503+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-18",
-      "title": "Jeopardy Night",
-      "startTime": "6 p.m.",
-      "endTime": "8 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-jeopardy-night/2026-11-18/"
-    },
     {
       "date": "2026-11-19",
       "title": "Night at the Museum: Reverse Coloring",
