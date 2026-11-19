@@ -1,8 +1,16 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-19T13:08:27.680847+00:00",
+  "updated": "2026-11-19T21:35:39.133681+00:00",
   "daysCollected": 30,
   "events": [
+    {
+      "date": "2026-11-19",
+      "title": "Garland Making with SLAM!",
+      "startTime": "6 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-garland-making-with-slam/2026-11-19/"
+    },
     {
       "date": "2026-11-19",
       "title": "Ross Art Museum: Reverse Coloring Pages",
@@ -21,11 +29,27 @@
     },
     {
       "date": "2026-11-20",
+      "title": "Founder Story Lunch",
+      "startTime": "12 p.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-founder-story-lunch/2026-11-20/"
+    },
+    {
+      "date": "2026-11-20",
       "title": "Perkins Observatory: Friday Evening Program",
       "startTime": "8 p.m.",
       "endTime": "10 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-20/"
+    },
+    {
+      "date": "2026-11-27",
+      "title": "OWU Students made pop-up",
+      "startTime": "11 a.m.",
+      "endTime": "1 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-made-pop-up/2026-11-27/"
     },
     {
       "date": "2026-11-29",
@@ -34,6 +58,14 @@
       "endTime": "8 p.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-bob-ross-at-the-ross/2026-11-29/"
+    },
+    {
+      "date": "2026-11-30",
+      "title": "Light the Hudler Tree!",
+      "startTime": "6 p.m.",
+      "endTime": "6:30 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-light-the-hudler-tree/2026-11-30/"
     },
     {
       "date": "2026-11-30",
@@ -58,6 +90,14 @@
       "endTime": "12 a.m.",
       "allDay": false,
       "url": "https://www.owu.edu/calendars/details/owu-students-karaoke-tuesday-2/2026-12-01/"
+    },
+    {
+      "date": "2026-12-02",
+      "title": "Faith & Food Passport - Kitchen x Interfaith House Project.",
+      "startTime": "6 p.m.",
+      "endTime": "7 p.m.",
+      "allDay": false,
+      "url": "https://www.owu.edu/calendars/details/owu-students-faith-food-passport-kitchen-x-interfaith-house-project/2026-12-02/"
     },
     {
       "date": "2026-12-03",
