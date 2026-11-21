@@ -1,24 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-20T20:21:09.060218+00:00",
+  "updated": "2026-11-21T02:15:54.434817+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-20",
-      "title": "Founder Story Lunch",
-      "startTime": "12 p.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-founder-story-lunch/2026-11-20/"
-    },
-    {
-      "date": "2026-11-20",
-      "title": "Perkins Observatory: Friday Evening Program",
-      "startTime": "8 p.m.",
-      "endTime": "10 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/perkins-observatory-friday-evening-program-39/2026-11-20/"
-    },
     {
       "date": "2026-11-27",
       "title": "OWU Students made pop-up",
