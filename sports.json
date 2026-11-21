@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T01:28:27.643Z",
+  "updatedAt": "2026-11-21T09:43:04.182Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -4123,8 +4123,8 @@
       "time": "7:30 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2025/12/15/watchowu-mens-basketball.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-basketball/stats/2026-27/berry/boxscore/10277",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
       "isoDate": "2026-11-20T12:00:00.000Z"
     },
@@ -4135,8 +4135,8 @@
       "time": "7 p.m",
       "location": "Cincinnati, Ohio",
       "site": "Home",
-      "watchUrl": "https://www.youtube.com/@mountstjosephsportsnetwork/streams",
-      "statsUrl": "https://msjlions.com/sidearmstats/wbball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/womens-basketball/stats/2026-27/albion/boxscore/10341",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-20T12:00:00.000Z"
     },
@@ -4159,7 +4159,7 @@
       "time": "10 a.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
-      "watchUrl": "",
+      "watchUrl": "https://battlingbishops.com/sports/2025/12/15/watch-ohio-wesleyan-swimming-diving.aspx",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-21T12:00:00.000Z"
@@ -4171,8 +4171,8 @@
       "time": "3 p.m",
       "location": "Cincinnati, Ohio",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/@mountstjosephsportsnetwork/streams",
+      "statsUrl": "https://msjlions.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-21T12:00:00.000Z"
     },
@@ -4183,7 +4183,7 @@
       "time": "10 a.m",
       "location": "Delaware, Ohio Meek Aquatics Center",
       "site": "Home",
-      "watchUrl": "",
+      "watchUrl": "https://battlingbishops.com/sports/2025/12/15/watch-ohio-wesleyan-swimming-diving.aspx",
       "statsUrl": "",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-swimming-and-diving/schedule/2026",
       "isoDate": "2026-11-21T12:00:00.000Z"
