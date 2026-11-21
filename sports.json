@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T20:07:25.811Z",
+  "updatedAt": "2026-11-21T01:28:27.643Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -4135,8 +4135,8 @@
       "time": "7 p.m",
       "location": "Cincinnati, Ohio",
       "site": "Home",
-      "watchUrl": "",
-      "statsUrl": "",
+      "watchUrl": "https://www.youtube.com/@mountstjosephsportsnetwork/streams",
+      "statsUrl": "https://msjlions.com/sidearmstats/wbball/summary",
       "scheduleUrl": "https://battlingbishops.com/sports/womens-basketball/schedule/2026",
       "isoDate": "2026-11-20T12:00:00.000Z"
     },
