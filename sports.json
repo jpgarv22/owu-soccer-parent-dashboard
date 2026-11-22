@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T03:06:09.227Z",
+  "updatedAt": "2026-11-22T11:13:27.863Z",
   "source": "https://battlingbishops.com",
   "videoHome": "https://www.northcoastnetwork.com/ohiowesleyan/",
   "availableSports": [
@@ -4142,13 +4142,13 @@
     },
     {
       "sport": "Men's Basketball",
-      "opponent": "Johns Hopkins",
+      "opponent": "#22 Johns Hopkins",
       "date": "Nov 21 (Sat) 7:30 p.m.",
       "time": "7:30 p.m",
       "location": "Delaware, Ohio Branch Rickey Arena",
       "site": "Home",
-      "watchUrl": "https://battlingbishops.com/sports/2025/12/15/watchowu-mens-basketball.aspx",
-      "statsUrl": "https://battlingbishops.com/sidearmstats/mbball/summary",
+      "watchUrl": "",
+      "statsUrl": "https://battlingbishops.com/sports/mens-basketball/stats/2026-27/johns-hopkins/boxscore/10278",
       "scheduleUrl": "https://battlingbishops.com/sports/mens-basketball/schedule/2026",
       "isoDate": "2026-11-21T12:00:00.000Z"
     },
