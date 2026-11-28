@@ -1,16 +1,8 @@
 {
   "source": "https://www.owu.edu/calendars/",
-  "updated": "2026-11-27T19:28:41.146497+00:00",
+  "updated": "2026-11-28T02:41:17.196117+00:00",
   "daysCollected": 30,
   "events": [
-    {
-      "date": "2026-11-27",
-      "title": "OWU Students made pop-up",
-      "startTime": "11 a.m.",
-      "endTime": "1 p.m.",
-      "allDay": false,
-      "url": "https://www.owu.edu/calendars/details/owu-students-made-pop-up/2026-11-27/"
-    },
     {
       "date": "2026-11-29",
       "title": "Bob Ross at the Ross!",
